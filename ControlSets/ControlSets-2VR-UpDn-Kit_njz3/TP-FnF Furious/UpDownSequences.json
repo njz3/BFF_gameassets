@@ -1,0 +1,45 @@
+[
+  {
+    "Enabled": false,
+    "Name": "Up/Down->H4",
+    "MappedButtons": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "IsNeutralFirstBtn": true,
+    "CanRollOver": false,
+    "UpRawInputIndex": 8,
+    "DownRawInputIndex": 9,
+    "NeutralDelay_ms": 200,
+    "Maintain_ms": 1000
+  },
+  {
+    "Enabled": true,
+    "Name": "1VR->3VR",
+    "MappedButtons": [
+      5,
+      6,
+      7
+    ],
+    "IsNeutralFirstBtn": false,
+    "CanRollOver": true,
+    "UpRawInputIndex": 5,
+    "DownRawInputIndex": -1,
+    "NeutralDelay_ms": 200,
+    "Maintain_ms": 1000
+  },
+  {
+    "Enabled": false,
+    "Name": "",
+    "MappedButtons": [],
+    "IsNeutralFirstBtn": false,
+    "CanRollOver": false,
+    "UpRawInputIndex": -1,
+    "DownRawInputIndex": -1,
+    "NeutralDelay_ms": 200,
+    "Maintain_ms": 0
+  }
+]

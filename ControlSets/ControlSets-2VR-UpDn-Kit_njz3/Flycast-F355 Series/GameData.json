@@ -1,0 +1,13 @@
+{
+  "GameName": "F355tiwn,F355twn2",
+  "Description": "F355 Challenge Series running on Flycast",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "f355tw*.bat",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

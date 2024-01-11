@@ -1,0 +1,54 @@
+[
+  {
+    "Enabled": true,
+    "Name": "1VR->4BGM",
+    "MappedButtons": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "IsNeutralFirstBtn": false,
+    "CanRollOver": true,
+    "UpRawInputIndex": 5,
+    "DownRawInputIndex": -1,
+    "NeutralDelay_ms": 300,
+    "Maintain_ms": 500
+  },
+  {
+    "Enabled": true,
+    "Name": "1VR->2VR",
+    "MappedButtons": [
+      4,
+      5
+    ],
+    "IsNeutralFirstBtn": false,
+    "CanRollOver": true,
+    "UpRawInputIndex": 4,
+    "DownRawInputIndex": -1,
+    "NeutralDelay_ms": 300,
+    "Maintain_ms": 500
+  },
+  {
+    "Enabled": false,
+    "Name": "",
+    "MappedButtons": [],
+    "IsNeutralFirstBtn": false,
+    "CanRollOver": false,
+    "UpRawInputIndex": -1,
+    "DownRawInputIndex": -1,
+    "NeutralDelay_ms": 200,
+    "Maintain_ms": 0
+  },
+  {
+    "Enabled": false,
+    "Name": "",
+    "MappedButtons": [],
+    "IsNeutralFirstBtn": false,
+    "CanRollOver": false,
+    "UpRawInputIndex": -1,
+    "DownRawInputIndex": -1,
+    "NeutralDelay_ms": 300,
+    "Maintain_ms": 500
+  }
+]

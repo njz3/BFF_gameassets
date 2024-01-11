@@ -1,0 +1,387 @@
+[
+  {
+    "UniqueName": "Droite",
+    "CombinedKeyStrokes": [
+      74,
+      0
+    ],
+    "KeySources": [
+      {
+        "Type": 4,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      }
+    ],
+    "KeySourcesOperators": [
+      0,
+      0
+    ],
+    "AxisTolerance_pct": 0.1,
+    "HoldTime_ms": 0,
+    "IsInvertedLogic": false,
+    "KeyAPI": 1
+  },
+  {
+    "UniqueName": "Gauche",
+    "CombinedKeyStrokes": [
+      70,
+      0
+    ],
+    "KeySources": [
+      {
+        "Type": 4,
+        "Index": 1,
+        "Threshold": 0.25,
+        "InvSign": true
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      }
+    ],
+    "KeySourcesOperators": [
+      0,
+      0
+    ],
+    "AxisTolerance_pct": 0.1,
+    "HoldTime_ms": 0,
+    "IsInvertedLogic": false,
+    "KeyAPI": 1
+  },
+  {
+    "UniqueName": "Ok",
+    "CombinedKeyStrokes": [
+      71,
+      0
+    ],
+    "KeySources": [
+      {
+        "Type": 4,
+        "Index": 2,
+        "Threshold": 0.25,
+        "InvSign": true
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      }
+    ],
+    "KeySourcesOperators": [
+      0,
+      0
+    ],
+    "AxisTolerance_pct": 0.1,
+    "HoldTime_ms": 0,
+    "IsInvertedLogic": false,
+    "KeyAPI": 1
+  },
+  {
+    "UniqueName": "Exit",
+    "CombinedKeyStrokes": [
+      2,
+      0
+    ],
+    "KeySources": [
+      {
+        "Type": 3,
+        "Index": 4,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 3,
+        "Index": 5,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      }
+    ],
+    "KeySourcesOperators": [
+      1,
+      0
+    ],
+    "AxisTolerance_pct": 0.1,
+    "HoldTime_ms": 2000,
+    "IsInvertedLogic": false,
+    "KeyAPI": 1
+  },
+  {
+    "UniqueName": "Gauche Rapide",
+    "CombinedKeyStrokes": [
+      58,
+      0
+    ],
+    "KeySources": [
+      {
+        "Type": 3,
+        "Index": 5,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      }
+    ],
+    "KeySourcesOperators": [
+      0,
+      0
+    ],
+    "AxisTolerance_pct": 0.1,
+    "HoldTime_ms": 0,
+    "IsInvertedLogic": false,
+    "KeyAPI": 1
+  },
+  {
+    "UniqueName": "Droite Rapide",
+    "CombinedKeyStrokes": [
+      59,
+      0
+    ],
+    "KeySources": [
+      {
+        "Type": 3,
+        "Index": 6,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      }
+    ],
+    "KeySourcesOperators": [
+      0,
+      0
+    ],
+    "AxisTolerance_pct": 0.1,
+    "HoldTime_ms": 0,
+    "IsInvertedLogic": false,
+    "KeyAPI": 1
+  },
+  {
+    "UniqueName": "Favoris",
+    "CombinedKeyStrokes": [
+      60,
+      0
+    ],
+    "KeySources": [
+      {
+        "Type": 3,
+        "Index": 5,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 3,
+        "Index": 6,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      }
+    ],
+    "KeySourcesOperators": [
+      1,
+      0
+    ],
+    "AxisTolerance_pct": 0.1,
+    "HoldTime_ms": 1000,
+    "IsInvertedLogic": false,
+    "KeyAPI": 1
+  },
+  {
+    "UniqueName": "Exit AltF4",
+    "CombinedKeyStrokes": [
+      1,
+      0
+    ],
+    "KeySources": [
+      {
+        "Type": 3,
+        "Index": 4,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 3,
+        "Index": 5,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      }
+    ],
+    "KeySourcesOperators": [
+      1,
+      0
+    ],
+    "AxisTolerance_pct": 0.1,
+    "HoldTime_ms": 4000,
+    "IsInvertedLogic": false,
+    "KeyAPI": 1
+  },
+  {
+    "UniqueName": "Up",
+    "CombinedKeyStrokes": [
+      74,
+      0
+    ],
+    "KeySources": [
+      {
+        "Type": 3,
+        "Index": 10,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      }
+    ],
+    "KeySourcesOperators": [
+      0,
+      0
+    ],
+    "AxisTolerance_pct": 0.1,
+    "HoldTime_ms": 0,
+    "IsInvertedLogic": false,
+    "KeyAPI": 1
+  },
+  {
+    "UniqueName": "Down",
+    "CombinedKeyStrokes": [
+      70,
+      0
+    ],
+    "KeySources": [
+      {
+        "Type": 3,
+        "Index": 9,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      }
+    ],
+    "KeySourcesOperators": [
+      0,
+      0
+    ],
+    "AxisTolerance_pct": 0.1,
+    "HoldTime_ms": 0,
+    "IsInvertedLogic": false,
+    "KeyAPI": 1
+  },
+  {
+    "UniqueName": "Start",
+    "CombinedKeyStrokes": [
+      71,
+      0
+    ],
+    "KeySources": [
+      {
+        "Type": 3,
+        "Index": 4,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      }
+    ],
+    "KeySourcesOperators": [
+      0,
+      0
+    ],
+    "AxisTolerance_pct": 0.1,
+    "HoldTime_ms": 0,
+    "IsInvertedLogic": false,
+    "KeyAPI": 2
+  }
+]

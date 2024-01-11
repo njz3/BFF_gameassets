@@ -1,0 +1,128 @@
+[
+  {
+    "RawOutputIdx": 0,
+    "MappedRawOutputBit": [
+      0
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 1,
+    "MappedRawOutputBit": [
+      1
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 2,
+    "MappedRawOutputBit": [
+      2
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 3,
+    "MappedRawOutputBit": [
+      4
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 4,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 5,
+    "MappedRawOutputBit": [
+      5
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 6,
+    "MappedRawOutputBit": [
+      6
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 7,
+    "MappedRawOutputBit": [
+      7
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 8,
+    "MappedRawOutputBit": [
+      8
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 9,
+    "MappedRawOutputBit": [
+      9
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 10,
+    "MappedRawOutputBit": [
+      10
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 11,
+    "MappedRawOutputBit": [
+      11
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 12,
+    "MappedRawOutputBit": [
+      12
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 13,
+    "MappedRawOutputBit": [
+      13
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 14,
+    "MappedRawOutputBit": [
+      14
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 15,
+    "MappedRawOutputBit": [
+      15
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  }
+]

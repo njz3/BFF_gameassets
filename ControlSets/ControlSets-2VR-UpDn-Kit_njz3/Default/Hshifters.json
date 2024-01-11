@@ -1,0 +1,19 @@
+[
+  {
+    "Type": 0,
+    "Enabled": false,
+    "MappedButtons": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "IsNeutralFirstBtn": true,
+    "LeftRightRawInputIndex": 10,
+    "RightRawInputIndex": 10,
+    "UpRawInputIndex": 8,
+    "DownRawInputIndex": 9,
+    "Maintain_ms": 1000
+  }
+]
