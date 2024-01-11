@@ -1,9 +1,9 @@
 [
   {
-    "Enabled": false,
+    "Enabled": true,
     "Name": "Up/Down->H4",
     "MappedButtons": [
-      16,
+      -1,
       17,
       18,
       19,
@@ -17,7 +17,7 @@
     "Maintain_ms": 1000
   },
   {
-    "Enabled": false,
+    "Enabled": true,
     "Name": "1VR->3VR",
     "MappedButtons": [
       4,

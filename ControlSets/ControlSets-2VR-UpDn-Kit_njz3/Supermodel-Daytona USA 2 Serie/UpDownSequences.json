@@ -4,10 +4,10 @@
     "Name": "Up/Down->H4",
     "MappedButtons": [
       16,
-      17,
       18,
       19,
-      20
+      20,
+      21
     ],
     "IsNeutralFirstBtn": true,
     "CanRollOver": false,
@@ -26,11 +26,11 @@
       7
     ],
     "IsNeutralFirstBtn": false,
-    "CanRollOver": true,
+    "CanRollOver": false,
     "UpRawInputIndex": 5,
     "DownRawInputIndex": 4,
-    "NeutralDelay_ms": 200,
-    "Maintain_ms": 1000
+    "NeutralDelay_ms": 300,
+    "Maintain_ms": 500
   },
   {
     "Enabled": false,

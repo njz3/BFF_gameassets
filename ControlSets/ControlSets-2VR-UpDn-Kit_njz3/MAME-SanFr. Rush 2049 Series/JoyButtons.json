@@ -51,6 +51,9 @@
     "Name": "Clutch"
   },
   {
+    "Name": "Reverse"
+  },
+  {
     "Name": "Gear1"
   },
   {
@@ -67,9 +70,6 @@
   },
   {
     "Name": ""
-  },
-  {
-    "Name": "Reverse"
   },
   {
     "Name": ""

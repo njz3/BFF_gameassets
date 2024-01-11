@@ -42,5 +42,16 @@
     "DownRawInputIndex": -1,
     "NeutralDelay_ms": 200,
     "Maintain_ms": 0
+  },
+  {
+    "Enabled": false,
+    "Name": "",
+    "MappedButtons": [],
+    "IsNeutralFirstBtn": false,
+    "CanRollOver": false,
+    "UpRawInputIndex": -1,
+    "DownRawInputIndex": -1,
+    "NeutralDelay_ms": 300,
+    "Maintain_ms": 500
   }
 ]

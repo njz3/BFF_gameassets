@@ -1,13 +1,15 @@
 [
   {
-    "Enabled": false,
-    "Name": "Up/Down->H4",
+    "Enabled": true,
+    "Name": "Up/Down->H6",
     "MappedButtons": [
       16,
-      17,
       18,
       19,
-      20
+      20,
+      21,
+      22,
+      23
     ],
     "IsNeutralFirstBtn": true,
     "CanRollOver": false,
@@ -20,13 +22,12 @@
     "Enabled": true,
     "Name": "2VR->4VR",
     "MappedButtons": [
-      -1,
       4,
       5,
       6,
       7
     ],
-    "IsNeutralFirstBtn": true,
+    "IsNeutralFirstBtn": false,
     "CanRollOver": false,
     "UpRawInputIndex": 5,
     "DownRawInputIndex": 4,

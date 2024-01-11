@@ -3,7 +3,7 @@
     "Name": ""
   },
   {
-    "Name": "Test menu"
+    "Name": "Test/Coin"
   },
   {
     "Name": "Service Or Coin"
@@ -12,40 +12,40 @@
     "Name": "Start"
   },
   {
-    "Name": ""
+    "Name": "PaddleLeft"
+  },
+  {
+    "Name": "PaddleRight"
+  },
+  {
+    "Name": "Boost"
   },
   {
     "Name": ""
   },
   {
-    "Name": ""
+    "Name": "SteerUp"
   },
   {
-    "Name": ""
+    "Name": "SteerDown"
   },
   {
-    "Name": "Up"
+    "Name": "BrakeSW"
   },
   {
-    "Name": "Down"
+    "Name": "GasSW"
   },
   {
-    "Name": ""
+    "Name": "View1"
   },
   {
-    "Name": ""
+    "Name": "View2"
   },
   {
-    "Name": ""
+    "Name": "View3"
   },
   {
-    "Name": ""
-  },
-  {
-    "Name": ""
-  },
-  {
-    "Name": ""
+    "Name": "View4"
   },
   {
     "Name": ""

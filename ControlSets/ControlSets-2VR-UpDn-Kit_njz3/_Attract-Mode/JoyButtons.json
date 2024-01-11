@@ -51,6 +51,9 @@
     "Name": "Neutral"
   },
   {
+    "Name": "Reverse"
+  },
+  {
     "Name": "Gear 1"
   },
   {
@@ -67,9 +70,6 @@
   },
   {
     "Name": "Gear 6"
-  },
-  {
-    "Name": "Reverse"
   },
   {
     "Name": ""

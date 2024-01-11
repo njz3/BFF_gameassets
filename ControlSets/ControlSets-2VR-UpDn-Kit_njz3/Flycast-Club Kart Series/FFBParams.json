@@ -13,7 +13,7 @@
   "MinVelThreshold": 0.2,
   "MinAccelThreshold": 0.1,
   "MinDamperForActive": 0.1,
-  "PermanentSpring": 0.38,
+  "PermanentSpring": 0.48,
   "Force_Kp": 1.0,
   "Spring_TrqDeadband": 0.0,
   "Spring_Kp": 1.0,

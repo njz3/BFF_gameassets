@@ -17,7 +17,7 @@
     "Maintain_ms": 1000
   },
   {
-    "Enabled": false,
+    "Enabled": true,
     "Name": "1VR->3VR",
     "MappedButtons": [
       4,

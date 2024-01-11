@@ -1,13 +1,13 @@
 [
   {
-    "Enabled": false,
+    "Enabled": true,
     "Name": "Up/Down->H4",
     "MappedButtons": [
-      16,
-      17,
+      -1,
       18,
       19,
-      20
+      20,
+      21
     ],
     "IsNeutralFirstBtn": true,
     "CanRollOver": false,

@@ -1,13 +1,16 @@
 [
   {
     "Enabled": false,
-    "Name": "Up/Down->H4",
+    "Name": "Up/Down->H6R",
     "MappedButtons": [
+      -1,
       16,
       17,
       18,
       19,
-      20
+      20,
+      21,
+      22
     ],
     "IsNeutralFirstBtn": true,
     "CanRollOver": false,

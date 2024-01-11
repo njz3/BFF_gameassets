@@ -29,8 +29,8 @@
     "CanRollOver": false,
     "UpRawInputIndex": 5,
     "DownRawInputIndex": 4,
-    "NeutralDelay_ms": 200,
-    "Maintain_ms": 1000
+    "NeutralDelay_ms": 300,
+    "Maintain_ms": 500
   },
   {
     "Enabled": false,

@@ -26,7 +26,7 @@
   {
     "RawOutputIdx": 3,
     "MappedRawOutputBit": [
-      4,
+      3,
       7
     ],
     "SequenceDelay_ms": 2000,

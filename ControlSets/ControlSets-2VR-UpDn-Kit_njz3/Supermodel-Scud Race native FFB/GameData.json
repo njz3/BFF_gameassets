@@ -1,0 +1,13 @@
+{
+  "GameName": "scud,scudp",
+  "Description": "Scud Race Series",
+  "ExecType": 2,
+  "OutputType": 2,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "Scud Race native ffb.bat|Scud Race Plus native ffb.bat",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

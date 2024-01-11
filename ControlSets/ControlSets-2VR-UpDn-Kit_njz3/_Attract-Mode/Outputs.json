@@ -1,66 +1,82 @@
 [
   {
     "IsInvertedLogic": true,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": true,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   },
   {
     "IsInvertedLogic": false,
-    "IsToggle": false
+    "IsToggle": false,
+    "Table": {}
   }
 ]

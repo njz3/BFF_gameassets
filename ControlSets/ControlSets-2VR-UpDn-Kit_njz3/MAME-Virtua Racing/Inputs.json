@@ -113,7 +113,7 @@
     "Name": "MUSIC",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
-    "ValidateDelay_ms": 0,
+    "ValidateDelay_ms": 20,
     "IsInvertedLogic": false,
     "IsToggle": false,
     "IsAutoFire": false,
@@ -160,7 +160,7 @@
     "IsTracked": false
   },
   {
-    "Name": "RX0_H6NEUTRAL",
+    "Name": "Rx0/H6.NEUTRAL",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -170,7 +170,7 @@
     "IsTracked": false
   },
   {
-    "Name": "RX1_H6_1",
+    "Name": "Rx1/H6.REVERSE",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -180,7 +180,7 @@
     "IsTracked": false
   },
   {
-    "Name": "RX2_H6_2",
+    "Name": "Rx2/H6.1",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -190,7 +190,7 @@
     "IsTracked": false
   },
   {
-    "Name": "RX3_H6_3",
+    "Name": "Rx3/H6.2",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -200,7 +200,7 @@
     "IsTracked": false
   },
   {
-    "Name": "RX4_H6_4",
+    "Name": "Rx4/H6.3",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -210,7 +210,7 @@
     "IsTracked": false
   },
   {
-    "Name": "RX5_H6_5",
+    "Name": "Rx5/H6.4",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -220,7 +220,7 @@
     "IsTracked": false
   },
   {
-    "Name": "RX6_H6_6",
+    "Name": "Rx6/H6.5",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -230,7 +230,7 @@
     "IsTracked": false
   },
   {
-    "Name": "RX7",
+    "Name": "Rx7/H6.6",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,

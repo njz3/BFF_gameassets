@@ -142,5 +142,53 @@
     "MappedJoyBtns": [
       23
     ]
+  },
+  {
+    "RawInputIdx": 24,
+    "MappedJoyBtns": [
+      24
+    ]
+  },
+  {
+    "RawInputIdx": 25,
+    "MappedJoyBtns": [
+      25
+    ]
+  },
+  {
+    "RawInputIdx": 26,
+    "MappedJoyBtns": [
+      26
+    ]
+  },
+  {
+    "RawInputIdx": 27,
+    "MappedJoyBtns": [
+      27
+    ]
+  },
+  {
+    "RawInputIdx": 28,
+    "MappedJoyBtns": [
+      28
+    ]
+  },
+  {
+    "RawInputIdx": 29,
+    "MappedJoyBtns": [
+      29
+    ]
+  },
+  {
+    "RawInputIdx": 30,
+    "MappedJoyBtns": [
+      30
+    ]
+  },
+  {
+    "RawInputIdx": 31,
+    "MappedJoyBtns": [
+      31
+    ]
   }
 ]

@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "Enabled": false,
+    "Name": "",
+    "MappedButtons": [],
+    "IsNeutralFirstBtn": false,
+    "CanRollOver": false,
+    "UpRawInputIndex": -1,
+    "DownRawInputIndex": -1,
+    "NeutralDelay_ms": 300,
+    "Maintain_ms": 500
+  },
+  {
+    "Enabled": false,
+    "Name": "",
+    "MappedButtons": [],
+    "IsNeutralFirstBtn": false,
+    "CanRollOver": false,
+    "UpRawInputIndex": -1,
+    "DownRawInputIndex": -1,
+    "NeutralDelay_ms": 300,
+    "Maintain_ms": 500
+  },
+  {
+    "Enabled": false,
+    "Name": "",
+    "MappedButtons": [],
+    "IsNeutralFirstBtn": false,
+    "CanRollOver": false,
+    "UpRawInputIndex": -1,
+    "DownRawInputIndex": -1,
+    "NeutralDelay_ms": 300,
+    "Maintain_ms": 500
+  },
+  {
+    "Enabled": false,
+    "Name": "",
+    "MappedButtons": [],
+    "IsNeutralFirstBtn": false,
+    "CanRollOver": false,
+    "UpRawInputIndex": -1,
+    "DownRawInputIndex": -1,
+    "NeutralDelay_ms": 300,
+    "Maintain_ms": 500
+  }
+]
