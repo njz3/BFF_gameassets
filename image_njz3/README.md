@@ -145,18 +145,30 @@ de configuration vidéo des émulateurs automatiquement.
 
 Tous les jeux fonctionnent en Full HD.
 
+
 - CRT 1280x960i (Videoamp 31Hz entrelacé sur VGA natif)
 - CRT 1024x768i (Videoamp 24Hz entrelacé sur VGA natif)
 
-Tous les jeux sauf certains Teknoparrot supporte seulement la HD 16/9e.
+Tous les jeux sauf certains Teknoparrot qui ne supportent que la HD 16/9e.
+
 
 - CRT 640x480p (Videoamp 31Hz progressif)
 - CRT 1024x384p (Videoamp 24Hz progressif strech)
+- CRT 512x384p (Videoamp 24Hz progressif en activant GPU scaling)
 - CRT 1280x240p (Videoamp 15Hz progressif strech)
 - CRT 640x480i (Videoamp 15Hz entrelacé sur VGA natif)
 - CRT 1280x480i (Videoamp 15Hz entrelacé strech sur VGA natif)
+- CRT 320x240p (Videoamp 15Hz progressif en activant GPU scaling)
 
 Seuls les jeux : MAME, model 2, model 3 et Naomi (Flycast) fonctionnent.
+
+## Utiliser des basses résolutions en utilisant le GPU Scaling sur le VideoAmp
+
+Exemple : sortir du 512x384p en utilisant le VideoAmp sur une carte NVidia 1050Ti
+1. Configuger le VideoAmp avec 2 résolutions : la (P)referred en 1024x384p, la suivante en supplémentaire 512x384p avec exactement le même timing vertical (même modeline verticale).
+2. Brancher le VideoAmp qui va etre détecter comme écran 1024x384p
+3. Aller dans le NVidia "Control Panel", et dans la page "Régler la taille et la position", activer le plein écran.
+4. Dans les propriétés d'affichage de Windows, sélectionner la résolution 512x384p, et vous aurez automatiquement un plein écran.
 
 # Pour ajouter un jeu 1P
 
