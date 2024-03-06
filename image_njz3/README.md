@@ -2,9 +2,11 @@ Distribution Sega Racer 2022-2024 - njz3
 
 # A propos
 
-Cette image disque est basée sur un Windows 10 entreprise dont la configuration a été adaptée aux racecabs.
-Elle propose un Hyperspin basé sur Maximum Car de HFS Play, avec la plupart des jeux et emulateurs
-pré-configurés pour être jouables immédiatement en mode retour de force.
+Cette image disque est basée sur un Windows 10 entreprise dont la configuration
+a été adaptée aux racecabs.
+Elle propose un Hyperspin basé sur Maximum Car de HFS Play, avec la plupart des
+jeux et emulateurs pré-configurés pour être jouables immédiatement en mode 
+retour de force.
 Les dernières versions des émulateurs sont utilisés, en particulier :
 - MAME pour les jeux anciens, ou ceux des générations 90/2000 de Namco ou Taito par exemple.
 - Nebula model 2 pour Sega Model 2
@@ -14,25 +16,31 @@ Les dernières versions des émulateurs sont utilisés, en particulier :
 - Dolphin pour les jeux Triforce
 - Teknoparrot pour les jeux sur plateforme PC
 
-Le retour de force est soit natif à la plateforme ou à l'émulateur (model2, supermodel), soit généré par le 
-FFB plugin de Boomslangnz. Il a été réglé dans le BackForceFeeder afin de restituer au plus juste les effets
-originaux quand c'est possible.
-Le mapping des boutons et des axes par défaut est actuellement celui de ma borne Le Mans à savoir 1 volant 
-simple, 2 pédales, 1 Start, 2 view buttons, 1 shifter Up/Down.
-Je laisse à chacun le soin de refaire le mapping selon sa borne via mon soft BackforceFeeder en suivant le 
-nommage déjà pré-établi pour les boutons de chaque jeu.
+Le retour de force est soit natif à la plateforme ou à l'émulateur (model2,
+supermodel), soit généré par le FFB plugin de Boomslangnz. Il a été réglé dans
+le BackForceFeeder afin de restituer au plus juste les effets originaux quand
+c'est possible.
+Le mapping des boutons et des axes par défaut est actuellement celui de ma 
+borne Le Mans à savoir 1 volant, 2 pédales, 1 Start, 2 view buttons, 1 shifter
+Up/Down.
+Je laisse à chacun le soin de refaire le mapping selon sa borne via mon soft
+BackforceFeeder en suivant le nommage déjà pré-établi pour les boutons de 
+chaque jeu.
 
 La distribution fonctionne en mode FullHD (1920x1080) sur l'ensemble des jeux. 
-En se limitant aux jeux MAME, model 1/2/3 et Flycast (Naomi) la distribution peut fonctionner en 24 kHz à 
-l'aide du videoamp en 1024x768i ou 1024x384p, ou en 15 kHz avec le videoamp en mode 1280x240p ou 1280x480i.
+En se limitant aux jeux MAME, model 1/2/3 et Flycast (Naomi) la distribution
+peut fonctionner en 24 kHz à l'aide du videoamp en 1024x768i ou 1024x384p, ou
+en 15 kHz avec le videoamp en mode 1280x240p ou 1280x480i.
 
 
 # Configuration Hardware
 
 > **IMPORTANT**
-> Au premier démarrage, laisser le temps à Windows de démarrer puis installer vos drivers.
+> Au premier démarrage, laisser le temps à Windows de démarrer puis installer
+> vos drivers.
 
-Si vous pouvez connecter votre PC à internet, faites Windows Update pour récupérer vos drivers automatiquement.
+Si vous pouvez connecter votre PC à internet, faites Windows Update pour
+récupérer vos drivers automatiquement.
 Le SSD est prévu pour fonctionner sur un PC avec :
 - un processeur intel 4th gen (ou plus récent), ou un AMD Ryzen.
 - 4GB de RAM minimum
@@ -50,15 +58,20 @@ possible avec moins de jeux (uniquement MAME, model 1/2/3 et Naomi via Flycast).
 
 ## Reseau
 
-IP: 192.168.1.201 (ou 202 ou 203, 204, .. selon la cabine en multi)
+IP: 192.168.1.4 pour cabine 1 (ou 192.168.1.5 ou .6, .7, .. selon la cabine en multi)
+Masque de sous-réseau: 255.255.255.0
+Passerelle : 192.168.1.254 (modifable selon votre réseau LAN en 192.168.1.1)
+DNS : 8.8.8.8 ou 8.8.4.4 (DNS de Google)
+Broadcast address: 192.168.1.255
 
-Masque: 255.255.255.0
+Mettre réseau privé et désactiver le Firewall.
 
-Passerelle : 192.168.1.254
-
-DNS : 8.8.8.8 ou 4.4.4.4 (Google)
-
-Mettre réseau privé et désactiver le Firewall
+> **Note:**
+Pour le jeu en réseau sur model 2 emulator (Sega Rally, Daytona 1, etc.)
+if faut impérativement activer le support des trames de longues taille (3kB)
+soit via une option de votre carte réseau, soit activer l'option "Jumbo Frames"
+dans votre carte Ethernet (MTU >3kB) et avoir un switch Ethernet 1GBit qui 
+supporte les "Jumbo Frames".
 
 ![Configuration réseau](Utils/images/networkconfig.png "Configuration réseau").
 
@@ -133,21 +146,23 @@ Lancer Teknoparrot, vérifier qu'un jeu se lance.
 
 # Changement de configurations vidéo
 
-L'image standard contient des configurations d'émulateurs pour fonctionner en mode FullHD 1080p et il est
-nécessaire de les changer pour changer de mode vidéo.
-Des scripts SetXXX.bat sont présents dans le répertoire `Utils\` pour réaliser la copie des fichiers
-de configuration vidéo des émulateurs automatiquement.
+L'image standard contient des configurations d'émulateurs pour fonctionner
+en mode FullHD 1080 et il est nécessaire de les changer pour changer de mode
+vidéo. Des scripts SetXXX.bat sont présents dans le répertoire `Utils\` pour
+réaliser la copie des fichiers de configuration vidéo des émulateurs
+automatiquement.
 
 ![Scripts de changement de config vidéo](Utils/images/scriptsconfigvideo.png "Scripts de changement de config vidéo").
 
+Liste des résolutions:
 
-- FullHD 1080p
+- FullHD 1080p/i
 
 Tous les jeux fonctionnent en Full HD.
 
 
-- CRT 1280x960i (Videoamp 31Hz entrelacé sur VGA natif)
-- CRT 1024x768i (Videoamp 24Hz entrelacé sur VGA natif)
+- CRT 1280x960p/i (moniteur PC ou Videoamp 31Hz entrelacé sur VGA natif)
+- CRT 1024x768p/i (moniteur PC ou Videoamp 24Hz entrelacé sur VGA natif)
 
 Tous les jeux sauf certains Teknoparrot qui ne supportent que la HD 16/9e.
 
@@ -164,11 +179,17 @@ Seuls les jeux : MAME, model 2, model 3 et Naomi (Flycast) fonctionnent.
 
 ## Utiliser des basses résolutions en utilisant le GPU Scaling sur le VideoAmp
 
-Exemple : sortir du 512x384p en utilisant le VideoAmp sur une carte NVidia 1050Ti
-1. Configuger le VideoAmp avec 2 résolutions : la (P)referred en 1024x384p, la suivante en supplémentaire 512x384p avec exactement le même timing vertical (même modeline verticale).
+Exemple : sortir du 512x384p en utilisant le VideoAmp sur une carte NVidia 
+1050Ti.
+1. Configurer le VideoAmp avec 2 résolutions : la (P)referred en 1024x384p,
+la suivante en supplémentaire 512x384p avec exactement le même timing vertical
+(même valeur en vertical dans la modeline).
 2. Brancher le VideoAmp qui va etre détecter comme écran 1024x384p
-3. Aller dans le NVidia "Control Panel", et dans la page "Régler la taille et la position", activer le plein écran.
-4. Dans les propriétés d'affichage de Windows, sélectionner la résolution 512x384p, et vous aurez automatiquement un plein écran.
+3. Aller dans le NVidia "Control Panel", ou Intel ou AMD, et dans la page 
+"Régler la taille et la position", activer le plein écran ou le mode Stretch.
+4. Dans les propriétés d'affichage de Windows, sélectionner la résolution
+512x384p, et vous aurez automatiquement un plein écran avec scaling par GPU.
+
 
 # Pour ajouter un jeu 1P
 
@@ -186,15 +207,15 @@ Comme pratiquement chaque jeu a une configuration propre pour le FFB ou les
 boutons, il est conseillé de faire un fichier .bat pour chaque jeu, qui sera
 placé dans le dossier du jeu ou de l'émulateur qui va le lancer.
 
-Nommer votre fichier .bat de manière unique et identifiable facilement.
-Si possible, prendre un nom sans espace et qui correspont à un nom de rom unique.
+Nommer votre fichier .bat de manière unique et identifiable facilement. Si 
+possible, prendre un nom sans espace et qui correspont à un nom de rom unique.
 Par exemple : "daytonas.bat" dans le dossier de `C:\Racecab\Emulators\Model2 v1.1a`
 (rom "daytonas" pour le jeu Daytona Saturn Ads).
 
 Au besoin, placez les arguments dont vous avez besoin dans le .bat.
 Des utilitaires dans `C:\Racecab\Utils` vous permettent de faire des actions de
-bases, comme lancer un emulateur, appuyer sur une touche, tuer un process, changer
-de résolution, etc.
+bases, comme lancer un emulateur, appuyer sur une touche, tuer un process,
+changer de résolution, etc.
 En particulier, je recommande de mettre la fenetre en mode "minimized" dès le
 lancement et de donner un titre de fenetre (via la commande `TITLE`) qui soit
 unique pour le jeu, afin que le BackForceFeeder puisse identifier quel jeu est
@@ -263,7 +284,7 @@ Les options du module PCLauncher de RocketLauncher sont données en entête de
 fichier dans la balise [Example].
 
 > **ATTENTION**
-> pour temporairement enlever un jeu dans le fichier, il faut mettre des '#' au
+pour temporairement enlever un jeu dans le fichier, il faut mettre des '#' au
 début de ligne dans `C:\Racecab\Hyperspin\RocketLauncher\Modules\PCLauncher\1P.ini`
 et surtout supprimer les [] autour du nom du jeu, sinon RocketLauncher va
 quand même le détecter. 
@@ -283,15 +304,18 @@ Puis prendre le system 1P et taper le nom de votre jeu (par exemple 'daytonas').
 
 Lancer Hyperspin et faire la même chose en testant si votre jeu se lance.
 
+Pour vous aider à trouver les bons fichiers ou les bons répertoires, vous pouvez
+lancer le script `C:\Racecab\Utils\edit1Pfiles.Bat`
+
 ## Configuration BackForceFeeder
 
 Ajouter un nouveau control set en duplicant un existant.
 
-Pour automatiquement détecter le jeu dans le BFF, préciser soit le nom de l'exécutable
-et le titre de la fenetre principale, soit dans le fichier .bat ajouter un TITLE
-avec un titre unique ou le nom du fichier .bat. Dans ce cas, dans le BFF 
-indiquer `conhost|cmd` dans l'exe, et en nom de fenetre ce que vous avez mis en
-TITLE de votre .bat (en général nom du fichier .bat).
+Pour automatiquement détecter le jeu dans le BFF, préciser soit le nom de 
+l'exécutable et le titre de la fenetre principale, soit dans le fichier .bat 
+ajouter un TITLE avec un titre unique ou le nom du fichier .bat. Dans ce cas,
+dans le BFF, indiquer `conhost|cmd` dans l'exe, et en nom de fenetre ce que 
+vous avez mis en TITLE de votre .bat (en général nom du fichier .bat).
 
 Lancer le jeu via le .bat et verifier que le BFF bascule vers le control set
 (vous devez avoir coché l'autodetection dans App&Hardware pour que cela marche).
@@ -324,16 +348,19 @@ En résumé :
 6) Si besoin, configurer le BFF pour détecter votre .bat ou votre jeu et 
 configurer les controles, les lampes ou le retour de force.
 
+Pour vous aider à trouver les bons fichiers ou les bons répertoires, vous pouvez
+lancer le script `C:\Racecab\Utils\editMULTIfiles.Bat`
+
 
 # Configuration du BackForceFeeder
 
-Le logiciel BackForceFeeder est pré-installé et possède une configuration par défaut
-pour la plupart des jeux en mode shifter Up/Down et 2x View Buttons.
+Le logiciel BackForceFeeder est pré-installé et possède une configuration par
+défaut pour la plupart des jeux en mode shifter Up/Down et 2x View Buttons.
 
-Le logiciel nécessite un fichier `licence.dat` pour être activé, qui est fourni sur
-demande par email à `bff.register@gmail.com` en indiquant votre ID de machine et 
-en joignant un don paypal à la même adresse email (un minimum de 20€ par machine est 
-demandé).
+Le logiciel nécessite un fichier `licence.dat` pour être activé, qui est fourni
+sur demande par email à `bff.register@gmail.com` en indiquant votre ID de
+machine et en joignant un don paypal à la même adresse email (un minimum de 20€
+par machine est demandé).
 
 Le fichier de licence est à placer dans le répertoire :
 `C:\Users\Racecab\Documents\BackForceFeeder`
@@ -343,12 +370,20 @@ Le fichier de licence est à placer dans le répertoire :
 Les configurations sont stockées dans le répertoire :
 `C:\Users\Racecab\Documents\BackForceFeeder`
 
-Le sous-dossier ControlSets contient en particulier les configurations pour chaque jeu.
-Vous ne pouvez pas éditer à la main ces fichiers si le logiciel fonctionne, il faut
-d'abord le fermer pour pouvoir modifier les fichiers.
+Le sous-dossier ControlSets contient en particulier les configurations pour
+chaque jeu. Vous ne pouvez pas éditer à la main ces fichiers si le logiciel
+fonctionne, il faut d'abord le fermer pour pouvoir modifier les fichiers.
 
 
 # Notes - FAQ
+
+## Jeux Model 2 en mode Link
+
+Pour avoir un bon fonctionnement en mode Link (MULTI) il est obligatoire
+d'avoir un switch 1Gbs et d'activer le mode "Jumbo Frame", voir au début
+de ce document.
+La touche pour quitter l'émulateur est Alt+F4.
+
 
 ## Jeux Teknoparrot
 
@@ -358,12 +393,35 @@ Prévoir de copier les fichiers EPROM single/multi dans `C:\Users\Racecab\AppDat
 
 ### Raw Thrills PC Based
 
-La plupart des jeux Raw Thrills necessite d'etre à la racine de `C:\` dans un repertoire commencant par `rawart`, par
-exemple: 
+La plupart des jeux Raw Thrills necessite d'etre à la racine de `C:\` dans un
+repertoire commencant par `rawart`, par exemple: 
 - `Fast n Furious serie` dans `C:\rawart FnF\`
 - `Winter X Games Snocross` obligatoirement dans `C:\rawart Winter X Games Snocross\` sinon image qui fait du flickering.
 - `SuperBikes` obligatoirement dans `C:\rawart SuperBikes\` sinon erreur CRC
 - `SuperBikes 2` obligatoirement dans `C:\rawart SuperBikes2\` sinon erreur CRC
+
+### Daytona USA Championship (TP)
+
+Le jeu ne fonctionnera en multi __*que si une webcam USB compatible*__ est branchée.
+
+Il est important de respecter une adresse IP en 192.168.1.X dont le dernier
+chiffre X est en dessous de 10 (exemple: X=4, X=5, X=6, X=7).
+Fichiers à modifier : 
+- ShellData\ShellData.ini : dans [Network], mettre Enabled=1, CabinetID=1 (ou 2, 3, 4), NumCabinets=2 (ou 4)
+- Shell\Game.ini : dans [Network], mettre CabinetDomain=192.168.1 et CabinetBaseAddr=X (avec X=4 ou 5, 6, 7 selon votre IP)
+
+Pour le Service menu (shell): 
+- déplacer le jeu à la racine C:\Sega
+- installer driver DK2
+- désactiver sortie son HDMI et activer sortie son analogique
+- lancer C:\Sega/shell/shell.exe
+- appuyer sur la touche T (pour test), et la touche Y pour service
+
+### Sega Rally 3 - Autres Editions (courses issues de la version PC)
+
+Les Editions Artic, Alpines, etc. utilisent les circuits de la version PC mais
+ne marchent qu'en mode Quick Race (single ou multijoueur) et non en mode 
+championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 
 # Change log
 
