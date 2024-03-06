@@ -20,6 +20,7 @@
   {
     "RawInputIdx": 3,
     "MappedJoyBtns": [
+      0,
       3
     ]
   },
@@ -32,6 +33,7 @@
   {
     "RawInputIdx": 5,
     "MappedJoyBtns": [
+      0,
       5
     ]
   },

@@ -61,6 +61,15 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
+      <FieldName>Experimental Webcam Hack</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
       <FieldName>CustomResolution</FieldName>
       <FieldValue>1</FieldValue>
       <FieldType>Bool</FieldType>
@@ -635,13 +644,13 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>NamcoMkdx</EmulationProfile>
-  <GameProfileRevision>3</GameProfileRevision>
+  <GameProfileRevision>6</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
   <EmulatorType>TeknoParrot</EmulatorType>
   <Patreon>true</Patreon>
-  <RequiresAdmin>true</RequiresAdmin>
+  <RequiresAdmin>false</RequiresAdmin>
   <msysType>0</msysType>
   <InvertedMouseAxis>false</InvertedMouseAxis>
   <GunGame>false</GunGame>

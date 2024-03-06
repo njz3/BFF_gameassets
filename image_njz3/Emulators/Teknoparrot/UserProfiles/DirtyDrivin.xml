@@ -3,7 +3,7 @@
   <ProfileName>DirtyDrivin</ProfileName>
   <GameNameInternal>Dirty Drivin'</GameNameInternal>
   <GameGenreInternal>Racing</GameGenreInternal>
-  <GamePath>..\..\Games\Dirty Drivin - Raw Thrills PC Based\sdaemon.exe</GamePath>
+  <GamePath>C:\Racecab\Games\Dirty Drivin - Raw Thrills PC Based\sdaemon.exe</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />
@@ -315,10 +315,19 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Volume Down</ButtonName>
+      <DirectInputButton>
+        <Button>57</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
       <InputMapping>P1ButtonDown</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi />
-      <BindName />
+      <BindNameDi>Joystick Buttons9</BindNameDi>
+      <BindName>Joystick Buttons9</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -339,10 +348,19 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Volume Up</ButtonName>
+      <DirectInputButton>
+        <Button>56</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
       <InputMapping>P1ButtonUp</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi />
-      <BindName />
+      <BindNameDi>Joystick Buttons8</BindNameDi>
+      <BindName>Joystick Buttons8</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>

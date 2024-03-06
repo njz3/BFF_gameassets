@@ -98,7 +98,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Enable</FieldName>
-      <FieldValue>0</FieldValue>
+      <FieldValue>1</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -107,7 +107,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Cabinet 1 IP X.X.X.???</FieldName>
-      <FieldValue>192.168.1.201</FieldValue>
+      <FieldValue>4</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>254</FieldMax>
@@ -117,7 +117,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Cabinet 2 IP X.X.X.???</FieldName>
-      <FieldValue>192.168.1.202</FieldValue>
+      <FieldValue>5</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>254</FieldMax>

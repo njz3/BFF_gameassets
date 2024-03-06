@@ -7,13 +7,13 @@
     ],
     "KeySources": [
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 4,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 5,
         "Threshold": 0.75,
         "InvSign": false
@@ -30,7 +30,7 @@
       0
     ],
     "AxisTolerance_pct": 0.1,
-    "HoldTime_ms": 3000,
+    "HoldTime_ms": 2000,
     "IsInvertedLogic": false,
     "KeyAPI": 1
   }

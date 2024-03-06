@@ -120,7 +120,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Dhcp</FieldName>
-      <FieldValue>1</FieldValue>
+      <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -129,7 +129,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Ip</FieldName>
-      <FieldValue>192.168.1.201</FieldValue>
+      <FieldValue>192.168.1.4</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>

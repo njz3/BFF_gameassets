@@ -34,6 +34,15 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
+      <FieldName>Framelimiter</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
       <FieldName>CustomResolution</FieldName>
       <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
@@ -127,6 +136,24 @@
       <FieldName>Enable Capture</FieldName>
       <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>IP Address</FieldName>
+      <FieldValue>192.168.1.4</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>Subnet Mask</FieldName>
+      <FieldValue>255.255.255.0</FieldValue>
+      <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
@@ -674,7 +701,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>NamcoWmmt3</EmulationProfile>
-  <GameProfileRevision>4</GameProfileRevision>
+  <GameProfileRevision>6</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>

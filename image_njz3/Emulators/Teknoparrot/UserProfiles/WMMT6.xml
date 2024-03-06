@@ -125,7 +125,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>RouterIP</FieldName>
-      <FieldValue>192.168.1.1</FieldValue>
+      <FieldValue>192.168.1.254</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>

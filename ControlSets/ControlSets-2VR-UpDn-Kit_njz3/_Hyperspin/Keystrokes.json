@@ -112,13 +112,13 @@
     ],
     "KeySources": [
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 4,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 5,
         "Threshold": 0.75,
         "InvSign": false
@@ -147,7 +147,7 @@
     ],
     "KeySources": [
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 5,
         "Threshold": 0.75,
         "InvSign": false
@@ -182,7 +182,7 @@
     ],
     "KeySources": [
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 6,
         "Threshold": 0.75,
         "InvSign": false
@@ -217,13 +217,13 @@
     ],
     "KeySources": [
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 5,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 6,
         "Threshold": 0.75,
         "InvSign": false
@@ -252,13 +252,13 @@
     ],
     "KeySources": [
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 4,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 5,
         "Threshold": 0.75,
         "InvSign": false
@@ -287,7 +287,7 @@
     ],
     "KeySources": [
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 10,
         "Threshold": 0.75,
         "InvSign": false
@@ -322,7 +322,7 @@
     ],
     "KeySources": [
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 9,
         "Threshold": 0.75,
         "InvSign": false
@@ -357,7 +357,7 @@
     ],
     "KeySources": [
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 4,
         "Threshold": 0.75,
         "InvSign": false

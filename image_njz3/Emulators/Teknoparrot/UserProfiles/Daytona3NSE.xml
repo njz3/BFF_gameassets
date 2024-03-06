@@ -53,7 +53,7 @@
     <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>View Change 1 To Cycle All Views</FieldName>
-      <FieldValue>1</FieldValue>
+      <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>

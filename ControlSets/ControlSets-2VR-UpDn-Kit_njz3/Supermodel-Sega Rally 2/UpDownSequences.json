@@ -1,6 +1,6 @@
 [
   {
-    "Enabled": false,
+    "Enabled": true,
     "Name": "Up/Down->H4",
     "MappedButtons": [
       16,

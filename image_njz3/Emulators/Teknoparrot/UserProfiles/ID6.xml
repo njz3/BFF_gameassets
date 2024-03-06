@@ -24,7 +24,7 @@
       </FieldOptions>
     </FieldInformation>
     <FieldInformation>
-      <CategoryName>General</CategoryName>
+      <CategoryName>Graphics</CategoryName>
       <FieldName>GPU Fix</FieldName>
       <FieldValue>None</FieldValue>
       <FieldType>Dropdown</FieldType>
@@ -33,6 +33,7 @@
       <FieldOptions>
         <string>None</string>
         <string>AMD</string>
+        <string>New AMD Driver</string>
         <string>INTEL</string>
       </FieldOptions>
     </FieldInformation>
@@ -68,6 +69,15 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
+      <FieldName>Framelimiter</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
       <FieldName>LinearFiltering</FieldName>
       <FieldValue>1</FieldValue>
       <FieldType>Bool</FieldType>
@@ -87,6 +97,15 @@
     <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>Windowed</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Enable Chinese Subtitles</FieldName>
       <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
@@ -186,7 +205,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Ip</FieldName>
-      <FieldValue>192.168.1.201</FieldValue>
+      <FieldValue>192.168.1.4</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -240,7 +259,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Cab1IP</FieldName>
-      <FieldValue>192.168.1.201</FieldValue>
+      <FieldValue>192.168.1.4</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -249,7 +268,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Cab2IP</FieldName>
-      <FieldValue>192.168.1.202</FieldValue>
+      <FieldValue>192.168.1.5</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -963,7 +982,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>SegaInitialD</EmulationProfile>
-  <GameProfileRevision>28</GameProfileRevision>
+  <GameProfileRevision>32</GameProfileRevision>
   <HasSeparateTestMode>true</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>

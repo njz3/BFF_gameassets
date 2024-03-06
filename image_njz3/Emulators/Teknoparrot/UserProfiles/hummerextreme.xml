@@ -34,6 +34,15 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
+      <FieldName>Hide Cursor</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
       <FieldName>Use Custom Resolution</FieldName>
       <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
@@ -124,7 +133,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Dhcp</FieldName>
-      <FieldValue>1</FieldValue>
+      <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -133,7 +142,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Ip</FieldName>
-      <FieldValue>192.168.1.201</FieldValue>
+      <FieldValue>192.168.1.4</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -142,7 +151,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Cab1IP</FieldName>
-      <FieldValue>192.168.1.201</FieldValue>
+      <FieldValue>192.168.1.4</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -151,7 +160,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Cab2IP</FieldName>
-      <FieldValue>192.168.1.202</FieldValue>
+      <FieldValue>192.168.1.5</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -160,7 +169,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Cab3IP</FieldName>
-      <FieldValue>192.168.1.203</FieldValue>
+      <FieldValue>192.168.1.6</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -169,7 +178,7 @@
     <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Cab4IP</FieldName>
-      <FieldValue>192.168.1.204</FieldValue>
+      <FieldValue>192.168.1.7</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -578,7 +587,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>HummerExtreme</EmulationProfile>
-  <GameProfileRevision>7</GameProfileRevision>
+  <GameProfileRevision>8</GameProfileRevision>
   <HasSeparateTestMode>true</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>

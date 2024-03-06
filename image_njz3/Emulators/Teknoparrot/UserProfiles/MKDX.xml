@@ -635,13 +635,13 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>NamcoMkdx</EmulationProfile>
-  <GameProfileRevision>30</GameProfileRevision>
+  <GameProfileRevision>31</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
   <EmulatorType>TeknoParrot</EmulatorType>
   <Patreon>false</Patreon>
-  <RequiresAdmin>true</RequiresAdmin>
+  <RequiresAdmin>false</RequiresAdmin>
   <msysType>0</msysType>
   <InvertedMouseAxis>false</InvertedMouseAxis>
   <GunGame>false</GunGame>

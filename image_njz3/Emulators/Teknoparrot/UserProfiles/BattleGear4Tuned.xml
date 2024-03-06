@@ -3,7 +3,7 @@
   <ProfileName>BattleGear4Tuned</ProfileName>
   <GameNameInternal>Battle Gear 4 Tuned</GameNameInternal>
   <GameGenreInternal>Racing</GameGenreInternal>
-  <GamePath>..\..\Games\Battle Gear 4 Tuned 2.8 - Taito Type X +\game4.exe</GamePath>
+  <GamePath>C:\Racecab\Games\Battle Gear 4 Tuned 2.8 - Taito Type X +\game4.exe</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />

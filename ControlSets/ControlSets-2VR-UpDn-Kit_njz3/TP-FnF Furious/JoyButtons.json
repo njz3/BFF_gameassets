@@ -6,7 +6,7 @@
     "Name": "Test"
   },
   {
-    "Name": ""
+    "Name": "Service"
   },
   {
     "Name": "Start"
@@ -33,7 +33,13 @@
     "Name": ""
   },
   {
-    "Name": ""
+    "Name": "Tunes"
+  },
+  {
+    "Name": "VolumeUp"
+  },
+  {
+    "Name": "VolumeDown"
   },
   {
     "Name": ""
@@ -48,22 +54,16 @@
     "Name": ""
   },
   {
-    "Name": ""
+    "Name": "Gear1"
   },
   {
-    "Name": ""
+    "Name": "Gear2"
   },
   {
-    "Name": ""
+    "Name": "Gear3"
   },
   {
-    "Name": ""
-  },
-  {
-    "Name": ""
-  },
-  {
-    "Name": ""
+    "Name": "Gear4"
   },
   {
     "Name": ""

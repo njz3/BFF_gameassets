@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProfileName>SR3ArticEdition</ProfileName>
-  <GameNameInternal>SR3ArticEdition (Metadata Missing)</GameNameInternal>
+  <GameNameInternal>SEGA Rally 3 - Artic Edition</GameNameInternal>
+  <GameGenreInternal>Racing</GameGenreInternal>
   <GamePath>..\..\Games\Sega Rally 3 - SEGA Europa R - ArticEdition\Rally\Rally.exe</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
@@ -499,7 +500,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>EuropaRSegaRally3</EmulationProfile>
-  <GameProfileRevision>26</GameProfileRevision>
+  <GameProfileRevision>27</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>

@@ -2,18 +2,17 @@
   {
     "UniqueName": "Exit",
     "CombinedKeyStrokes": [
-      1,
-      0
+      1
     ],
     "KeySources": [
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 4,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
-        "Type": 3,
+        "Type": 1,
         "Index": 5,
         "Threshold": 0.75,
         "InvSign": false

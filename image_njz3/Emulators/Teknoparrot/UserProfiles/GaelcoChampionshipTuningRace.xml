@@ -711,12 +711,12 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>TokyoCop</EmulationProfile>
-  <GameProfileRevision>24</GameProfileRevision>
+  <GameProfileRevision>25</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
   <EmulatorType>Lindbergh</EmulatorType>
-  <Patreon>true</Patreon>
+  <Patreon>false</Patreon>
   <RequiresAdmin>false</RequiresAdmin>
   <msysType>1</msysType>
   <InvertedMouseAxis>false</InvertedMouseAxis>
