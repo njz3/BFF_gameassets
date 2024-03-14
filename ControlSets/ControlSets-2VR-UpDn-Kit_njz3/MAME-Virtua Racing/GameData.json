@@ -1,6 +1,6 @@
 {
   "GameName": "vr",
-  "Description": "",
+  "Description": "Virtua Racing",
   "ExecType": 3,
   "OutputType": 2,
   "ProcessName": "mame*",

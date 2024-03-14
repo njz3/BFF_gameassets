@@ -8,7 +8,7 @@ set CAB_ID=_single
 set GAME=Daytona3NSE.xml
 
 ::Copy config
-set GAME_PATH="C:\Racecab\Games\Daytona Championship USA New Season Edition"
+set GAME_PATH="C:\Racecab\Games\Daytona Championship USA New Season Edition\Sega"
 set CFG_SRC=%GAME_PATH%\GameData\config%CAB_ID%.ini
 set CFG_DST=%GAME_PATH%\GameData\config.ini
 XCOPY /Y /C %CFG_SRC% %CFG_DST%

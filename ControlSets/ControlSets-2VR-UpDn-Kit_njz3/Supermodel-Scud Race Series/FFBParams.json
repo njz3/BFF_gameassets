@@ -3,7 +3,7 @@
   "AllowEffectsTuning": true,
   "SkipStopEffect": false,
   "UseTrqEmulationForMissing": true,
-  "UsePulseSeq": false,
+  "UsePulseSeq": true,
   "ForceTrqForAllCommands": true,
   "DirectionUseSignedMagnitude": false,
   "GlobalGain": 1.0,

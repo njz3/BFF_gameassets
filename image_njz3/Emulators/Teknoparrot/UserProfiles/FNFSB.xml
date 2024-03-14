@@ -89,53 +89,9 @@
   </ConfigValues>
   <JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Start</ButtonName>
-      <DirectInputButton>
-        <Button>51</Button>
-        <IsAxis>false</IsAxis>
-        <IsAxisMinus>false</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
+      <ButtonName>Start / Nitro</ButtonName>
       <InputMapping>P1ButtonStart</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons3</BindNameDi>
-      <BindName>Joystick Buttons3</BindName>
-      <HideWithDirectInput>false</HideWithDirectInput>
-      <HideWithXInput>false</HideWithXInput>
-      <HideWithRawInput>false</HideWithRawInput>
-      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
-      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
-      <HideWithRelativeAxis>false</HideWithRelativeAxis>
-      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
-      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
-      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
-      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
-      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
-      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
-      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
-      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
-      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
-      <HideWithoutProMode>false</HideWithoutProMode>
-      <HideWithProMode>false</HideWithProMode>
-    </JoystickButtons>
-    <JoystickButtons>
-      <ButtonName>Shift Down</ButtonName>
-      <DirectInputButton>
-        <Button>57</Button>
-        <IsAxis>false</IsAxis>
-        <IsAxisMinus>false</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
-      <InputMapping>P1ButtonDown</InputMapping>
-      <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons9</BindNameDi>
-      <BindName>Joystick Buttons9</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -165,7 +121,7 @@
         <IsReverseAxis>false</IsReverseAxis>
         <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
       </DirectInputButton>
-      <InputMapping>P1ButtonUp</InputMapping>
+      <InputMapping>P1Button3</InputMapping>
       <AnalogType>None</AnalogType>
       <BindNameDi>Joystick Buttons8</BindNameDi>
       <BindName>Joystick Buttons8</BindName>
@@ -188,20 +144,9 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Nitro</ButtonName>
-      <DirectInputButton>
-        <Button>52</Button>
-        <IsAxis>false</IsAxis>
-        <IsAxisMinus>false</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
+      <ButtonName>Tunes</ButtonName>
       <InputMapping>P1Button1</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons4</BindNameDi>
-      <BindName>Joystick Buttons4</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -221,86 +166,9 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Button1 / View</ButtonName>
-      <DirectInputButton>
-        <Button>53</Button>
-        <IsAxis>false</IsAxis>
-        <IsAxisMinus>false</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
+      <ButtonName>View1</ButtonName>
       <InputMapping>P1Button2</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons5</BindNameDi>
-      <BindName>Joystick Buttons5</BindName>
-      <HideWithDirectInput>false</HideWithDirectInput>
-      <HideWithXInput>false</HideWithXInput>
-      <HideWithRawInput>false</HideWithRawInput>
-      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
-      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
-      <HideWithRelativeAxis>false</HideWithRelativeAxis>
-      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
-      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
-      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
-      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
-      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
-      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
-      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
-      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
-      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
-      <HideWithoutProMode>false</HideWithoutProMode>
-      <HideWithProMode>false</HideWithProMode>
-    </JoystickButtons>
-    <JoystickButtons>
-      <ButtonName>Button2 / Music</ButtonName>
-      <DirectInputButton>
-        <Button>54</Button>
-        <IsAxis>false</IsAxis>
-        <IsAxisMinus>false</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
-      <InputMapping>P1Button3</InputMapping>
-      <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons6</BindNameDi>
-      <BindName>Joystick Buttons6</BindName>
-      <HideWithDirectInput>false</HideWithDirectInput>
-      <HideWithXInput>false</HideWithXInput>
-      <HideWithRawInput>false</HideWithRawInput>
-      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
-      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
-      <HideWithRelativeAxis>false</HideWithRelativeAxis>
-      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
-      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
-      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
-      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
-      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
-      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
-      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
-      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
-      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
-      <HideWithoutProMode>false</HideWithoutProMode>
-      <HideWithProMode>false</HideWithProMode>
-    </JoystickButtons>
-    <JoystickButtons>
-      <ButtonName>Button3 / Other</ButtonName>
-      <DirectInputButton>
-        <Button>55</Button>
-        <IsAxis>false</IsAxis>
-        <IsAxisMinus>false</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
-      <InputMapping>P1Button4</InputMapping>
-      <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons7</BindNameDi>
-      <BindName>Joystick Buttons7</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -353,20 +221,9 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Menu Left</ButtonName>
-      <DirectInputButton>
-        <Button>0</Button>
-        <IsAxis>true</IsAxis>
-        <IsAxisMinus>true</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
-      <InputMapping>P1ButtonLeft</InputMapping>
+      <ButtonName>Service</ButtonName>
+      <InputMapping>Service1</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick X -</BindNameDi>
-      <BindName>Joystick X -</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -386,20 +243,31 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Menu Right</ButtonName>
-      <DirectInputButton>
-        <Button>0</Button>
-        <IsAxis>true</IsAxis>
-        <IsAxisMinus>false</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
+      <ButtonName>Volume Up</ButtonName>
+      <InputMapping>P1ButtonLeft</InputMapping>
+      <AnalogType>None</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Volume Down</ButtonName>
       <InputMapping>P1ButtonRight</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick X +</BindNameDi>
-      <BindName>Joystick X +</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -529,20 +397,9 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Brake</ButtonName>
-      <DirectInputButton>
-        <Button>8</Button>
-        <IsAxis>true</IsAxis>
-        <IsAxisMinus>true</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
+      <ButtonName>Brake / Shift Down</ButtonName>
       <InputMapping>Analog4</InputMapping>
       <AnalogType>Brake</AnalogType>
-      <BindNameDi>Joystick Z -</BindNameDi>
-      <BindName>Joystick Z -</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -563,7 +420,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>RawThrillsFNF</EmulationProfile>
-  <GameProfileRevision>19</GameProfileRevision>
+  <GameProfileRevision>20</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>

@@ -1,0 +1,13 @@
+{
+  "GameName": "vr",
+  "Description": "Virtua Racing Native FFB",
+  "ExecType": 3,
+  "OutputType": 2,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "vr_nativeFFB.bat",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

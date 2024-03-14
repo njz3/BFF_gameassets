@@ -1,0 +1,13 @@
+{
+  "GameName": "srally2",
+  "Description": "SR2 Native FFB",
+  "ExecType": 2,
+  "OutputType": 2,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "SegaRally2_nativeFFB.bat",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

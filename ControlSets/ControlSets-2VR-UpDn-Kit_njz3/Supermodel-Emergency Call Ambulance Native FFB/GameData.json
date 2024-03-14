@@ -1,0 +1,13 @@
+{
+  "GameName": "eca",
+  "Description": "ECA Native FFB",
+  "ExecType": 2,
+  "OutputType": 2,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "EmergencyCallAmbulance_nativeFFB.bat",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

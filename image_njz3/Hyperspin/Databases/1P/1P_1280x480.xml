@@ -1,0 +1,1975 @@
+﻿<?xml version="1.0"?>
+<menu>
+
+<game name="shutdown" index="" image="">
+	<description>Shutdown PC</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega Racer System</manufacturer>
+	<year>2022</year>
+	<genre>Utility</genre>
+</game>
+
+<!-- *** Sega Model 1 (MAME) *** -->
+
+<!-- for native FFB version, put name="vr_nativeFFB" -->
+<game name="vr" index="" image="">
+	<description>Virtua Racing</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1992</year>
+	<genre>F1 Racing</genre>
+	<rating></rating>
+</game>
+<!--
+<game name="vformula" index="" image="">
+	<description>Virtua Formula</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1993</year>
+	<genre>F1 Racing</genre>
+	<rating></rating>
+</game>
+-->
+
+<!-- *** Sega Model 2 *** -->
+
+<!-- for native FFB version, put name="daytonas_nativeFFB" -->
+<game name="daytonas" index="" image="">
+	<description>Daytona USA</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1993</year>
+	<genre>Racing</genre>
+	<rating></rating>
+</game>
+<game name="daytonagtx" index="" image="">
+	<description>Daytona USA GTX</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2004</year>
+	<genre>Racing</genre>
+	<rating></rating>
+</game>
+<!-- for native FFB version, put name="indy500_nativeFFB" -->
+<game name="indy500" index="" image="">
+	<description>Indy 500</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1995</year>
+	<genre>F1 Racing</genre>
+	<rating></rating>
+</game>
+<game name="overrev" index="" image="">
+	<description>Over Rev</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Jaleco, *FFB*</manufacturer>
+	<year>1997</year>
+	<genre>Racing</genre>
+	<rating></rating>
+</game>
+<!-- for native FFB version, put name="srallyc_nativeFFB" -->
+<game name="srallyc" index="" image="">
+	<description>Sega Rally Championship</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1995</year>
+	<genre>Rally</genre>
+	<rating></rating>
+</game>
+<game name="sgt24h" index="" image="">
+	<description>Super GT 24h</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1996</year>
+	<genre>Racing</genre>
+	<rating></rating>
+</game>
+<!-- for native FFB version, put name="stcc_nativeFFB" -->
+<game name="stcc" index="" image="">
+	<description>Sega Touring Car Championship</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1996</year>
+	<genre>Racing</genre>
+	<rating></rating>
+</game>
+
+<!-- *** Sega Model 3 *** -->
+
+<!-- for native FFB version, put name="daytona2_nativeFFB" -->
+<game name="daytona2" index="" image="">
+	<description>Daytona USA 2 - Battle On the Edge</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1998</year>
+	<genre>Racing</genre>
+	<rating></rating>
+</game>
+<!-- for native FFB version, put name="dayto2pe_nativeFFB" -->
+<game name="dayto2pe" index="" image="">
+	<description>Daytona USA 2 - Power Edition</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1998</year>
+	<genre>Racing</genre>
+	<rating></rating>
+</game>
+<!-- for native FFB version, put name="dirtdvls_nativeFFB" -->
+<game name="dirtdvls" index="" image="">
+	<description>Dirt Devils</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1998</year>
+	<genre>Racing</genre>
+	<rating></rating>
+</game>
+<!-- for native FFB version, put name="eca_nativeFFB" -->
+<game name="eca" index="" image="">
+	<description>Emergency Call Ambulance</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1999</year>
+	<genre></genre>
+	<rating></rating>
+</game>
+<!-- for native FFB version, put name="lemans24_nativeFFBM2" or name="lemans24_nativeFFBM3"-->
+<game name="lemans24" index="" image="">
+	<description>LeMans24</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1997</year>
+	<genre>Racing</genre>
+	<rating></rating>
+</game>
+<!-- for native FFB version, put name="scud_nativeFFB" -->
+<game name="scud" index="" image="">
+	<description>Scud Race</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1996</year>
+	<genre>Racing</genre>
+	<rating></rating>
+</game>
+<!-- for native FFB version, put name="scudplus_nativeFFB" -->
+<game name="scudplus" index="" image="">
+	<description>Scud Race Plus</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1996</year>
+	<genre>Racing</genre>
+	<rating></rating>
+</game>
+<!-- for native FFB version, put name="srally2_nativeFFB" -->
+<game name="srally2" index="" image="">
+	<description>Sega Rally 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1998</year>
+	<genre>Rally</genre>
+	<rating></rating>
+</game>
+
+<!-- *** NAOMI 1/2 *** -->
+
+<game name="18wheels" index="true" image="1">
+	<description>18 Wheeler</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>2000</year>
+	<genre>Truck</genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="clubkrt" index="true" image="c">
+	<description>Club Kart European Session 2001</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>2001</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="clubk2k3" index="true" image="c">
+	<description>Club Kart European Session 2003</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>2003</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="crzytaxi" index="true" image="c">
+	<description>Crazi Taxi</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1999</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="f355twin" index="true" image="c">
+	<description>F-355</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>2001</year>
+	<genre>Racing</genre>
+	<rating></rating>
+</game>
+<game name="f355twn2" index="true" image="c">
+	<description>F-355 Challenge 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>2001</year>
+	<genre></genre>
+</game>
+<game name="initdexp" index="true" image="c">
+	<description>Initial D Arcade Stage</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2001</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="initdv2e" index="true" image="c">
+	<description>Initial D Arcade Stage V.2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2002</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="initdv3e" index="true" image="c">
+	<description>Initial D Arcade Stage V.3</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2003</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="jambo" index="true" image="c">
+	<description>Jambo Safari</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1999</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="kingrt66" index="true" image="c">
+	<description>King Of Route 66</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>2001</year>
+	<genre>Truck</genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="tokyobus" index="" image="">
+	<description>Tokyo Bus Guide</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1999</year>
+	<genre>Sim</genre>
+	<rating></rating>
+</game>
+
+<!-- *** Sammy Atomiswave *** -->
+
+<game name="ftspeed" index="true" image="m">
+	<description>Faster Than Speed</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sammy, *FFB*</manufacturer>
+	<year>2004</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="maxspeed" index="true" image="m">
+	<description>Maximum Speed</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sammy, *FFB*</manufacturer>
+	<year>2002</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+
+<!-- *** SEGA HIKARU (Demul) *** -->
+
+<game name="sgnascar" index="true" image="p">
+	<description>Nascar Racing</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>E.A. Sports, *FFB*</manufacturer>
+	<year>2000</year>
+	<genre>Racing</genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="swracer" index="true" image="p">
+	<description>Star Wars Pod Racer</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>SEGA</manufacturer>
+	<year>2001</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+
+<!-- *** GAELCO (Demul) *** -->
+
+<game name="atvtrack" index="true" image="p">
+	<description>Atv Track</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Gaelko, *FFB*</manufacturer>
+	<year>2000</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="smashdrv" index="true" image="p">
+	<description>Smash Drive</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Gaelko, *FFB*</manufacturer>
+	<year>2000</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+
+<!-- *** Dolphin *** -->
+
+<game name="F-ZeroAXGX" index="true" image="p">
+	<description>F-Zero AX on GX</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>SEGA, NGC (on GX)</manufacturer>
+	<year>2003</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+
+<!-- *** Sega Triforce *** -->
+
+<game name="F-ZeroAX" index="true" image="p">
+	<description>F-Zero AX</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>SEGA</manufacturer>
+	<year>2003</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+
+<game name="MarioKartGP" index="true" image="p">
+	<description>Mario Kart Arcade GP</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>NAMCO</manufacturer>
+	<year>2004</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="MarioKartGP2" index="true" image="p">
+	<description>Mario Kart Arcade GP 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>NAMCO</manufacturer>
+	<year>2005</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+
+<!-- *** PC GAMES/Teknoparrot *** -->
+
+<!--
+<game name="batman" index="true" image="p">
+	<description>Batman</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Raw Thrills, *FFB*</manufacturer>
+	<year>2013</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="BTG4" index="true" image="p">
+	<description>Battle Gear 4</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Taito</manufacturer>
+	<year>2006</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="BTG4Tuned" index="true" image="p">
+	<description>Battle Gear 4 Tuned</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Taito, *FFB*</manufacturer>
+	<year>2007</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="BTGpro" index="true" image="p">
+	<description>Battle Gear 4 Tuned Professionnal Edition</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Taito, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="cars" index="true" image="p">
+	<description>Cars</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills</manufacturer>
+	<year>2011</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="chasehq2" index="true" image="p">
+	<description>Chase H.Q. 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Taito, *FFB*</manufacturer>
+	<year>2007</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+ -->
+<!--
+<game name="crazyspeed" index="true" image="p">
+	<description>Crazy Speed</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer></manufacturer>
+	<year>2006</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+-->
+<!--
+<game name="D3USA" index="true" image="p">
+	<description>Daytona Championship USA 3</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2017</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="Daytona3NSE" index="true" image="p">
+	<description>Daytona Championship USA 3 New Season Edition</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2021</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="dirtdrivin" index="true" image="p">
+	<description>Dirt Drivin</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills, *FFB*</manufacturer>
+	<year>2012</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="FNF" index="true" image="p">
+	<description>Fast and Furious</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills</manufacturer>
+	<year>2004</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+ -->
+<!--
+<game name="FNFDrift" index="true" image="p">
+	<description>Fast and Furious Tokyo Drift</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills</manufacturer>
+	<year>2006</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+-->
+<!--
+<game name="FNFsupercars" index="true" image="p">
+	<description>Fast and Furious Super Cars</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills</manufacturer>
+	<year>2011</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="FordRacing" index="true" image="p">
+	<description>Ford Racing</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2006</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="gaelcorace" index="true" image="p">
+	<description>Gaelco Championship Tuning Race</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Gaelco, /!\ Patreon</manufacturer>
+	<year>2005</year>
+	<genre></genre>
+	<rating>Patreon</rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="GRIDAutospor" index="true" image="p">
+	<description>GRID</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Codemaster, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="GTI3" index="true" image="p">
+	<description>GTI Club Supermini Festa</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Konami, *FBB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="h2o" index="true" image="p">
+	<description>H2 Overdrive</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills, *FFB*</manufacturer>
+	<year>2013</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="ID4" index="true" image="p">
+	<description>Initial D4</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2007</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="ID4exp" index="true" image="p">
+	<description>Initial D4 Export</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2007</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="ID5" index="true" image="p">
+	<description>Initial D5</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="ID6" index="true" image="p">
+	<description>Initial D6</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2010</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="ID7" index="true" image="p">
+	<description>Initial D7</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2012</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="ID8" index="true" image="p">
+	<description>Initial D8</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2014</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="idz" index="true" image="p">
+	<description>Initial D Zero</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2017</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+-->
+<!--
+<game name="idzv2" index="true" image="p">
+	<description>Initial D Zero V2.11</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2018</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game
+-->
+<!--
+<game name="kodrive" index="true" image="p">
+	<description>K.O. Drive</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2009</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="LGS" index="true" image="p">
+	<description>Let's Go Safari</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>2012</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="MKDX" index="true" image="p">
+	<description>Mario Kart DX V. 1.10</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, *FFB*</manufacturer>
+    <year>2014</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="MD5" index="true" image="p">
+	<description>Wangan Midnight Run 5</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, *FFB*</manufacturer>
+	<year>2015</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="nicktoons" index="true" image="p">
+	<description>Nicktoons NitroRacing</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills</manufacturer>
+	<year>2009</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="or2spdx" index="true" image="p">
+	<description>Out Run 2 SP DX</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2006</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="rf3d" index="true" image="p">
+	<description>Road Fighter 3D</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Konami, *FFB*</manufacturer>
+	<year>2007</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="Sega Rally 3" index="true" image="p">
+	<description>Sega Rally 3</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="Sega Rally 3 - ArticEdition" index="true" image="p">
+	<description>Sega Rally 3 - ArticEdition</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="Sega Rally 3 - AlpineEdition" index="true" image="p">
+	<description>Sega Rally 3 - AlpineEdition</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="Sega Rally 3 - CanyonEdition" index="true" image="p">
+	<description>Sega Rally 3 - CanyonEdition</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="Sega Rally 3 - MasterEdition" index="true" image="p">
+	<description>Sega Rally 3 - MasterEdition</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="Sega Rally 3 - SafariEdition" index="true" image="p">
+	<description>Sega Rally 3 - SafariEdition</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="Sega Rally 3 - TropicalEdition" index="true" image="p">
+	<description>Sega Rally 3 - TropicalEdition</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="Sega Rally 3 - TropicalEdition478" index="true" image="p">
+	<description>Sega Rally 3 - TropicalEdition478</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+-->
+<!--
+<game name="Sega Rally 3 Revo PC" index="true" image="p">
+	<description>Sega Rally 3 Revo PC</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>No</enabled>
+</game>
+-->
+<!--
+<game name="Showdown" index="true" image="p">
+	<description>Showdown</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2014</year>
+	<genre>Dirt Racing</genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="sonic" index="true" image="p">
+	<description>Sonic Sega All Stars Racing</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2010</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="SRC" index="true" image="p">
+	<description>Sega Racing Classic</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2010</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="SRG" index="true" image="p">
+	<description>Storm Racer G</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Whalap/SEGA, *FFB*</manufacturer>
+	<year>2013</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="segartv" index="true" image="p">
+	<description>Sega Race TV</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>2007</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="SWDC" index="true" image="p">
+	<description>Sega World Driver Championship</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>2018</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="rtuned" index="true" image="p">
+	<description>R-Tuned</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="tokyocop" index="true" image="p">
+	<description>Tokyo Cop</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Gaelko</manufacturer>
+	<year>2006</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="Valve R Limit" index="true" image="p">
+	<description>Valve R Limit</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Taito</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="WR" index="true" image="p">
+	<description>Wacky Races</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Banpresto, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+-->
+
+<!-- *** MAME *** -->
+
+<game name="280zzzap" index="" image="">
+	<description>280 ZZZAP</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Midway</manufacturer>
+	<year>1976</year>
+	<genre>Car Racing</genre>
+</game>
+<game name="acedrive" index="" image="">
+	<description>Ace Driver : Racing Evolution</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>NAMCO, *FFB*</manufacturer>
+	<year>1994</year>
+	<genre>Car Racing</genre>
+</game>
+<game name="victlap" index="" image="">
+	<description>Ace Driver : Victory Lap</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>NAMCO, *FFB*</manufacturer>
+	<year>1996</year>
+	<genre>Car Racing</genre>
+</game>
+<game name="badlands" index="" image="">
+	<description>Bad Lands</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari</manufacturer>
+	<year>1989</year>
+	<genre></genre>
+</game>
+<game name="bigrun" index="" image="">
+	<description>Big Run</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Jaelco</manufacturer>
+	<year>1989</year>
+	<genre></genre>
+</game>
+<game name="blmbycar" index="" image="">
+	<description>Blomby Car</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>ABM</manufacturer>
+	<year>1994</year>
+	<genre></genre>
+</game>
+<game name="buggyboy" index="" image="">
+	<description>Buggy Boy</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Tatsumi</manufacturer>
+	<year>1985</year>
+	<genre></genre>
+</game>
+<game name="buggychl" index="" image="">
+	<description>Buggy Challenge</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Taito</manufacturer>
+	<year>1984</year>
+	<genre></genre>
+</game>
+<game name="bnj" index="" image="">
+	<description>Bump 'n' Jump</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Data East</manufacturer>
+	<year>1982</year>
+	<genre></genre>
+</game>
+<game name="cartfury" index="" image="">
+	<description>C.A.R.T. Fury</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Midway</manufacturer>
+	<year>2000</year>
+	<genre></genre>
+</game>
+<game name="calspeed" index="" image="">
+	<description>California Speed</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari, *FFB*</manufacturer>
+	<year>1998</year>
+	<genre></genre>
+</game>
+<game name="chqflag" index="" image="">
+	<description>Chequered Flag</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Konami</manufacturer>
+	<year>1988</year>
+	<genre></genre>
+</game>
+<game name="csprint" index="" image="">
+	<description>Championship Sprint</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari</manufacturer>
+	<year>1986</year>
+	<genre></genre>
+</game>
+<game name="changela" index="" image="">
+	<description>Change Lanes</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Taito</manufacturer>
+	<year>1983</year>
+	<genre></genre>
+</game>
+<game name="cbombers" index="" image="">
+	<description>Chase Bombers</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>TAITO, *FFB*</manufacturer>
+	<year>1994</year>
+	<genre></genre>
+</game>
+<game name="chasehq" index="" image="">
+	<description>Chase H.Q.</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>TAITO</manufacturer>
+	<year>1988</year>
+	<genre></genre>
+</game>
+<game name="cischeat" index="" image="">
+	<description>Cisco Heat</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Jaleco, *FFB*</manufacturer>
+	<year>1990</year>
+	<genre></genre>
+</game>
+<game name="contcirc" index="" image="">
+	<description>Continental Circus</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>TAITO</manufacturer>
+	<year>1989</year>
+	<genre></genre>
+</game>
+<game name="crusnusa" index="" image="">
+	<description>Cruis'n USA</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Midway, *FFB*</manufacturer>
+	<year>1994</year>
+	<genre></genre>
+</game>
+<game name="crusnwld" index="" image="">
+	<description>Cruis'n World</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Midway, *FFB*</manufacturer>
+	<year>1996</year>
+	<genre></genre>
+	<rating></rating>
+</game>
+<game name="crusnexo" index="" image="">
+	<description>Cruis'n Exotica</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Midway, /!\ Bad</manufacturer>
+	<year>1999</year>
+	<genre></genre>
+	<rating>Emulation bugs</rating>
+</game>
+<game name="dirtdasha" index="" image="">
+	<description>Dirt Dash</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, *FFB*</manufacturer>
+	<year>1995</year>
+	<genre>Dirt Racing</genre>
+	<rating></rating>
+</game>
+<game name="dblaxle" index="" image="">
+	<description>Double Axle</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>TAITO, *FFB*</manufacturer>
+	<year>1991</year>
+	<genre></genre>
+</game>
+<game name="driftout" index="" image="">
+	<description>Drift Out</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Visco</manufacturer>
+	<year>1991</year>
+	<genre></genre>
+</game>
+<game name="drifto94" index="" image="">
+	<description>Drift Out 94</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Visco</manufacturer>
+	<year>1994</year>
+	<genre></genre>
+</game>
+<game name="drivedge" index="" image="">
+	<description>Driver's Edge</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Strata</manufacturer>
+	<year>1994</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="f1en" index="" image="">
+	<description>F1 Exhaust Note</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1991</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="f1gp" index="" image="">
+	<description>F-1 Grand Prix</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>VideoSystem</manufacturer>
+	<year>1991</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="f1gp2" index="" image="">
+	<description>F-1 Grand Prix</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>VideoSystem</manufacturer>
+	<year>1992</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="f1gpstar" index="" image="">
+	<description>F-1 Grand Prix Star</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Jaleco, *FFB*</manufacturer>
+	<year>1988</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="f1gpstr2" index="" image="">
+	<description>F-1 Grand Prix Star 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Jaleco, *FFB*</manufacturer>
+	<year>1990</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="f1lap" index="" image="">
+	<description>F1 Super Lap</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1993</year>
+	<genre>F1 Racing</genre>
+	<rating></rating>
+</game>
+<game name="finallap" index="" image="">
+	<description>Final Lap</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1987</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="finalap2" index="" image="">
+	<description>Final Lap 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1990</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="finalap3" index="" image="">
+	<description>Final Lap 3</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1992</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="finalapr" index="" image="">
+	<description>Final Lap R</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1995</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="gtmr" index="" image="">
+	<description>1000 Miglia : Great 1000 Miles Rally</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Kaneko</manufacturer>
+	<year>1994</year>
+	<genre></genre>
+</game>
+<game name="gtmr2" index="" image="">
+	<description>Mille Miglia 2: Great 1000 Miles Rally 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Kaneko</manufacturer>
+	<year>1995</year>
+	<genre></genre>
+</game>
+<game name="groundfx" index="" image="">
+	<description>Ground Effects</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Taito Corporation</manufacturer>
+	<year>1982</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="gticlub" index="" image="">
+	<description>GTI Club</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Konami</manufacturer>
+	<year>1996</year>
+	<genre></genre>
+</game>
+<game name="harddriv" index="" image="">
+	<description>Hard Drivin'</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari, *FFB*</manufacturer>
+	<year>1988</year>
+	<genre></genre>
+</game>
+<game name="hotchase" index="" image="">
+	<description>Hot Chase</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Konami</manufacturer>
+	<year>1988</year>
+	<genre></genre>
+</game>
+<game name="hotrod" index="" image="">
+	<description>Hot Rod</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>SEGA</manufacturer>
+	<year>1988</year>
+	<genre></genre>
+</game>
+<game name="hydra" index="" image="">
+	<description>Hydra</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari</manufacturer>
+	<year>1990</year>
+	<genre></genre>
+</game>
+<game name="hyprdriv" index="" image="">
+	<description>Hyperdrive</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Midway, *FFB*</manufacturer>
+	<year>1998</year>
+	<genre></genre>
+</game>
+<game name="offroad" index="" image="">
+	<description>Ironman Ivan Stewart's Super Off Road</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Leland</manufacturer>
+	<year>1989</year>
+	<genre></genre>
+</game>
+<game name="konamigt" index="" image="">
+	<description>Konami GT</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Konami</manufacturer>
+	<year>1985</year>
+	<genre></genre>
+</game>
+<game name="luckywld" index="" image="">
+	<description>Lucky and Wild</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1992</year>
+	<genre></genre>
+</game>
+<game name="midnrun" index="" image="">
+	<description>Midnight Run</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Konami</manufacturer>
+	<year>1995</year>
+	<genre></genre>
+</game>
+<game name="montecar" index="" image="">
+	<description>Monte Carlo</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari</manufacturer>
+	<year>1979</year>
+	<genre></genre>
+</game>
+<game name="nrallyx" index="" image="">
+	<description>New Rally X</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1981</year>
+	<genre></genre>
+</game>
+<game name="neodrift" index="" image="">
+	<description>Neo Drift Out</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Visco</manufacturer>
+	<year>1996</year>
+	<genre></genre>
+</game>
+<game name="nitedrvr" index="" image="">
+	<description>Night Driver</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari</manufacturer>
+	<year>1976</year>
+	<genre>Car Racing</genre>
+</game>
+<game name="offroadc" index="" image="">
+	<description>Off Road Challenge</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Midway, *FFB*</manufacturer>
+	<year>2000</year>
+	<genre></genre>
+</game>
+<game name="orunners" index="" image="">
+	<description>Out Runners</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1992</year>
+	<genre></genre>
+</game>
+<game name="outrun" index="" image="">
+	<description>Out Run</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1986</year>
+	<genre></genre>
+</game>
+<game name="polepos" index="" image="">
+	<description>Pole Position</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1982</year>
+	<genre></genre>
+</game>
+<game name="polepos2" index="" image="">
+	<description>Pole Position 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1983</year>
+	<genre></genre>
+</game>
+<game name="pdrift" index="" image="">
+	<description>Power Drift</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1988</year>
+	<genre></genre>
+</game>
+<game name="racedriv" index="" image="">
+	<description>Race Drivin'</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari, *FFB*</manufacturer>
+	<year>1990</year>
+	<genre></genre>
+</game>
+<game name="radm" index="" image="">
+	<description>Rad Mobile</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1990</year>
+	<genre></genre>
+</game>
+<game name="radr" index="" image="">
+	<description>Rad Rally</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, /!\ Bug</manufacturer>
+	<year>1991</year>
+	<genre></genre>
+	<rating></rating>
+</game>
+<game name="rallyx" index="" image="">
+	<description>Rally X</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1980</year>
+	<genre></genre>
+</game>
+<game name="raverace" index="" image="">
+	<description>Rave Racer</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, *FFB*</manufacturer>
+	<year>1995</year>
+	<genre></genre>
+</game>
+<game name="ridgerac" index="" image="">
+	<description>Ridge Racer</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1993</year>
+	<genre></genre>
+</game>
+<game name="ridgera2" index="" image="">
+	<description>Ridge Racer 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1994</year>
+	<genre></genre>
+</game>
+<game name="roadblst" index="" image="">
+	<description>Road Blaster</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari</manufacturer>
+	<year>1987</year>
+	<genre></genre>
+</game>
+<game name="roadedge" index="" image="">
+	<description>Road Edge</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>SNK, /!\ Bad</manufacturer>
+	<year>1997</year>
+	<genre></genre>
+	<rating>Emulation bugs</rating>
+</game>
+<game name="roadf" index="" image="">
+	<description>Road Fighter</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Konami</manufacturer>
+	<year>1984</year>
+	<genre></genre>
+</game>
+<game name="roadriot" index="" image="">
+	<description>Road Riot 4WD</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari</manufacturer>
+	<year>1991</year>
+	<genre></genre>
+</game>
+<game name="scia" index="" image="">
+	<description>Special Criminal Investigation</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>TAITO</manufacturer>
+	<year>1989</year>
+	<genre></genre>
+</game>
+<game name="sfrush" index="" image="">
+	<description>San Fransisco Rush</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari, *FFB*</manufacturer>
+	<year>1997</year>
+	<genre></genre>
+</game>
+<game name="sfrushrk" index="" image="">
+	<description>San Fransisco Rush The Rock</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari, *FFB*</manufacturer>
+	<year>1998</year>
+	<genre></genre>
+</game>
+<game name="sf2049" index="" image="">
+	<description>San Fransisco Rush 2049</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari, *FFB*</manufacturer>
+	<year>1999</year>
+	<genre></genre>
+</game>
+<game name="sf2049se" index="" image="">
+	<description>San Fransisco Rush 2049 Special Edition</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari, *FFB*</manufacturer>
+	<year>2003</year>
+	<genre></genre>
+</game>
+<game name="sidebs" index="" image="">
+	<description>Side By Side</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>TAITO</manufacturer>
+	<year>1996</year>
+	<genre>Racing</genre>
+</game>
+<game name="sidebs2" index="" image="">
+	<description>Side By Side 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>TAITO</manufacturer>
+	<year>1997</year>
+	<genre>Racing</genre>
+</game>
+<game name="slipstrm" index="" image="">
+	<description>Slip Stream</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Capcom</manufacturer>
+	<year>1995</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="speedfrk" index="" image="">
+	<description>Speed Freak</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Vectorbeam</manufacturer>
+	<year>1979</year>
+	<genre></genre>
+</game>
+<game name="speedrcr" index="" image="">
+	<description>Speed Racer</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1995</year>
+	<genre></genre>
+</game>
+<game name="speedup" index="" image="">
+	<description>Speed Up</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Gaelco</manufacturer>
+	<year>1996</year>
+	<genre>Car Racing</genre>
+</game>
+<game name="sprint1" index="" image="">
+	<description>Srint 1</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari</manufacturer>
+	<year>1978</year>
+	<genre></genre>
+</game>
+<game name="sprint4" index="" image="">
+	<description>Sprint 4</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari</manufacturer>
+	<year>1977</year>
+	<genre></genre>
+</game>
+<game name="sprint8" index="" image="">
+	<description>Sprint 8</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari</manufacturer>
+	<year>1977</year>
+	<genre></genre>
+</game>
+<game name="spyhunt" index="" image="">
+	<description>Spy Hunter</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Bally Midway</manufacturer>
+	<year>1983</year>
+	<genre>Pursuit</genre>
+</game>
+<game name="spyhunt2" index="" image="">
+	<description>Spy Hunter 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Bally Midway, /!\ Bad</manufacturer>
+	<year>1985</year>
+	<genre>Pursuit</genre>
+	<rating></rating>
+</game>
+<game name="stunrun" index="" image="">
+	<description>Stun Runner</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>ATARI GAMES</manufacturer>
+	<year>1989</year>
+	<genre>Car Racing</genre>
+</game>
+<game name="superchs" index="" image="">
+	<description>Super Chase Criminal Termination</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>TAITO, *FFB*</manufacturer>
+	<year>1992</year>
+	<genre>Pursuit</genre>
+</game>
+<game name="smgp" index="" image="">
+	<description>Super Monaco GP</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1989</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="ssprint" index="" image="">
+	<description>Super Sprint</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari</manufacturer>
+	<year>1986</year>
+	<genre>TopView</genre>
+</game>
+<game name="technodr" index="" image="">
+	<description>Techno Drive</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco</manufacturer>
+	<year>1998</year>
+	<genre>RAcing</genre>
+</game>
+<game name="thrilld" index="" image="">
+	<description>Thrill Drive</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Konami, /!\ Bad</manufacturer>
+	<year>1998</year>
+	<genre>Racing</genre>
+	<rating>Emulation bugs</rating>
+</game>
+<game name="topspeed" index="" image="">
+	<description>Top Speed</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Taito</manufacturer>
+	<year>1987</year>
+	<genre></genre>
+</game>
+<game name="trally" index="" image="">
+	<description>Trash Rally</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Alpha Denshi Co.</manufacturer>
+	<year>1991</year>
+	<genre>Rally</genre>
+</game>
+<game name="turbo" index="" image="">
+	<description>Turbo</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1981</year>
+	<genre></genre>
+</game>
+<game name="toutrun" index="" image="">
+	<description>Turbo Out Run</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>1989</year>
+	<genre>Racing</genre>
+</game>
+<game name="tx1" index="" image="">
+	<description>TX-1</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Tatsumi</manufacturer>
+	<year>1983</year>
+	<genre>Racing</genre>
+</game>
+<game name="vaportrx" index="" image="">
+	<description>Vapor TRX</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Atari, *FFB*</manufacturer>
+	<year>1998</year>
+	<genre>Racing</genre>
+</game>
+<game name="wecleman" index="" image="">
+	<description>Wec Le Mans 24</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Konami</manufacturer>
+	<year>1986</year>
+	<genre>Racing</genre>
+</game>
+<game name="windheat" index="" image="">
+	<description>Winding Heat</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>KONAMI</manufacturer>
+	<year>1996</year>
+	<genre>Racing</genre>
+</game>
+<game name="winrun" index="" image="">
+	<description>Winning Run</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>NAMCO</manufacturer>
+	<year>1988</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="winrungp" index="" image="">
+	<description>Winning Run Suzuka GP</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>NAMCO</manufacturer>
+	<year>1989</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="winrun91" index="" image="">
+	<description>Winning Run ' 91</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>NAMCO</manufacturer>
+	<year>1991</year>
+	<genre>F1 Racing</genre>
+</game>
+<game name="wrally" index="" image="">
+	<description>World Rally</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Gaelco</manufacturer>
+	<year>1993</year>
+	<genre>Rally</genre>
+</game>
+<game name="wrally2" index="" image="">
+	<description>World Rally 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Gaelco</manufacturer>
+	<year>1995</year>
+	<genre>Rally</genre>
+</game>
+<game name="xrally" index="" image="">
+	<description>Xtreme Rally</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>SNK, /!\ Bad</manufacturer>
+	<year>1998</year>
+	<genre>Rally</genre>
+	<rating>Emulation bugs</rating>
+</game>
+
+<!-- *** Bike *** -->
+
+<game name="abcop" index="" image="">
+	<description>ABC Cop</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>SEGA</manufacturer>
+	<year>1990</year>
+	<genre>Bike</genre>
+</game>
+<game name="coolridr" index="" image="">
+	<description>Cool Riders</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1994</year>
+	<genre>Bike</genre>
+</game>
+<game name="enduror" index="" image="">
+	<description>Enduro Racer</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1987</year>
+	<genre>Bike</genre>
+</game>
+<!--
+<game name="FNFSB" index="true" image="p">
+	<description>Fast and Furious Super Bike</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills</manufacturer>
+	<year>2006</year>
+	<genre>Bike</genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="FNFSB2" index="true" image="p">
+	<description>Fast and Furious Super Bike 2</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills</manufacturer>
+	<year>2010</year>
+	<genre>Bike</genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+-->
+<game name="hangon" index="" image="">
+	<description>Hang-On</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1985</year>
+	<genre>Bike</genre>
+</game>
+<game name="hangonjr" index="" image="">
+	<description>Hang-On Jr</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1986</year>
+	<genre>Bike</genre>
+</game>
+<game name="harley" index="true" image="c">
+	<description>Harley Davidson And L.A. Riders</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1998</year>
+	<genre>Bike</genre>
+</game>
+<game name="manxttc" index="true" image="c">
+	<description>Manx TT Superbikes</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1995</year>
+	<genre>Bike</genre>
+</game>
+<game name="motoraid" index="" image="">
+	<description>Motor Raid</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1996</year>
+	<genre>Bike</genre>
+</game>
+<game name="rachero" index="" image="">
+	<description>Racing Hero</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1988</year>
+	<genre>Bike</genre>
+</game>
+<game name="radikalb" index="" image="">
+	<description>Radikal Biker</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Gaelco</manufacturer>
+	<year>1998</year>
+	<genre>Bike</genre>
+</game>
+<game name="shangon" index="" image="">
+	<description>Super Hang-On</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1987</year>
+	<genre>Bike</genre>
+</game>
+<game name="waverunr" index="" image="">
+	<description>Wave Runner</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>1996</year>
+	<genre>Jetski</genre>
+</game>
+<game name="wrungp" index="" image="">
+	<description>Wave Runner GP</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>2001</year>
+	<genre>Jetski</genre>
+</game>
+<game name="wldrider" index="true" image="c">
+	<description>Wild Riders</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>2002</year>
+	<genre>Bike</genre>
+</game>
+<!--
+<game name="winterx" index="true" image="p">
+	<description>X Games Snow Cross</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills, *FFB*</manufacturer>
+	<year>2011</year>
+	<genre>Snowbike</genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+-->
+
+</menu>
