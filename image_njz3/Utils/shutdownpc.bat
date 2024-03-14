@@ -1,4 +1,3 @@
-@echo on
-killHyperspin.vbs
+killProcess.vbs "BackForceFeeder.exe"
+CALL killHyperspin.bat
 shutdown /s /t 1
-@echo off

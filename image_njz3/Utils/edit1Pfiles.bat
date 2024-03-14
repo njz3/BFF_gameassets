@@ -1,3 +1,4 @@
+:: Edit 1 Player files for Hyperspin/RocketLauncher
 SET PATH_HS=C:\Racecab\Hyperspin
 START "notepad++.exe" %PATH_HS%\Databases\1P\1P.xml
 START "notepad++.exe" %PATH_HS%\RocketLauncher\RocketLauncherUI\Databases\1P\1P.xml

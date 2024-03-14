@@ -1,3 +1,4 @@
+:: Edit MULTI player files for Hyperspin/RocketLauncher
 SET PATH_HS=C:\Racecab\Hyperspin
 START "notepad++.exe" %PATH_HS%\Databases\MULTI\MULTI.xml
 START "notepad++.exe" %PATH_HS%\RocketLauncher\RocketLauncherUI\Databases\MULTI\MULTI.xml

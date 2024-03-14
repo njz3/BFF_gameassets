@@ -1,3 +1,1 @@
-@echo on
-killFlycast.vbs
-@echo off
+killProcess.vbs flycast.exe

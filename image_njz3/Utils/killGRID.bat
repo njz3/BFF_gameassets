@@ -1,0 +1,1 @@
+killProcess.vbs GRID.exe
