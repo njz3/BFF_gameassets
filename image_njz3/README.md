@@ -400,9 +400,10 @@ repertoire commencant par `rawart`, par exemple:
 - `SuperBikes` obligatoirement dans `C:\rawart SuperBikes\` sinon erreur CRC
 - `SuperBikes 2` obligatoirement dans `C:\rawart SuperBikes2\` sinon erreur CRC
 
-### Daytona USA Championship (TP)
+### Daytona USA Championship 3 (TP)
 
-Le jeu ne fonctionnera en multi __*que si une webcam USB compatible*__ est branchée.
+Le jeu ne fonctionnera en multi __*que si une webcam FullHD USB compatible avec le jeu*__ est branchée.
+Certaines webcam Logitech sont compatibles.
 
 Il est important de respecter une adresse IP en 192.168.1.X dont le dernier
 chiffre X est en dessous de 10 (exemple: X=4, X=5, X=6, X=7).
@@ -424,6 +425,20 @@ ne marchent qu'en mode Quick Race (single ou multijoueur) et non en mode
 championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 
 # Change log
+
+---
+2023-03-19:
+- add more games for 1024x384p (DJ Goliath)
+- update BFF and Videoamp
+- add raverace to Multi
+- add _nativeFFB
+- fix FFB Plugin opengl32.dll for supermodel
+
+---
+2023-03-08:
+- fix Daytona USA 3/NSE Link mode
+- fix MAME nvram for Link mode for f1lap, radr, orunner
+- add m2lagfix for Model 2 Link mode
 
 ---
 2023-02-02:
