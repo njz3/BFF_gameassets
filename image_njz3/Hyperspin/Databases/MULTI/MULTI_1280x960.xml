@@ -22,6 +22,7 @@
 	<genre>F1 Racing</genre>
 	<rating></rating>
 </game>
+<!-- for native FFB version, put name="vformula_nativeFFB" -->
 <!--
 <game name="vformula" index="" image="">
 	<description>Virtua Formula</description>
@@ -46,6 +47,7 @@
 	<genre>Racing</genre>
 	<rating></rating>
 </game>
+<!-- for native FFB version, put name="indy500_nativeFFB" -->
 <game name="indy500" index="" image="">
 	<description>Indy 500</description>
 	<cloneof></cloneof>
@@ -55,6 +57,7 @@
 	<genre>F1 Racing</genre>
 	<rating></rating>
 </game>
+<!-- for native FFB version, put name="srallyc_nativeFFB" -->
 <game name="srallyc" index="" image="">
 	<description>Sega Rally Championship</description>
 	<cloneof></cloneof>
@@ -64,6 +67,7 @@
 	<genre>Rally</genre>
 	<rating></rating>
 </game>
+<!-- for native FFB version, put name="stcc_nativeFFB" -->
 <!--
 <game name="stcc" index="" image="">
 	<description>Sega Touring Car Championship</description>
@@ -167,16 +171,6 @@
 	<crc></crc>
 	<manufacturer>Sega</manufacturer>
 	<year>2003</year>
-	<genre></genre>
-	<rating></rating>
-	<enabled>Yes</enabled>
-</game>
-<game name="crzytaxi" index="true" image="c">
-	<description>Crazi Taxi</description>
-	<cloneof></cloneof>
-	<crc></crc>
-	<manufacturer>Sega</manufacturer>
-	<year>1999</year>
 	<genre></genre>
 	<rating></rating>
 	<enabled>Yes</enabled>
@@ -472,22 +466,22 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
-<game name="MKDX" index="true" image="p">
-	<description>Mario Kart DX V. 1.10</description>
+<game name="IDZv2TP" index="true" image="p">
+	<description>Initial D Zero V2.30</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Namco, *FFB*</manufacturer>
-    <year>2014</year>
+	<manufacturer>Sega, *FFB* need AIME</manufacturer>
+	<year>2018</year>
 	<genre></genre>
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
-<game name="MD5" index="true" image="p">
-	<description>Wangan Midnight Run 5</description>
+<game name="MKDX" index="true" image="p">
+	<description>Mario Kart DX V1.10</description>
 	<cloneof></cloneof>
 	<crc></crc>
 	<manufacturer>Namco, *FFB*</manufacturer>
-	<year>2015</year>
+    <year>2013</year>
 	<genre></genre>
 	<rating></rating>
 	<enabled>Yes</enabled>
@@ -613,7 +607,7 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
-<game name="sonic" index="true" image="p">
+<game name="SSASR" index="true" image="p">
 	<description>Sonic Sega All Stars Racing</description>
 	<cloneof></cloneof>
 	<crc></crc>
@@ -695,6 +689,18 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
+-->
+<game name="WMMT5" index="true" image="p">
+	<description>Wangan Midnight Run 5</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, *FFB*</manufacturer>
+	<year>2015</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<!--
 <game name="WR" index="true" image="p">
 	<description>Wacky Races</description>
 	<cloneof></cloneof>
@@ -709,6 +715,7 @@
 
 <!-- *** MAME *** -->
 
+<!--
 <game name="acedrive" index="" image="">
 	<description>Ace Driver : Racing Evolution</description>
 	<cloneof></cloneof>
@@ -725,6 +732,7 @@
 	<year>1996</year>
 	<genre>Car Racing</genre>
 </game>
+-->
 <!--
 <game name="cartfury" index="" image="">
 	<description>C.A.R.T. Fury</description>
@@ -896,6 +904,7 @@
 	<year>1995</year>
 	<genre></genre>
 </game>
+<!--
 <game name="ridgerac" index="" image="">
 	<description>Ridge Racer</description>
 	<cloneof></cloneof>
@@ -912,6 +921,7 @@
 	<year>1994</year>
 	<genre></genre>
 </game>
+-->
 <!--
 <game name="sfrush" index="" image="">
 	<description>San Fransisco Rush</description>
@@ -1076,6 +1086,7 @@
 	<year>1996</year>
 	<genre>Jetski</genre>
 </game>
+-->
 <game name="wrungp" index="" image="">
 	<description>Wave Runner GP</description>
 	<cloneof></cloneof>
@@ -1084,15 +1095,6 @@
 	<year>2001</year>
 	<genre>Jetski</genre>
 </game>
-<game name="wldrider" index="true" image="c">
-	<description>Wild Riders</description>
-	<cloneof></cloneof>
-	<crc></crc>
-	<manufacturer>Sega</manufacturer>
-	<year>2002</year>
-	<genre>Bike</genre>
-</game>
--->
 <!--
 <game name="winterx" index="true" image="p">
 	<description>X Games Snow Cross</description>

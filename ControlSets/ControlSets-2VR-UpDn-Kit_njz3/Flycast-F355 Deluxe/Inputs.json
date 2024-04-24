@@ -1,0 +1,322 @@
+[
+  {
+    "Name": "COIN1",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "TEST",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 20,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "SERVICE",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 20,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "START",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 20,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "VIEW1/VIEWCHANGE",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 20,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "VIEW2/SIDEBRAKE",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 20,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "VIEW3",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 20,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "VIEW4",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 20,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "SHIFTER UP",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 20,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "SHIFTER DOWN",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 20,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "SHIFTER SIDE",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 20,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "MUSIC",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 20,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "WHBTN1",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "WHBTN2",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "WHBTN3",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "WHBTN4",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "Rx0/H6.NEUTRAL",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "Rx1/H6.REVERSE",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "Rx2/H6.1",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "Rx3/H6.2",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "Rx4/H6.3",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "Rx5/H6.4",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "Rx6/H6.5",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "Rx7/H6.6",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  },
+  {
+    "Name": "",
+    "AutoFirePeriod_ms": 100,
+    "HoldTime_ms": 0,
+    "ValidateDelay_ms": 0,
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "IsAutoFire": false,
+    "IsTracked": false
+  }
+]

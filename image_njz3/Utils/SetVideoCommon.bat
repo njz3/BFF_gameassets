@@ -6,6 +6,8 @@ XCOPY /Y /I C:\Racecab\Hyperspin\Databases\MULTI\MULTI%RES_EXT%.xml C:\Racecab\H
 XCOPY /Y /I %EMULATORS_DIR%\Mame\mame%RES_EXT%.ini %EMULATORS_DIR%\Mame\mame.ini
 :: MAME LINK
 XCOPY /Y /I "%EMULATORS_DIR%\Mame LINK\mame%RES_EXT%.ini" "%EMULATORS_DIR%\Mame LINK\mame.ini"
+:: MAME Namco LINK
+XCOPY /Y /I "%EMULATORS_DIR%\Mame Namco LINK\mame%RES_EXT%.ini" "%EMULATORS_DIR%\Mame Namco LINK\mame.ini"
 
 :: Flycast
 XCOPY /Y /I %EMULATORS_DIR%\Flycast\flycast_options%RES_EXT%.bat %EMULATORS_DIR%\Flycast\flycast_options.bat

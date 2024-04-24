@@ -98,6 +98,16 @@ Le mot de passe pour Teamviewer est `Racecab22!`
 Le mot de passe pour VNC est `racecab`
 
 
+## Démarrage automatique d'un jeu
+
+Par défaut, deux raccourcis (hyperspin.exe et BackforceFeeder.exe) sont
+installés dans le répertoire de démarrage automatique: 
+```C:\Users\Racecab\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup```
+
+Si vous souhaitez ne pas faire démarrer automatiquement Hyperspin, mais un jeu
+en particulier, vous devez supprimer le raccourci vers Hyperspin, et en créer
+un autre vers l'émulateur ou le jeu que vous souhaitez lancer dès le démarrage.
+
 ## FFB dans les émulateurs
 
 En cas de changement ou de ré-installation de vjoy, re mettre vJoy en volant 
@@ -352,6 +362,23 @@ Pour vous aider à trouver les bons fichiers ou les bons répertoires, vous pouv
 lancer le script `C:\Racecab\Utils\editMULTIfiles.Bat`
 
 
+# Modifier/ré-ordonner la liste de jeux sur Hyperspin
+
+Si vous souhaitez réorganiser ou cacher des jeux, vous devez éditer le fichier
+de base de données XML de Hyperspin.
+Le plus simple est de lancer le script dans "C:\Racecab\Utils\edit1Pfiles.bat"
+qui ouvrira tous les répertoires et fichiers utilisés pour le mode 1P par 
+exemple (procédez de même pour le mode MULTI en lançant
+"C:\Racecab\Utils\editMULTIfiles.bat").
+
+Ensuite, vous commentez ou réordonnez manuellement les jeux dans le fichier
+"C:\Racecab\Hyperspin\Databases\1P\1P.xml". 2 fichiers seront ouverts pour
+l'édition à l'aide du script, celui que vous devez modifier est situé dans
+"C:\Racecab\Hyperspin\Databases\1P".
+Veuillez faire une sauvegarde du fichier avant l'édition, afin de pouvoir
+revenir en arrière.
+
+
 # Configuration du BackForceFeeder
 
 Le logiciel BackForceFeeder est pré-installé et possède une configuration par
@@ -373,6 +400,14 @@ Les configurations sont stockées dans le répertoire :
 Le sous-dossier ControlSets contient en particulier les configurations pour
 chaque jeu. Vous ne pouvez pas éditer à la main ces fichiers si le logiciel
 fonctionne, il faut d'abord le fermer pour pouvoir modifier les fichiers.
+
+## Configuration de vos boutons/axes
+
+Pour configurer les contrôles pour votre propre panel/cablage, le mieux est 
+de ne changer que le mapping des boutons par type d'émulateur (MAME, Model 2,
+Supermodel, TP), puis d'utiliser la page "Explorer" de ControlSet pour 
+copier-coller uniquement le mapping des entrées brutes, et/ou le calibrage 
+des axes vers plusieurs ControlSets simultanément.
 
 
 # Notes - FAQ
@@ -424,7 +459,14 @@ Les Editions Artic, Alpines, etc. utilisent les circuits de la version PC mais
 ne marchent qu'en mode Quick Race (single ou multijoueur) et non en mode 
 championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 
+
+
 # Change log
+
+---
+2023-04-05:
+- Fix Initial D Zero v2.30
+- Add TP Serial (ex Patreon) games
 
 ---
 2023-03-19:

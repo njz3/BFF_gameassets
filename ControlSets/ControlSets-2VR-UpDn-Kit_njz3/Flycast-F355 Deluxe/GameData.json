@@ -1,0 +1,13 @@
+{
+  "GameName": "f355",
+  "Description": "F355 Deluxe Series running on Flycast",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "f355dlx*.bat",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

@@ -22,7 +22,7 @@
 	<genre>F1 Racing</genre>
 	<rating></rating>
 </game>
-<!--
+<!-- for native FFB version, put name="vformula_nativeFFB" -->
 <game name="vformula" index="" image="">
 	<description>Virtua Formula</description>
 	<cloneof></cloneof>
@@ -32,7 +32,6 @@
 	<genre>F1 Racing</genre>
 	<rating></rating>
 </game>
--->
 
 <!-- *** Sega Model 2 *** -->
 
@@ -487,12 +486,34 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
+ -->
+<!--
+<game name="CruisnBlast" index="true" image="p">
+	<description>Cruis'n Blast</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills, /!\ Serial only</manufacturer>
+	<year>2017</year>
+	<genre></genre>
+	<rating>TP Serial</rating>
+	<enabled>Yes</enabled>
+</game>
 <game name="crazyspeed" index="true" image="p">
 	<description>Crazy Speed</description>
 	<cloneof></cloneof>
 	<crc></crc>
 	<manufacturer></manufacturer>
 	<year>2006</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="D1GP" index="true" image="p">
+	<description>D1GP Arcade</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Taito</manufacturer>
+	<year>2008</year>
 	<genre></genre>
 	<rating></rating>
 	<enabled>Yes</enabled>
@@ -519,6 +540,16 @@
 	<enabled>Yes</enabled>
 </game>
 <!--
+<game name="DeadHeat" index="true" image="p">
+	<description>Dead Heat</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, /!\ Serial only</manufacturer>
+	<year>2010</year>
+	<genre></genre>
+	<rating>TP Serial</rating>
+	<enabled>Yes</enabled>
+</game>
 <game name="dirtdrivin" index="true" image="p">
 	<description>Dirt Drivin</description>
 	<cloneof></cloneof>
@@ -539,8 +570,6 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
- -->
-<!--
 <game name="FNFDrift" index="true" image="p">
 	<description>Fast and Furious Tokyo Drift</description>
 	<cloneof></cloneof>
@@ -551,8 +580,6 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
--->
-<!--
 <game name="FNFsupercars" index="true" image="p">
 	<description>Fast and Furious Super Cars</description>
 	<cloneof></cloneof>
@@ -577,10 +604,10 @@
 	<description>Gaelco Championship Tuning Race</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Gaelco, /!\ Patreon</manufacturer>
+	<manufacturer>Gaelco, /!\ Serial only</manufacturer>
 	<year>2005</year>
 	<genre></genre>
-	<rating>Patreon</rating>
+	<rating>TP Serial</rating>
 	<enabled>Yes</enabled>
 </game>
 -->
@@ -687,16 +714,16 @@
 </game>
 -->
 <!--
-<game name="idzv2" index="true" image="p">
-	<description>Initial D Zero V2.11</description>
+<game name="IDZv2TP" index="true" image="p">
+	<description>Initial D Zero V2.30</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Sega, *FFB*</manufacturer>
+	<manufacturer>Sega, *FFB* need AIME</manufacturer>
 	<year>2018</year>
 	<genre></genre>
 	<rating></rating>
 	<enabled>Yes</enabled>
-</game
+</game>
 -->
 <!--
 <game name="kodrive" index="true" image="p">
@@ -721,23 +748,23 @@
 </game>
 -->
 <game name="MKDX" index="true" image="p">
-	<description>Mario Kart DX V. 1.10</description>
+	<description>Mario Kart DX V1.10</description>
 	<cloneof></cloneof>
 	<crc></crc>
 	<manufacturer>Namco, *FFB*</manufacturer>
-    <year>2014</year>
+    <year>2013</year>
 	<genre></genre>
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
-<game name="MD5" index="true" image="p">
-	<description>Wangan Midnight Run 5</description>
+<game name="MKDX118" index="true" image="p">
+	<description>Mario Kart DX V1.18</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Namco, *FFB*</manufacturer>
-	<year>2015</year>
+	<manufacturer>Namco, /!\ Serial only</manufacturer>
+    <year>2013</year>
 	<genre></genre>
-	<rating></rating>
+	<rating>TP Serial</rating>
 	<enabled>Yes</enabled>
 </game>
 <!--
@@ -877,7 +904,7 @@
 	<enabled>Yes</enabled>
 </game>
 <!--
-<game name="sonic" index="true" image="p">
+<game name="SSASR" index="true" image="p">
 	<description>Sonic Sega All Stars Racing</description>
 	<cloneof></cloneof>
 	<crc></crc>
@@ -958,6 +985,57 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
+<game name="WMMT3" index="true" image="p">
+	<description>Wangan Midnight Max Tune 3</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, /!\ Serial only</manufacturer>
+	<year>2007</year>
+	<genre></genre>
+	<rating>TP Serial</rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="WMMT3DX" index="true" image="p">
+	<description>Wangan Midnight Max Tune 3DX+</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, /!\ Serial only</manufacturer>
+	<year>2010</year>
+	<genre></genre>
+	<rating>TP Serial</rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="WMMT5" index="true" image="p">
+	<description>Wangan Midnight Max Tune 5</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, *FFB*</manufacturer>
+	<year>2014</year>
+	<genre></genre>
+	<rating>TP Serial</rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="WMMT5DX" index="true" image="p">
+	<description>Wangan Midnight Max Tune 5DX+</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, *FFB*</manufacturer>
+	<year>2017</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="WMMT6" index="true" image="p">
+	<description>Wangan Midnight Max Tune 6</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, *FFB*</manufacturer>
+	<year>2018</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<!--
 <game name="WR" index="true" image="p">
 	<description>Wacky Races</description>
 	<cloneof></cloneof>
@@ -968,6 +1046,7 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
+-->
 
 <!-- *** MAME *** -->
 
@@ -1516,10 +1595,10 @@
 	<description>Road Edge</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>SNK, /!\ Bad</manufacturer>
+	<manufacturer>SNK</manufacturer>
 	<year>1997</year>
 	<genre></genre>
-	<rating>Emulation bugs</rating>
+	<rating></rating>
 </game>
 <game name="roadf" index="" image="">
 	<description>Road Fighter</description>
@@ -1847,6 +1926,18 @@
 	<year>1994</year>
 	<genre>Bike</genre>
 </game>
+<!--
+<game name="DeadHeatRiders" index="true" image="p">
+	<description>Dead Heat Riders</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, /!\ Serial only</manufacturer>
+	<year>2007</year>
+	<genre></genre>
+	<rating>TP Serial</rating>
+	<enabled>Yes</enabled>
+</game>
+-->
 <game name="enduror" index="" image="">
 	<description>Enduro Racer</description>
 	<cloneof></cloneof>
@@ -1872,6 +1963,16 @@
 	<crc></crc>
 	<manufacturer>RawThrills</manufacturer>
 	<year>2010</year>
+	<genre>Bike</genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="FrenzyExpress" index="true" image="p">
+	<description>Frenzy Express</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega</manufacturer>
+	<year>2001</year>
 	<genre>Bike</genre>
 	<rating></rating>
 	<enabled>Yes</enabled>
@@ -1941,6 +2042,18 @@
 	<year>1987</year>
 	<genre>Bike</genre>
 </game>
+<!--
+<game name="StormRider" index="true" image="p">
+	<description>Storm Rider</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Whalap/SEGA</manufacturer>
+	<year>2013</year>
+	<genre>Bike</genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+-->
 <game name="waverunr" index="" image="">
 	<description>Wave Runner</description>
 	<cloneof></cloneof>
