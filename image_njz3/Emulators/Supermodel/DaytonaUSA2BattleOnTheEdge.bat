@@ -8,4 +8,3 @@ CALL supermodel_options.bat
 
 :: Lunch emulator
 supermodel.exe %GAME% %SUPERMODEL_OPTIONS%
-

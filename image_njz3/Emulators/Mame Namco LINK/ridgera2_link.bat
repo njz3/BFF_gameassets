@@ -11,4 +11,4 @@ CALL set_cab_id.bat
 CALL set_cab_network%CAB_ID%.bat
 
 :: Normal command
-start jb_build.exe %GAME% -nvram_directory nvram%CAB_ID% -comm_localport %LOCALPORT% -comm_remoteport %NEXTPORT% -comm_localhost %LOCALIP% -comm_remotehost %NEXTIP%
+start mame.exe %GAME% -nvram_directory nvram%CAB_ID% -comm_localport %LOCALPORT% -comm_remoteport %NEXTPORT% -comm_localhost %LOCALIP% -comm_remotehost %NEXTIP%

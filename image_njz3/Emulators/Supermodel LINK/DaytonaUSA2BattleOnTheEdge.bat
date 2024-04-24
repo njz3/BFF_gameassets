@@ -5,6 +5,6 @@ CONSOLESTATE /Min
 
 set GAME=..\Supermodel\ROMs\daytona2.zip
 CALL supermodel_options.bat
+
 :: Lunch emulator
 supermodel.exe %GAME% %SUPERMODEL_OPTIONS%
-

@@ -7,3 +7,6 @@ set GAME=..\Mame\roms\f355twin.zip
 CALL flycast_options.bat
 :: Lunch emulator
 flycast.exe %GAME% %FLYCAST_OPTIONS%
+
+:: Kill remaining process
+killProcess.vbs flycast.exe
