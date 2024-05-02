@@ -17,7 +17,7 @@ XCOPY /Y /I "%EMULATORS_DIR%\Mame Namco LINK\mame%RES_EXT%.ini" "%EMULATORS_DIR%
 
 :: Flycast
 XCOPY /Y /I "%EMULATORS_DIR%\Flycast\flycast_options%RES_EXT%.bat" "%EMULATORS_DIR%\Flycast\flycast_options.bat"
-XCOPY /Y /I "%EMULATORS_DIR%\Flycast\emu%CAB_ID%%RES_EXT%.cfg" "%EMULATORS_DIR%\Flycast\emu.cfg"
+XCOPY /Y /I "%EMULATORS_DIR%\Flycast\emu_single%RES_EXT%.cfg" "%EMULATORS_DIR%\Flycast\emu.cfg"
 
 :: Flycast LINK
 XCOPY /Y /I "%EMULATORS_DIR%\Flycast LINK\flycast_options%RES_EXT%.bat" "%EMULATORS_DIR%\Flycast LINK\flycast_options.bat"
