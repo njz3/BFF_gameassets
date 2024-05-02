@@ -1,5 +1,7 @@
 Distribution Sega Racer 2022-2024 - njz3
 
+FOR ENGLISH TRANSLATION, PLEASE USE https://www.deepl.com/ or https://translate.google.com/
+
 # A propos
 
 Cette image disque est basée sur un Windows 10 entreprise dont la configuration
@@ -462,6 +464,14 @@ championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 
 
 # Change log
+
+---
+2023-05-02:
+- Update BFF 0.7.0.129, TP 1250, MAME 0.265
+- Fix MKDX/WMMT6/IDZv2TP not exiting with Start+VR1 due to being launched as administrator (not required anymore)
+- Fix KO Drive
+- Fix Flycast stretch not working for F355 as it uses the parameters in emu.cfg file (copy files when video is configured)
+- Add Win10 English language pack
 
 ---
 2023-04-05:
