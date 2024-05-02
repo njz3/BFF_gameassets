@@ -4,7 +4,7 @@
   "ExecType": 0,
   "OutputType": 3,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "f355dlx*.bat",
+  "MainWindowTitle": "f355.bat|f355dlx.bat",
   "PriorityLevel": 1,
   "AddressesValues": [],
   "MatchingWordValues": [],
