@@ -3,7 +3,7 @@
 TITLE %~nx0
 CONSOLESTATE /Min
 
-set GAME=..\Mame\roms\crzytaxi.zip
+set GAME=..\MameRoms\crzytaxi.zip
 CALL flycast_options.bat
 :: Lunch emulator
 flycast.exe %GAME% %FLYCAST_OPTIONS%

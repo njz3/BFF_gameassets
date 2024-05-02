@@ -3,7 +3,7 @@
 TITLE %~nx0
 CONSOLESTATE /Min
 
-set GAME=..\Mame\roms\initd.zip
+set GAME=..\MameRoms\initd.zip
 CALL flycast_options.bat
 :: Lunch emulator
 flycast.exe %GAME% %FLYCAST_OPTIONS%

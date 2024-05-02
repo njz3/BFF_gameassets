@@ -3,7 +3,7 @@
   <ProfileName>KODrive</ProfileName>
   <GameNameInternal>K.O. Drive (Prototype)</GameNameInternal>
   <GameGenreInternal>Racing</GameGenreInternal>
-  <GamePath>..\..\Games\K.O. Drive  - SEGA Ringwide\exe\M-DriveR_RingWide.exe</GamePath>
+  <GamePath>C:\Racecab\Games\K.O. Drive  - SEGA Ringwide\exe\M-DriveR_RingWide.exe</GamePath>
   <TestMenuParameter>TestMode.exe</TestMenuParameter>
   <TestMenuIsExecutable>true</TestMenuIsExecutable>
   <ExtraParameters />

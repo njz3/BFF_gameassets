@@ -3,7 +3,7 @@
 TITLE %~nx0
 CONSOLESTATE /Min
 
-set GAME=..\Mame\roms\f355twin.zip
+set GAME=..\MameRoms\f355twin.zip
 CALL flycast_options.bat
 :: Lunch emulator
 flycast.exe %GAME% %FLYCAST_OPTIONS%

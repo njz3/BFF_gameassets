@@ -4,7 +4,7 @@
   "ExecType": 2,
   "OutputType": 2,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "DaytonaUSA2BattleOnTheEdge_nativeFFB.bat|DaytonaUSA2PowerEdition_nativeFFB.bat",
+  "MainWindowTitle": "DaytonaUSA2BattleOnTheEdge_nativeFFB.bat|DaytonaUSA2PowerEdition_nativeFFB*",
   "PriorityLevel": 1,
   "AddressesValues": [],
   "MatchingWordValues": [],

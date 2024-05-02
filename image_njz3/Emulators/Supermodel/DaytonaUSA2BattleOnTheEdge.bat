@@ -3,7 +3,7 @@
 TITLE %~nx0
 CONSOLESTATE /Min
 
-set GAME=..\Supermodel\ROMs\daytona2.zip
+set GAME=..\SupermodelRoms\daytona2.zip
 CALL supermodel_options.bat
 
 :: Lunch emulator

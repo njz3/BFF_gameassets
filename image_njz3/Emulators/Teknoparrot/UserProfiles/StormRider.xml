@@ -238,7 +238,7 @@
     <JoystickButtons>
       <ButtonName>View 2 / Menu Right</ButtonName>
       <DirectInputButton>
-        <Button>53</Button>
+        <Button>54</Button>
         <IsAxis>false</IsAxis>
         <IsAxisMinus>false</IsAxisMinus>
         <IsFullAxis>false</IsFullAxis>
@@ -248,8 +248,8 @@
       </DirectInputButton>
       <InputMapping>P1Button3</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons5</BindNameDi>
-      <BindName>Joystick Buttons5</BindName>
+      <BindNameDi>Joystick Buttons6</BindNameDi>
+      <BindName>Joystick Buttons6</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -271,7 +271,7 @@
     <JoystickButtons>
       <ButtonName>Start</ButtonName>
       <DirectInputButton>
-        <Button>50</Button>
+        <Button>51</Button>
         <IsAxis>false</IsAxis>
         <IsAxisMinus>false</IsAxisMinus>
         <IsFullAxis>false</IsFullAxis>
@@ -281,8 +281,8 @@
       </DirectInputButton>
       <InputMapping>P1ButtonStart</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons2</BindNameDi>
-      <BindName>Joystick Buttons2</BindName>
+      <BindNameDi>Joystick Buttons3</BindNameDi>
+      <BindName>Joystick Buttons3</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -304,7 +304,7 @@
     <JoystickButtons>
       <ButtonName>Boost</ButtonName>
       <DirectInputButton>
-        <Button>54</Button>
+        <Button>53</Button>
         <IsAxis>false</IsAxis>
         <IsAxisMinus>false</IsAxisMinus>
         <IsFullAxis>false</IsFullAxis>
@@ -314,8 +314,8 @@
       </DirectInputButton>
       <InputMapping>P1Button1</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons6</BindNameDi>
-      <BindName>Joystick Buttons6</BindName>
+      <BindNameDi>Joystick Buttons5</BindNameDi>
+      <BindName>Joystick Buttons5</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>

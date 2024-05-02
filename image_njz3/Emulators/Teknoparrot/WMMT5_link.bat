@@ -1,10 +1,10 @@
-@ECHO ON
-
+@ECHO OFF
 :: set the title to match the name of the batch file with
 TITLE %~nx0
 CONSOLESTATE /Min
 
-set CAB_ID=_link_cab1
+:: Set CAB_ID
+CALL set_cab_id.bat
 
 set GAME=WMMT5.xml
 

@@ -1,0 +1,13 @@
+{
+  "GameName": "srallyc,srallycb,srallyp",
+  "Description": "Sega Rally Champ Native FFB",
+  "ExecType": 1,
+  "OutputType": 1,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "SegaRallyChampionship_nativeFFB*",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

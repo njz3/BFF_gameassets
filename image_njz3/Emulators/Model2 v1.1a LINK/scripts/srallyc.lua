@@ -2,7 +2,7 @@ require("model2")
 
 function Init()
     --only for slave machines !
-    --Patch_DisableMaster();
+	--Patch_DisableMaster();
 end
 
 function Patch_DisableMaster()

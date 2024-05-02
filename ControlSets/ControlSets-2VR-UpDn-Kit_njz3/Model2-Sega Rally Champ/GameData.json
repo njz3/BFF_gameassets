@@ -1,6 +1,6 @@
 {
   "GameName": "srallyc,srallycb,srallyp",
-  "Description": "",
+  "Description": "Sega Rally Champ",
   "ExecType": 1,
   "OutputType": 1,
   "ProcessName": "EMULATOR|emulator_multicpu",

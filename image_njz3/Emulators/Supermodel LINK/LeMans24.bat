@@ -3,7 +3,7 @@
 TITLE %~nx0
 CONSOLESTATE /Min
 
-set GAME=..\Supermodel\ROMs\lemans24.zip
+set GAME=..\SupermodelRoms\lemans24.zip
 CALL supermodel_options.bat
 :: emulated FFB, link to right nvram for model 3 driveboard
 del /F /Q "NVRAM\lemans24.nv"

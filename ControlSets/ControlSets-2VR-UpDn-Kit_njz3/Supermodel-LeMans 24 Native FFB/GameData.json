@@ -4,7 +4,7 @@
   "ExecType": 2,
   "OutputType": 2,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "LeMans24_nativeFFB*.bat",
+  "MainWindowTitle": "LeMans24_nativeFFB*",
   "PriorityLevel": 1,
   "AddressesValues": [],
   "MatchingWordValues": [],

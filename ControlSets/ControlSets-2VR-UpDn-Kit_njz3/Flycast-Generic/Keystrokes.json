@@ -32,6 +32,6 @@
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 2000,
     "IsInvertedLogic": false,
-    "KeyAPI": 1
+    "KeyAPI": 3
   }
 ]

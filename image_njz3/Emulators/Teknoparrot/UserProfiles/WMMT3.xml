@@ -26,11 +26,23 @@
     <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>Windowed</FieldName>
-      <FieldValue>1</FieldValue>
+      <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Graphics</CategoryName>
+      <FieldName>GPU Fix</FieldName>
+      <FieldValue>None</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions>
+        <string>None</string>
+        <string>INTEL</string>
+      </FieldOptions>
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
@@ -651,7 +663,7 @@
     <JoystickButtons>
       <ButtonName>Insert Card</ButtonName>
       <DirectInputButton>
-        <Button>54</Button>
+        <Button>51</Button>
         <IsAxis>false</IsAxis>
         <IsAxisMinus>false</IsAxisMinus>
         <IsFullAxis>false</IsFullAxis>
@@ -661,8 +673,8 @@
       </DirectInputButton>
       <InputMapping>Wmmt3InsertCard</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons6</BindNameDi>
-      <BindName>Joystick Buttons6</BindName>
+      <BindNameDi>Joystick Buttons3</BindNameDi>
+      <BindName>Joystick Buttons3</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -683,7 +695,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>NamcoWmmt3</EmulationProfile>
-  <GameProfileRevision>15</GameProfileRevision>
+  <GameProfileRevision>16</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>

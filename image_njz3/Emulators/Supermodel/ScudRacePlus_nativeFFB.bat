@@ -3,7 +3,7 @@
 TITLE %~nx0
 CONSOLESTATE /Min
 
-set GAME=..\Supermodel\ROMs\scudplus.zip
+set GAME=..\SupermodelRoms\scudplus.zip
 CALL supermodel_options.bat
 :: Lunch emulator
 supermodel.exe %GAME% %SUPERMODEL_OPTIONS%

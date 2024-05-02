@@ -3,7 +3,8 @@
 TITLE %~nx0
 CONSOLESTATE /Min
 
-set CAB_ID=_link_cab1
+:: Set CAB_ID
+CALL set_cab_id.bat
 
 set GAME=Daytona3.xml
 

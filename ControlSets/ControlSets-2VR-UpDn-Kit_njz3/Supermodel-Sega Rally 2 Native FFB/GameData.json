@@ -4,7 +4,7 @@
   "ExecType": 2,
   "OutputType": 2,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "SegaRally2_nativeFFB.bat",
+  "MainWindowTitle": "SegaRally2_nativeFFB*",
   "PriorityLevel": 1,
   "AddressesValues": [],
   "MatchingWordValues": [],

@@ -71,7 +71,7 @@
     <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>Enable Outputs</FieldName>
-      <FieldValue>0</FieldValue>
+      <FieldValue>1</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -116,7 +116,7 @@
     <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>CustomName</FieldName>
-      <FieldValue>Reaver</FieldValue>
+      <FieldValue>Namco</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
