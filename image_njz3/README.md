@@ -466,7 +466,12 @@ championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 # Change log
 
 ---
-2023-05-02:
+2024-06-07:
+- Update BFF 0.7.0.135, TP 1269, MAME 0.266 (no nag), MAME FFB plugin, Supermodel
+- Update Demul for Nascar and SWPR
+
+---
+2024-05-02:
 - Update BFF 0.7.0.129, TP 1250, MAME 0.265
 - Fix MKDX/WMMT6/IDZv2TP not exiting with Start+VR1 due to being launched as administrator (not required anymore)
 - Fix KO Drive
@@ -474,12 +479,12 @@ championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 - Add Win10 English language pack
 
 ---
-2023-04-05:
+2024-04-05:
 - Fix Initial D Zero v2.30
 - Add TP Serial (ex Patreon) games
 
 ---
-2023-03-19:
+2024-03-19:
 - add more games for 1024x384p (DJ Goliath)
 - update BFF and Videoamp
 - add raverace to Multi
@@ -487,16 +492,16 @@ championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 - fix FFB Plugin opengl32.dll for supermodel
 
 ---
-2023-03-08:
+2024-03-08:
 - fix Daytona USA 3/NSE Link mode
 - fix MAME nvram for Link mode for f1lap, radr, orunner
 - add m2lagfix for Model 2 Link mode
 
 ---
-2023-02-02:
+2024-02-02:
 - fix OR2 force feedback
 - add scripts in Utils/ to easily change all configurations options for CRT or LCD mode
 
 ---
-2023-01-04:
+2024-01-04:
 - fix disk structure for Raw Thrills Games (rawart)

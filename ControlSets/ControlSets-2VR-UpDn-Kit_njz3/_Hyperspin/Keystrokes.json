@@ -1,6 +1,6 @@
 [
   {
-    "UniqueName": "Droite",
+    "UniqueName": "RIGHTWHL",
     "CombinedKeyStrokes": [
       74,
       0
@@ -9,7 +9,7 @@
       {
         "Type": 4,
         "Index": 1,
-        "Threshold": 0.75,
+        "Threshold": 0.85,
         "InvSign": false
       },
       {
@@ -35,7 +35,7 @@
     "KeyAPI": 1
   },
   {
-    "UniqueName": "Gauche",
+    "UniqueName": "LEFTWHL",
     "CombinedKeyStrokes": [
       70,
       0
@@ -44,7 +44,7 @@
       {
         "Type": 4,
         "Index": 1,
-        "Threshold": 0.25,
+        "Threshold": 0.15,
         "InvSign": true
       },
       {
@@ -70,7 +70,7 @@
     "KeyAPI": 1
   },
   {
-    "UniqueName": "Ok",
+    "UniqueName": "ACCEL",
     "CombinedKeyStrokes": [
       71,
       0
@@ -105,7 +105,7 @@
     "KeyAPI": 1
   },
   {
-    "UniqueName": "Exit",
+    "UniqueName": "EXIT",
     "CombinedKeyStrokes": [
       2,
       0
@@ -140,7 +140,7 @@
     "KeyAPI": 1
   },
   {
-    "UniqueName": "Gauche Rapide",
+    "UniqueName": "LEFTJUMP",
     "CombinedKeyStrokes": [
       58,
       0
@@ -175,7 +175,7 @@
     "KeyAPI": 1
   },
   {
-    "UniqueName": "Droite Rapide",
+    "UniqueName": "RIGHTJUMP",
     "CombinedKeyStrokes": [
       59,
       0
@@ -210,7 +210,7 @@
     "KeyAPI": 1
   },
   {
-    "UniqueName": "Favoris",
+    "UniqueName": "FAV",
     "CombinedKeyStrokes": [
       60,
       0
@@ -245,7 +245,7 @@
     "KeyAPI": 1
   },
   {
-    "UniqueName": "Exit AltF4",
+    "UniqueName": "EXIT_ALTF4",
     "CombinedKeyStrokes": [
       1,
       0
@@ -280,7 +280,7 @@
     "KeyAPI": 1
   },
   {
-    "UniqueName": "Up",
+    "UniqueName": "SHIFTDOWN",
     "CombinedKeyStrokes": [
       74,
       0
@@ -315,7 +315,7 @@
     "KeyAPI": 1
   },
   {
-    "UniqueName": "Down",
+    "UniqueName": "SHIFTUP",
     "CombinedKeyStrokes": [
       70,
       0
@@ -350,7 +350,7 @@
     "KeyAPI": 1
   },
   {
-    "UniqueName": "Start",
+    "UniqueName": "STARTBTN",
     "CombinedKeyStrokes": [
       71,
       0
@@ -382,6 +382,6 @@
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 0,
     "IsInvertedLogic": false,
-    "KeyAPI": 2
+    "KeyAPI": 1
   }
 ]

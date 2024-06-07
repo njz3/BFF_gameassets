@@ -32,8 +32,12 @@ XCOPY /E /H /C /Y /I "%EMULATORS_DIR%\Model2 v1.1a LINK\scripts%RES_EXT%" "%EMUL
 
 :: Supermodel
 XCOPY /Y /I "%EMULATORS_DIR%\Supermodel\supermodel_video_options%RES_EXT%.bat" "%EMULATORS_DIR%\Supermodel\supermodel_video_options.bat"
+:: Supermodel plugin FFB
+XCOPY /Y /I "%EMULATORS_DIR%\Supermodel FFBplugin\supermodel_video_options%RES_EXT%.bat" "%EMULATORS_DIR%\Supermodel FFBplugin\supermodel_video_options.bat"
 :: Supermodel LINK
 XCOPY /Y /I "%EMULATORS_DIR%\Supermodel LINK\supermodel_video_options%RES_EXT%.bat" "%EMULATORS_DIR%\Supermodel LINK\supermodel_video_options.bat"
+:: Supermodel LINK plugin FFB
+XCOPY /Y /I "%EMULATORS_DIR%\Supermodel LINK FFBplugin\supermodel_video_options%RES_EXT%.bat" "%EMULATORS_DIR%\Supermodel LINK FFBplugin\supermodel_video_options.bat"
 
 :: Dolphin NGC
 XCOPY /Y /I "%EMULATORS_DIR%\Dolphin\dolphin\User\Config\GFX%RES_EXT%.ini" "%EMULATORS_DIR%\Dolphin\dolphin\User\Config\GFX.ini"
@@ -44,6 +48,8 @@ XCOPY /Y /I "%EMULATORS_DIR%\Triforce\dolphin_tri_MKAGP\User\Config\GFX%RES_EXT%
 
 :: Teknoparrot OR2SPDX
 XCOPY /Y /I "%EMULATORS_DIR%\TeknoParrot\UserProfiles\or2spdlx%RES_EXT%.xml" "%EMULATORS_DIR%\TeknoParrot\UserProfiles\or2spdlx.xml"
+:: Teknoparrot MKDDX
+XCOPY /Y /I "%EMULATORS_DIR%\TeknoParrot\UserProfiles\MKDX%RES_EXT%.xml" "%EMULATORS_DIR%\TeknoParrot\UserProfiles\MKDX.xml"
 
 :: Create a texte file to know chich resolution is used
 DEL /Q "C:\Racecab\Configured_for*.txt"

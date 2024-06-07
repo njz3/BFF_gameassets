@@ -16,8 +16,8 @@
     "vJoyAxisIndex": 1,
     "RawAxisType": 0,
     "ControlPoints": [
-      "0.137728937728938,0.5",
-      "0.739438339438339,0"
+      "0.13,0",
+      "0.73,1"
     ],
     "IsNegativeDirection": true,
     "IsFullRangeAxis": false,
@@ -28,8 +28,8 @@
     "vJoyAxisIndex": 2,
     "RawAxisType": 0,
     "ControlPoints": [
-      "0.181684981684982,0.5",
-      "0.554822954822955,0"
+      "0.18,0",
+      "0.55,1"
     ],
     "IsNegativeDirection": true,
     "IsFullRangeAxis": false,

@@ -567,7 +567,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>RawThrillsFNF</EmulationProfile>
-  <GameProfileRevision>8</GameProfileRevision>
+  <GameProfileRevision>9</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
@@ -578,6 +578,7 @@
   <InvertedMouseAxis>false</InvertedMouseAxis>
   <GunGame>false</GunGame>
   <DevOnly>false</DevOnly>
+  <ExecutableName>game.exe</ExecutableName>
   <HasTwoExecutables>false</HasTwoExecutables>
   <LaunchSecondExecutableFirst>false</LaunchSecondExecutableFirst>
   <GamePath2 />
