@@ -411,8 +411,16 @@ Supermodel, TP), puis d'utiliser la page "Explorer" de ControlSet pour
 copier-coller uniquement le mapping des entrées brutes, et/ou le calibrage 
 des axes vers plusieurs ControlSets simultanément.
 
+> **IMPORTANT**
+> Par défaut, le dossier `C:\Users\Racecab\Documents\BackForceFeeder\ControlSets`
+> est un lien symbolique vers un dossier archivé. Pour créer un lien vers 
+> un autre dossier, utiliser la commande `mklink /d NOUVEAULIEN CIBLE` avec
+> NOUVEAULIEN le dossier `C:\Users\Racecab\Documents\BackForceFeeder\ControlSets`
+> et CIBLE le dossier où vous voulez sauver les control sets.
+
 
 # Notes - FAQ
+
 
 ## Jeux Model 2 en mode Link
 
@@ -466,9 +474,9 @@ championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 # Change log
 
 ---
-2024-06-07:
+2024-06-14:
 - Update BFF 0.7.0.135, TP 1269, MAME 0.266 (no nag), MAME FFB plugin, Supermodel
-- Update Demul for Nascar and SWPR
+- Update Demul for Hikaru (Nascar and SWPR)
 
 ---
 2024-05-02:
