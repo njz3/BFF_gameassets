@@ -28,7 +28,7 @@ games (only MAME, model 1/2/3 and Naomi via Flycast).
 
 Your computer must be switched off and the power cord removed to avoid any 
 electric shock.
-Open your computer and fix the SATA disk drive into your computer. Connect it
+Open your computer and attach the SATA disk drive into your computer. Connect it
 using a SATA cable to an available port on your motherboard and connect the
 other side to the drive at the small SATA connector for data.
 Then connect the drive to your ATX power supply using the second, larger 
@@ -75,8 +75,7 @@ internet access, or use a switch to link more than 2 computers, or connect your
 computers to a home network and the Internet.
 In all cases, you'll need to reconfigure your network settings as these are
 usually lost once the disk has been installed in your computer.
-Go to the network configuration page and set the following parameters 
-parameters:
+Go to the network configuration page and set the following parameters:
 
 - IPv4 address: 192.168.1.4 for cab 1 (or 192.168.1.5 for cab 2, and .6
 or .7, or .X ... depending on your multi-cab setup). Some games, such as Daytona 2
