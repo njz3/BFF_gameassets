@@ -14,12 +14,12 @@ https://github.com/njz3/BFF_gameassets/blob/main/image_njz3/QUICKSTART.md
 The SSD is designed to run on a PC with:
 - an intel 4th gen (or later) processor, or an AMD Ryzen or later.
 - 4GB RAM minimum
-- Nvidia 1030 graphics card or higher (1050Ti recommended)
+- Nvidia 1030 graphics adapter or higher (1050Ti recommended)
 - a permanently connected USB keyboard or mouse (in order to be able to use the
 use the DInput keyboard emulation function)
 - either a FullHD LCD monitor to enjoy the full range of games, or a 
 CRT monitor supporting 1024x768.
-- if you're using a VideoAmp card, you can use either the 31kHz or 24kHz 
+- if you're using a VideoAmp board, you can use either the 31kHz or 24kHz 
 interlaced modes for all games except Teknoparrot HD, and a specific 
 15kHz edition in 1280x240p or 1280x480i “stretch” mode is possible with fewer 
 games (only MAME, model 1/2/3 and Naomi via Flycast).
@@ -92,7 +92,7 @@ Firewall.
 > **Note:**
 For network gaming on model 2 emulator (Sega Rally, Daytona 1, etc.) you need
 to enable support for long frames (3kB) either via an option on your network 
-card driver, or enable the "Jumbo Frames" (MTU >3kB) option in the Ethernet
+board driver, or enable the "Jumbo Frames" (MTU >3kB) option in the Ethernet
 board adapter properties, and have a 1GBit Ethernet switch that supports 
 "Jumbo Frames".
 
