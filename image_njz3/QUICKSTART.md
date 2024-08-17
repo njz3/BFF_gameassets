@@ -96,7 +96,7 @@ card driver, or enable the "Jumbo Frames" (MTU >3kB) option in the Ethernet
 board adapter properties, and have a 1GBit Ethernet switch that supports 
 "Jumbo Frames".
 
-![Network configuration](Utils/images/networkconfig.png “Network configuration”).
+![Configuration réseau](Utils/images/networkconfig.png "Configuration réseau").
 
 ## PASSWORD AND REMOTE CONNECTION
 
