@@ -6,6 +6,7 @@ AND COPY-PASTE THE WHOLE CONTENT TO GET THE TRANSLATED DOCUMENT.
 
 An up-to-date online version of the QUICKSTART and README files are available here:
 Une version en ligne à jour du fichier README est disponible ici :
+
 https://github.com/njz3/BFF_gameassets/blob/main/image_njz3/README.md
 https://github.com/njz3/BFF_gameassets/blob/main/image_njz3/QUICKSTART.md
 

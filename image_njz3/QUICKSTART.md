@@ -3,6 +3,7 @@ Distribution Sega Racer 2022-2024 - njz3
 
 An up-to-date online version of the QUICKSTART and README files are available here:
 Une version en ligne à jour du fichier README est disponible ici :
+
 https://github.com/njz3/BFF_gameassets/blob/main/image_njz3/README.md
 https://github.com/njz3/BFF_gameassets/blob/main/image_njz3/QUICKSTART.md
 
@@ -94,7 +95,8 @@ to enable support for long frames (3kB) either via an option on your network
 card driver, or enable the "Jumbo Frames" (MTU >3kB) option in the Ethernet
 board adapter properties, and have a 1GBit Ethernet switch that supports 
 "Jumbo Frames".
-Network configuration](Utils/images/networkconfig.png “Network configuration”).
+
+![Network configuration](Utils/images/networkconfig.png “Network configuration”).
 
 ## PASSWORD AND REMOTE CONNECTION
 
@@ -198,6 +200,7 @@ if faut impérativement activer le support des trames de longues taille (3kB)
 soit via une option de votre carte réseau, soit activer l'option "Jumbo Frames"
 dans votre carte Ethernet (MTU >3kB) et avoir un switch Ethernet 1GBit qui 
 supporte les "Jumbo Frames".
+
 ![Configuration réseau](Utils/images/networkconfig.png "Configuration réseau").
 
 ## MOT DE PASSE ET "REMOTE CONNECTION"
