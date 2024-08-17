@@ -1,10 +1,17 @@
 Distribution Sega Racer 2022-2024 - njz3
+----------------------------------------
 
-FOR ENGLISH TRANSLATION, PLEASE USE https://www.deepl.com/ or https://translate.google.com/
+FOR ENGLISH TRANSLATION, PLEASE USE https://www.deepl.com/ OR https://translate.google.com/
+AND COPY-PASTE THE WHOLE CONTENT TO GET THE TRANSLATED DOCUMENT.
+
+An up-to-date online version of the QUICKSTART and README files are available here:
+Une version en ligne à jour du fichier README est disponible ici :
+https://github.com/njz3/BFF_gameassets/blob/main/image_njz3/README.md
+https://github.com/njz3/BFF_gameassets/blob/main/image_njz3/QUICKSTART.md
 
 # A propos
 
-Cette image disque est basée sur un Windows 10 entreprise dont la configuration
+Cette image disque est basée sur un Windows 10 Entreprise dont la configuration
 a été adaptée aux racecabs.
 Elle propose un Hyperspin basé sur Maximum Car de HFS Play, avec la plupart des
 jeux et emulateurs pré-configurés pour être jouables immédiatement en mode 
@@ -38,6 +45,9 @@ en 15 kHz avec le videoamp en mode 1280x240p ou 1280x480i.
 # Configuration Hardware
 
 > **IMPORTANT**
+> Pour que les disques se lancent, vous devez configurer votre BIOS de carte mère
+> pour démarrer sur le port SATA sur lequel est monté le disque, désactiver le 
+> "Secure Boot" et utiliser le mode de démarrage "Legacy BIOS" (MBR), et non UEFI.
 > Au premier démarrage, laisser le temps à Windows de démarrer puis installer
 > vos drivers.
 
@@ -60,13 +70,26 @@ possible avec moins de jeux (uniquement MAME, model 1/2/3 et Naomi via Flycast).
 
 ## Reseau
 
-IP: 192.168.1.4 pour cabine 1 (ou 192.168.1.5 ou .6, .7, .. selon la cabine en multi)
-Masque de sous-réseau: 255.255.255.0
-Passerelle : 192.168.1.254 (modifable selon votre réseau LAN en 192.168.1.1)
-DNS : 8.8.8.8 ou 8.8.4.4 (DNS de Google)
-Broadcast address: 192.168.1.255
+Le fonctionnement en multiplayer (ou link) est déjà prévu dans les images.
+Vous pouvez soit relié en direct 2 ordinateurs (cable croisé inutile) sans 
+avoir besoin d'accès à internet, soit utiliser un switch pour relier plus de 2
+ordinateurs, ou relier vos ordinateurs à un réseau domestique et à internet.
+Dans tous les cas, il est nécessaire de re-configurer les paramètres réseau
+car ceux-ci sont en général perdus après installation du disque dans votre 
+ordinateur.
+Allez dans la page de configuration du réseau et définissez les paramètres 
+suivants :
 
-Mettre réseau privé et désactiver le Firewall.
+- adresse IPv4: 192.168.1.4 pour cabine 1 (ou 192.168.1.5 pour cabine 2,et .6
+ou .7, ou .X .. selon la cabine en multi). Certains jeux comme Daytona 2
+supportent jusqu'à 8 ou 16 machines en multiplayer.
+- Masque de sous-réseau: 255.255.255.0
+- Passerelle : 192.168.1.254 (modifable selon votre réseau LAN en 192.168.1.1)
+- DNS : 8.8.8.8 ou 8.8.4.4 (DNS de Google)
+- Broadcast address: 192.168.1.255
+
+Toujours dans la configuration réseau, mettre réseau privé et désactivez le
+Firewall.
 
 > **Note:**
 Pour le jeu en réseau sur model 2 emulator (Sega Rally, Daytona 1, etc.)
@@ -94,11 +117,13 @@ Sont pré-installés :
 
 ## Mots de passe et prise en main à distance
 
-Par défaut, Teamviewer et TightVNC (mode serveur) sont préinstallés.
-Le mot de passe de session pour l'utilisateur Racecab (admin) est `racecab`
-Le mot de passe pour Teamviewer est `Racecab22!`
-Le mot de passe pour VNC est `racecab`
+Par défaut, Teamviewer et TightVNC (mode serveur) sont préinstallés et le 
+bureau à distance est activé. 
+Attention, il est de votre responsabilité de protéger votre réseau d'un accès
+extérieur.
 
+Le mot de passe de session pour l'utilisateur Racecab (admin) est `racecab`
+Le mot de passe pour VNC est `racecab`
 
 ## Démarrage automatique d'un jeu
 
