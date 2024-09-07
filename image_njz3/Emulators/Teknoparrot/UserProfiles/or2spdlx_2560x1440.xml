@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ProfileName>hummerextreme</ProfileName>
-  <GameNameInternal>Hummer Extreme Edition</GameNameInternal>
+  <ProfileName>or2spdlx</ProfileName>
+  <GameNameInternal>OutRun 2 SP SDX</GameNameInternal>
   <GameGenreInternal>Racing</GameGenreInternal>
-  <GamePath>C:\Racecab\Games\Hummer Extreme - SEGA Lindbergh\disk0\hummer_Master.elf</GamePath>
-  <TestMenuParameter>-t</TestMenuParameter>
-  <TestMenuIsExecutable>false</TestMenuIsExecutable>
+  <GamePath>C:\Racecab\Games\Outrun 2 SP SDX - SEGA Lindbergh\disk0\Jennifer\Jennifer_patched</GamePath>
+  <TestMenuParameter>..\JenTest\JenTest</TestMenuParameter>
+  <TestMenuIsExecutable>true</TestMenuIsExecutable>
   <ExtraParameters />
   <TestMenuExtraParameters />
-  <IconName>Icons/hummerextreme.png</IconName>
+  <IconName>Icons/or2spdlx.png</IconName>
   <ResetHint>false</ResetHint>
   <ConfigValues>
     <FieldInformation>
@@ -25,6 +25,24 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
+      <FieldName>EnableAmdFix</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>FreePlay</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
       <FieldName>Windowed</FieldName>
       <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
@@ -35,35 +53,8 @@
     <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>Hide Cursor</FieldName>
-      <FieldValue>0</FieldValue>
+      <FieldValue>1</FieldValue>
       <FieldType>Bool</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>General</CategoryName>
-      <FieldName>Use Custom Resolution</FieldName>
-      <FieldValue>0</FieldValue>
-      <FieldType>Bool</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>General</CategoryName>
-      <FieldName>Custom Resolution Width</FieldName>
-      <FieldValue>1280</FieldValue>
-      <FieldType>Text</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>General</CategoryName>
-      <FieldName>Custom Resolution Height</FieldName>
-      <FieldValue>768</FieldValue>
-      <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
@@ -97,6 +88,42 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
+      <FieldName>Resolution Width</FieldName>
+      <FieldValue>2560</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Resolution Height</FieldName>
+      <FieldValue>1440</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Enable Outputs</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>LinearFiltering</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
       <FieldName>DongleRegion</FieldName>
       <FieldValue>EXPORT</FieldValue>
       <FieldType>Dropdown</FieldType>
@@ -122,15 +149,6 @@
       </FieldOptions>
     </FieldInformation>
     <FieldInformation>
-      <CategoryName>General</CategoryName>
-      <FieldName>FreePlay</FieldName>
-      <FieldValue>1</FieldValue>
-      <FieldType>Bool</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
       <CategoryName>Network</CategoryName>
       <FieldName>Dhcp</FieldName>
       <FieldValue>1</FieldValue>
@@ -143,42 +161,6 @@
       <CategoryName>Network</CategoryName>
       <FieldName>Ip</FieldName>
       <FieldValue>192.168.1.4</FieldValue>
-      <FieldType>Text</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>Network</CategoryName>
-      <FieldName>Cab1IP</FieldName>
-      <FieldValue>192.168.1.4</FieldValue>
-      <FieldType>Text</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>Network</CategoryName>
-      <FieldName>Cab2IP</FieldName>
-      <FieldValue>192.168.1.5</FieldValue>
-      <FieldType>Text</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>Network</CategoryName>
-      <FieldName>Cab3IP</FieldName>
-      <FieldValue>192.168.1.6</FieldValue>
-      <FieldType>Text</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>Network</CategoryName>
-      <FieldName>Cab4IP</FieldName>
-      <FieldValue>192.168.1.7</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -216,6 +198,33 @@
       <FieldName>Dns2</FieldName>
       <FieldValue>8.8.4.4</FieldValue>
       <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Score</CategoryName>
+      <FieldName>Enable Submission</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Score</CategoryName>
+      <FieldName>Enable GUI</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Score</CategoryName>
+      <FieldName>Enable Capture</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
@@ -520,7 +529,7 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>ViewChange</ButtonName>
+      <ButtonName>View Change</ButtonName>
       <DirectInputButton>
         <Button>52</Button>
         <IsAxis>false</IsAxis>
@@ -553,9 +562,42 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Boost</ButtonName>
+      <ButtonName>Gear Shift Up</ButtonName>
       <DirectInputButton>
-        <Button>53</Button>
+        <Button>56</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2ButtonUp</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons8</BindNameDi>
+      <BindName>Joystick Buttons8</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Gear Shift Down</ButtonName>
+      <DirectInputButton>
+        <Button>57</Button>
         <IsAxis>false</IsAxis>
         <IsAxisMinus>false</IsAxisMinus>
         <IsFullAxis>false</IsFullAxis>
@@ -565,8 +607,8 @@
       </DirectInputButton>
       <InputMapping>P2ButtonDown</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons5</BindNameDi>
-      <BindName>Joystick Buttons5</BindName>
+      <BindNameDi>Joystick Buttons9</BindNameDi>
+      <BindName>Joystick Buttons9</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -586,19 +628,18 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
   </JoystickButtons>
-  <EmulationProfile>HummerExtreme</EmulationProfile>
-  <GameProfileRevision>9</GameProfileRevision>
+  <EmulationProfile>Outrun2SPX</EmulationProfile>
+  <GameProfileRevision>34</GameProfileRevision>
   <HasSeparateTestMode>true</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
-  <EmulatorType>ElfLdr2</EmulatorType>
+  <EmulatorType>Lindbergh</EmulatorType>
   <Patreon>false</Patreon>
   <RequiresAdmin>false</RequiresAdmin>
   <msysType>0</msysType>
   <InvertedMouseAxis>false</InvertedMouseAxis>
   <GunGame>false</GunGame>
   <DevOnly>false</DevOnly>
-  <ExecutableName>hummer_Master.elf</ExecutableName>
   <HasTwoExecutables>false</HasTwoExecutables>
   <LaunchSecondExecutableFirst>false</LaunchSecondExecutableFirst>
   <GamePath2 />
@@ -606,8 +647,8 @@
   <xAxisMax>255</xAxisMax>
   <yAxisMin>0</yAxisMin>
   <yAxisMax>255</yAxisMax>
-  <GasAxisMin>32</GasAxisMin>
-  <GasAxisMax>208</GasAxisMax>
+  <GasAxisMin>0</GasAxisMin>
+  <GasAxisMax>255</GasAxisMax>
   <OnlineProfileURL />
   <IsLegacy>false</IsLegacy>
 </GameProfile>

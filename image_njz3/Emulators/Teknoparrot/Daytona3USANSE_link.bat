@@ -6,19 +6,22 @@ CONSOLESTATE /Min
 :: Set CAB_ID
 CALL set_cab_id.bat
 
-set GAME=Daytona3.xml
+set GAME=Daytona3NSE.xml
 
-::Copy config
+:: link to right config
 set GAME_PATH="C:\Racecab\Games\Daytona Championship USA New Season Edition\Sega"
 set CFG_SRC=%GAME_PATH%\GameData\config%CAB_ID%.ini
 set CFG_DST=%GAME_PATH%\GameData\config.ini
-XCOPY /Y /C %CFG_SRC% %CFG_DST%
+del /F /Q %CFG_DST%
+mklink /H %CFG_DST% %CFG_SRC%
 set CFG_SRC=%GAME_PATH%\shell\Game%CAB_ID%.ini
 set CFG_DST=%GAME_PATH%\shell\Game.ini
-XCOPY /Y /C %CFG_SRC% %CFG_DST%
+del /F /Q %CFG_DST%
+mklink /H %CFG_DST% %CFG_SRC%
 set CFG_SRC=%GAME_PATH%\ShellData\ShellData%CAB_ID%.ini
 set CFG_DST=%GAME_PATH%\ShellData\ShellData.ini
-XCOPY /Y /C %CFG_SRC% %CFG_DST%
+del /F /Q %CFG_DST%
+mklink /H %CFG_DST% %CFG_SRC%
 
 ::Start game
 TeknoParrotUi.exe --profile=%GAME% --startMinimized

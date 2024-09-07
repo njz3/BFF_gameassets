@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ProfileName>hummerextreme</ProfileName>
-  <GameNameInternal>Hummer Extreme Edition</GameNameInternal>
+  <ProfileName>MKDX</ProfileName>
+  <GameNameInternal>Mario Kart: Arcade GP DX</GameNameInternal>
   <GameGenreInternal>Racing</GameGenreInternal>
-  <GamePath>C:\Racecab\Games\Hummer Extreme - SEGA Lindbergh\disk0\hummer_Master.elf</GamePath>
-  <TestMenuParameter>-t</TestMenuParameter>
+  <GamePath>..\..\Games\Mario Kart Arcade GP DX (V1.10 - Mod FR 1h) - Namco ES3\MK_AGP3_FINAL.exe</GamePath>
+  <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />
   <TestMenuExtraParameters />
-  <IconName>Icons/hummerextreme.png</IconName>
+  <IconName>Icons/MKDX.png</IconName>
   <ResetHint>false</ResetHint>
   <ConfigValues>
     <FieldInformation>
@@ -34,7 +34,16 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
-      <FieldName>Hide Cursor</FieldName>
+      <FieldName>Enable Outputs</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>FreezeCountdownTimer</FieldName>
       <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
@@ -43,8 +52,8 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
-      <FieldName>Use Custom Resolution</FieldName>
-      <FieldValue>0</FieldValue>
+      <FieldName>AutoAcclOff</FieldName>
+      <FieldValue>1</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -52,18 +61,9 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
-      <FieldName>Custom Resolution Width</FieldName>
-      <FieldValue>1280</FieldValue>
-      <FieldType>Text</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>General</CategoryName>
-      <FieldName>Custom Resolution Height</FieldName>
-      <FieldValue>768</FieldValue>
-      <FieldType>Text</FieldType>
+      <FieldName>CustomResolution</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
@@ -97,97 +97,17 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
-      <FieldName>DongleRegion</FieldName>
-      <FieldValue>EXPORT</FieldValue>
-      <FieldType>Dropdown</FieldType>
+      <FieldName>ResolutionWidth</FieldName>
+      <FieldValue>2560</FieldValue>
+      <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
-      <FieldOptions>
-        <string>JAPAN</string>
-        <string>USA</string>
-        <string>EXPORT</string>
-      </FieldOptions>
+      <FieldOptions />
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
-      <FieldName>PcbRegion</FieldName>
-      <FieldValue>EXPORT</FieldValue>
-      <FieldType>Dropdown</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions>
-        <string>JAPAN</string>
-        <string>USA</string>
-        <string>EXPORT</string>
-      </FieldOptions>
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>General</CategoryName>
-      <FieldName>FreePlay</FieldName>
-      <FieldValue>1</FieldValue>
-      <FieldType>Bool</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>Network</CategoryName>
-      <FieldName>Dhcp</FieldName>
-      <FieldValue>1</FieldValue>
-      <FieldType>Bool</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>Network</CategoryName>
-      <FieldName>Ip</FieldName>
-      <FieldValue>192.168.1.4</FieldValue>
-      <FieldType>Text</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>Network</CategoryName>
-      <FieldName>Cab1IP</FieldName>
-      <FieldValue>192.168.1.4</FieldValue>
-      <FieldType>Text</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>Network</CategoryName>
-      <FieldName>Cab2IP</FieldName>
-      <FieldValue>192.168.1.5</FieldValue>
-      <FieldType>Text</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>Network</CategoryName>
-      <FieldName>Cab3IP</FieldName>
-      <FieldValue>192.168.1.6</FieldValue>
-      <FieldType>Text</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>Network</CategoryName>
-      <FieldName>Cab4IP</FieldName>
-      <FieldValue>192.168.1.7</FieldValue>
-      <FieldType>Text</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>Network</CategoryName>
-      <FieldName>Mask</FieldName>
-      <FieldValue>255.255.255.0</FieldValue>
+      <FieldName>ResolutionHeight</FieldName>
+      <FieldValue>1440</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -204,8 +124,8 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Network</CategoryName>
-      <FieldName>Dns1</FieldName>
-      <FieldValue>8.8.8.8</FieldValue>
+      <FieldName>ServerAddress</FieldName>
+      <FieldValue>127.0.0.1</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -213,8 +133,26 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Network</CategoryName>
-      <FieldName>Dns2</FieldName>
-      <FieldValue>8.8.4.4</FieldValue>
+      <FieldName>ServerPort</FieldName>
+      <FieldValue>49200</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>AmAuthPort</FieldName>
+      <FieldValue>49199</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>PlayerId</FieldName>
+      <FieldValue>1234567890</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -289,7 +227,7 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Coin 1</ButtonName>
+      <ButtonName>Coin</ButtonName>
       <DirectInputButton>
         <Button>48</Button>
         <IsAxis>false</IsAxis>
@@ -303,28 +241,6 @@
       <AnalogType>None</AnalogType>
       <BindNameDi>Joystick Buttons0</BindNameDi>
       <BindName>Joystick Buttons0</BindName>
-      <HideWithDirectInput>false</HideWithDirectInput>
-      <HideWithXInput>false</HideWithXInput>
-      <HideWithRawInput>false</HideWithRawInput>
-      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
-      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
-      <HideWithRelativeAxis>false</HideWithRelativeAxis>
-      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
-      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
-      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
-      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
-      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
-      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
-      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
-      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
-      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
-      <HideWithoutProMode>false</HideWithoutProMode>
-      <HideWithProMode>false</HideWithProMode>
-    </JoystickButtons>
-    <JoystickButtons>
-      <ButtonName>Coin 2</ButtonName>
-      <InputMapping>Coin2</InputMapping>
-      <AnalogType>None</AnalogType>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -520,7 +436,139 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>ViewChange</ButtonName>
+      <ButtonName>Item</ButtonName>
+      <DirectInputButton>
+        <Button>53</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1Button5</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons5</BindNameDi>
+      <BindName>Joystick Buttons5</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Menu Up</ButtonName>
+      <DirectInputButton>
+        <Button>57</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1ButtonUp</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons9</BindNameDi>
+      <BindName>Joystick Buttons9</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Menu Down</ButtonName>
+      <DirectInputButton>
+        <Button>56</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1ButtonDown</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons8</BindNameDi>
+      <BindName>Joystick Buttons8</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Enter Switch</ButtonName>
+      <DirectInputButton>
+        <Button>51</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1Button1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons3</BindNameDi>
+      <BindName>Joystick Buttons3</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Mario Button</ButtonName>
       <DirectInputButton>
         <Button>52</Button>
         <IsAxis>false</IsAxis>
@@ -530,7 +578,7 @@
         <IsReverseAxis>false</IsReverseAxis>
         <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
       </DirectInputButton>
-      <InputMapping>P1ButtonDown</InputMapping>
+      <InputMapping>ExtensionOne2</InputMapping>
       <AnalogType>None</AnalogType>
       <BindNameDi>Joystick Buttons4</BindNameDi>
       <BindName>Joystick Buttons4</BindName>
@@ -553,9 +601,9 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Boost</ButtonName>
+      <ButtonName>Banapass Card Entry</ButtonName>
       <DirectInputButton>
-        <Button>53</Button>
+        <Button>54</Button>
         <IsAxis>false</IsAxis>
         <IsAxisMinus>false</IsAxisMinus>
         <IsFullAxis>false</IsFullAxis>
@@ -563,10 +611,10 @@
         <IsReverseAxis>false</IsReverseAxis>
         <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
       </DirectInputButton>
-      <InputMapping>P2ButtonDown</InputMapping>
+      <InputMapping>P1Button2</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons5</BindNameDi>
-      <BindName>Joystick Buttons5</BindName>
+      <BindNameDi>Joystick Buttons6</BindNameDi>
+      <BindName>Joystick Buttons6</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -586,19 +634,19 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
   </JoystickButtons>
-  <EmulationProfile>HummerExtreme</EmulationProfile>
-  <GameProfileRevision>9</GameProfileRevision>
-  <HasSeparateTestMode>true</HasSeparateTestMode>
+  <EmulationProfile>NamcoMkdx</EmulationProfile>
+  <GameProfileRevision>31</GameProfileRevision>
+  <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
-  <EmulatorType>ElfLdr2</EmulatorType>
+  <EmulatorType>TeknoParrot</EmulatorType>
   <Patreon>false</Patreon>
   <RequiresAdmin>false</RequiresAdmin>
   <msysType>0</msysType>
   <InvertedMouseAxis>false</InvertedMouseAxis>
   <GunGame>false</GunGame>
   <DevOnly>false</DevOnly>
-  <ExecutableName>hummer_Master.elf</ExecutableName>
+  <ExecutableName>MK_AGP3_FINAL.exe</ExecutableName>
   <HasTwoExecutables>false</HasTwoExecutables>
   <LaunchSecondExecutableFirst>false</LaunchSecondExecutableFirst>
   <GamePath2 />
@@ -606,8 +654,8 @@
   <xAxisMax>255</xAxisMax>
   <yAxisMin>0</yAxisMin>
   <yAxisMax>255</yAxisMax>
-  <GasAxisMin>32</GasAxisMin>
-  <GasAxisMax>208</GasAxisMax>
-  <OnlineProfileURL />
+  <GasAxisMin>0</GasAxisMin>
+  <GasAxisMax>255</GasAxisMax>
+  <OnlineProfileURL>https://teknoparrot.com/OnlineProfile/MKDX</OnlineProfileURL>
   <IsLegacy>false</IsLegacy>
 </GameProfile>

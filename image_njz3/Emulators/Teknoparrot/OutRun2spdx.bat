@@ -7,10 +7,11 @@ set CAB_ID=_single
 
 set GAME=or2spdlx.xml
 
-::Copy config
+:: link to right config for link mode
 set CFG_SRC=%APPDATA%\Teknoparrot\SBMB_e2prom%CAB_ID%.bin
 set CFG_DST=%APPDATA%\Teknoparrot\SBMB_e2prom.bin
-XCOPY /Y /C %CFG_SRC% %CFG_DST%
+del /F /Q %CFG_DST%
+mklink /H %CFG_DST% %CFG_SRC%
 
 ::Start game
 TeknoParrotUi.exe --profile=%GAME% --startMinimized

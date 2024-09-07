@@ -470,12 +470,12 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>DeadHeatRiders</EmulationProfile>
-  <GameProfileRevision>7</GameProfileRevision>
+  <GameProfileRevision>8</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
   <EmulatorType>ElfLdr2</EmulatorType>
-  <Patreon>true</Patreon>
+  <Patreon>false</Patreon>
   <RequiresAdmin>false</RequiresAdmin>
   <msysType>0</msysType>
   <InvertedMouseAxis>false</InvertedMouseAxis>

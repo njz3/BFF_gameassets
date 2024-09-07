@@ -625,12 +625,12 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>RingRiders</EmulationProfile>
-  <GameProfileRevision>11</GameProfileRevision>
+  <GameProfileRevision>12</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
   <EmulatorType>ElfLdr2</EmulatorType>
-  <Patreon>true</Patreon>
+  <Patreon>false</Patreon>
   <RequiresAdmin>false</RequiresAdmin>
   <msysType>0</msysType>
   <InvertedMouseAxis>false</InvertedMouseAxis>
