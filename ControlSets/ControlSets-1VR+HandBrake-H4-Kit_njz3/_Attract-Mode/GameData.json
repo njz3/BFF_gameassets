@@ -1,0 +1,13 @@
+{
+  "GameName": "",
+  "Description": "Attract mode launcher",
+  "ExecType": 0,
+  "OutputType": 0,
+  "ProcessName": "attract*",
+  "MainWindowTitle": "*",
+  "PriorityLevel": -1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

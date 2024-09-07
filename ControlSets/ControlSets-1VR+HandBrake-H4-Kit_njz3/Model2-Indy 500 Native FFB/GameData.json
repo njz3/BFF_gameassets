@@ -1,0 +1,13 @@
+{
+  "GameName": "indy500_ffb,indy500d,indy500to",
+  "Description": "Sega Indy 500 Native FFB",
+  "ExecType": 1,
+  "OutputType": 1,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "Indy500_nativeFFB*",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

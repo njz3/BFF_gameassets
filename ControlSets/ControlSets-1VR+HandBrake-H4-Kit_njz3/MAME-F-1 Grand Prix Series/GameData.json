@@ -1,0 +1,13 @@
+{
+  "GameName": "f1gp,f1gp2,f1gpstar,f1gpstr2,f1superb",
+  "Description": "",
+  "ExecType": 3,
+  "OutputType": 2,
+  "ProcessName": "mame*",
+  "MainWindowTitle": "*[f1gp]*|*[f1gp2]*|*[f1gpstar]*|*[f1gpstr2]*|*[f1superb]*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

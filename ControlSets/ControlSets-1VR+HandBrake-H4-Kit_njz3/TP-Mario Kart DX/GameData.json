@@ -1,0 +1,13 @@
+{
+  "GameName": "MKDX",
+  "Description": "",
+  "ExecType": 4,
+  "OutputType": 2,
+  "ProcessName": "MK_AGP3*",
+  "MainWindowTitle": "*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

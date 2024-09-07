@@ -1,0 +1,13 @@
+{
+  "GameName": "smashdrv",
+  "Description": "Gaelco Smashing drive",
+  "ExecType": 0,
+  "OutputType": 2,
+  "ProcessName": "demul*",
+  "MainWindowTitle": "*Drive*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

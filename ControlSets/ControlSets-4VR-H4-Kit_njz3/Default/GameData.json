@@ -1,0 +1,13 @@
+{
+  "GameName": "",
+  "Description": "",
+  "ExecType": 0,
+  "OutputType": 0,
+  "ProcessName": "explorer",
+  "MainWindowTitle": "*",
+  "PriorityLevel": -2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

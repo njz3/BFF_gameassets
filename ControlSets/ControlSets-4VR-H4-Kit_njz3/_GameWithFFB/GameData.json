@@ -1,0 +1,13 @@
+{
+  "GameName": "",
+  "Description": "Game that has native FFB support",
+  "ExecType": 0,
+  "OutputType": 0,
+  "ProcessName": "",
+  "MainWindowTitle": "",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

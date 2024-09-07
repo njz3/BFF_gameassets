@@ -1,0 +1,13 @@
+{
+  "GameName": "tokyobus",
+  "Description": "Tokyo Bus Guide",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "tokyobus.bat",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

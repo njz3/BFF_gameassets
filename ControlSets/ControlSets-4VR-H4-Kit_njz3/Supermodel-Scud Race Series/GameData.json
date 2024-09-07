@@ -1,0 +1,13 @@
+{
+  "GameName": "scud,scudp",
+  "Description": "Scud Race Series",
+  "ExecType": 2,
+  "OutputType": 2,
+  "ProcessName": "supermodel*",
+  "MainWindowTitle": "*scud*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

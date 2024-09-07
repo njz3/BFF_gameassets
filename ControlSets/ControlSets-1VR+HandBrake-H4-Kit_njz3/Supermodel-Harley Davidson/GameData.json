@@ -1,0 +1,13 @@
+{
+  "GameName": "harley",
+  "Description": "Harley Davidson",
+  "ExecType": 2,
+  "OutputType": 2,
+  "ProcessName": "supermodel*",
+  "MainWindowTitle": "*harley*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

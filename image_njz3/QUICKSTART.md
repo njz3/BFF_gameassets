@@ -16,7 +16,7 @@ The SSD is designed to run on a PC with:
 - 4GB RAM minimum
 - Nvidia 1030 graphics adapter or higher (1050Ti recommended)
 - a permanently connected USB keyboard or mouse (in order to be able to use the
-use the DInput keyboard emulation function)
+DInput keyboard emulation function)
 - either a FullHD LCD monitor to enjoy the full range of games, or a 
 CRT monitor supporting 1024x768.
 - if you're using a VideoAmp board, you can use either the 31kHz or 24kHz 
