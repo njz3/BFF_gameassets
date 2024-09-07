@@ -1,0 +1,13 @@
+{
+  "GameName": "finallap,finalap2,finalap3,finalapr",
+  "Description": "",
+  "ExecType": 3,
+  "OutputType": 2,
+  "ProcessName": "mame*",
+  "MainWindowTitle": "*[finallap]*|*[finalap2]*|*[finalap3]*|*[finalapr]*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

@@ -80,7 +80,7 @@
     "IsTracked": false
   },
   {
-    "Name": "SHIFTER UP",
+    "Name": "SHFT UP",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 20,
@@ -90,7 +90,7 @@
     "IsTracked": false
   },
   {
-    "Name": "SHIFTER DOWN",
+    "Name": "SHFT DOWN",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 20,
@@ -100,7 +100,7 @@
     "IsTracked": false
   },
   {
-    "Name": "SHIFTER SIDE",
+    "Name": "SHFT LEFT",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 20,
@@ -110,7 +110,7 @@
     "IsTracked": false
   },
   {
-    "Name": "MUSIC",
+    "Name": "MUSIC/SHFT RIGHT",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 20,

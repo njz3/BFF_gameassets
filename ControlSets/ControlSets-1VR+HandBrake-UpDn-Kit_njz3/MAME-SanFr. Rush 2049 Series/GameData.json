@@ -1,0 +1,13 @@
+{
+  "GameName": "sf2049,sf2049se,sf2049te,sf2049tea",
+  "Description": "",
+  "ExecType": 3,
+  "OutputType": 2,
+  "ProcessName": "mame*",
+  "MainWindowTitle": "*[sf2049]*|*[sf2049se]*|*[sf2049te]*|*[sf2049tea]*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

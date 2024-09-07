@@ -1,0 +1,13 @@
+{
+  "GameName": "daytonas",
+  "Description": "Sega Daytona USA (Saturn Ads)",
+  "ExecType": 1,
+  "OutputType": 1,
+  "ProcessName": "EMULATOR|emulator_multicpu",
+  "MainWindowTitle": "*Saturn*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

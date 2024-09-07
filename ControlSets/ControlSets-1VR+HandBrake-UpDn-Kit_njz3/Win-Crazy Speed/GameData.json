@@ -1,0 +1,13 @@
+{
+  "GameName": "",
+  "Description": "",
+  "ExecType": 0,
+  "OutputType": 0,
+  "ProcessName": "Client_r*",
+  "MainWindowTitle": "*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

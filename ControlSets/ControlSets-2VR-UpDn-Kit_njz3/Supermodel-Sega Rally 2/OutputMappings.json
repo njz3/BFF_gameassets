@@ -33,7 +33,9 @@
   },
   {
     "RawOutputIdx": 4,
-    "MappedRawOutputBit": [],
+    "MappedRawOutputBit": [
+      4
+    ],
     "SequenceDelay_ms": 2000,
     "Sequence": 0
   },

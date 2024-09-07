@@ -1,0 +1,13 @@
+{
+  "GameName": "lemans24",
+  "Description": "Le Mans 24 ",
+  "ExecType": 2,
+  "OutputType": 2,
+  "ProcessName": "supermodel*",
+  "MainWindowTitle": "*Mans*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

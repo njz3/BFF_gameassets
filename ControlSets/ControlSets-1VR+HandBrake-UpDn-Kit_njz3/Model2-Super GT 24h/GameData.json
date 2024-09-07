@@ -1,0 +1,13 @@
+{
+  "GameName": "sgt24h",
+  "Description": "",
+  "ExecType": 1,
+  "OutputType": 1,
+  "ProcessName": "EMULATOR|emulator_multicpu",
+  "MainWindowTitle": "Super*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "vJoyAxisIndex": 0,
+    "RawAxisType": 0,
+    "ControlPoints": [
+      "0,0",
+      "1,1"
+    ],
+    "IsNegativeDirection": false,
+    "IsFullRangeAxis": false,
+    "RawMin_cts": 0,
+    "RawMax_cts": 4095
+  },
+  {
+    "vJoyAxisIndex": 1,
+    "RawAxisType": 0,
+    "ControlPoints": [
+      "0,0",
+      "1,1"
+    ],
+    "IsNegativeDirection": false,
+    "IsFullRangeAxis": false,
+    "RawMin_cts": 0,
+    "RawMax_cts": 4095
+  },
+  {
+    "vJoyAxisIndex": 2,
+    "RawAxisType": 0,
+    "ControlPoints": [
+      "0,0",
+      "1,1"
+    ],
+    "IsNegativeDirection": false,
+    "IsFullRangeAxis": false,
+    "RawMin_cts": 0,
+    "RawMax_cts": 4095
+  },
+  {
+    "vJoyAxisIndex": 3,
+    "RawAxisType": 0,
+    "ControlPoints": [
+      "0,0",
+      "1,1"
+    ],
+    "IsNegativeDirection": false,
+    "IsFullRangeAxis": false,
+    "RawMin_cts": 0,
+    "RawMax_cts": 4095
+  }
+]

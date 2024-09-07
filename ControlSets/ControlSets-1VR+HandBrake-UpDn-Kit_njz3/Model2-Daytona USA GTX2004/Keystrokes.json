@@ -1,0 +1,36 @@
+[
+  {
+    "UniqueName": "Exit",
+    "CombinedKeyStrokes": [
+      1
+    ],
+    "KeySources": [
+      {
+        "Type": 1,
+        "Index": 4,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 1,
+        "Index": 5,
+        "Threshold": 0.75,
+        "InvSign": false
+      },
+      {
+        "Type": 0,
+        "Index": 1,
+        "Threshold": 0.75,
+        "InvSign": false
+      }
+    ],
+    "KeySourcesOperators": [
+      1,
+      0
+    ],
+    "AxisTolerance_pct": 0.1,
+    "HoldTime_ms": 2000,
+    "IsInvertedLogic": false,
+    "KeyAPI": 1
+  }
+]

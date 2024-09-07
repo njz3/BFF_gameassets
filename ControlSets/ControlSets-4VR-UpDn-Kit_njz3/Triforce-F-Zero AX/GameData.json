@@ -1,0 +1,13 @@
+{
+  "GameName": "SBGG",
+  "Description": "",
+  "ExecType": 0,
+  "OutputType": 2,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "F-Zero AX Rev E.bat",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

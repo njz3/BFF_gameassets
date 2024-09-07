@@ -1,0 +1,13 @@
+{
+  "GameName": "SBKP,SBNL",
+  "Description": "",
+  "ExecType": 0,
+  "OutputType": 2,
+  "ProcessName": "dolphin",
+  "MainWindowTitle": "*SBKP*|*SBNL*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

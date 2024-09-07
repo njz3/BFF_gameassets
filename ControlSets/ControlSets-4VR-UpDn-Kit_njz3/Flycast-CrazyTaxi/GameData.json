@@ -1,0 +1,13 @@
+{
+  "GameName": "crzytaxi",
+  "Description": "Crazy Taxis on Flycast",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "crzytaxi.bat",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

@@ -1,0 +1,13 @@
+{
+  "GameName": "ftspeed,wldrider,wrungp",
+  "Description": "Driving game running on Flycast",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "flycast*",
+  "MainWindowTitle": "*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

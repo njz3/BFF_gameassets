@@ -1,0 +1,13 @@
+{
+  "GameName": "srallyc,srallycb,srallyp",
+  "Description": "Sega Rally Champ",
+  "ExecType": 1,
+  "OutputType": 1,
+  "ProcessName": "EMULATOR|emulator_multicpu",
+  "MainWindowTitle": "*Rally*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}
