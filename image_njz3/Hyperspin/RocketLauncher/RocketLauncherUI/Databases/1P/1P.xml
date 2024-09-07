@@ -635,6 +635,16 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
+<game name="hummerextreme" index="true" image="p">
+	<description>Hummer Extreme</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2009</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
 <game name="ID4" index="true" image="p">
 	<description>Initial D4</description>
 	<cloneof></cloneof>
@@ -757,6 +767,16 @@
 	<rating>TP Serial</rating>
 	<enabled>Yes</enabled>
 </game>
+<game name="MaximumHeat" index="true" image="p">
+	<description>Maximum Heat</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, /!\ Serial only</manufacturer>
+    <year>2011</year>
+	<genre></genre>
+	<rating>TP Serial</rating>
+	<enabled>Yes</enabled>
+</game>
 <game name="nicktoons" index="true" image="p">
 	<description>Nicktoons NitroRacing</description>
 	<cloneof></cloneof>
@@ -783,6 +803,16 @@
 	<crc></crc>
 	<manufacturer>Konami, *FFB*</manufacturer>
 	<year>2007</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="rtuned" index="true" image="p">
+	<description>R-Tuned</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
 	<genre></genre>
 	<rating></rating>
 	<enabled>Yes</enabled>
@@ -939,16 +969,6 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
-<game name="rtuned" index="true" image="p">
-	<description>R-Tuned</description>
-	<cloneof></cloneof>
-	<crc></crc>
-	<manufacturer>Sega, *FFB*</manufacturer>
-	<year>2008</year>
-	<genre></genre>
-	<rating></rating>
-	<enabled>Yes</enabled>
-</game>
 <game name="tokyocop" index="true" image="p">
 	<description>Tokyo Cop</description>
 	<cloneof></cloneof>
@@ -964,6 +984,16 @@
 	<cloneof></cloneof>
 	<crc></crc>
 	<manufacturer>Taito</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="WR" index="true" image="p">
+	<description>Wacky Races</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Banpresto, *FFB*</manufacturer>
 	<year>2008</year>
 	<genre></genre>
 	<rating></rating>
@@ -996,7 +1026,7 @@
 	<manufacturer>Namco, *FFB*</manufacturer>
 	<year>2014</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <game name="WMMT5DX" index="true" image="p">
@@ -1019,12 +1049,12 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
-<game name="WR" index="true" image="p">
-	<description>Wacky Races</description>
+<game name="WastelandRacers" index="true" image="p">
+	<description>Wasteland Racers</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Banpresto, *FFB*</manufacturer>
-	<year>2008</year>
+	<manufacturer>TrioTech</manufacturer>
+	<year>2006</year>
 	<genre></genre>
 	<rating></rating>
 	<enabled>Yes</enabled>

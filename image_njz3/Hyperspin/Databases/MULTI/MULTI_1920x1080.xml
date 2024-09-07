@@ -424,6 +424,16 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
+<game name="hummerextreme" index="true" image="p">
+	<description>Hummer Extreme</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2009</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
 <game name="ID5" index="true" image="p">
 	<description>Initial D5</description>
 	<cloneof></cloneof>
@@ -504,6 +514,18 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
+<!--
+<game name="rtuned" index="true" image="p">
+	<description>R-Tuned</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+-->
 <game name="Sega Rally 3" index="true" image="p">
 	<description>Sega Rally 3</description>
 	<cloneof></cloneof>
@@ -653,16 +675,6 @@
 	<crc></crc>
 	<manufacturer>Sega</manufacturer>
 	<year>2018</year>
-	<genre></genre>
-	<rating></rating>
-	<enabled>Yes</enabled>
-</game>
-<game name="rtuned" index="true" image="p">
-	<description>R-Tuned</description>
-	<cloneof></cloneof>
-	<crc></crc>
-	<manufacturer>Sega, *FFB*</manufacturer>
-	<year>2008</year>
 	<genre></genre>
 	<rating></rating>
 	<enabled>Yes</enabled>

@@ -1,18 +1,10 @@
 Distribution Sega Racer 2022-2024 - njz3
-----------------------------------------
 
-FOR ENGLISH TRANSLATION, PLEASE USE https://www.deepl.com/ OR https://translate.google.com/
-AND COPY-PASTE THE WHOLE CONTENT TO GET THE TRANSLATED DOCUMENT.
-
-An up-to-date online version of the QUICKSTART and README files are available here:
-Une version en ligne à jour du fichier README est disponible ici :
-
-https://github.com/njz3/BFF_gameassets/blob/main/image_njz3/README.md
-https://github.com/njz3/BFF_gameassets/blob/main/image_njz3/QUICKSTART.md
+FOR ENGLISH TRANSLATION, PLEASE USE https://www.deepl.com/ or https://translate.google.com/
 
 # A propos
 
-Cette image disque est basée sur un Windows 10 Entreprise dont la configuration
+Cette image disque est basée sur un Windows 10 entreprise dont la configuration
 a été adaptée aux racecabs.
 Elle propose un Hyperspin basé sur Maximum Car de HFS Play, avec la plupart des
 jeux et emulateurs pré-configurés pour être jouables immédiatement en mode 
@@ -46,9 +38,6 @@ en 15 kHz avec le videoamp en mode 1280x240p ou 1280x480i.
 # Configuration Hardware
 
 > **IMPORTANT**
-> Pour que les disques se lancent, vous devez configurer votre BIOS de carte mère
-> pour démarrer sur le port SATA sur lequel est monté le disque, désactiver le 
-> "Secure Boot" et utiliser le mode de démarrage "Legacy BIOS" (MBR), et non UEFI.
 > Au premier démarrage, laisser le temps à Windows de démarrer puis installer
 > vos drivers.
 
@@ -71,26 +60,13 @@ possible avec moins de jeux (uniquement MAME, model 1/2/3 et Naomi via Flycast).
 
 ## Reseau
 
-Le fonctionnement en multiplayer (ou link) est déjà prévu dans les images.
-Vous pouvez soit relié en direct 2 ordinateurs (cable croisé inutile) sans 
-avoir besoin d'accès à internet, soit utiliser un switch pour relier plus de 2
-ordinateurs, ou relier vos ordinateurs à un réseau domestique et à internet.
-Dans tous les cas, il est nécessaire de re-configurer les paramètres réseau
-car ceux-ci sont en général perdus après installation du disque dans votre 
-ordinateur.
-Allez dans la page de configuration du réseau et définissez les paramètres 
-suivants :
+IP: 192.168.1.4 pour cabine 1 (ou 192.168.1.5 ou .6, .7, .. selon la cabine en multi)
+Masque de sous-réseau: 255.255.255.0
+Passerelle : 192.168.1.254 (modifable selon votre réseau LAN en 192.168.1.1)
+DNS : 8.8.8.8 ou 8.8.4.4 (DNS de Google)
+Broadcast address: 192.168.1.255
 
-- adresse IPv4: 192.168.1.4 pour cabine 1 (ou 192.168.1.5 pour cabine 2,et .6
-ou .7, ou .X .. selon la cabine en multi). Certains jeux comme Daytona 2
-supportent jusqu'à 8 ou 16 machines en multiplayer.
-- Masque de sous-réseau: 255.255.255.0
-- Passerelle : 192.168.1.254 (modifable selon votre réseau LAN en 192.168.1.1)
-- DNS : 8.8.8.8 ou 8.8.4.4 (DNS de Google)
-- Broadcast address: 192.168.1.255
-
-Toujours dans la configuration réseau, mettre réseau privé et désactivez le
-Firewall.
+Mettre réseau privé et désactiver le Firewall.
 
 > **Note:**
 Pour le jeu en réseau sur model 2 emulator (Sega Rally, Daytona 1, etc.)
@@ -118,13 +94,11 @@ Sont pré-installés :
 
 ## Mots de passe et prise en main à distance
 
-Par défaut, Teamviewer et TightVNC (mode serveur) sont préinstallés et le 
-bureau à distance est activé. 
-Attention, il est de votre responsabilité de protéger votre réseau d'un accès
-extérieur.
-
+Par défaut, Teamviewer et TightVNC (mode serveur) sont préinstallés.
 Le mot de passe de session pour l'utilisateur Racecab (admin) est `racecab`
+Le mot de passe pour Teamviewer est `Racecab22!`
 Le mot de passe pour VNC est `racecab`
+
 
 ## Démarrage automatique d'un jeu
 
@@ -455,6 +429,13 @@ d'avoir un switch 1Gbs et d'activer le mode "Jumbo Frame", voir au début
 de ce document.
 La touche pour quitter l'émulateur est Alt+F4.
 
+## Jeux Model 3
+
+Supermodel permet d'utiliser un shifter Up/Down pour les jeux à 4 vitesses,
+ainsi il n'est pas nécessaire d'activer une émulation de séquence pour émuler
+un shifter H4 depuis un Up/Down. Les paramètres sont "InputGearShiftUp" et
+"InputGearShiftDown". Mais il reste tout à fait possible d'utiliser une
+séquence ou directement un shifter H4 via le decodeur du BFF.
 
 ## Jeux Teknoparrot
 
@@ -498,6 +479,11 @@ championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 
 
 # Change log
+
+---
+2024-08-09:
+- Update BFF 0.7.0.144, TP 1340, MAME 0.268 (no nag), MAME FFB plugin, Supermodel
+- Add Wasteland Racers
 
 ---
 2024-06-14:
