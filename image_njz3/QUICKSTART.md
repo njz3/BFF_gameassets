@@ -106,6 +106,35 @@ access.
 The session password for the Racecab (admin) user is `racecab`.
 The password for VNC is `racecab`.
 
+## BACKFORCEFEEDER LICENCE AND TARGET HARDWARE
+
+You need to register the BackForceFeeder software to get a licence file and
+remove the trial period.
+This licence file is generated based on your CPU and motherboard serial
+numbers. Those information are combined to a unique machine ID code that
+you can see in the "About" dialog of the BackForceFeeder (BFF) software.
+You need to open the BFF main window by clicking on "show" on the BFF tray
+icon, or start the GUI version if the software is not started yet.
+
+Then, to get a license, please send an email to `bff.register@gmail.com`
+with your machine ID code XXXXX and a paypal donation to the author (amount is 
+free, nevertheless a minimum of 20euros per licence is asked). Once you have
+the license-XXXXXX.dat file, copy it to the following directory:
+`C:\Users\Racecab\Documents\BackForceFeeder\`
+
+Restart the BFF and check in the About dialog that your software is registered.
+
+Once your BFF is registered, you can change the target hardware (commnunication
+protocol with your motor board) to the one of your cabinet.
+The target hardware can be changed in the "App&Hardware" dialog of the BFF.
+Open the window and check if the current target hardware matches your cabinet.
+If not, switch off the "manager" (click on the green status manager button),
+then select another target hardware, then restart the manager (click on the 
+now red status button). Finally, save your changes in the arduino board by 
+clicking on "save to eprom & reset" button while the manager is running (status
+in green).
+
+
 # FRANCAIS
 
 ## CONFIGURATION MINIMALE PC
@@ -211,3 +240,37 @@ extérieur.
 
 Le mot de passe de session pour l'utilisateur Racecab (admin) est `racecab`
 Le mot de passe pour VNC est `racecab`
+
+## LICENCE BACKFORCEFEEDER ET MATÉRIEL CIBLE
+
+Vous devez enregistrer le logiciel BackForceFeeder pour obtenir un fichier de
+licence et supprimer la période d'essai.
+Ce fichier de licence est généré à partir des numéros de série de votre 
+processeur et de votre carte mère. Ces informations sont combinées pour donner
+un code d'identification unique de la machine que vous pouvez voir dans la 
+la fenêtre "A propos" du logiciel BackForceFeeder (BFF).
+Vous devez ouvrir la fenêtre principale du BFF en cliquant sur le menu 
+"Afficher" de l'icône BFF dans la barre des tâches, ou en démarrant la version
+GUI du BFF si le logiciel n'est pas encore démarré.
+
+Ensuite, pour obtenir une licence, envoyez un courriel à 
+`bff.register@gmail.com` en indiquant le code d'identification XXXXX de 
+votre machine et un don paypal à l'auteur (le montant est libre, néanmoins un 
+minimum de 20euros par licence est demandé). Une fois que vous avez
+le fichier license-XXXXXX.dat, copiez-le dans le répertoire suivant :
+`C:\Users\Racecab\Documents\BackForceFeeder\`
+
+Redémarrez le BFF et vérifiez dans la boîte de dialogue "A propos" que votre
+logiciel est bien enregistré.
+
+Une fois que votre BFF est enregistré, vous pouvez changer le matériel cible 
+(protocole de communication avec votre carte moteur) pour celui de votre 
+matériel.
+Le matériel cible peut être modifié dans la fenêtre "App&Matériel" du BFF.
+Ouvrez la fenêtre et vérifiez si le matériel cible actuel correspond à votre 
+matériel. Si ce n'est pas le cas, désactivez le "manager" (cliquez sur le 
+bouton vert indiquant l'état du manager), sélectionnez ensuite un autre 
+matériel cible, puis redémarrez le gestionnaire (cliquez sur le bouton d'état
+qui est maintenant rouge). Enfin, sauvegardez vos modifications sur la carte
+arduino en cliquant sur le bouton « sauv.eprom & reset » pendant que le manager
+est en cours d'exécution (statut en vert).
