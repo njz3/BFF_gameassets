@@ -1,0 +1,13 @@
+{
+  "GameName": "initd,initdexp,initdv2j,initdv3e",
+  "Description": "Initial D 123 series running on Flycast",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "initd*.bat",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

@@ -1,0 +1,13 @@
+{
+  "GameName": "outrun",
+  "Description": "Sega Out Run",
+  "ExecType": 3,
+  "OutputType": 2,
+  "ProcessName": "mame*",
+  "MainWindowTitle": "*[outrun]*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

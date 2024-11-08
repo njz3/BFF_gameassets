@@ -1,0 +1,13 @@
+{
+  "GameName": "indy500,indy500d,indy500to",
+  "Description": "Sega Indy 500",
+  "ExecType": 1,
+  "OutputType": 1,
+  "ProcessName": "EMULATOR|emulator_multicpu",
+  "MainWindowTitle": "indian*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

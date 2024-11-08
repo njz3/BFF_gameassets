@@ -1,0 +1,13 @@
+{
+  "GameName": "sfrush,sfrushrk",
+  "Description": "",
+  "ExecType": 3,
+  "OutputType": 2,
+  "ProcessName": "mame*",
+  "MainWindowTitle": "*[sfrush]*|*[sfrushrk]*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

@@ -1,0 +1,13 @@
+{
+  "GameName": "GFZP01",
+  "Description": "",
+  "ExecType": 0,
+  "OutputType": 2,
+  "ProcessName": "Dolphin",
+  "MainWindowTitle": "*Dolphin*GFZP01*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

@@ -1,0 +1,13 @@
+{
+  "GameName": "FNF,FNFDrift",
+  "Description": "",
+  "ExecType": 4,
+  "OutputType": 2,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "FNF.bat|FNFDrift.bat",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

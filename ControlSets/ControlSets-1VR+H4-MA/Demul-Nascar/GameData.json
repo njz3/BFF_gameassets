@@ -1,0 +1,13 @@
+{
+  "GameName": "sgnascar",
+  "Description": "Sega Nascar on Hikaru",
+  "ExecType": 0,
+  "OutputType": 2,
+  "ProcessName": "demul*",
+  "MainWindowTitle": "*NASCAR*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

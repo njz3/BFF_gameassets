@@ -1,0 +1,13 @@
+{
+  "GameName": "winrun,winrun91,winrungp",
+  "Description": "",
+  "ExecType": 3,
+  "OutputType": 2,
+  "ProcessName": "mame*",
+  "MainWindowTitle": "*[winrun]*|*[winrun91]*|*[winrungp]*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

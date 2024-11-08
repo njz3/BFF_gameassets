@@ -481,6 +481,11 @@ championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 # Change log
 
 ---
+2024-11-08:
+- Update BFF 0.7.0.159, MAME 0.271 (no nag), MAME FFB plugin, Supermodel
+- Fix flycast FFB: removed FFB plugin
+
+---
 2024-08-09:
 - Update BFF 0.7.0.144, TP 1340, MAME 0.268 (no nag), MAME FFB plugin, Supermodel
 - Add Wasteland Racers

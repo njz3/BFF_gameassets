@@ -1,0 +1,104 @@
+[
+  {
+    "RawOutputIdx": 0,
+    "MappedRawOutputBit": [
+      2
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 1,
+    "MappedRawOutputBit": [
+      7
+    ],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 2,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 3,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 4,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 5,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 6,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 7,
+    "MappedRawOutputBit": [
+      7
+    ],
+    "SequenceDelay_ms": 1000,
+    "Sequence": 1
+  },
+  {
+    "RawOutputIdx": 8,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 9,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 10,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 11,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 12,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 13,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 14,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 15,
+    "MappedRawOutputBit": [],
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  }
+]

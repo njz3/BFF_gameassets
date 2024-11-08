@@ -1,0 +1,13 @@
+{
+  "GameName": "",
+  "Description": "Road fighters 3D on Konami PC",
+  "ExecType": 0,
+  "OutputType": 0,
+  "ProcessName": "spice*",
+  "MainWindowTitle": "*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

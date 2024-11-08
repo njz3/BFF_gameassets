@@ -1,0 +1,13 @@
+{
+  "GameName": "Project Cars - Pagani Edition",
+  "Description": "",
+  "ExecType": 0,
+  "OutputType": 0,
+  "ProcessName": "pCARS64*",
+  "MainWindowTitle": "Project Cars*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}
