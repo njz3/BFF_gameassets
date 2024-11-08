@@ -644,12 +644,12 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>NamcoMkdx</EmulationProfile>
-  <GameProfileRevision>6</GameProfileRevision>
+  <GameProfileRevision>8</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
   <EmulatorType>TeknoParrot</EmulatorType>
-  <Patreon>true</Patreon>
+  <Patreon>false</Patreon>
   <RequiresAdmin>false</RequiresAdmin>
   <msysType>0</msysType>
   <InvertedMouseAxis>false</InvertedMouseAxis>
@@ -667,4 +667,5 @@
   <GasAxisMax>255</GasAxisMax>
   <OnlineProfileURL>https://teknoparrot.com/OnlineProfile/MKDX</OnlineProfileURL>
   <IsLegacy>false</IsLegacy>
+  <HasTpoSupport>true</HasTpoSupport>
 </GameProfile>

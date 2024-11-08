@@ -67,6 +67,7 @@
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+      <Hint>Enter Virtual Key Code Hex Value!</Hint>
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Keypad</CategoryName>
@@ -76,6 +77,7 @@
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+      <Hint>Enter Virtual Key Code Hex Value!</Hint>
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Keypad</CategoryName>
@@ -85,6 +87,7 @@
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+      <Hint>Enter Virtual Key Code Hex Value!</Hint>
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Keypad</CategoryName>
@@ -94,6 +97,7 @@
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+      <Hint>Enter Virtual Key Code Hex Value!</Hint>
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Keypad</CategoryName>
@@ -103,6 +107,7 @@
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+      <Hint>Enter Virtual Key Code Hex Value!</Hint>
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Keypad</CategoryName>
@@ -112,6 +117,7 @@
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+      <Hint>Enter Virtual Key Code Hex Value!</Hint>
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Keypad</CategoryName>
@@ -121,6 +127,7 @@
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+      <Hint>Enter Virtual Key Code Hex Value!</Hint>
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Keypad</CategoryName>
@@ -130,6 +137,7 @@
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+      <Hint>Enter Virtual Key Code Hex Value!</Hint>
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Keypad</CategoryName>
@@ -139,6 +147,7 @@
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+      <Hint>Enter Virtual Key Code Hex Value!</Hint>
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Keypad</CategoryName>
@@ -148,6 +157,7 @@
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+      <Hint>Enter Virtual Key Code Hex Value!</Hint>
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Keypad</CategoryName>
@@ -157,6 +167,7 @@
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+      <Hint>Enter Virtual Key Code Hex Value!</Hint>
     </FieldInformation>
     <FieldInformation>
       <CategoryName>Keypad</CategoryName>
@@ -166,6 +177,7 @@
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
       <FieldOptions />
+      <Hint>Enter Virtual Key Code Hex Value!</Hint>
     </FieldInformation>
   </ConfigValues>
   <JoystickButtons>
@@ -578,7 +590,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>DeadHeat</EmulationProfile>
-  <GameProfileRevision>6</GameProfileRevision>
+  <GameProfileRevision>7</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
@@ -601,4 +613,5 @@
   <GasAxisMax>255</GasAxisMax>
   <OnlineProfileURL />
   <IsLegacy>false</IsLegacy>
+  <HasTpoSupport>false</HasTpoSupport>
 </GameProfile>

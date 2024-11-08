@@ -4,5 +4,6 @@ TITLE %~nx0
 CONSOLESTATE /Min
 
 set GAME=ID4Jap.xml
+
 ::Start game
 TeknoParrotUi.exe --profile=%GAME% --startMinimized

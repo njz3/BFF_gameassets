@@ -203,6 +203,16 @@
       <FieldOptions />
     </FieldInformation>
     <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>No Handicap</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+      <Hint>Disable Rubberbanding during network play if all players enable</Hint>
+    </FieldInformation>
+    <FieldInformation>
       <CategoryName>Score</CategoryName>
       <FieldName>Enable Submission</FieldName>
       <FieldValue>0</FieldValue>
@@ -629,7 +639,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>Outrun2SPX</EmulationProfile>
-  <GameProfileRevision>34</GameProfileRevision>
+  <GameProfileRevision>36</GameProfileRevision>
   <HasSeparateTestMode>true</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
@@ -651,4 +661,5 @@
   <GasAxisMax>255</GasAxisMax>
   <OnlineProfileURL />
   <IsLegacy>false</IsLegacy>
+  <HasTpoSupport>true</HasTpoSupport>
 </GameProfile>
