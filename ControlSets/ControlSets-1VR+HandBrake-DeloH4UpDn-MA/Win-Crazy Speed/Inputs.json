@@ -160,7 +160,7 @@
     "IsTracked": false
   },
   {
-    "Name": "Rx0/H4.NEUTRAL",
+    "Name": "Rx0",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -170,7 +170,7 @@
     "IsTracked": false
   },
   {
-    "Name": "Rx1/H4.REVERSE",
+    "Name": "Rx1",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
