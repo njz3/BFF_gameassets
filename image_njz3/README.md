@@ -481,6 +481,15 @@ championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 # Change log
 
 ---
+2024-11-28:
+- Update Teknoparrot
+- Fix OutRun2 SP DX not working with latest Teknoparrot
+- Add files for 3840x2160 resolution
+- Fix WackyRace brake pedal
+- Removed directories for Supermodel with FFB plugin
+- Add CrazyRide (1P)
+
+---
 2024-11-08:
 - Update BFF 0.7.0.159, MAME 0.271 (no nag), MAME FFB plugin, Supermodel
 - Fix flycast FFB: removed FFB plugin

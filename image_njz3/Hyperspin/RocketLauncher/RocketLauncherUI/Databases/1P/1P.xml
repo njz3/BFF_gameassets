@@ -483,14 +483,14 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
-<game name="CruisnBlast" index="true" image="p">
-	<description>Cruis'n Blast</description>
+<game name="CrazyRide" index="true" image="p">
+	<description>Crazy Ride</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>RawThrills, /!\ Serial only</manufacturer>
-	<year>2017</year>
+	<manufacturer></manufacturer>
+	<year>2019</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <!--
@@ -505,6 +505,16 @@
 	<enabled>Yes</enabled>
 </game>
 -->
+<game name="CruisnBlast" index="true" image="p">
+	<description>Cruis'n Blast</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills, /!\ Serial only</manufacturer>
+	<year>2017</year>
+	<genre></genre>
+	<rating>TP Serial</rating>
+	<enabled>Yes</enabled>
+</game>
 <game name="D1GP" index="true" image="p">
 	<description>D1GP Arcade</description>
 	<cloneof></cloneof>
@@ -539,10 +549,10 @@
 	<description>Dead Heat</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Namco, /!\ Serial only</manufacturer>
+	<manufacturer>Namco</manufacturer>
 	<year>2010</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <game name="dirtdrivin" index="true" image="p">
@@ -599,10 +609,10 @@
 	<description>Gaelco Championship Tuning Race</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Gaelco, /!\ Serial only</manufacturer>
+	<manufacturer>Gaelco</manufacturer>
 	<year>2005</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <game name="GRIDAutospor" index="true" image="p">
@@ -761,10 +771,10 @@
 	<description>Mario Kart DX V1.18</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Namco, /!\ Serial only</manufacturer>
+	<manufacturer>Namco</manufacturer>
     <year>2013</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <game name="MaximumHeat" index="true" image="p">
@@ -827,6 +837,7 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
+<!--
 <game name="Sega Rally 3 - ArticEdition" index="true" image="p">
 	<description>Sega Rally 3 - ArticEdition</description>
 	<cloneof></cloneof>
@@ -897,6 +908,7 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
+-->
 <!--
 <game name="Sega Rally 3 Revo PC" index="true" image="p">
 	<description>Sega Rally 3 Revo PC</description>
@@ -1003,10 +1015,10 @@
 	<description>Wangan Midnight Max Tune 3</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Namco, /!\ Serial only</manufacturer>
+	<manufacturer>Namco, *FFB*</manufacturer>
 	<year>2007</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <game name="WMMT3DX" index="true" image="p">
@@ -1053,10 +1065,10 @@
 	<description>Wasteland Racers</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>TrioTech</manufacturer>
+	<manufacturer>TrioTech, *FFB*, /!\ Serial only</manufacturer>
 	<year>2006</year>
 	<genre></genre>
-	<rating></rating>
+	<rating>TP Serial</rating>
 	<enabled>Yes</enabled>
 </game>
 
@@ -1942,10 +1954,10 @@
 	<description>Dead Heat Riders</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Namco, /!\ Serial only</manufacturer>
+	<manufacturer>Namco</manufacturer>
 	<year>2007</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <game name="enduror" index="" image="">

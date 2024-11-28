@@ -353,14 +353,14 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
-<game name="CruisnBlast" index="true" image="p">
-	<description>Cruis'n Blast</description>
+<game name="CrazyRide" index="true" image="p">
+	<description>Crazy Ride</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>RawThrills, /!\ Serial only</manufacturer>
-	<year>2017</year>
+	<manufacturer></manufacturer>
+	<year>2019</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <!--
@@ -375,6 +375,16 @@
 	<enabled>Yes</enabled>
 </game>
 -->
+<game name="CruisnBlast" index="true" image="p">
+	<description>Cruis'n Blast</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills, /!\ Serial only</manufacturer>
+	<year>2017</year>
+	<genre></genre>
+	<rating>TP Serial</rating>
+	<enabled>Yes</enabled>
+</game>
 <game name="D1GP" index="true" image="p">
 	<description>D1GP Arcade</description>
 	<cloneof></cloneof>

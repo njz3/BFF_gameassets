@@ -484,16 +484,14 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
- -->
-<!--
-<game name="CruisnBlast" index="true" image="p">
-	<description>Cruis'n Blast</description>
+<game name="CrazyRide" index="true" image="p">
+	<description>Crazy Ride</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>RawThrills, /!\ Serial only</manufacturer>
-	<year>2017</year>
+	<manufacturer></manufacturer>
+	<year>2019</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <game name="crazyspeed" index="true" image="p">
@@ -504,6 +502,16 @@
 	<year>2006</year>
 	<genre></genre>
 	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="CruisnBlast" index="true" image="p">
+	<description>Cruis'n Blast</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>RawThrills, /!\ Serial only</manufacturer>
+	<year>2017</year>
+	<genre></genre>
+	<rating>TP Serial</rating>
 	<enabled>Yes</enabled>
 </game>
 <game name="D1GP" index="true" image="p">
@@ -540,10 +548,10 @@
 	<description>Dead Heat</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Namco, /!\ Serial only</manufacturer>
+	<manufacturer>Namco</manufacturer>
 	<year>2010</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <game name="dirtdrivin" index="true" image="p">
@@ -600,10 +608,10 @@
 	<description>Gaelco Championship Tuning Race</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Gaelco, /!\ Serial only</manufacturer>
+	<manufacturer>Gaelco</manufacturer>
 	<year>2005</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <game name="GRIDAutospor" index="true" image="p">
@@ -632,6 +640,16 @@
 	<crc></crc>
 	<manufacturer>RawThrills, *FFB*</manufacturer>
 	<year>2013</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="hummerextreme" index="true" image="p">
+	<description>Hummer Extreme</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2009</year>
 	<genre></genre>
 	<rating></rating>
 	<enabled>Yes</enabled>
@@ -706,8 +724,6 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
--->
-<!--
 <game name="IDZv2TP" index="true" image="p">
 	<description>Initial D Zero V2.30</description>
 	<cloneof></cloneof>
@@ -718,8 +734,6 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
--->
-<!--
 <game name="kodrive" index="true" image="p">
 	<description>K.O. Drive</description>
 	<cloneof></cloneof>
@@ -754,8 +768,18 @@
 	<description>Mario Kart DX V1.18</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Namco, /!\ Serial only</manufacturer>
+	<manufacturer>Namco</manufacturer>
     <year>2013</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="MaximumHeat" index="true" image="p">
+	<description>Maximum Heat</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Namco, /!\ Serial only</manufacturer>
+    <year>2011</year>
 	<genre></genre>
 	<rating>TP Serial</rating>
 	<enabled>Yes</enabled>
@@ -770,6 +794,7 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
+-->
 <game name="or2spdx" index="true" image="p">
 	<description>Out Run 2 SP DX</description>
 	<cloneof></cloneof>
@@ -780,12 +805,23 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
+<!--
 <game name="rf3d" index="true" image="p">
 	<description>Road Fighter 3D</description>
 	<cloneof></cloneof>
 	<crc></crc>
 	<manufacturer>Konami, *FFB*</manufacturer>
 	<year>2007</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
+<game name="rtuned" index="true" image="p">
+	<description>R-Tuned</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Sega, *FFB*</manufacturer>
+	<year>2008</year>
 	<genre></genre>
 	<rating></rating>
 	<enabled>Yes</enabled>
@@ -882,8 +918,6 @@
 	<rating></rating>
 	<enabled>No</enabled>
 </game>
--->
-<!--
 <game name="Showdown" index="true" image="p">
 	<description>Showdown</description>
 	<cloneof></cloneof>
@@ -944,16 +978,6 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
-<game name="rtuned" index="true" image="p">
-	<description>R-Tuned</description>
-	<cloneof></cloneof>
-	<crc></crc>
-	<manufacturer>Sega, *FFB*</manufacturer>
-	<year>2008</year>
-	<genre></genre>
-	<rating></rating>
-	<enabled>Yes</enabled>
-</game>
 <game name="tokyocop" index="true" image="p">
 	<description>Tokyo Cop</description>
 	<cloneof></cloneof>
@@ -974,14 +998,24 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
+<game name="WR" index="true" image="p">
+	<description>Wacky Races</description>
+	<cloneof></cloneof>
+	<crc></crc>
+	<manufacturer>Banpresto, *FFB*</manufacturer>
+	<year>2008</year>
+	<genre></genre>
+	<rating></rating>
+	<enabled>Yes</enabled>
+</game>
 <game name="WMMT3" index="true" image="p">
 	<description>Wangan Midnight Max Tune 3</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Namco, /!\ Serial only</manufacturer>
+	<manufacturer>Namco, *FFB*</manufacturer>
 	<year>2007</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <game name="WMMT3DX" index="true" image="p">
@@ -1001,7 +1035,7 @@
 	<manufacturer>Namco, *FFB*</manufacturer>
 	<year>2014</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 <game name="WMMT5DX" index="true" image="p">
@@ -1024,14 +1058,14 @@
 	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
-<game name="WR" index="true" image="p">
-	<description>Wacky Races</description>
+<game name="WastelandRacers" index="true" image="p">
+	<description>Wasteland Racers</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Banpresto, *FFB*</manufacturer>
-	<year>2008</year>
+	<manufacturer>TrioTech, *FFB*, /!\ Serial only</manufacturer>
+	<year>2006</year>
 	<genre></genre>
-	<rating></rating>
+	<rating>TP Serial</rating>
 	<enabled>Yes</enabled>
 </game>
 -->
@@ -1919,10 +1953,10 @@
 	<description>Dead Heat Riders</description>
 	<cloneof></cloneof>
 	<crc></crc>
-	<manufacturer>Namco, /!\ Serial only</manufacturer>
+	<manufacturer>Namco</manufacturer>
 	<year>2007</year>
 	<genre></genre>
-	<rating>TP Serial</rating>
+	<rating></rating>
 	<enabled>Yes</enabled>
 </game>
 -->
