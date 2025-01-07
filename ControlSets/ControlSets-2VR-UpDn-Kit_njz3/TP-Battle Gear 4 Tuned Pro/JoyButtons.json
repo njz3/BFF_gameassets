@@ -24,10 +24,10 @@
     "Name": "Sidebrake"
   },
   {
-    "Name": "ShiftUp"
+    "Name": ""
   },
   {
-    "Name": "ShiftDown"
+    "Name": ""
   },
   {
     "Name": ""
@@ -51,7 +51,7 @@
     "Name": "Clutch"
   },
   {
-    "Name": "Reverse"
+    "Name": ""
   },
   {
     "Name": "Gear1"
@@ -60,16 +60,16 @@
     "Name": "Gear2"
   },
   {
-    "Name": "Gear3"
+    "Name": "Gear3/Up"
   },
   {
-    "Name": "Gear4"
+    "Name": "Gear4/Dn"
   },
   {
     "Name": "Gear5"
   },
   {
-    "Name": "Gear6"
+    "Name": "Gear6/Rv"
   },
   {
     "Name": ""

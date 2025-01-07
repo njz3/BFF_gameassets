@@ -4,8 +4,8 @@
   <GameNameInternal>Let's Go Safari</GameNameInternal>
   <GameGenreInternal>Racing</GameGenreInternal>
   <GamePath>..\..\Games\Let's Go Safari - SEGA Ringwide\GameSampR_RingWide.exe</GamePath>
-  <TestMenuParameter>-t</TestMenuParameter>
-  <TestMenuIsExecutable>false</TestMenuIsExecutable>
+  <TestMenuParameter>GameTestR_RingWide.exe</TestMenuParameter>
+  <TestMenuIsExecutable>true</TestMenuIsExecutable>
   <ExtraParameters />
   <TestMenuExtraParameters />
   <IconName>Icons/LGS.png</IconName>
@@ -69,6 +69,24 @@
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Use Keyboard/Button For Axis</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Keyboard/Button Axis Wheel Sensitivity</FieldName>
+      <FieldValue>10</FieldValue>
+      <FieldType>Slider</FieldType>
+      <FieldMin>1</FieldMin>
+      <FieldMax>127</FieldMax>
       <FieldOptions />
     </FieldInformation>
   </ConfigValues>
@@ -212,7 +230,7 @@
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
-      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithKeyboardForAxis>true</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
       <HideWithRelativeAxis>false</HideWithRelativeAxis>
       <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
@@ -228,14 +246,14 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Handle L</ButtonName>
-      <InputMapping>ExtensionOne17</InputMapping>
-      <AnalogType>None</AnalogType>
+      <ButtonName>Wheel Axis Left</ButtonName>
+      <InputMapping>Analog0</InputMapping>
+      <AnalogType>Wheel</AnalogType>
       <HideWithDirectInput>false</HideWithDirectInput>
-      <HideWithXInput>false</HideWithXInput>
+      <HideWithXInput>true</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
-      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>true</HideWithoutKeyboardForAxis>
       <HideWithRelativeAxis>false</HideWithRelativeAxis>
       <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
       <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
@@ -250,14 +268,14 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Handle R</ButtonName>
-      <InputMapping>ExtensionOne18</InputMapping>
-      <AnalogType>None</AnalogType>
+      <ButtonName>Wheel Axis Right</ButtonName>
+      <InputMapping>Analog0</InputMapping>
+      <AnalogType>Wheel</AnalogType>
       <HideWithDirectInput>false</HideWithDirectInput>
-      <HideWithXInput>false</HideWithXInput>
+      <HideWithXInput>true</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
-      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>true</HideWithoutKeyboardForAxis>
       <HideWithRelativeAxis>false</HideWithRelativeAxis>
       <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
       <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
@@ -603,7 +621,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>LGS</EmulationProfile>
-  <GameProfileRevision>14</GameProfileRevision>
+  <GameProfileRevision>15</GameProfileRevision>
   <HasSeparateTestMode>true</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>

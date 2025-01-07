@@ -4,7 +4,7 @@ TITLE %~nx0
 CONSOLESTATE /Min
 
 :: Set CAB_ID
-set CAB_ID=_single
+CALL set_cab_id.bat
 
 set GAME=WMMT5DXPlus.xml
 

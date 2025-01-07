@@ -262,7 +262,7 @@
     <JoystickButtons>
       <ButtonName>Shift Down</ButtonName>
       <DirectInputButton>
-        <Button>56</Button>
+        <Button>57</Button>
         <IsAxis>false</IsAxis>
         <IsAxisMinus>false</IsAxisMinus>
         <IsFullAxis>false</IsFullAxis>
@@ -272,8 +272,8 @@
       </DirectInputButton>
       <InputMapping>P2ButtonDown</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons8</BindNameDi>
-      <BindName>Joystick Buttons8</BindName>
+      <BindNameDi>Joystick Buttons9</BindNameDi>
+      <BindName>Joystick Buttons9</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -295,7 +295,7 @@
     <JoystickButtons>
       <ButtonName>Shift Up</ButtonName>
       <DirectInputButton>
-        <Button>57</Button>
+        <Button>56</Button>
         <IsAxis>false</IsAxis>
         <IsAxisMinus>false</IsAxisMinus>
         <IsFullAxis>false</IsFullAxis>
@@ -305,8 +305,8 @@
       </DirectInputButton>
       <InputMapping>P2ButtonUp</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons9</BindNameDi>
-      <BindName>Joystick Buttons9</BindName>
+      <BindNameDi>Joystick Buttons8</BindNameDi>
+      <BindName>Joystick Buttons8</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -723,4 +723,5 @@
   <GasAxisMax>255</GasAxisMax>
   <OnlineProfileURL />
   <IsLegacy>false</IsLegacy>
+  <HasTpoSupport>false</HasTpoSupport>
 </GameProfile>

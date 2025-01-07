@@ -407,8 +407,19 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Gear Shift 1</ButtonName>
+      <DirectInputButton>
+        <Button>66</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
       <InputMapping>Wmmt5GearChange1</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons18</BindNameDi>
+      <BindName>Joystick Buttons18</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -429,8 +440,19 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Gear Shift 2</ButtonName>
+      <DirectInputButton>
+        <Button>67</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
       <InputMapping>Wmmt5GearChange2</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons19</BindNameDi>
+      <BindName>Joystick Buttons19</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -451,8 +473,19 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Gear Shift 3</ButtonName>
+      <DirectInputButton>
+        <Button>68</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
       <InputMapping>Wmmt5GearChange3</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons20</BindNameDi>
+      <BindName>Joystick Buttons20</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -473,8 +506,19 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Gear Shift 4</ButtonName>
+      <DirectInputButton>
+        <Button>69</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
       <InputMapping>Wmmt5GearChange4</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons21</BindNameDi>
+      <BindName>Joystick Buttons21</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -495,8 +539,19 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Gear Shift 5</ButtonName>
+      <DirectInputButton>
+        <Button>70</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
       <InputMapping>Wmmt5GearChange5</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons22</BindNameDi>
+      <BindName>Joystick Buttons22</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -517,8 +572,19 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Gear Shift 6</ButtonName>
+      <DirectInputButton>
+        <Button>71</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
       <InputMapping>Wmmt5GearChange6</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons23</BindNameDi>
+      <BindName>Joystick Buttons23</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -727,4 +793,5 @@
   <GasAxisMax>80</GasAxisMax>
   <OnlineProfileURL />
   <IsLegacy>false</IsLegacy>
+  <HasTpoSupport>false</HasTpoSupport>
 </GameProfile>

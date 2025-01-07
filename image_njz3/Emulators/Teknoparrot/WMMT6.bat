@@ -6,4 +6,4 @@ CONSOLESTATE /Min
 set GAME=WMMT6.xml
 
 ::Start game
-TeknoParrotUi.exe --profile=%GAME% --startMinimized
+Elevate -wait TeknoParrotUi.exe "--profile=%GAME% --startMinimized"

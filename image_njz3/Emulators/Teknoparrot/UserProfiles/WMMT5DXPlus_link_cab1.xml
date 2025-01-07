@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ProfileName>WMMT5</ProfileName>
-  <GameNameInternal>Wangan Midnight Maximum Tune 5</GameNameInternal>
+  <ProfileName>WMMT5DXPlus</ProfileName>
+  <GameNameInternal>Wangan Midnight Maximum Tune 5DX+</GameNameInternal>
   <GameGenreInternal>Racing</GameGenreInternal>
-  <GamePath>C:\Racecab\Games\Wangan Midnight Maximum Tune 5 - Namco ES3X\wmn5r.exe</GamePath>
+  <GamePath>C:\Racecab\Games\Wangan Midnight Maximum Tune 5DX+\wmn5r.exe</GamePath>
   <TestMenuParameter />
   <TestMenuIsExecutable>false</TestMenuIsExecutable>
   <ExtraParameters />
   <TestMenuExtraParameters />
-  <IconName>Icons/WMMT5.png</IconName>
-  <ValidMd5>MD5\WMMT5.md5</ValidMd5>
+  <IconName>Icons/WMMT5DXPlus.png</IconName>
   <ResetHint>true</ResetHint>
   <ConfigValues>
     <FieldInformation>
@@ -36,7 +35,7 @@
     <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>TerminalEmulator</FieldName>
-      <FieldValue>0</FieldValue>
+      <FieldValue>1</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -62,15 +61,6 @@
     </FieldInformation>
     <FieldInformation>
       <CategoryName>General</CategoryName>
-      <FieldName>TerminalMode</FieldName>
-      <FieldValue>0</FieldValue>
-      <FieldType>Bool</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>General</CategoryName>
       <FieldName>WhiteScreenFix</FieldName>
       <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
@@ -81,15 +71,6 @@
     <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>Windowed</FieldName>
-      <FieldValue>0</FieldValue>
-      <FieldType>Bool</FieldType>
-      <FieldMin>0</FieldMin>
-      <FieldMax>0</FieldMax>
-      <FieldOptions />
-    </FieldInformation>
-    <FieldInformation>
-      <CategoryName>General</CategoryName>
-      <FieldName>SkipMovies</FieldName>
       <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
@@ -162,7 +143,7 @@
     <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>CustomName</FieldName>
-      <FieldValue>Namco</FieldValue>
+      <FieldValue>Namco1</FieldValue>
       <FieldType>Text</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -879,7 +860,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>NamcoWmmt5</EmulationProfile>
-  <GameProfileRevision>31</GameProfileRevision>
+  <GameProfileRevision>6</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>true</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
