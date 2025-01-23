@@ -67,6 +67,31 @@ configuration.
 If you can connect your PC to the Internet, first run Windows Update to get 
 your drivers automatically.
 
+Depending on the configuration requested, you must first check the
+resolution for your monitor. A 1920x1080 image configuration means that you 
+must set your Windows desktop resolution to this resolution, otherwise the
+games will not be displayed correctly.
+
+Then, immediately configure the BackForceFeeder, in particular check the target
+hardware, then do the motor calibration in the "App&Hardware" page following
+the instructions. Open the diagnostics page and press "DiagMode?" at the top 
+left, and move the cursor next to it to see if the motor reacts. Once finished,
+stop the Diag mode, and close the window.
+
+Then proceed to calibrate the axes of all games. First make sure you are in the
+"Default" ControlSet. Select the X axis (steering wheel), open the axis editor
+and then click on "calibrate wheel", then follow the instructions. Calibrate
+the Y (accelerator pedal) and Z (brake pedal) axes using the "Negative Pedal"
+mode and *do not check* "Full range". Follow the instructions: first press and
+hold the pedal, then click next, then release the pedal, then click next, then
+click OK.
+
+Once the "Default" ControlSet is calibrated, open the "Game Data" page, then
+open the "Explorer" page, then select "Default" on the left and all ControlSets
+on the right. Click on "data selection" and check "Axes.json". Finally, launch
+the copy to overwrite the game data and set the calibration. Close all pages
+and this step is complete. You can restart the PC to have the Hyperspin menu.
+
 ## NETWORK CONFIGURATION (MULTIPLAYER/LINK MODE)
 
 Multiplayer (or link) mode is already configured for the images.
@@ -198,6 +223,34 @@ pouvez poursuivre la configuration.
 
 Si vous pouvez connecter votre PC à internet, lancez en premier Windows Update
 pour récupérer vos drivers automatiquement.
+
+Selon la configuration demandée, il vous faut commencer par vérifier la 
+résolution pour votre moniteur. Une configuration de l'image en 1920x1080 
+signifie que vous devez obligatoirement mettre votre résolution de bureau 
+Windows à cette résolution, sinon les jeux ne seront pas correctement affichés.
+
+Ensuite, faites tout de suite la configuration du BackForceFeeder, en particulier
+contrôler le matériel cible, puis faites le calibrage moteur dans la page 
+"App&Hardware" en suivant les instructions. Ouvrir la page diagnostiques et
+appuyer en haut à gauche sur "DiagMode?", et faire bouger le curseur à côté
+pour voir si le moteur réagit. Une fois terminé, arrêter le mode Diag, et fermer
+la fenetre.
+
+Procéder ensuite au calibrage des axes de tous les jeux. Assurez-vous d'abord
+d'être dans le ControlSet "Default". Sélectionnez l'axe X (volant), ouvrir 
+l'éditeur d'axe et ensuite cliquez sur "calibrate wheel", puis suivre les 
+instructions. Calibrer les axes Y (pédale accélérateur) et Z (pédale frein) en
+utilisant le mode "Negative pedal" et *ne pas cocher* "Full range". Suivez les 
+instructions: d'abord appuyer et maintenir la pédale, puis faire suivant, puis
+relâcher la pédale, puis faire suivant, puis faire OK.
+
+Une fois le ControlSet "Default" calibré, ouvrir la page "Données jeu",
+puis ouvrir la page "Explorer", puis sélectionner à gauche "Default" et à droite
+tous les ControlSets. Cliquer sur "sélection données" et cocher "Axes.json". Enfin 
+lancer la copie pour écraser les données des jeux et mettre le calibrage.
+Fermer toutes les pages et cette étape est terminée. Vous pouvez relancer le PC pour
+avoir le menu Hyperspin.
+
 
 ## CONFIGURATION RESEAU (MODE MULTIPLAYER/LINK)
 
