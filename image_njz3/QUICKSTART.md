@@ -86,7 +86,7 @@ mode and *do not check* "Full range". Follow the instructions: first press and
 hold the pedal, then click next, then release the pedal, then click next, then
 click OK.
 
-Once the "Default" ControlSet is calibrated, open the "Game Data" page, then
+Once the "Default" ControlSet is calibrated, open the "ControlSets" page, then
 open the "Explorer" page, then select "Default" on the left and all ControlSets
 on the right. Click on "data selection" and check "Axes.json". Finally, launch
 the copy to overwrite the game data and set the calibration. Close all pages
