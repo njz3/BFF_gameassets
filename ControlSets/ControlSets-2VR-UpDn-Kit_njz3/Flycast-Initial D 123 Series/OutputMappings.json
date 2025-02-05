@@ -10,7 +10,7 @@
   {
     "RawOutputIdx": 1,
     "MappedRawOutputBit": [
-      1
+      7
     ],
     "SequenceDelay_ms": 2000,
     "Sequence": 0
@@ -18,7 +18,7 @@
   {
     "RawOutputIdx": 2,
     "MappedRawOutputBit": [
-      2
+      6
     ],
     "SequenceDelay_ms": 2000,
     "Sequence": 0
@@ -26,7 +26,7 @@
   {
     "RawOutputIdx": 3,
     "MappedRawOutputBit": [
-      3
+      5
     ],
     "SequenceDelay_ms": 2000,
     "Sequence": 0
@@ -42,7 +42,7 @@
   {
     "RawOutputIdx": 5,
     "MappedRawOutputBit": [
-      5
+      3
     ],
     "SequenceDelay_ms": 2000,
     "Sequence": 0
@@ -50,7 +50,7 @@
   {
     "RawOutputIdx": 6,
     "MappedRawOutputBit": [
-      6
+      7
     ],
     "SequenceDelay_ms": 2000,
     "Sequence": 0
@@ -58,7 +58,7 @@
   {
     "RawOutputIdx": 7,
     "MappedRawOutputBit": [
-      7
+      2
     ],
     "SequenceDelay_ms": 2000,
     "Sequence": 0
