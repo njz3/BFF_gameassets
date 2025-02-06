@@ -96,6 +96,33 @@
       <FieldOptions />
     </FieldInformation>
     <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>Master</FieldName>
+      <FieldValue>90.0.0.232</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>Slave</FieldName>
+      <FieldValue>90.0.0.233</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>Gateway</FieldName>
+      <FieldValue>90.0.0.1</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
       <CategoryName>Sound</CategoryName>
       <FieldName>MuteMusic</FieldName>
       <FieldValue>0</FieldValue>
@@ -714,11 +741,11 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>TokyoCop</EmulationProfile>
-  <GameProfileRevision>23</GameProfileRevision>
+  <GameProfileRevision>25</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
-  <EmulatorType>Lindbergh</EmulatorType>
+  <EmulatorType>ElfLdr2</EmulatorType>
   <Patreon>false</Patreon>
   <RequiresAdmin>false</RequiresAdmin>
   <msysType>1</msysType>
@@ -738,4 +765,6 @@
   <OnlineProfileURL />
   <IsLegacy>false</IsLegacy>
   <HasTpoSupport>false</HasTpoSupport>
+  <IsTpoExclusive>false</IsTpoExclusive>
+  <RequiresBepInEx>false</RequiresBepInEx>
 </GameProfile>

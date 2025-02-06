@@ -662,4 +662,6 @@
   <OnlineProfileURL />
   <IsLegacy>false</IsLegacy>
   <HasTpoSupport>true</HasTpoSupport>
+  <IsTpoExclusive>false</IsTpoExclusive>
+  <RequiresBepInEx>false</RequiresBepInEx>
 </GameProfile>
