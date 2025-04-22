@@ -33,6 +33,15 @@
       <FieldOptions />
     </FieldInformation>
     <FieldInformation>
+      <CategoryName>FFB Blaster</CategoryName>
+      <FieldName>Enable</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>Windowed</FieldName>
       <FieldValue>0</FieldValue>
@@ -741,7 +750,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>TokyoCop</EmulationProfile>
-  <GameProfileRevision>25</GameProfileRevision>
+  <GameProfileRevision>26</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>

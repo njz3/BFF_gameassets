@@ -90,6 +90,15 @@
       <FieldOptions />
     </FieldInformation>
     <FieldInformation>
+      <CategoryName>FFB Blaster</CategoryName>
+      <FieldName>Enable</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>Use Keyboard/Button For Axis</FieldName>
       <FieldValue>0</FieldValue>
@@ -752,7 +761,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>NamcoWmmt3</EmulationProfile>
-  <GameProfileRevision>19</GameProfileRevision>
+  <GameProfileRevision>20</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
@@ -776,4 +785,6 @@
   <OnlineProfileURL />
   <IsLegacy>false</IsLegacy>
   <HasTpoSupport>false</HasTpoSupport>
+  <IsTpoExclusive>false</IsTpoExclusive>
+  <RequiresBepInEx>false</RequiresBepInEx>
 </GameProfile>

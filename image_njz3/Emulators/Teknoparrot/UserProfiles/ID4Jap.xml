@@ -1033,7 +1033,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>SegaInitialDLindbergh</EmulationProfile>
-  <GameProfileRevision>23</GameProfileRevision>
+  <GameProfileRevision>24</GameProfileRevision>
   <HasSeparateTestMode>true</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
@@ -1055,4 +1055,7 @@
   <GasAxisMax>255</GasAxisMax>
   <OnlineProfileURL />
   <IsLegacy>false</IsLegacy>
+  <HasTpoSupport>false</HasTpoSupport>
+  <IsTpoExclusive>false</IsTpoExclusive>
+  <RequiresBepInEx>false</RequiresBepInEx>
 </GameProfile>

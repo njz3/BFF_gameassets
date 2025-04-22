@@ -99,7 +99,7 @@
     <FieldInformation>
       <CategoryName>SoundFix</CategoryName>
       <FieldName>Enable</FieldName>
-      <FieldValue>1</FieldValue>
+      <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
@@ -114,6 +114,15 @@
       <FieldMax>100</FieldMax>
       <FieldOptions />
       <Hint>Volume percent value for fixed sounds</Hint>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>FFB Blaster</CategoryName>
+      <FieldName>Enable</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
     </FieldInformation>
     <FieldInformation>
       <CategoryName>ForceFeedback</CategoryName>
@@ -610,7 +619,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>RawThrillsFNF</EmulationProfile>
-  <GameProfileRevision>6</GameProfileRevision>
+  <GameProfileRevision>7</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
@@ -633,4 +642,7 @@
   <GasAxisMax>255</GasAxisMax>
   <OnlineProfileURL />
   <IsLegacy>false</IsLegacy>
+  <HasTpoSupport>false</HasTpoSupport>
+  <IsTpoExclusive>false</IsTpoExclusive>
+  <RequiresBepInEx>false</RequiresBepInEx>
 </GameProfile>

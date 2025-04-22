@@ -27,12 +27,13 @@ borne Le Mans à savoir 1 volant, 2 pédales, 1 Start, 2 view buttons, 1 shifter
 Up/Down.
 Je laisse à chacun le soin de refaire le mapping selon sa borne via mon soft
 BackforceFeeder en suivant le nommage déjà pré-établi pour les boutons de 
-chaque jeu.
+chaque jeu. Il y a des exemples de ControlSets disponibles dans le dossier 
+```Documents\BackForceFeeder\ControlSets-XXX```
 
 La distribution fonctionne en mode FullHD (1920x1080) sur l'ensemble des jeux. 
 En se limitant aux jeux MAME, model 1/2/3 et Flycast (Naomi) la distribution
 peut fonctionner en 24 kHz à l'aide du videoamp en 1024x768i ou 1024x384p, ou
-en 15 kHz avec le videoamp en mode 1280x240p ou 1280x480i.
+en 15 kHz avec le videoamp en mode 1280x240p ou 1280x480i (image étirée).
 
 
 # Configuration Hardware
@@ -151,6 +152,8 @@ C:\Racecab\Games\Mario Kart Arcade GP DX (V1.10 - Mod FR 1h) - Namco ES3
 C:\Racecab\Games\Outrun 2 SP SDX - SEGA Lindbergh\disk0\Jennifer
 C:\Racecab\Games\R-Tuned Ultimate Street Racing - SEGA Lindbergh
 ```
+Attention pour les jeux Lindbergh comme Outrun2, il faut en plus copier les dll `opengl32.dll`
+et `SDL2.dll` dans `C:\Racecab\Emulators\Teknoparrot\TeknoParrot`
 
 Lancer MAME, vérifier qu'un jeu se lance.
 Lancer Teknoparrot, vérifier qu'un jeu se lance.
@@ -411,16 +414,17 @@ Supermodel, TP), puis d'utiliser la page "Explorer" de ControlSet pour
 copier-coller uniquement le mapping des entrées brutes, et/ou le calibrage 
 des axes vers plusieurs ControlSets simultanément.
 
-> **IMPORTANT**
-> Par défaut, le dossier `C:\Users\Racecab\Documents\BackForceFeeder\ControlSets`
-> est un lien symbolique vers un dossier archivé. Pour créer un lien vers 
-> un autre dossier, utiliser la commande `mklink /d NOUVEAULIEN CIBLE` avec
-> NOUVEAULIEN le dossier `C:\Users\Racecab\Documents\BackForceFeeder\ControlSets`
-> et CIBLE le dossier où vous voulez sauver les control sets.
+Des ensembles de jeux de paramètres ont été créés pour différents panels.
+Le dossier `C:\Users\Racecab\Documents\BackForceFeeder\` contient plusieurs
+sous dossiers dont le nom commence par `ControlSets-XXX`.
+Après avoir éteint le BackForceFeeder, vous pouvez effacer le dossier ControlSets-XXX`
+et le remplacer par un autre dossier qui correspond à votre panel.
+Vous pouvez ensuite relancer le BackForceFeeder et faire le calibrage des axes
+sur l'ensemble de paramètres `Default` et le dupliquer sur tous les autres ensemble
+de paramètres.
 
 
 # Notes - FAQ
-
 
 ## Jeux Model 2 en mode Link
 
@@ -479,6 +483,10 @@ championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 
 
 # Change log
+
+---
+2025-04-22:
+- Update BFF to 0.8.0.49 (support for Sega Servoboard). Update Teknoparrot 1.0.0.1606, Supermodel 2025-04-22, flycast master 2025-04-15.
 
 ---
 2024-11-28:

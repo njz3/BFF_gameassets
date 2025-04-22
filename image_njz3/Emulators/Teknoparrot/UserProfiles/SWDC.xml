@@ -144,6 +144,15 @@
       <Hint>Used in combination with the "Force Specific Network Adapter" option. If that option is enabled, TP will try and find the network adapter that the IP you insert here belongs to.</Hint>
     </FieldInformation>
     <FieldInformation>
+      <CategoryName>FFB Blaster</CategoryName>
+      <FieldName>Enable</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>Use Keyboard/Button For Axis</FieldName>
       <FieldValue>0</FieldValue>
@@ -845,7 +854,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>ALLSSWDC</EmulationProfile>
-  <GameProfileRevision>15</GameProfileRevision>
+  <GameProfileRevision>16</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>true</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
@@ -870,4 +879,7 @@
   <GasAxisMax>255</GasAxisMax>
   <OnlineProfileURL>https://teknoparrot.com/OnlineProfile/APM3</OnlineProfileURL>
   <IsLegacy>false</IsLegacy>
+  <HasTpoSupport>false</HasTpoSupport>
+  <IsTpoExclusive>false</IsTpoExclusive>
+  <RequiresBepInEx>false</RequiresBepInEx>
 </GameProfile>

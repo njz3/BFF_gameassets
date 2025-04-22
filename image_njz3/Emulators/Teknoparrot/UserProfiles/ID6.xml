@@ -122,6 +122,15 @@
       <FieldOptions />
     </FieldInformation>
     <FieldInformation>
+      <CategoryName>FFB Blaster</CategoryName>
+      <FieldName>Enable</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>Enable Outputs</FieldName>
       <FieldValue>1</FieldValue>
@@ -982,7 +991,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>SegaInitialD</EmulationProfile>
-  <GameProfileRevision>33</GameProfileRevision>
+  <GameProfileRevision>34</GameProfileRevision>
   <HasSeparateTestMode>true</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
@@ -1005,4 +1014,6 @@
   <OnlineProfileURL />
   <IsLegacy>false</IsLegacy>
   <HasTpoSupport>true</HasTpoSupport>
+  <IsTpoExclusive>false</IsTpoExclusive>
+  <RequiresBepInEx>false</RequiresBepInEx>
 </GameProfile>

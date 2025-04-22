@@ -6,12 +6,12 @@
 	<ExtraParameters></ExtraParameters>
 	<TestMenuExtraParameters></TestMenuExtraParameters>
 	<EmulationProfile>NamcoWmmt6RR</EmulationProfile>
-	<GameProfileRevision>6</GameProfileRevision>
+	<GameProfileRevision>9</GameProfileRevision>
 	<HasSeparateTestMode>false</HasSeparateTestMode>
 	<Is64Bit>true</Is64Bit>
 	<TestExecIs64Bit>false</TestExecIs64Bit>
 	<EmulatorType>TeknoParrot</EmulatorType>
-	<Patreon>true</Patreon>
+	<Patreon>false</Patreon>
 	<RequiresAdmin>false</RequiresAdmin>
 	<msysType>0</msysType>
 	<InvertedMouseAxis>false</InvertedMouseAxis>
@@ -130,6 +130,12 @@
 			<FieldValue></FieldValue>
 			<FieldType>Text</FieldType>
 			<Hint>Your card ID, click on the Online Profile button to obtain it.</Hint>
+		</FieldInformation>
+		<FieldInformation>
+			<CategoryName>FFB Blaster</CategoryName>
+			<FieldName>Enable</FieldName>
+			<FieldValue>0</FieldValue>
+			<FieldType>Bool</FieldType>
 		</FieldInformation>
 	</ConfigValues>
 	<JoystickButtons>
@@ -597,7 +603,7 @@
 		</JoystickButtons>
 		<JoystickButtons>
 			<ButtonName>Insert Card</ButtonName>
-			<InputMapping>ExtensionOne1</InputMapping>
+			<InputMapping>ExtensionOne13</InputMapping>
 		</JoystickButtons>
 	</JoystickButtons>
 </GameProfile>

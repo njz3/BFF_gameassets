@@ -51,6 +51,15 @@
       <FieldOptions />
     </FieldInformation>
     <FieldInformation>
+      <CategoryName>FFB Blaster</CategoryName>
+      <FieldName>Enable</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>Enable Outputs</FieldName>
       <FieldValue>1</FieldValue>
@@ -246,7 +255,7 @@
         <IsReverseAxis>false</IsReverseAxis>
         <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
       </DirectInputButton>
-      <InputMapping>Service2</InputMapping>
+      <InputMapping>Coin1</InputMapping>
       <AnalogType>None</AnalogType>
       <BindNameDi>Joystick Buttons0</BindNameDi>
       <BindName>Joystick Buttons0</BindName>
@@ -566,72 +575,6 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Shift Left</ButtonName>
-      <DirectInputButton>
-        <Button>0</Button>
-        <IsAxis>true</IsAxis>
-        <IsAxisMinus>true</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
-      <InputMapping>P2Button2</InputMapping>
-      <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick X -</BindNameDi>
-      <BindName>Joystick X -</BindName>
-      <HideWithDirectInput>false</HideWithDirectInput>
-      <HideWithXInput>false</HideWithXInput>
-      <HideWithRawInput>false</HideWithRawInput>
-      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
-      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
-      <HideWithRelativeAxis>false</HideWithRelativeAxis>
-      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
-      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
-      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
-      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
-      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
-      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
-      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
-      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
-      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
-      <HideWithoutProMode>true</HideWithoutProMode>
-      <HideWithProMode>false</HideWithProMode>
-    </JoystickButtons>
-    <JoystickButtons>
-      <ButtonName>Shift Right</ButtonName>
-      <DirectInputButton>
-        <Button>0</Button>
-        <IsAxis>true</IsAxis>
-        <IsAxisMinus>false</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
-      <InputMapping>P2Button1</InputMapping>
-      <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick X +</BindNameDi>
-      <BindName>Joystick X +</BindName>
-      <HideWithDirectInput>false</HideWithDirectInput>
-      <HideWithXInput>false</HideWithXInput>
-      <HideWithRawInput>false</HideWithRawInput>
-      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
-      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
-      <HideWithRelativeAxis>false</HideWithRelativeAxis>
-      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
-      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
-      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
-      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
-      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
-      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
-      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
-      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
-      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
-      <HideWithoutProMode>true</HideWithoutProMode>
-      <HideWithProMode>false</HideWithProMode>
-    </JoystickButtons>
-    <JoystickButtons>
       <ButtonName>Gear 1</ButtonName>
       <InputMapping>P2Button3</InputMapping>
       <AnalogType>None</AnalogType>
@@ -676,20 +619,9 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Gear 3 / Shift Up</ButtonName>
-      <DirectInputButton>
-        <Button>56</Button>
-        <IsAxis>false</IsAxis>
-        <IsAxisMinus>false</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
-      <InputMapping>P1Button2</InputMapping>
+      <ButtonName>Gear 3 / Shift Down</ButtonName>
+      <InputMapping>P1Button3</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons8</BindNameDi>
-      <BindName>Joystick Buttons8</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -709,20 +641,9 @@
       <HideWithProMode>false</HideWithProMode>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>Gear 4 / Shift Down</ButtonName>
-      <DirectInputButton>
-        <Button>57</Button>
-        <IsAxis>false</IsAxis>
-        <IsAxisMinus>false</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
-      </DirectInputButton>
-      <InputMapping>P1Button3</InputMapping>
+      <ButtonName>Gear 4 / Shift Up</ButtonName>
+      <InputMapping>P1Button2</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Joystick Buttons9</BindNameDi>
-      <BindName>Joystick Buttons9</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -873,7 +794,7 @@
         <IsReverseAxis>false</IsReverseAxis>
         <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
       </DirectInputButton>
-      <InputMapping>Analog2</InputMapping>
+      <InputMapping>Analog6</InputMapping>
       <AnalogType>Gas</AnalogType>
       <BindNameDi>Joystick Y -</BindNameDi>
       <BindName>Joystick Y -</BindName>
@@ -906,7 +827,7 @@
         <IsReverseAxis>false</IsReverseAxis>
         <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
       </DirectInputButton>
-      <InputMapping>Analog4</InputMapping>
+      <InputMapping>Analog8</InputMapping>
       <AnalogType>Brake</AnalogType>
       <BindNameDi>Joystick Z -</BindNameDi>
       <BindName>Joystick Z -</BindName>
@@ -930,7 +851,7 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Clutch</ButtonName>
-      <InputMapping>Analog6</InputMapping>
+      <InputMapping>Analog12</InputMapping>
       <AnalogType>Gas</AnalogType>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
@@ -952,7 +873,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>TaitoTypeXBattleGear</EmulationProfile>
-  <GameProfileRevision>25</GameProfileRevision>
+  <GameProfileRevision>28</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <TestExecIs64Bit>false</TestExecIs64Bit>
@@ -975,4 +896,7 @@
   <GasAxisMax>255</GasAxisMax>
   <OnlineProfileURL />
   <IsLegacy>false</IsLegacy>
+  <HasTpoSupport>false</HasTpoSupport>
+  <IsTpoExclusive>false</IsTpoExclusive>
+  <RequiresBepInEx>false</RequiresBepInEx>
 </GameProfile>
