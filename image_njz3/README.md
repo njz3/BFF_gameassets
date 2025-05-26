@@ -431,9 +431,9 @@ Si l'initialization ne se déroule pas correctement, vérifier dans un premier t
 que la LED rouge pret du connecteur CN2 s'allume et clignote toutes les 3 secondes
 quand la carte est alimentée en 100VAC.
 
-Les servoboard Sega indique par un code de clignotement certaines erreurs. Par
+Les servoboard Sega indiquent par un code de clignotement certaines erreurs. Par
 exemple, si le codeur n'est pas correctement branché, un clignotement d'environ 1 seconde
-va être vu.
+va être réalisé.
 
 Quand l'initalization se déroule correctement, la LED rouge va rester allumée en permanence.
 
