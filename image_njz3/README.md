@@ -423,6 +423,19 @@ Vous pouvez ensuite relancer le BackForceFeeder et faire le calibrage des axes
 sur l'ensemble de paramètres `Default` et le dupliquer sur tous les autres ensemble
 de paramètres.
 
+# Problèmes connus - Troubleshooting
+
+## Servoboard Sega avec adaptateur midi ou RS
+
+Si l'initialization ne se déroule pas correctement, vérifier dans un premier temps 
+que la LED rouge pret du connecteur CN2 s'allume et clignote toutes les 3 secondes
+quand la carte est alimentée en 100VAC.
+
+Les servoboard Sega indique par un code de clignotement certaines erreurs. Par
+exemple, si le codeur n'est pas correctement branché, un clignotement d'environ 1 seconde
+va être vu.
+
+Quand l'initalization se déroule correctement, la LED rouge va rester allumée en permanence.
 
 # Notes - FAQ
 
