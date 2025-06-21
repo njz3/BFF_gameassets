@@ -441,6 +441,11 @@ un shifter H4 depuis un Up/Down. Les paramètres sont "InputGearShiftUp" et
 "InputGearShiftDown". Mais il reste tout à fait possible d'utiliser une
 séquence ou directement un shifter H4 via le decodeur du BFF.
 
+## Jeux Demul (Hikaru/Gaelco)
+
+Il faut obligatoirement une souris et un clavier USB branché sinon Demul
+fait une erreur IDirectInput au démarrage.
+
 ## Jeux Teknoparrot
 
 ### Outrun2 et autres jeux Lindberg
