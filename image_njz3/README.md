@@ -423,19 +423,6 @@ Vous pouvez ensuite relancer le BackForceFeeder et faire le calibrage des axes
 sur l'ensemble de paramètres `Default` et le dupliquer sur tous les autres ensemble
 de paramètres.
 
-# Problèmes connus - Troubleshooting
-
-## Servoboard Sega avec adaptateur midi ou RS
-
-Si l'initialization ne se déroule pas correctement, vérifier dans un premier temps 
-que la LED rouge pret du connecteur CN2 s'allume et clignote toutes les 3 secondes
-quand la carte est alimentée en 100VAC.
-
-Les servoboard Sega indiquent par un code de clignotement certaines erreurs. Par
-exemple, si le codeur n'est pas correctement branché, un clignotement d'environ 1 seconde
-va être réalisé.
-
-Quand l'initalization se déroule correctement, la LED rouge va rester allumée en permanence.
 
 # Notes - FAQ
 
@@ -453,11 +440,6 @@ ainsi il n'est pas nécessaire d'activer une émulation de séquence pour émule
 un shifter H4 depuis un Up/Down. Les paramètres sont "InputGearShiftUp" et
 "InputGearShiftDown". Mais il reste tout à fait possible d'utiliser une
 séquence ou directement un shifter H4 via le decodeur du BFF.
-
-## Jeux Demul (Hikaru/Gaelco)
-
-Il faut obligatoirement une souris et un clavier USB branché sinon Demul
-fait une erreur IDirectInput au démarrage.
 
 ## Jeux Teknoparrot
 
@@ -501,6 +483,10 @@ championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 
 
 # Change log
+
+---
+2025-08-08:
+- Update MAME and romset to 0.279, update Teknoparrot 1.0.0.1727, model2 to v1.1c from Sailorsat (many thanks to her invaluable contributions).
 
 ---
 2025-04-22:
