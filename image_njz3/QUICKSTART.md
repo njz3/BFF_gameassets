@@ -159,6 +159,9 @@ now red status button). Finally, save your changes in the arduino board by
 clicking on "save to eprom & reset" button while the manager is running (status
 in green).
 
+Each license is tied to a specific CPU and motherboard; it is not possible to
+transfer the license to another computer without generating a new one, and it 
+is impossible to delete a license that has already been issued.
 
 # FRANCAIS
 
@@ -327,3 +330,7 @@ matériel cible, puis redémarrez le gestionnaire (cliquez sur le bouton d'état
 qui est maintenant rouge). Enfin, sauvegardez vos modifications sur la carte
 arduino en cliquant sur le bouton « sauv.eprom & reset » pendant que le manager
 est en cours d'exécution (statut en vert).
+
+Chaque licence est liée à un processeur et à une carte mère spécifiques. Il
+n'est pas possible de transférer la licence vers un autre ordinateur sans en
+générer une nouvelle, et il est impossible de supprimer une licence déjà émise.
