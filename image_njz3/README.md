@@ -551,3 +551,90 @@ championnat. Le mode championnat ne marche qu'avec la version arcade originale.
 ---
 2024-01-04:
 - fix disk structure for Raw Thrills Games (rawart)
+
+
+
+# Annexe A - Jeux qui ne quittent pas avec ESC
+
+On quitte un jeu avec la touche ESC : soit par la règle clavier du profil du
+jeu dans le BackForceFeeder (maintenir des boutons du panneau), soit avec un
+vrai clavier. Sur une borne en accès public, la règle BFF est désactivée et
+seul un vrai clavier permet de quitter.
+
+Les jeux suivants ne quittent pas avec ESC. Il faut mettre Alt+F4 dans la
+règle clavier de leur profil BFF :
+
+| Jeu                    | Émulateur                 | Pour quitter                                                       |
+|------------------------|---------------------------|--------------------------------------------------------------------|
+| Smashing Drive         | Demul (Gaelco)            | Alt+F4                                                             |
+| Sega Nascar            | Demul (Hikaru)            | Alt+F4                                                             |
+| Star Wars Racer Arcade | Demul (Hikaru)            | Alt+F4                                                             |
+| Batman                 | TeknoParrot (Raw Thrills) | Alt+F4                                                             |
+| Outrun 2 SP DX         | TeknoParrot (Lindbergh)   | Alt+F4                                                             |
+| Sega Racing Classic    | TeknoParrot               | Alt+F4                                                             |
+| Cars                   | TeknoParrot (Raw Thrills) | ni ESC ni Alt+F4 : seul l'arrêt du processus le ferme (à corriger) |
+
+Un jeu lancé en administrateur (`Elevate`, ou `RequiresAdmin` dans son profil
+TeknoParrot) ne reçoit pas les touches simulées par le BFF, qui ne tourne pas
+en administrateur : seul un vrai clavier le quitte. WMMT6 est donc lancé sans
+`Elevate` et avec `RequiresAdmin` à false dans ses profils utilisateur.
+
+Les jeux multi-cartes de Flycast (F355 Challenge 1 et 2) ouvrent une fenêtre
+par carte : `RunFlycastGame.cmd` ferme toutes les fenêtres de flycast dès que
+l'une d'elles est fermée, si bien qu'un seul ESC suffit.
+
+Les lanceurs (.bat ou .cmd) appelés par AttractMode Plus doivent finir par
+EXIT : AttractMode Plus les lance par `cmd /K`, qui garde la console ouverte
+sinon, et reste alors bloqué sur un écran noir après la fin du jeu (corrigé le
+16/10/2026 pour or2spdlx, WMMT3, WMMT3DX, WMMT5, WMMT5DX et leurs versions
+link).
+
+Essais du 16/10/2026 sur Racecab1, en pilotant AttractMode Plus et les jeux par
+vJoy comme le ferait le BFF :
+- quittent avec ESC : sm2-emu (7 jeux), Supermodel (8 jeux), Flycast (14 jeux),
+  Triforce et Dolphin (4 jeux), MAME (5 jeux essayés, les 151 romsets des
+  listes vérifiés par `mame -verifyroms`) ;
+- TeknoParrot, quittent avec ESC : Battle Gear 4, Chase H.Q. 2, Cruis'n Blast,
+  Daytona Championship USA, GRID, Initial D 8, Mario Kart Arcade GP DX,
+  Sega Rally 3, WMMT5, WMMT6 ;
+- les 45 autres jeux TeknoParrot de la liste n'ont pas encore été essayés.
+
+
+# Annexe B - Temps de démarrage
+
+Temps entre l'appui sur Start dans AttractMode Plus et l'écran principal du jeu
+(écran-titre ou démonstration, après les écrans de démarrage, de texte ou de
+chargement). Mesures sur Racecab1 (GTX 1050 Ti), avec une capture d'écran
+toutes les 2 secondes :
+
+| Émulateur              | Jeu mesuré               | Temps     | Écrans traversés                                  |
+|------------------------|--------------------------|-----------|---------------------------------------------------|
+| sm2-emu                | Daytona USA              | < 5 s     | aucun                                             |
+| Supermodel             | Sega Rally 2             | 20 s      | écran noir, logo SEGA                             |
+| Flycast (Atomiswave)   | Faster Than Speed        | 16 s      | logos Sammy et Atomiswave                         |
+| Flycast (Naomi 2)      | Initial D Arcade Stage   | 56 s      | logo NAOMI 2, initialisations, logos SEGA         |
+| Triforce (Dolphin)     | F-Zero AX                | 18 s      | logos SEGA/Nintendo, AV, ADX                      |
+| Demul (Hikaru)         | Star Wars Racer Arcade   | 36 s      | avertissement, logos LucasArts et SEGA            |
+| MAME                   | Driver's Edge            | 28 s      | écran d'état du système, logo Strata              |
+
+Jeux TeknoParrot (captures toutes les 5 secondes) :
+
+| Jeu                      | Fenêtre du jeu | Écran principal | Écrans traversés                                     |
+|--------------------------|----------------|-----------------|------------------------------------------------------|
+| GRID                     | 13 s           | 25 s            | logos SEGA amusements, Codemasters                   |
+| Battle Gear 4            | -              | 40 s            | avertissement Taito, TX Surround                     |
+| Sega Racing Classic      | 25 s           | 45 s            | initialisation de la carte de pilotage, logo SEGA    |
+| Cars                     | 15 s           | 55 s            | logos Disney et Pixar                                |
+| Sega Rally 3             | 23 s           | 60 s            | réglages, logos SEGA, SRS, WRC                       |
+| Chase H.Q. 2             | 13 s           | 65 s            | « Booting », RenderWare, avertissement Taito         |
+| Daytona Championship USA | 21 s           | 75 s            | chargement, test réseau, logos SEGA et CRIWARE       |
+| WMMT5                    | 9 s            | non mesuré      | plein écran exclusif, invisible aux captures         |
+| Mario Kart Arcade GP DX  | 22 s           | non mesuré      | plein écran exclusif, invisible aux captures         |
+| Batman                   | 22 s           | non mesuré      | plein écran exclusif, invisible aux captures         |
+| Outrun 2 SP DX           | 22 s           | non mesuré      | plein écran exclusif, invisible aux captures         |
+| Initial D 8              | 39 s           | non mesuré      | plein écran exclusif, invisible aux captures         |
+| WMMT6                    | 30 s environ   | non mesuré      | plein écran exclusif, invisible aux captures         |
+| Cruis'n Blast            | -              | plus de 90 s    | « Loading » long, jeu en pause s'il n'est pas devant |
+
+Un jeu TeknoParrot qui n'est pas au premier plan met souvent son chargement en
+pause : rien ne doit prendre le premier plan pendant qu'il démarre.
