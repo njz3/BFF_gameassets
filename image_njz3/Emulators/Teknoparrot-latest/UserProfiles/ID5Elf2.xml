@@ -1,0 +1,1472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GameNameInternal />
+  <GamePath>..\..\Games\Initial D 5 Export - SEGA Lindbergh\id5.exe</GamePath>
+  <TestMenuParameter>-t</TestMenuParameter>
+  <TestMenuIsExecutable>false</TestMenuIsExecutable>
+  <TestMenuIsTerminal>false</TestMenuIsTerminal>
+  <ExtraParameters />
+  <TestMenuExtraParameters />
+  <ResetHint>false</ResetHint>
+  <ConfigValues>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Input API</FieldName>
+      <FieldValue>DirectInput</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions>
+        <string>DirectInput</string>
+        <string>XInput</string>
+      </FieldOptions>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Graphics</CategoryName>
+      <FieldName>GPU Fix</FieldName>
+      <FieldValue>None</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions>
+        <string>None</string>
+        <string>INTEL</string>
+      </FieldOptions>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>FreePlay</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Windowed</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>RealGearshift</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>FFB Blaster</CategoryName>
+      <FieldName>Enable</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Enable Outputs</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Framelimiter</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Fixed at 60 fps for Initial D network play: always online, and in LAN / offline play once the new LAN mode is on (the online server switches it on step by step). Until then, and with the old LAN-pair settings, this setting still applies.</Hint>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>LinearFiltering</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Uses Linear instead of nearest neighbor filtering for upscaling/downscaling textures and framebuffers. Can look nicer.</Hint>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>HideCursor</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Use Keyboard/Button For Axis</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Keyboard/Button Axis Wheel Sensitivity</FieldName>
+      <FieldValue>10</FieldValue>
+      <FieldType>Slider</FieldType>
+      <FieldMin>1</FieldMin>
+      <FieldMax>127</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Keyboard/Button Axis Pedal Sensitivity</FieldName>
+      <FieldValue>10</FieldValue>
+      <FieldType>Slider</FieldType>
+      <FieldMin>1</FieldMin>
+      <FieldMax>255</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>ResolutionWidth</FieldName>
+      <FieldValue>1920</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>ResolutionHeight</FieldName>
+      <FieldValue>1080</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>ResolutionMode</FieldName>
+      <FieldValue>Upscale</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions>
+        <string>Upscale</string>
+        <string>Game</string>
+      </FieldOptions>
+      <Hint>Upscale (recommended): the game runs at its native 1360x768 and the picture is scaled to ResolutionWidth x ResolutionHeight; all 2D elements stay where they belong. Game: the old behaviour, the game's own resolution code runs at that size (above 1360x768 some menus, story talk boxes and ticker clips are misplaced).</Hint>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>RenderResolution</FieldName>
+      <FieldValue>Auto</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions>
+        <string>Auto</string>
+        <string>Stock</string>
+        <string>1.5x</string>
+        <string>2x</string>
+      </FieldOptions>
+      <Hint>3D scene resolution when the output is above 1360x768 (Upscale). Auto: the 3D frame buffer (RenderResolutionWidth / RenderResolutionHeight) is raised to the output size while it is at its default 962x768; a value you set there always wins. Stock: keep the frame buffer fields. 1.5x / 2x: that multiple of the output (supersampling, more GPU load).</Hint>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>RenderResolutionWidth</FieldName>
+      <FieldValue>1280</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>RenderResolutionHeight</FieldName>
+      <FieldValue>720</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>Show settings</FieldName>
+      <FieldValue>Basic</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions>
+        <string>Basic</string>
+        <string>Advanced</string>
+      </FieldOptions>
+      <Hint>Initial D starts online by default: at every start TeknoParrot checks the online server, and with this PC registered (Account page) you get nationwide matchmaking, events and rankings. Without registration, or when the server cannot be reached, the game starts offline within seconds. Basic: nothing to set. Advanced: online server, LAN group and peers, seat, cabinet serial, the cabinet's EEPROM network record.</Hint>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>NetworkMode</FieldName>
+      <FieldValue>Auto</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions>
+        <string>Auto</string>
+      </FieldOptions>
+      <Hint>TPUI always selects Auto. Online when the server answers and this PC is registered; otherwise offline or LAN.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Debug</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>Dhcp</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Advanced. The cabinet's own network record in the game's EEPROM (what the game's test menu shows). Online and LAN play use the Windows network of the adapter above, not these values. Leave them as they are unless a test menu needs a fixed address.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Advanced</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>Ip</FieldName>
+      <FieldValue>192.168.1.4</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Advanced. The cabinet's address in the game's EEPROM network record (when Dhcp is off). Not used for online or LAN play.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Advanced</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>Mask</FieldName>
+      <FieldValue>255.255.255.0</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Advanced. The subnet mask in the game's EEPROM network record (when Dhcp is off). Not used for online or LAN play.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Advanced</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>Gateway</FieldName>
+      <FieldValue>192.168.1.254</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Advanced. The gateway in the game's EEPROM network record (when Dhcp is off). Not used for online or LAN play.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Advanced</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>Dns1</FieldName>
+      <FieldValue>8.8.8.8</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Advanced. The first DNS server in the game's EEPROM network record (when Dhcp is off). Not used for online or LAN play.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Advanced</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>Dns2</FieldName>
+      <FieldValue>8.8.4.4</FieldValue>
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Advanced. The second DNS server in the game's EEPROM network record (when Dhcp is off). Not used for online or LAN play.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Advanced</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>LanGroup</FieldName>
+      <FieldValue />
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Advanced. LAN group of this cabinet. Empty: TeknoParrot links with the other TeknoParrot PCs of your network after you confirm the link once. A name (the same on every cabinet of one store) separates stores that share a network, counts as the confirmation, and allows LAN play on a network Windows marks as Public. Only PCs with the same group and the same game link.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Advanced</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>LanPeers</FieldName>
+      <FieldValue />
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Advanced. Extra addresses to look for, separated by commas. Normally empty: TeknoParrot finds the other PCs by itself. Needed on networks that do not pass broadcasts (Tailscale and similar), and for a PC on another subnet.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Advanced</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>LanName</FieldName>
+      <FieldValue />
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Advanced. The name the other PCs show for this one. Empty = the Windows computer name. It is the only thing this PC puts on the network before a link.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Advanced</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>SeatNumber</FieldName>
+      <FieldValue>AUTO</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions>
+        <string>AUTO</string>
+        <string>SINGLE</string>
+        <string>A1</string>
+        <string>A2</string>
+        <string>B1</string>
+        <string>B2</string>
+        <string>C1</string>
+        <string>C2</string>
+        <string>D1</string>
+        <string>D2</string>
+      </FieldOptions>
+      <Hint>Advanced. Seat of this cabinet in its store. AUTO (recommended): TeknoParrot assigns the seat itself when it finds another TeknoParrot PC on your network, and SINGLE when it finds none. SINGLE: never seated. A1..D2: a fixed seat (tournaments, cabinets that must keep their place). A seat two PCs claim at once sends the later one to SINGLE.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Advanced</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>CabinetSerial</FieldName>
+      <FieldValue />
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Advanced. Optional cabinet serial (letters/digits, the first 11 are sent to ALL.Net). Empty = a stable serial generated from this PC. Set it only when two PCs would otherwise get the same serial (cloned or imaged installs). Two online game instances on one PC are not supported. Online play only. A registered PC uses its Online ID instead on the official server.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Advanced</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>OnlineID</FieldName>
+      <FieldValue />
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Hidden: managed on the Account page (Initial D Online). Your Initial D Online PCB ID (AALG-...), filled in by TeknoParrotUI from your teknoparrot.com account. Used only for online play on the official server; offline and LAN play ignore it. One PC per account.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Debug</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>OnlineSecret</FieldName>
+      <FieldValue />
+      <FieldType>Text</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Hidden: managed on the Account page (Initial D Online). The secret that belongs to OnlineID (43 characters). Keep it private: it lets anyone play as you. Used only for online play on the official server.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Debug</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>OnlineVerbose</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Debug: log every server box packet / store DB command and more to TeknoParrot\id5online.log in the game folder.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Debug</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>OnlineDebugPoller</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Debug: log the game's network state (seqInitNetwork, store link, DB/match alive, ALL.Net auth) once per second to TeknoParrot\id5online.log.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Debug</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>LagComp</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Online only: predict the opponent's car from each packet's age so it is shown where it really is (100-300 ms internet latency: position error p95 about 3-7 m instead of 27-50 m). Also stops the opponent running far ahead after a crash.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Debug</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>MvSendDivisor</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Numeric</FieldType>
+      <FieldMin>1</FieldMin>
+      <FieldMax>60</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Online only: send your car state every N frames. 1 = 60 Hz (recommended with LagComp, about 8.4 kB/s), 6 = stock 10 Hz.</Hint>
+      <VisibleWhen>Show settings</VisibleWhen>
+      <VisibleWhenValue>Debug</VisibleWhenValue>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Network</CategoryName>
+      <FieldName>Chat</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Text chat with your rival in online matches (F2 type, Enter send, Esc close, Ctrl+1..4 quick phrases, /mute). Goes through the TeknoParrot server; nothing is stored.</Hint>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Voice</CategoryName>
+      <FieldName>VoiceChat</FieldName>
+      <FieldValue>off</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions>
+        <string>off</string>
+        <string>listen</string>
+        <string>talk</string>
+      </FieldOptions>
+      <Hint>Voice chat in online matches, through the server you play on (not stored, not recorded). talk uses your microphone (a headset is advised; no echo cancelling); F3: talk + listen -&gt; listen only -&gt; off.</Hint>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>Voice</CategoryName>
+      <FieldName>VoicePttKey</FieldName>
+      <FieldValue />
+      <FieldType>KeyCapture</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldStep>0</FieldStep>
+      <FieldOptions />
+      <Hint>Optional push-to-talk key; empty = voice activation.</Hint>
+      <UseUnitySorting>false</UseUnitySorting>
+    </FieldInformation>
+  </ConfigValues>
+  <JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Test</ButtonName>
+      <DirectInputButton>
+        <Button>49</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>Test</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons1</BindNameDi>
+      <BindName>Joystick Buttons1</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Service</ButtonName>
+      <DirectInputButton>
+        <Button>50</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>Service1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons2</BindNameDi>
+      <BindName>Joystick Buttons2</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Coin</ButtonName>
+      <DirectInputButton>
+        <Button>48</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>Coin1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons0</BindNameDi>
+      <BindName>Joystick Buttons0</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Start</ButtonName>
+      <DirectInputButton>
+        <Button>51</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1ButtonStart</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons3</BindNameDi>
+      <BindName>Joystick Buttons3</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Wheel Axis</ButtonName>
+      <DirectInputButton>
+        <Button>0</Button>
+        <IsAxis>true</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>Analog0</InputMapping>
+      <AnalogType>Wheel</AnalogType>
+      <BindNameDi>Joystick X +</BindNameDi>
+      <BindName>Joystick X +</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>true</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Wheel Axis Left</ButtonName>
+      <InputMapping>Analog0</InputMapping>
+      <AnalogType>Wheel</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>true</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>true</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Wheel Axis Right</ButtonName>
+      <InputMapping>Analog0</InputMapping>
+      <AnalogType>Wheel</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>true</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>true</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Gas</ButtonName>
+      <DirectInputButton>
+        <Button>4</Button>
+        <IsAxis>true</IsAxis>
+        <IsAxisMinus>true</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>Analog2</InputMapping>
+      <AnalogType>Gas</AnalogType>
+      <BindNameDi>Joystick Y -</BindNameDi>
+      <BindName>Joystick Y -</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Brake</ButtonName>
+      <DirectInputButton>
+        <Button>8</Button>
+        <IsAxis>true</IsAxis>
+        <IsAxisMinus>true</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>Analog4</InputMapping>
+      <AnalogType>Brake</AnalogType>
+      <BindNameDi>Joystick Z -</BindNameDi>
+      <BindName>Joystick Z -</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Shift up</ButtonName>
+      <DirectInputButton>
+        <Button>56</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2ButtonUp</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons8</BindNameDi>
+      <BindName>Joystick Buttons8</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Shift Down</ButtonName>
+      <DirectInputButton>
+        <Button>57</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2ButtonDown</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons9</BindNameDi>
+      <BindName>Joystick Buttons9</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>View Change</ButtonName>
+      <DirectInputButton>
+        <Button>52</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1Button1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons4</BindNameDi>
+      <BindName>Joystick Buttons4</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Menu Up</ButtonName>
+      <DirectInputButton>
+        <Button>56</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1ButtonUp</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons8</BindNameDi>
+      <BindName>Joystick Buttons8</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Menu Down</ButtonName>
+      <DirectInputButton>
+        <Button>57</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1ButtonDown</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons9</BindNameDi>
+      <BindName>Joystick Buttons9</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Menu Left</ButtonName>
+      <DirectInputButton>
+        <Button>0</Button>
+        <IsAxis>true</IsAxis>
+        <IsAxisMinus>true</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1ButtonLeft</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick X -</BindNameDi>
+      <BindName>Joystick X -</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Menu Right</ButtonName>
+      <DirectInputButton>
+        <Button>0</Button>
+        <IsAxis>true</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1ButtonRight</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick X +</BindNameDi>
+      <BindName>Joystick X +</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Gear 1</ButtonName>
+      <DirectInputButton>
+        <Button>66</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2Button1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons18</BindNameDi>
+      <BindName>Joystick Buttons18</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Gear 2</ButtonName>
+      <DirectInputButton>
+        <Button>67</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2Button2</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons19</BindNameDi>
+      <BindName>Joystick Buttons19</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Gear 3</ButtonName>
+      <DirectInputButton>
+        <Button>68</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2Button3</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons20</BindNameDi>
+      <BindName>Joystick Buttons20</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Gear 4</ButtonName>
+      <DirectInputButton>
+        <Button>69</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2Button4</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons21</BindNameDi>
+      <BindName>Joystick Buttons21</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Gear 5</ButtonName>
+      <DirectInputButton>
+        <Button>70</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2Button5</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons22</BindNameDi>
+      <BindName>Joystick Buttons22</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Gear 6</ButtonName>
+      <DirectInputButton>
+        <Button>71</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2Button6</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons23</BindNameDi>
+      <BindName>Joystick Buttons23</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Chat: Quick 1</ButtonName>
+      <InputMapping>ChatQuick1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Chat: Quick 2</ButtonName>
+      <InputMapping>ChatQuick2</InputMapping>
+      <AnalogType>None</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Chat: Quick 3</ButtonName>
+      <InputMapping>ChatQuick3</InputMapping>
+      <AnalogType>None</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Chat: Quick 4</ButtonName>
+      <InputMapping>ChatQuick4</InputMapping>
+      <AnalogType>None</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Voice: Push-to-talk</ButtonName>
+      <InputMapping>ChatPushToTalk</InputMapping>
+      <AnalogType>None</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Voice: Mode</ButtonName>
+      <InputMapping>ChatVoiceMode</InputMapping>
+      <AnalogType>None</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithRawInputTrackball>false</HideWithRawInputTrackball>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+      <HideWithoutProMode>false</HideWithoutProMode>
+      <HideWithProMode>false</HideWithProMode>
+    </JoystickButtons>
+  </JoystickButtons>
+  <EmulationProfile>SegaInitialDLindbergh</EmulationProfile>
+  <GameProfileRevision>13</GameProfileRevision>
+  <HasSeparateTestMode>true</HasSeparateTestMode>
+  <Is64Bit>false</Is64Bit>
+  <TestExecIs64Bit>false</TestExecIs64Bit>
+  <EmulatorType>ElfLdr2</EmulatorType>
+  <Patreon>false</Patreon>
+  <RequiresAdmin>false</RequiresAdmin>
+  <msysType>0</msysType>
+  <InvertedMouseAxis>false</InvertedMouseAxis>
+  <GunGame>false</GunGame>
+  <DevOnly>false</DevOnly>
+  <HasTwoExecutables>false</HasTwoExecutables>
+  <LaunchSecondExecutableFirst>false</LaunchSecondExecutableFirst>
+  <GamePath2 />
+  <xAxisMin>0</xAxisMin>
+  <xAxisMax>255</xAxisMax>
+  <yAxisMin>0</yAxisMin>
+  <yAxisMax>255</yAxisMax>
+  <GasAxisMin>0</GasAxisMin>
+  <GasAxisMax>255</GasAxisMax>
+  <OnlineProfileURL>https://teknoparrot.com/OnlineProfile/InitialD</OnlineProfileURL>
+  <IsLegacy>false</IsLegacy>
+  <HasTpoSupport>false</HasTpoSupport>
+  <HasGtOnTp>false</HasGtOnTp>
+  <IsTpoExclusive>false</IsTpoExclusive>
+  <RequiresBepInEx>false</RequiresBepInEx>
+  <LaunchMinimized>false</LaunchMinimized>
+  <LaunchSecondExecutableMinimized>false</LaunchSecondExecutableMinimized>
+  <OnlineIdFieldName>OnlineID</OnlineIdFieldName>
+  <OnlineIdType>InitialD</OnlineIdType>
+  <Requires4GBPatch>false</Requires4GBPatch>
+  <Rotary1Sensitivity>1</Rotary1Sensitivity>
+  <Rotary2Sensitivity>1</Rotary2Sensitivity>
+  <Rotary3Sensitivity>1</Rotary3Sensitivity>
+  <Rotary4Sensitivity>1</Rotary4Sensitivity>
+  <Rotary1Increment>5</Rotary1Increment>
+  <Rotary2Increment>5</Rotary2Increment>
+  <Rotary3Increment>5</Rotary3Increment>
+  <Rotary4Increment>5</Rotary4Increment>
+  <UseRemoteThread>false</UseRemoteThread>
+  <UseDirectionalPresses>true</UseDirectionalPresses>
+  <GameVersion />
+  <AllowSettingSync>false</AllowSettingSync>
+  <Use16BitAnalog>false</Use16BitAnalog>
+  <IsDeprecated>false</IsDeprecated>
+</GameProfile>

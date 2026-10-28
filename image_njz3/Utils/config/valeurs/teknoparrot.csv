@@ -1,0 +1,120 @@
+# Les profils TeknoParrot dont la resolution est pilotable, et SOUS QUEL NOM.
+#
+# Il n'y a pas une convention mais six, selon le jeu : ResolutionWidth,
+# Custom Resolution Width, Resolution Width, Screen Width, CustomWidth, Width.
+# D ou cette table : il est hors de question de deviner par motif, car des
+# champs comme ShadowMapWidth, CharacterShadowMapWidth, SpecularWidth ou
+# FrameBufferHeight portent eux aussi des valeurs de resolution et casseraient
+# le rendu si on les ecrasait.
+#
+# CHAMP_ACTIVER : le booleen qui autorise la resolution personnalisee, quand le
+# profil en a un. Build-Config le met a 1 des lors qu il existe.
+#
+# Les profils absents de cette table n'ont aucun champ de resolution : ils
+# suivent le bureau, que SetResolution.exe a deja change. Savoir s ils
+# fonctionnent vraiment en basse resolution est ce que tranchent les listes
+# romlists\TeknoParrot<RES>.txt, pas ce fichier.
+#
+# Genere le 18/10/2026 en lisant les profils de Racecab1 ; a regenerer apres
+# une mise a jour de TeknoParrot qui ajouterait des jeux.
+PROFIL;DOSSIER;CHAMP_LARGEUR;CHAMP_HAUTEUR;CHAMP_ACTIVER
+BattleGear4Pro;Teknoparrot2025-04;Custom Resolution Width;Custom Resolution Height;
+BattleGear4Pro;Teknoparrot2025-08;Custom Resolution Width;Custom Resolution Height;
+BattleGear4Pro;Teknoparrot2026-06;Custom Resolution Width;Custom Resolution Height;
+BattleGear4Tuned;Teknoparrot2025-04;Custom Resolution Width;Custom Resolution Height;
+BattleGear4Tuned;Teknoparrot2025-08;Custom Resolution Width;Custom Resolution Height;
+BattleGear4Tuned;Teknoparrot2026-06;Custom Resolution Width;Custom Resolution Height;
+Cars;Teknoparrot2025-04;Resolution Width;Resolution Height;
+Cars;Teknoparrot2025-08;Resolution Width;Resolution Height;
+Cars;Teknoparrot2026-06;Resolution Width;Resolution Height;
+CrazyRide;Teknoparrot2025-04;CustomWidth;CustomHeight;CustomResolution
+CrazyRide;Teknoparrot2025-08;CustomWidth;CustomHeight;CustomResolution
+CrazyRide;Teknoparrot2026-06;CustomWidth;CustomHeight;CustomResolution
+DeadHeat;Teknoparrot2025-04;Custom Resolution Width;Custom Resolution Height;
+DeadHeat;Teknoparrot2025-08;Custom Resolution Width;Custom Resolution Height;
+DeadHeat;Teknoparrot2026-06;Custom Resolution Width;Custom Resolution Height;
+GaelcoChampionshipTuningRace;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+GaelcoChampionshipTuningRace;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+GaelcoChampionshipTuningRace;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+hummerextreme;Teknoparrot2025-04;Custom Resolution Width;Custom Resolution Height;
+hummerextreme;Teknoparrot2025-08;Custom Resolution Width;Custom Resolution Height;
+hummerextreme;Teknoparrot2026-06;Custom Resolution Width;Custom Resolution Height;
+ID4Exp;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+ID4Exp;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+ID4Exp;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+ID4Jap;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+ID4Jap;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+ID4Jap;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+ID5;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+ID5;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+ID5;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+IDZTP;Teknoparrot2025-04;Screen Width;Screen Height;
+IDZTP;Teknoparrot2025-08;Screen Width;Screen Height;
+IDZTP;Teknoparrot2026-06;Screen Width;Screen Height;
+IDZv2TP;Teknoparrot2025-04;Screen Width;Screen Height;
+IDZv2TP;Teknoparrot2025-08;Screen Width;Screen Height;
+IDZv2TP;Teknoparrot2026-06;Screen Width;Screen Height;
+MKDX;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;CustomResolution
+MKDX;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;CustomResolution
+MKDX;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;CustomResolution
+MKDX118;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;CustomResolution
+MKDX118;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;CustomResolution
+MKDX118;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;CustomResolution
+Nirin;Teknoparrot2025-04;Custom Resolution Width;Custom Resolution Height;
+Nirin;Teknoparrot2025-08;Custom Resolution Width;Custom Resolution Height;
+Nirin;Teknoparrot2026-06;Custom Resolution Width;Custom Resolution Height;
+or2spdlx;Teknoparrot2025-04;Resolution Width;Resolution Height;
+or2spdlx;Teknoparrot2025-08;Resolution Width;Resolution Height;
+or2spdlx;Teknoparrot2026-06;Resolution Width;Resolution Height;
+R-Tuned;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;CustomResolution
+R-Tuned;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;CustomResolution
+R-Tuned;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;CustomResolution
+RingRiders;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+RingRiders;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+RingRiders;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+Showdown;Teknoparrot2025-04;Width;Height;
+Showdown;Teknoparrot2025-08;Width;Height;
+Showdown;Teknoparrot2026-06;Width;Height;
+SR3;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+SR3;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+SR3;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+SR3AlpineEdition;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+SR3AlpineEdition;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+SR3AlpineEdition;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+SR3ArticEdition;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+SR3ArticEdition;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+SR3ArticEdition;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+SR3CanyonEdition;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+SR3CanyonEdition;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+SR3CanyonEdition;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+SR3MasterEdition;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+SR3MasterEdition;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+SR3MasterEdition;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+SR3SafariEdition;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+SR3SafariEdition;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+SR3SafariEdition;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+SR3TropicalEdition;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+SR3TropicalEdition;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+SR3TropicalEdition;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+SR3TropicalEdition478;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+SR3TropicalEdition478;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+SR3TropicalEdition478;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+SWDC;Teknoparrot2025-04;Resolution Width;Resolution Height;
+SWDC;Teknoparrot2025-08;Resolution Width;Resolution Height;
+SWDC;Teknoparrot2026-06;Resolution Width;Resolution Height;
+TokyoCop;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;
+TokyoCop;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;
+TokyoCop;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;
+WMMT3_link_cab1;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;CustomResolution
+WMMT3_link_cab1;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;CustomResolution
+WMMT3_link_cab1;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;CustomResolution
+WMMT3_link_cab2;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;CustomResolution
+WMMT3_link_cab2;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;CustomResolution
+WMMT3_link_cab2;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;CustomResolution
+WMMT3_single;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;CustomResolution
+WMMT3_single;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;CustomResolution
+WMMT3_single;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;CustomResolution
+WMMT3;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;CustomResolution
+WMMT3DXP;Teknoparrot2025-04;ResolutionWidth;ResolutionHeight;CustomResolution
+WMMT3DXP;Teknoparrot2025-08;ResolutionWidth;ResolutionHeight;CustomResolution
+WMMT3DXP;Teknoparrot2026-06;ResolutionWidth;ResolutionHeight;CustomResolution

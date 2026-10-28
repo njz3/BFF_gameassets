@@ -1,0 +1,5 @@
+#Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
+Model 2 Sm2 Raw;Model 2 Raw;@;;1992-1995;Sega;;;;;;;;;;;;;;;
+Model 3 Raw;Model 3 Raw;@;;1995-1999;Sega;;;;;;;;;;;;;;;
+Naomi Raw;Naomi Raw;@;;1999-2005;Sega;;;;;;;;;;;;;;;
+LinuxLoaderRaw;Linux Loader Raw;@;;2005-2012;Various;;;;;;;;;;;;;;;;

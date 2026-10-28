@@ -1,0 +1,6 @@
+#Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
+Single;Single;@;;Single Player;Multi systems;;;;;;;;;;;;;;;
+Multi;Multi;@;;Multiplayer mode;Multi systems;;;;;;;;;;;;;;;
+Bike Main;Bike;@;;Bike games;Multi systems;;;;;;;;;;;;;;;
+shutdownpc;Shut down;Utils;;Shutdown the computer;Power-off;;;;;;;;shutdownpc.bat;;;;;;;
+rebootpc;Reboot;Utils;;Reboot the computer;Reboot;;;;;;;;rebootpc.bat;;;;;;;

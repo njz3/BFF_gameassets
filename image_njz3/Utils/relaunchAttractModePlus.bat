@@ -1,0 +1,2 @@
+CALL killAttractModePlus.bat
+CALL startAttractModePlus.bat

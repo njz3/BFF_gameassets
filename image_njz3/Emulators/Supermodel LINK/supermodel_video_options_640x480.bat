@@ -1,2 +1,0 @@
-:: 640x480 4/3
-set VIDEO_OPTIONS=-res=640,480

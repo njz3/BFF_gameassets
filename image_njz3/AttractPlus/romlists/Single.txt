@@ -1,0 +1,11 @@
+#Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
+Model 2;Model 2;@;;1992-1995;Sega;;;;;;;;;;;;;;;
+Model 3;Model 3;@;;1995-1999;Sega;;;;;;;;;;;;;;;
+Naomi;Naomi;@;;1999-2005;Sega;;;;;;;;;;;;;;;
+TeknoParrot;TeknoParrot;@;;2005-2015;Various;;;;;;;;;;;;;;;
+MAME 3D;MAME 3D;@;;1995-2010;Various;;;;;;;;;;;;;;;
+MAME 2D;MAME 2D;@;;1980-1995;Various;;;;;;;;;;;;;;;
+Other;Other;@;;1990-2010;Various;;;;;;;;;;;;;;;
+LinuxLoader;Linux Loader;@;;2005-2012;Various;;;;;;;;;;;;;;;;
+WindowsLoader;Windows Loader;@;;2005-2020;Various;;;;;;;;;;;;;;;;
+Raw versions;Raw versions;@;;1992-2012;Various;;;;;;;;;;;;;;;

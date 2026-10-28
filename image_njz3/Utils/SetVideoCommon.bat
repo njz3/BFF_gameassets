@@ -8,20 +8,21 @@ CALL set_cab_id.bat
 XCOPY /Y /I "C:\Racecab\Hyperspin\Databases\1P\1P%RES_EXT%.xml" "C:\Racecab\Hyperspin\Databases\1P\1P.xml"
 XCOPY /Y /I "C:\Racecab\Hyperspin\Databases\MULTI\MULTI%RES_EXT%.xml" "C:\Racecab\Hyperspin\Databases\MULTI\MULTI.xml"
 
-:: MAME
-XCOPY /Y /I "%EMULATORS_DIR%\Mame\mame%RES_EXT%.ini" "%EMULATORS_DIR%\Mame\mame.ini"
-:: MAME LINK
-XCOPY /Y /I "%EMULATORS_DIR%\Mame LINK\mame%RES_EXT%.ini" "%EMULATORS_DIR%\Mame LINK\mame.ini"
-:: MAME Namco LINK
-XCOPY /Y /I "%EMULATORS_DIR%\Mame Namco LINK\mame%RES_EXT%.ini" "%EMULATORS_DIR%\Mame Namco LINK\mame.ini"
+:: MAME : mame.ini par Build-Config (gabarits, voir targets.csv)
+:: Virtua Racing : le SetXXX.bat appelant vient de poser la NVRAM au format de
+:: l ecran dans Mame\nvram\vr. Avec le dossier d ecriture, MAME lit d abord
+:: sa copie de Saves\mame_single\nvram\vr : on l efface, il repart de
+:: celle qui vient d etre posee.
+CALL set_writedir.bat
+if defined WRITEDIR_ROOT if exist "%WRITEDIR_ROOT%\mame_single\nvram\vr\" RMDIR /S /Q "%WRITEDIR_ROOT%\mame_single\nvram\vr"
 
-:: Flycast
-XCOPY /Y /I "%EMULATORS_DIR%\Flycast\flycast_options%RES_EXT%.bat" "%EMULATORS_DIR%\Flycast\flycast_options.bat"
-XCOPY /Y /I "%EMULATORS_DIR%\Flycast\emu_single%RES_EXT%.cfg" "%EMULATORS_DIR%\Flycast\emu.cfg"
-
-:: Flycast LINK
-XCOPY /Y /I "%EMULATORS_DIR%\Flycast LINK\flycast_options%RES_EXT%.bat" "%EMULATORS_DIR%\Flycast LINK\flycast_options.bat"
-XCOPY /Y /I "%EMULATORS_DIR%\Flycast LINK\emu%CAB_ID%%RES_EXT%.cfg" "%EMULATORS_DIR%\Flycast LINK\emu.cfg"
+:: Flycast, Supermodel et sm2-emu passent par la table de cibles :
+:: Utils\config\targets.csv dit quel fichier vient de quel gabarit ou de
+:: quelle variante, et sous quelle identite de cabine.
+:: Build-Config ne touche PAS aux dossiers NVRAM sur un changement de
+:: resolution : ils ne sont reposes que lorsque la cabine change.
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Racecab\Utils\config\Build-Config.ps1" -Res %RES_EXT%
+IF ERRORLEVEL 1 ECHO *** Build-Config a echoue : configuration incomplete ***
 
 :: model 2
 XCOPY /Y /I "%EMULATORS_DIR%\Model2 v1.1a\Emulator%RES_EXT%.ini" "%EMULATORS_DIR%\Model2 v1.1a\Emulator.ini"
@@ -30,11 +31,6 @@ XCOPY /Y /I "%EMULATORS_DIR%\Model2 v1.1a LINK\Emulator%RES_EXT%.ini" "%EMULATOR
 XCOPY /E /H /C /Y /I "%EMULATORS_DIR%\Model2 v1.1a\scripts%RES_EXT%" "%EMULATORS_DIR%\Model2 v1.1a\scripts"
 XCOPY /E /H /C /Y /I "%EMULATORS_DIR%\Model2 v1.1a LINK\scripts%RES_EXT%" "%EMULATORS_DIR%\Model2 v1.1a LINK\scripts"
 
-:: Supermodel
-XCOPY /Y /I "%EMULATORS_DIR%\Supermodel\supermodel_video_options%RES_EXT%.bat" "%EMULATORS_DIR%\Supermodel\supermodel_video_options.bat"
-:: Supermodel LINK
-XCOPY /Y /I "%EMULATORS_DIR%\Supermodel LINK\supermodel_video_options%RES_EXT%.bat" "%EMULATORS_DIR%\Supermodel LINK\supermodel_video_options.bat"
-
 :: Dolphin NGC
 XCOPY /Y /I "%EMULATORS_DIR%\Dolphin\dolphin\User\Config\GFX%RES_EXT%.ini" "%EMULATORS_DIR%\Dolphin\dolphin\User\Config\GFX.ini"
 
@@ -42,11 +38,9 @@ XCOPY /Y /I "%EMULATORS_DIR%\Dolphin\dolphin\User\Config\GFX%RES_EXT%.ini" "%EMU
 XCOPY /Y /I "%EMULATORS_DIR%\Triforce\dolphin_tri_FZero\User\Config\GFX%RES_EXT%.ini" "%EMULATORS_DIR%\Triforce\dolphin_tri_FZero\User\Config\GFX.ini"
 XCOPY /Y /I "%EMULATORS_DIR%\Triforce\dolphin_tri_MKAGP\User\Config\GFX%RES_EXT%.ini" "%EMULATORS_DIR%\Triforce\dolphin_tri_MKAGP\User\Config\GFX.ini"
 
-:: Teknoparrot OR2SPDX
-XCOPY /Y /I "%EMULATORS_DIR%\TeknoParrot\UserProfiles\or2spdlx%RES_EXT%.xml" "%EMULATORS_DIR%\TeknoParrot\UserProfiles\or2spdlx.xml"
-:: Teknoparrot MKDDX
-XCOPY /Y /I "%EMULATORS_DIR%\TeknoParrot\UserProfiles\MKDX%RES_EXT%.xml" "%EMULATORS_DIR%\TeknoParrot\UserProfiles\MKDX.xml"
+:: La resolution des profils TeknoParrot est posee par Build-Config
+:: (type XML, table valeurs\teknoparrot.csv) : les noms de champs varient
+:: d un jeu a l autre, et les anciennes lignes XCOPY visaient un dossier
+:: TeknoParrot qui n existe plus depuis que les installations sont versionnees.
 
-:: Create a texte file to know chich resolution is used
-DEL /Q "C:\Racecab\Configured_for*.txt"
-ECHO Configuration done for SSD%RES_EXT% >> "C:\Racecab\Configured_for%RES_EXT%.txt"
+:: Le temoin Configured_for*.txt est desormais ecrit par Build-Config.

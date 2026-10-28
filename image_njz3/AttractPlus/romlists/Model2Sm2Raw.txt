@@ -1,0 +1,9 @@
+#Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
+daytona;Daytona USA;Sm2Raw;;1994;Sega;Racing *FFB*;8;0;paddle,pedal;preliminary;1;raster;;;;9;;;;
+daytonas;Daytona USA Saturn Ads;Sm2Raw;;1994;Sega;Racing *FFB*;8;0;paddle,pedal;preliminary;1;raster;;;;9;;;;
+#daytonagtx;Daytona USA GTX;Sm2;;1994;Sega;;8;0;paddle,pedal;preliminary;1;raster;;;;9;;;;
+indy500;Indy 500;Sm2Raw;;1995;Sega;Racing *FFB*;2;0;paddle,pedal;preliminary;1;raster;;;;9;;;;
+overrev;Over Rev;Sm2Raw;;1997;Jaleco Ltd.;Racing *FFB*;2;;;;;;;;;;;;;
+sgt24h;Super GT 24h;Sm2Raw;;1996;Jaleco Ltd.;Racing *FFB*;;;;;;;;;;;;;;
+srallyc;Sega Rally Championship;Sm2Raw;;1993;Sega;Racing *FFB*;2;0;paddle,pedal;preliminary;1;raster;;;;1;;;;
+stcc;Sega Touring Car Championship;Sm2Raw;;1996;Sega;Racing *FFB*;2;0;paddle,pedal;preliminary;1;raster;;;;9;;;;

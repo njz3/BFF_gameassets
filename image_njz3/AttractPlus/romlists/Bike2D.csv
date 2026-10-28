@@ -1,0 +1,14 @@
+#Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
+500gp;500 GP (US, 5GP3 Ver. C);MAME;;1998;Namco;Bike;2;0;joystick (vertical2-way),joystick (analog),pedal,joystick (vertical2-way);preliminary;1;raster;;;;4;;;;
+abcop;A.B. Cop (World) (FD1094 317-0169b);MAME;;1990;Sega;Bike;1;0;paddle,pedal;good;1;raster;;;;1;;;;
+coolridr;Cool Riders;MAME;;1995;Sega;Bike;2;0;paddle,pedal,paddle,pedal;imperfect;2;raster;;;;4;;;;
+enduror;Enduro Racer (Rev A, YM2151, FD1089B 317-0013A);MAME;;1986;Sega;Bike;1;0;joystick (analog),pedal;good;1;raster;;;;;;;;
+gprider;GP Rider (World, FD1094 317-0163) (Twin setup);MAME;;1990;Sega;Bike;2;0;paddle,pedal,paddle,pedal;good;2;raster;;;;2;;;;
+hangon;Hang-On (Rev A);MAME;;1985;Sega;Bike;1;0;paddle,pedal;good;1;raster;;;;;;;;
+hangonjr;Hang-On Jr. (Rev. B);MAME;;1985;Sega;Bike;1;0;paddle,pedal;good;1;raster;;;;;;;;
+rachero;Racing Hero (FD1094 317-0144);MAME;;1989;Sega;Bike;1;0;paddle,pedal;good;1;raster;;;;;;;;
+rallybik;Rally Bike (Europe, US) / Dash Yarou (Japan);MAME;;1988;Toaplan / Taito Corporation;Bike;2;270;joystick (8-way),joystick (8-way);good;1;raster;;;;2;;;;
+scross;Stadium Cross (World);MAME;;1992;Sega;Bike;2;0;paddle,pedal,joystick (8-way),paddle,pedal;imperfect;2;raster;;;;3;;;;
+shangon;Super Hang-On (sitdown/upright) (unprotected);MAME;;1987;Sega;Bike;1;0;paddle,pedal;good;1;raster;;;;1;;;;
+wgp2;WGP 2: Real Race Feeling (Japan);MAME;;1990;Taito Corporation;Bike;2;0;joystick (4-way),joystick (analog),joystick (analog);preliminary;1;raster;;;;4;;;;
+wgp;WGP: Real Race Feeling (World);MAME;;1989;Taito Corporation Japan;Bike;2;0;joystick (4-way),joystick (analog),joystick (analog);preliminary;1;raster;;;;6;;;;

@@ -1,0 +1,19 @@
+# Une ligne par identite de cabinet. CAB reprend le suffixe de set_cab_id.bat.
+# En link les deux cabinets forment un anneau : le suivant de l un est l autre.
+#
+# PORT_LOCAL / PORT_SUIVANT : Supermodel ecoute sur PORT_LOCAL et emet vers
+# IP_SUIVANTE:PORT_SUIVANT. Les deux cabines etant sur des machines
+# differentes, le meme port des deux cotes convient - c est la configuration
+# d origine de l image, et elle est eprouvee. MAME, lui, croise 15112/15113
+# par set_cab_network_link_cab*.bat ; les deux emulateurs ne tournant jamais
+# en meme temps, il n y a pas de conflit.
+# FLYCAST_SERVEUR_LOCAL / FLYCAST_SERVEUR / FLYCAST_NOM : le link de Flycast
+# (emu.cfg, section [network]) : cab1 est le serveur (ActAsServer), les
+# autres s y connectent (server = adresse de cab1) ; ISPUsername = le nom.
+# Enable et EmulateBBA reprennent LINK_ACTIF.
+CAB;LINK_ACTIF;IP_LOCALE;MASQUE;IP_SUIVANTE;PORT_LOCAL;PORT_SUIVANT;INDEX_CABINET;FORCE_FFB;FLYCAST_SERVEUR_LOCAL;FLYCAST_SERVEUR;FLYCAST_NOM
+_single;false;;;;1970;1970;0;100;false;;racecab1
+_link_cab1;true;192.168.1.4;255.255.255.0;192.168.1.5;1970;1970;0;30;true;;racecab1
+_link_cab2;true;192.168.1.5;255.255.255.0;192.168.1.4;1970;1970;1;30;false;192.168.1.4;racecab2
+_link_cab3;true;192.168.1.6;255.255.255.0;192.168.1.7;1970;1970;2;30;false;192.168.1.4;racecab3
+_link_cab4;true;192.168.1.7;255.255.255.0;192.168.1.4;1970;1970;3;30;false;192.168.1.4;racecab4

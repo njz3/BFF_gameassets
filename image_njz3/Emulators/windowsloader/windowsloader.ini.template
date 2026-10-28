@@ -1,0 +1,23 @@
+; Reglages de l image Racecab pour windowsloader. Tout ce qui n est pas
+; ici garde la valeur par defaut. Le bouton "Sauvegarder" du menu (Tab)
+; reecrit ce fichier en entier.
+;
+; DISPLAY_MODE = BORDERLESS : fenetre sans bordure a la resolution du bureau
+; (choix du proprietaire, 24/10/2026). Le lanceur ne passe donc plus
+; --fullscreen.
+; GENERE par Utils\config\Build-Config.ps1 a partir de windowsloader.ini.template :
+; c est le gabarit qu il faut modifier. Le bouton "Sauvegarder" du menu (Tab)
+; ecrit bien ce fichier, mais le Build-Config suivant le recrit.
+; DISPLAY_MODE suit la resolution (colonne MODE_FENETRE de resolutions.csv) :
+; BORDERLESS, ou BORDERLESS_STRETCH en super-resolution (l image remplit
+; l ecran). Il n est plus passe en ligne de commande (plus de
+; windowsloader_video_options.bat depuis le 27/10/2026).
+;
+[Display]
+DISPLAY_MODE = {{MODE_FENETRE}}
+
+; Langue du selecteur et du menu (Tab), depuis la 20261028-3 : AUTO suit la
+; langue d affichage de Windows (francais si Windows est en francais, sinon
+; anglais). Choix du proprietaire, 28/10/2026 : AUTO.
+[Launcher]
+LANGUAGE = AUTO

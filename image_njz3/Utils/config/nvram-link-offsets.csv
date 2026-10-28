@@ -1,0 +1,73 @@
+# Offsets des reglages de link dans les NVRAM Supermodel (Model 3).
+#
+# RELATIFS AU BLOC et en ordre LOGIQUE : octet logique i = octet physique i^1,
+# le 93C46 etant un composant 16 bits que Supermodel range en mots little-endian.
+# Les offsets de FICHIER ne sont PAS portables : la version de Supermodel et le
+# chemin source du bloc, tous deux de longueur variable, figurent en clair dans
+# l en-tete du fichier.
+#
+# PERIODE     : distance du second exemplaire de l enregistrement dans le 93C46.
+# MIROIR_BRAM : ou la Backup RAM recopie le meme enregistrement, un mot EEPROM
+#               par double mot 32 bits gros-boutien. Vide = pas de miroir.
+#
+# TABLE DE LECTURE SEULEMENT. Les jeux verifient une somme de controle sur
+# l enregistrement : modifier un seul octet, meme un zero de bourrage sans aucun
+# sens de reglage, fait retomber le jeu aux valeurs d usine (cabine 1, maitre,
+# solo) en recalculant la somme. Verifie sur scudplus (avec miroir) et sur
+# srally2 (sans miroir). La bascule de mode et d ID se fait donc en choisissant
+# le DOSSIER de NVRAM, pas en patchant des octets.
+JEU;OFFSET;SINGLE;CAB1;CAB2;PERIODE;MIROIR_BRAM;SENS
+dayto2pe;0x06;9F;07;ED;0x3A;0x1E020;somme de controle, octet haut (c est elle qui interdit le patch)
+dayto2pe;0x07;1D;02;BD;0x3A;0x1E020;somme de controle, octet bas (c est elle qui interdit le patch)
+dayto2pe;0x10;00;01;01;0x3A;0x1E020;? change avec le link
+dayto2pe;0x1E;00;01;02;0x3A;0x1E020;numero de cabine (0 = solo, 1..n en link)
+dayto2pe;0x1F;00;00;01;0x3A;0x1E020;drapeau esclave (0 = maitre, 1 = esclave)
+dayto2pe;0x26;01;05;05;0x3A;0x1E020;mode de link (1 = solo ici, 5 = link)
+daytona2;0x06;E8;96;0C;0x3A;0x1E020;somme de controle, octet haut (c est elle qui interdit le patch)
+daytona2;0x07;9F;9F;1D;0x3A;0x1E020;somme de controle, octet bas (c est elle qui interdit le patch)
+daytona2;0x1E;00;01;02;0x3A;0x1E020;numero de cabine (0 = solo, 1..n en link)
+daytona2;0x1F;00;00;01;0x3A;0x1E020;drapeau esclave (0 = maitre, 1 = esclave)
+daytona2;0x26;03;05;05;0x3A;0x1E020;mode de link (3 = solo, 5 = link)
+dirtdvls;0x06;17;6A;48;;;somme de controle, octet haut (c est elle qui interdit le patch)
+dirtdvls;0x07;85;19;7E;;;somme de controle, octet bas (c est elle qui interdit le patch)
+dirtdvls;0x19;03;00;01;;;index de cabine base 0 (3 = solo, 0 = cab1, 1 = cab2)
+dirtdvls;0x2E;00;00;01;;;drapeau esclave (0 = maitre, 1 = esclave)
+eca;;;;;0x3A;0x1E020;cab1 et cab2 identiques au solo : link NON configure
+harleya;0x06;05;6E;90;0x3A;0x1E020;somme de controle, octet haut (c est elle qui interdit le patch)
+harleya;0x07;B8;16;6C;0x3A;0x1E020;somme de controle, octet bas (c est elle qui interdit le patch)
+harleya;0x21;00;01;01;0x3A;0x1E020;link actif (0 = solo, 1 = link)
+harleya;0x22;00;00;01;0x3A;0x1E020;? a 1 sur la cabine 2 seulement
+harleya;0x23;00;00;01;0x3A;0x1E020;drapeau esclave (0 = maitre, 1 = esclave)
+lemans24;0x06;B7;84;3C;;;somme de controle, octet haut (c est elle qui interdit le patch)
+lemans24;0x07;32;96;FC;;;somme de controle, octet bas (c est elle qui interdit le patch)
+lemans24;0x19;02;00;01;;;index de cabine base 0 (2 = solo, 0 = cab1, 1 = cab2)
+lemans24;0x1C;00;01;01;;;link actif (0 = solo, 1 = link)
+lemans24;0x2D;00;02;02;;;nombre de cabines (0 = solo, 2 = link)
+lemans24;0x33;00;00;01;;;drapeau esclave (0 = maitre, 1 = esclave)
+lemans24_m2db;0x06;9B;84;84;;;somme de controle, octet haut (c est elle qui interdit le patch)
+lemans24_m2db;0x07;94;96;96;;;somme de controle, octet bas (c est elle qui interdit le patch)
+lemans24_m2db;0x19;02;00;00;;;index de cabine base 0 : 00 SUR LES DEUX CABINES, a corriger
+lemans24_m2db;0x2D;00;02;02;;;nombre de cabines (0 = solo, 2 = link)
+lemans24_m3db;0x06;B7;84;3C;;;somme de controle, octet haut (c est elle qui interdit le patch)
+lemans24_m3db;0x07;32;96;FC;;;somme de controle, octet bas (c est elle qui interdit le patch)
+lemans24_m3db;0x19;02;00;01;;;index de cabine base 0 (2 = solo, 0 = cab1, 1 = cab2)
+lemans24_m3db;0x1C;00;01;01;;;link actif (0 = solo, 1 = link)
+lemans24_m3db;0x2D;00;02;02;;;nombre de cabines (0 = solo, 2 = link)
+lemans24_m3db;0x33;00;00;01;;;drapeau esclave (0 = maitre, 1 = esclave)
+scud;0x06;5C;0A;90;0x3A;0x1E020;somme de controle, octet haut (c est elle qui interdit le patch)
+scud;0x07;3D;B3;31;0x3A;0x1E020;somme de controle, octet bas (c est elle qui interdit le patch)
+scud;0x1E;00;01;02;0x3A;0x1E020;numero de cabine (0 = solo, 1..n en link)
+scud;0x1F;00;00;01;0x3A;0x1E020;drapeau esclave (0 = maitre, 1 = esclave)
+scud;0x26;03;05;05;0x3A;0x1E020;mode de link (3 = solo, 5 = link)
+scudau;;;;;0x3A;0x1E020;cab1 et cab2 identiques au solo : link NON configure
+scudj;;;;;0x3A;0x1E020;cab1 et cab2 identiques au solo : link NON configure
+scudplus;0x06;33;0B;BE;0x3A;0x1E020;somme de controle, octet haut (c est elle qui interdit le patch)
+scudplus;0x07;B2;6F;06;0x3A;0x1E020;somme de controle, octet bas (c est elle qui interdit le patch)
+scudplus;0x1E;00;01;02;0x3A;0x1E020;numero de cabine (0 = solo, 1..n en link)
+scudplus;0x1F;00;00;01;0x3A;0x1E020;drapeau esclave (0 = maitre, 1 = esclave)
+scudplus;0x26;03;05;05;0x3A;0x1E020;mode de link (3 = solo, 5 = link)
+scudplus;0x27;01;00;00;0x3A;0x1E020;mode de link, second octet
+srally2;0x0A;20;21;23;;;somme de controle, octet haut
+srally2;0x0B;CC;2D;0E;;;somme de controle, octet bas
+srally2;0x0F;04;05;06;;;compteur d ecritures
+srally2;0x19;03;43;83;;;cabine en bits 6-7 (03 = solo, 43 = cab1, 83 = cab2)

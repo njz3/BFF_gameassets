@@ -1,0 +1,97 @@
+# Quel fichier est produit, a partir de quoi, et sous quelle identite.
+# Le template ou la variante vit dans le dossier de l emulateur, a cote du
+# fichier produit ; un meme template peut servir plusieurs cibles, ici le
+# solo et le LINK.
+#
+# CAB  : _single pour un dossier solo ou pour une cible qui ne depend pas de
+#        la cabine, __CAB__ pour la cabine de CETTE machine.
+# TYPE : TEMPLATE  un template a mots-cles {{AINSI}} -> le fichier produit
+#        VARIANT un fichier deja ecrit, choisi par son nom -> recopie
+#        FOLDER  un dossier modele -> recopie dans le dossier vivant
+#        STALE   les copies d un fichier que l emulateur garde dans le
+#                 dossier d ecriture (TARGET relative a WRITEDIR_ROOT) :
+#                 effacees si elles different de la SOURCE, a placer apres
+#                 la cible qui regenere cette SOURCE
+# OPTIONAL : yes = si la source manque, on previent et on passe, au lieu
+#        d echouer. A reserver aux cas ou l absence est legitime.
+# WRITEDIR : pour un FOLDER, le dossier d ecriture (relatif a WRITEDIR_ROOT,
+#        {{CAB}} permis) que l emulateur amorce depuis ce dossier vivant. Vide
+#        quand des NVRAM sont posees : l emulateur le refait au lancement
+#        suivant depuis celles qu on vient de poser.
+# TREE : yes = un FOLDER range par jeu, recopie avec ses sous-dossiers
+#        (linuxloader). Sinon a plat : un sous-dossier du modele est une
+#        remise, jamais recopiee.
+#
+# {{RES}} et {{CAB}} dans la SOURCE d une VARIANT ou d un FOLDER disent de
+# quels axes la cible depend. C est ce qui permet de changer de resolution
+# sans rien toucher de ce qui depend de la cabine, et inversement.
+#
+# UNE CIBLE DE TYPE FOLDER PORTE DE L ETAT, PAS DE LA CONFIGURATION : les
+# NVRAM gardent les reglages et les meilleurs temps. Elles ne sont recopiees
+# que lorsque la cabine change vraiment, jamais sur un changement de
+# resolution. Voir l en-tete de Build-Config.ps1.
+TARGET;SOURCE;CAB;TYPE;OPTIONAL;WRITEDIR;TREE
+Emulators\sm2-emu\sm2-emu.ini;Emulators\sm2-emu\sm2-emu.ini.template;_single;TEMPLATE;
+Emulators\sm2-emu LINK\sm2-emu.ini;Emulators\sm2-emu\sm2-emu.ini.template;__CAB__;TEMPLATE;
+Emulators\Supermodel\Config\Supermodel.ini;Emulators\Supermodel\Config\Supermodel.ini.template;_single;TEMPLATE;
+Emulators\Supermodel LINK\Config\Supermodel.ini;Emulators\Supermodel\Config\Supermodel.ini.template;__CAB__;TEMPLATE;
+# MAME : mame.ini selon la resolution. Un gabarit pour Mame et Mame LINK
+# (memes cles), un pour Mame Namco LINK (MAME 0.251).
+Emulators\Mame\mame.ini;Emulators\Mame\mame.ini.template;_single;TEMPLATE;
+Emulators\Mame LINK\mame.ini;Emulators\Mame\mame.ini.template;_single;TEMPLATE;
+Emulators\Mame Namco LINK\mame.ini;Emulators\Mame Namco LINK\mame.ini.template;_single;TEMPLATE;
+# Affichage des deux chargeurs selon la resolution (MODE_FENETRE), dans leur
+# ini. linuxloader lit la copie de son ini faite dans son dossier d ecriture
+# (Saves\linuxloader_<identite>) : la cible STALE efface celles qui ne sont
+# plus a jour, il la refait depuis l original au lancement suivant.
+Emulators\linuxloader\linuxloader.ini;Emulators\linuxloader\linuxloader.ini.template;_single;TEMPLATE;
+linuxloader_*\linuxloader.ini;Emulators\linuxloader\linuxloader.ini;_single;STALE;
+Emulators\windowsloader\windowsloader.ini;Emulators\windowsloader\windowsloader.ini.template;_single;TEMPLATE;
+Emulators\Flycast\emu.cfg;Emulators\Flycast\emu.cfg.template;_single;TEMPLATE;
+Emulators\Flycast LINK\emu.cfg;Emulators\Flycast\emu.cfg.template;__CAB__;TEMPLATE;
+# Les copies de reglages que sm2-emu, Supermodel, Flycast, MAME et
+# windowsloader font dans leur dossier d ecriture (--write-dir des lanceurs,
+# pour UWF) : chacun recopie ou relit son original tant qu il n y en a pas, il
+# suffit donc d effacer celles qui ne sont plus a jour. Les dossiers suivent
+# la convention <emulateur>_<identite> de set_writedir.bat.
+# A placer apres les cibles qui regenerent les originaux.
+sm2-emu_single\sm2-emu.ini;Emulators\sm2-emu\sm2-emu.ini;_single;STALE;
+sm2-emu_link_cab*\sm2-emu.ini;Emulators\sm2-emu LINK\sm2-emu.ini;_single;STALE;
+supermodel_single\Config\Supermodel.ini;Emulators\Supermodel\Config\Supermodel.ini;_single;STALE;
+supermodel_link_cab*\Config\Supermodel.ini;Emulators\Supermodel LINK\Config\Supermodel.ini;_single;STALE;
+flycast_single\emu.cfg;Emulators\Flycast\emu.cfg;_single;STALE;
+flycast_link_cab*\emu.cfg;Emulators\Flycast LINK\emu.cfg;_single;STALE;
+mame_single\mame.ini;Emulators\Mame\mame.ini;_single;STALE;
+mame_link_cab*\mame.ini;Emulators\Mame LINK\mame.ini;_single;STALE;
+windowsloader_*\windowsloader.ini;Emulators\windowsloader\windowsloader.ini;_single;STALE;
+# Les NVRAM (FOLDER). Le dossier vivant est ce que l emulateur recopie dans
+# son dossier d ecriture au premier lancement ; WRITEDIR dit lequel vider
+# quand on pose d autres NVRAM.
+Emulators\Supermodel\NVRAM;Emulators\Supermodel\NVRAM_single;_single;FOLDER;;supermodel_single
+Emulators\Supermodel LINK\NVRAM;Emulators\Supermodel LINK\NVRAM{{CAB}};__CAB__;FOLDER;;supermodel{{CAB}}
+# Les NVRAM de sm2-emu. Comme pour Supermodel, l identite MASTER/SLAVE et le
+# numero de voiture sont un reglage DU JEU, dans sa backup RAM, pose une fois
+# par cabine au menu de service - l emulateur n y est pour rien, son
+# link_cabinet_index ne sert qu a une ligne de journal. Sans ces deux cibles,
+# un clonage de disque donnerait deux cabines maitres qui ne s apparient pas.
+Emulators\sm2-emu\saves;Emulators\sm2-emu\saves_single;_single;FOLDER;;sm2-emu_single
+Emulators\sm2-emu LINK\saves;Emulators\sm2-emu LINK\saves{{CAB}};__CAB__;FOLDER;;sm2-emu{{CAB}}
+Emulators\Flycast\data;Emulators\Flycast\data_single;_single;FOLDER;;flycast_single
+Emulators\Flycast LINK\data;Emulators\Flycast LINK\data{{CAB}};__CAB__;FOLDER;;flycast{{CAB}}
+# linuxloader prend sinon les NVRAM d un jeu dans le dossier du jeu, commun au
+# solo et au link : le lanceur link lui donne ce dossier en place, range par
+# jeu comme son dossier d ecriture, pour amorcer celles de la cabine.
+Emulators\linuxloader\saves;Emulators\linuxloader\saves{{CAB}};__CAB__;FOLDER;;linuxloader{{CAB}};yes
+# Les listes de jeux d AttractPlus : tous les jeux MAME, sm2-emu, Supermodel
+# et Flycast tournent en basse resolution, mais pas tous les TeknoParrot ni
+# tous les jeux de moto. Les variantes basse resolution ne retirent pas les
+# lignes, elles les COMMENTENT avec un #, donc le fichier garde sa structure.
+# Marquees OPTIONAL : une liste de jeux manquante pour une resolution ne
+# doit pas empecher les emulateurs d etre configures. Les onze resolutions
+# de resolutions.csv ont toutes leur variante aujourd hui.
+AttractPlus\romlists\TeknoParrot.txt;AttractPlus\romlists\TeknoParrot{{RES}}.txt;_single;VARIANT;yes
+AttractPlus\romlists\Bike3D.txt;AttractPlus\romlists\Bike3D{{RES}}.txt;_single;VARIANT;yes
+# La resolution dans les profils TeknoParrot. Un seul type XML, pilote par
+# une table : les noms de champs varient d un jeu a l autre (six graphies),
+# et 100 profils x 11 resolutions en fichiers variantes serait intenable.
+Emulators\Teknoparrot*\UserProfiles\*.xml;Utils\config\valeurs\teknoparrot.csv;_single;XML;

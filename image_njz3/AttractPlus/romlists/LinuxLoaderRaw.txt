@@ -1,0 +1,17 @@
+#Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
+DeadHeat;Dead Heat;LinuxLoaderRaw;;;;;;;;;;;;;;;;;;
+DeadHeatRiders;Dead Heat Riders;LinuxLoaderRaw;;;;Bike;;;;;;;;;;;;;;
+GaelcoTR;Gaelco Championship Tuning Race;LinuxLoaderRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+HummerXT;Hummer Extreme;LinuxLoaderRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+ID4Exp;ID4 Exp;LinuxLoaderRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+ID4Jap;ID4 Jap;LinuxLoaderRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+ID5;ID5;LinuxLoaderRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+MaxHeat3D;Maximum Heat 3D;LinuxLoaderRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+Nirin;Nirin;LinuxLoaderRaw;;;;Bike;;;;;;;;;;;;;;
+or2spdlx;Outrun 2 SP SDX;LinuxLoaderRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+RingRiders;Ring Riders;LinuxLoaderRaw;;;;Bike *FFB*;;;;;;;;;;;;;;
+RTuned;R-Tuned Ultimate Street Racing;LinuxLoaderRaw;;;;;;;;;;;;;;;;;;
+segartv;Sega Race TV;LinuxLoaderRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+TokyoCop;Tokyo Cop;LinuxLoaderRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+WMMT3;WMMT3;LinuxLoaderRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+WMMT3DXP;WMMT3 DX+;LinuxLoaderRaw;;;;Racing *FFB*;;;;;;;;;;;;;;

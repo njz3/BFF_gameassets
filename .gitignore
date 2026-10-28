@@ -1,1 +1,7 @@
 /ControlSets/ControlSets-2VR-UpDn-Kit_njz3/_Directory managed by BackForceFeeder.txt
+
+# State that AttractMode Plus rewrites on its own (last selection, window
+# position, values kept by layouts and plugins): not configuration
+/image_njz3/AttractPlus/config/attract.am
+/image_njz3/AttractPlus/config/window.am
+/image_njz3/AttractPlus/config/*.nv

@@ -1,0 +1,15 @@
+#Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
+18wheelr;18 Wheelers;FlycastRaw;;2003;Sega;Racing;;;;;;;;;;;;;;
+clubk2k3;Club Kart 2003;FlycastRaw;;2003;Sega;Racing;2;;;;;;;;;;;;;
+clubkrt;Club Kart 2003;FlycastRaw;;2001;Sega;Racing;2;;;;;;;;;;;;;
+f355twin;F355 Challenge;FlycastRaw;;1999;Sega;Racing *FFB*;2;;;;;;;;;;;;;
+f355twn2;F355 Challenge 2 International Courses;FlycastRaw;;2000;Sega;Racing *FFB*;2;;;;;;;;;;;;;
+ftspeed;Faster Than Speed;FlycastRaw;;2001;;Racing *FFB*;;;;;;;;;;;;;;
+initd;Initial D;FlycastRaw;;2003;Sega;Racing *FFB*;2;;;;;;;;;;;;;
+initdexp;Initial D Export;FlycastRaw;;2003;Sega;Racing *FFB*;2;;;;;;;;;;;;;
+initdv2e;Initial D 2 Export;FlycastRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+initdv3e;Initial D 3 Export;FlycastRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+kingrt66;King of Route 66;FlycastRaw;;;;;;;;;;;;;;;;;;
+maxspeed;Maximum Speed;FlycastRaw;;;;Racing *FFB*;;;;;;;;;;;;;;
+#sgdrvsim;Sega Driving Simulator;FlycastRaw;;;;;;;;;;;;;;;;;;
+#tokyobus;Tokyo Bus Simulator;FlycastRaw;;;;;;;;;;;;;;;;;;
