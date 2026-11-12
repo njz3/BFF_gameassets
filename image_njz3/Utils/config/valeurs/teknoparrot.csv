@@ -18,12 +18,6 @@
 # Genere le 18/10/2026 en lisant les profils de Racecab1 ; a regenerer apres
 # une mise a jour de TeknoParrot qui ajouterait des jeux.
 PROFIL;DOSSIER;CHAMP_LARGEUR;CHAMP_HAUTEUR;CHAMP_ACTIVER
-BattleGear4Pro;Teknoparrot2025-04;Custom Resolution Width;Custom Resolution Height;
-BattleGear4Pro;Teknoparrot2025-08;Custom Resolution Width;Custom Resolution Height;
-BattleGear4Pro;Teknoparrot2026-06;Custom Resolution Width;Custom Resolution Height;
-BattleGear4Tuned;Teknoparrot2025-04;Custom Resolution Width;Custom Resolution Height;
-BattleGear4Tuned;Teknoparrot2025-08;Custom Resolution Width;Custom Resolution Height;
-BattleGear4Tuned;Teknoparrot2026-06;Custom Resolution Width;Custom Resolution Height;
 Cars;Teknoparrot2025-04;Resolution Width;Resolution Height;
 Cars;Teknoparrot2025-08;Resolution Width;Resolution Height;
 Cars;Teknoparrot2026-06;Resolution Width;Resolution Height;

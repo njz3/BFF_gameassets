@@ -45,15 +45,11 @@
   },
   {
     "RawInputIdx": 8,
-    "MappedJoyBtns": [
-      8
-    ]
+    "MappedJoyBtns": []
   },
   {
     "RawInputIdx": 9,
-    "MappedJoyBtns": [
-      9
-    ]
+    "MappedJoyBtns": []
   },
   {
     "RawInputIdx": 10,

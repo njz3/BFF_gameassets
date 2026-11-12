@@ -1,8 +1,5 @@
 #Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
-Batman;Batman;TeknoParrot2025-04;;;;Racing *FFB*;;;;;;;;;;;;;;
-BattleGear4;Battle Gear 4;TeknoParrot2025-04;;;;;;;;;;;;;;;;;;
-BattleGear4Pro;Battle Gear 4 Pro;TeknoParrot2025-04;;;;Racing *FFB*;;;;;;;;;;;;;;
-BattleGear4Tuned;Battle Gear 4 Tuned;TeknoParrot2025-04;;;;Racing *FFB*;;;;;;;;;;;;;;
+Batman;Batman;TeknoParrot-latest;;;;Racing *FFB*;;;;;;;;;;;;;;
 Cars;Cars;TeknoParrotCmd2025-04;;;;;;;;;;;Cars.bat;;;;;;;
 ChaseHQ2;Chase HQ 2;TeknoParrot2025-04;;;;Racing *FFB*;;;;;;;;;;;;;;
 CrazyRide;Crazy Ride;TeknoParrot2026-06;;;;;;;;;;;;;;;;;;

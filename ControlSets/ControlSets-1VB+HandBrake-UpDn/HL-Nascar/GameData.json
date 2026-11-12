@@ -1,0 +1,13 @@
+{
+  "GameName": "sgnascar",
+  "Description": "Sega Nascar on Hikaruloader",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "hikaruloader",
+  "MainWindowTitle": "*[sgnascar]*|*[sgnascaro]*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

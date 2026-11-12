@@ -8,11 +8,1042 @@
   ####    ### ##  ##      ####   ####    ##   ##  ####    ### ##  ####    ####
                  ####
 
-                       A Sega Model 3 Arcade Emulator.
+                     A Sega Model Series Arcade Emulator.
 
                    Copyright 2003-2026 The Supermodel Team
 
                                  CHANGE LOG
+
+Commit 73ef237 on 2026-11-07 by njz3
+
+    Model 2 drive boards: RawDrive, m2ffb and replies on every board
+
+    Commands go out as RawDrive and m2ffb, with or without an emulated board,
+    for BackForceFeeder to drive a real one; its m2ffb_rx replaces the emulated
+    reply while the client stays connected. Daytona's and Sega Rally's emulated
+    boards now answer too (port D, Daytona's I/O board IN2).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 33235d6 on 2026-11-07 by njz3
+
+    Model 2 link: reopen a closed output connection
+
+    A machine still loading could close the connection while the other waited 
+    for the link: ConnectProc now reconnects every second, as Model 3's link
+    does.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 95bc1cb on 2026-11-06 by njz3
+
+    Merge upstream/master (345c3ad): Model 1, Model 2, version series 0.4
+
+    Upstream adds Sega Model 1 and Model 2 emulation, renames the project Sega 
+    Model Series, and numbers versions 0.4-YYYYMMDD-git-HASH with 
+    SupermodelVersion() in place of the SUPERMODEL_VERSION macro.
+
+    What the merge had to decide:
+
+    - Window resizing: both sides wrote one and git kept both without a
+    conflict.
+     Ours stays (not for BorderlessWindow nor the agent, the size kept as the
+     resolution), with upstream's threads paused around it. Upstream's
+     unconditional SDL_SetWindowResizable is dropped: it would have made the
+     cabinets' borderless windows resizable.
+    - -game stays ahead of upstream's rule that takes the game named as the zip.
+     A zip holding several games now loads the one of its name: srally2.zip
+     loaded srally2dx and now loads srally2, which also changes the NVRAM file.
+    - The network server's late start (d7cc56c) stays. Model 2 goes through
+     CNetBoardLink, so it is covered.
+    - release_windows.py compiles SUPERMODEL_GIT_REVISION and names the package
+     after Supermodel.exe -version, as Makefiles/Rules.inc does. -version runs
+     ahead of Agent::Init.
+    - GameLoader.cpp conflicted on the whole file, as upstream changed it from
+    CRLF
+     to LF: merged on normalised line endings, it keeps upstream's.
+    - Scripts/supermodel_build_bot.py, deleted upstream, stays deleted.
+    - Model 1 and Model 2 get emuOutputs, so that the agent sees their outputs.
+    - The launcher's new game list uses our romZips.
+
+    Checked in agent mode against d7cc56c, FFBRework.md 2.18:
+    - Sega Rally 2 from one save state of d7cc56c: frames identical over 1200
+     frames. From power-up: identical except the attract's frame 1800, which
+    also
+     changes from run to run on each build.
+    - DSB2 music, whose ROM byte order upstream changed: the same track at the
+    same
+     MPEG positions.
+    - The link with the cabinets' NVRAM: fake cabinet, 1 s and 4 s apart, all
+    link.
+    - The in-game menu's four pages on all three platforms.
+    - VR and The House of the Dead boot, play, and reload a save state.
+    - -game=hotdo in a zip named vr.zip holding both loads hotdo.
+
+    Not checked: the window resize (the agent has no real window), effects
+    played on a wheel, Scud Race, Daytona USA 2, Le Mans 24, Star Wars Trilogy
+    and the DSB1
+    (their ROMs are not on this PC), Model 2 force feedback, the Makefiles.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 345c3ad on 2026-11-06 by Bart Trzynadlowski
+
+    Version numbering updated (#370)
+
+    * Add Version.cpp and -version, take version number from source, bump to
+    0.4, remove build bot
+
+    * Rules.inc: fix how version is read for Windows Command Prompt
+Commit 2d833a0 on 2026-11-06 by Ian
+
+    Model 2: Top Skater's speed meter at the bottom left, not the centre
+
+    Its command 11 objects repeat the rasterizer command in their low byte, with
+    the center select (bits 6-7) that the high one, the only one used, lacks.
+    The speed meter (opcode 08805151) selects center 1, at the bottom left of
+    its window, and was drawn around center 0, the screen's centre.
+
+Commit d949f83 on 2026-11-06 by Ian
+
+    DSB2 program ROM in the 68K's byte order; Model 2 MPEG board from Games.xml
+
+    Top Skater had no music: Model 2 passed its DSB2 the 68K program as loaded
+    (Games.xml's byte_swap region, big endian), but CDSB2 read it as little 
+    endian words, as Model 3 left it after swapping it back. The 68K ran 
+    scrambled code and crashed. CDSB2 now reads the ROM big endian, as the 68K 
+    sees it, so neither model swaps it.
+
+    Model 2 takes the board type from Games.xml's mpeg_board, as Model 3, 
+    instead of the game's name: DSB1 for Sega Touring Car, DSB2 for Top Skater.
+
+Commit 5db27c3 on 2026-11-06 by Bart Trzynadlowski
+
+    Rename to Sega Model Series, fix macOS build warnings, and clean up
+    licensing and Games.xml (#366)
+
+    * Main.cpp: Fix offset handling in BuildDate() and adjusted how it is
+    printed
+
+    * Model 2: unhide the MB86233 bus's ReadData/WriteData to fix
+    -Woverloaded-virtual warnings (only SHARC and TGPx4 override them; TGP keeps
+    the defaults)
+
+    * CSoundBoard and CModel1SoundBoard final to fix
+    -Wdelete-non-abstract-non-virtual-dtor warnings
+
+    * Only print built date as part of banner if this is a non-release WIP
+    version
+
+    * Fix 'reducing alignment of section __DATA,__common' message on macOS
+
+    * Rename to 'A Sega Model Series Arcade Emulator' in user-facing text and
+    newer code, add missing GPL headers, and credit MAME authors with BSD notice
+    in README.txt
+
+    * Use the official PRO-1000 spelling in the platform name, user-visible text
+    and PRO-1000 code, and document all platforms' steppings and defaults
+
+    * Model 1 and 2: print game information at startup, like Model 3 and
+    PRO-1000 do
+
+    * Util::Format: fix short strings printing as empty when written to a stream
+    on macOS
+
+    * Print None when there is no Extra Hardware
+
+    * Games.xml: separate Model 1 and Model 2 games with blank lines and replace
+    tabs with spaces
+
+    * Games.xml: group games by system with section headers, sorted by parent
+    ROM set
+
+    * supermodel_build_bot.py: Update copyright date
+Commit 1b4b752 on 2026-11-06 by Ian
+
+    Model 2: a polygon crossing the eye's plane sorts by its max z
+
+    A polygon sorted by its min z that crosses the eye's plane (part of it 
+    behind the camera) has a negative min z. It now sorts by its max z, the far 
+    end of the part in front of the camera, instead of the farthest place
+    (44ccf10), which put it behind the scenery: Indy 500's walls and fence near 
+    the camera vanished (the hardware draws them), Virtual On's floor went 
+    behind its space backdrop. MAME sorts it nearest, over everything, which 
+    covers Virtual On's robot's feet. Indy 500's backdrop stays behind the 
+    track.
+
+Commit deb1fca on 2026-11-05 by Ian
+
+    Non-merged ROM sets of clones load without the parent (issue #365)
+
+    A clone's regions were merged into its parent's file by file, so parent 
+    files at offsets the clone doesn't use stayed required, and a non-merged set
+    (only MAME's files for the clone) was never complete. A region can now have
+    merge="false": in a clone it replaces the parent's region, or with no files
+    removes it. Used for:
+
+      daytona93         data ROMs (Daytona's mirrors overwrote its own data)
+     hotdp             program, data and polygon ROMs (the prototype's layout)
+     srallycdx(a)      samples (no ROM at IC37)
+     dynamcopb/c,      no TGP tables (Model 2B/2C)
+     dyndeka2b
+     manxttc           no Model 1 sound board (the DX's)
+     srally2dx         DSB2 ROMs, not dumped: the Twin's, now optional
+     swtrilgyp         banked CROM (no CROM2)
+
+Commit 7e3696d on 2026-11-05 by Ian
+
+    Model 2: force feedback from the racing games' drive boards
+
+    The drive board ROM runs, as Model 3's, when it is in the set and force 
+    feedback is on; without it the game runs as before (an optional region in 
+    Games.xml, as Model 3's).
+
+    Daytona USA (EPR-16488A) and Sega Rally (EPR-17891, DX: EPR-17182): 
+    CModel2DriveBoard, the SJ25-0207-01 board. A Z80 at 4 MHz that drives the 
+    motor itself (port 46: power and direction), its work done in a ~1 kHz 
+    interrupt; it reads the wheel through its ADC and calibrates the wheel at 
+    power-on, turning it until it sees it move. Daytona sends its commands in 
+    the I/O board's shared RAM (byte 11), Sega Rally on I/O port E.
+
+    Indy 500, Sega Touring Car, Over Rev and Super GT 24h (EPR-18261, the 
+    program of Model 3's Le Mans 24): CModel2DirectDriveBoard. Model 3's board 
+    hardware (Z80 at 8 MHz, the CTC's 500 Hz NMI), but a direct drive motor: a 
+    power each way (ports 2E left, 2A right), and a reply on I/O port D.
+
+    The motor's power, averaged over the frame's interrupts, is sent to the 
+    wheel as a constant force.
+
+Commit 59cc03b on 2026-11-05 by Ian
+
+    Model 2: i960 wait states from the board's area wait table
+
+    Each game writes Sega's area wait table at 0xE00000 (one word per memory 
+    area: 01/02/04/08/10 = 0-4 waits, bit 6 = DRAM), which was stored and 
+    ignored, so the i960 ran its data accesses with no wait states. Each data 
+    access now costs 3 cycles per wait of its area (as sm2-emu, fitted to 
+    hardware); opcode fetches (the instruction cache) and DRAM aren't charged.
+
+    Sega Rally programs its ROM at 4 waits. Running too fast, it read a timer 
+    value high enough to switch how the rival cars' paths are computed, so car 
+    13 started right behind car 14 instead of near the first left turn. It 
+    switches between 2 and 3 cycles per wait. Manx TT now runs its DX attract, 
+    the set's default.
+
+Commit a1e2169 on 2026-11-05 by Ian
+
+    SDL: run under Wayland (GLEW's missing GLX display isn't an error)
+
+    Under Wayland SDL's context is EGL, so GLEW's glewInit() returns 
+    GLEW_ERROR_NO_GLX_DISPLAY after loading the GL functions: only its GLX 
+    extensions failed, which Supermodel doesn't use. It was treated as fatal
+    ("Unable to query OpenGL"). Reported on Ubuntu 26.10 with Intel Iris Xe.
+
+Commit ef7efa9 on 2026-11-05 by Ian
+
+    Model 2 renderer: quads ~10x faster, texture RAM with real mip levels
+
+    Quads: 'precise' on each t[i] instead of the array t[4]. The precise array 
+    made the quad fragment shader about ten times slower per pixel on NVIDIA
+    (Indy 500 3D pass at 2x supersampling: 10.9 ms -> 0.9 ms).
+
+    Texture RAM 0/1 are 2D R16UI textures with a GL mip level per hardware mip 
+    level (as the Model 3 renderer), instead of buffer textures. Same output.
+
+Commit 44ccf10 on 2026-11-05 by Ian
+
+    Model 2: a negative z sorts as the farthest, not the nearest
+
+    A polygon crossing the eye's plane, sorted by its min z, has a negative z. 
+    MAME clamps it to 0 (frontmost). Indy 500's backdrop, a flat polygon around 
+    the camera, is one: drawn in front, it hid the whole track below the
+    horizon.
+
+Commit e7b01c6 on 2026-11-05 by Ian
+
+    V60, MB86233: constexpr class constants (MinGW link)
+
+    A static const member that's bound to a reference needs a definition outside
+    the class; MinGW's linker doesn't find one. static constexpr members are
+    inline in C++17, so they define themselves.
+
+Commit 552cb0f on 2026-11-05 by Ian
+
+    Makefiles: build Src/Model2/Sega315_5838.cpp (the protection chip)
+
+Commit efc793e on 2026-11-05 by Ian
+
+    Model 2: TGPx4 program RAM is uint64_t (gcc build)
+
+    UINT64 is unsigned long long and uint64_t is unsigned long on 64-bit Linux,
+    so a UINT64 pointer to the program RAM doesn't convert. Also initialise
+    CModel2's members in declaration order (-Wreorder).
+
+Commit 4722665 on 2026-11-05 by Ian
+
+    Model 1/2: include <cmath> and <algorithm> where they're used (gcc build)
+
+Commit a8fe4cf on 2026-11-05 by Ian
+
+    Model 2: re-signal a shared IRQ line that stays pending after an ack
+
+    The i960's interrupt lines are level sensitive: the timers share line 2, and
+    when only one of two pending timers is acknowledged the line stays asserted
+    and the CPU takes it again once the handler returns. The core
+    (as MAME's) reacts to edges, so the second timer was never taken, never 
+    restarted, and Over Rev's timer-driven sound commands stopped after the boot
+    and coin sounds. A line partly acknowledged but still pending is now dropped
+    and raised again (held by the i960 until it can be taken).
+
+Commit 5c03a51 on 2026-11-04 by Ian
+
+    Model 2: Top Skater's second matrix and compact objects (simulated
+    geometrizer)
+
+    Top Skater uploads its own geometrizer program (TGPx4 code). Read from its
+    disassembly, its commands differ from the simulation's:
+    - 1B loads a second matrix and translation (was: overwrote the first)
+    - 1C copies the first into the second and has no data words (was: a
+      3-word translate, which desynced the rest of the display list)
+    - 11 objects have compact link records (no reserved normal and quad
+      gap words), and a vertex whose raw x has bit 0 set follows the
+      second matrix The compact records and the per-vertex matrix as in sm2-emu
+    (dmanlfc, GPLv3). Attract now draws its 3D properly. The second matrix is
+    saved in its own block (older states load without it).
+
+Commit 8a06091 on 2026-11-04 by Ian
+
+    MB86235: memory to register transfers take the register from AS/BS
+
+    In alu1_trans2_2, a memory to register transfer (SDA/SDB 2) names its 
+    register in the same field as a register to memory one (AS/BS); the AD/BD
+    bits are part of the memory address there. MAME takes AD/BD, a register its
+    tables don't have: Top Skater's geometrizer program
+    (3C7: MVD2 into AA2 and AB6) stopped with an illegal register.
+
+Commit 326b505 on 2026-11-04 by Ian
+
+    Model 2: clip_polygon can't overrun its 8-vertex buffers
+
+    A convex quad clipped by the 4 planes has at most 8 vertices, but a twisted
+    one (two edges crossing) can gain 2 per plane. Top Skater sends such quads
+    (9-10 vertices after clipping), which overran verts_out
+    (Run-Time Check Failure #2 in debug builds). The output is now capped; the
+    extra vertices only belong to those broken polygons. MAME has the same
+    buffers.
+
+Commit 841c70f on 2026-11-04 by Ian
+
+    Model 2: Rail Chase 2 drive board check
+
+    At boot Rail Chase 2 checks the link to its drive board (pneumatic seat): 
+    commands on the 315-5649's port E, acknowledged on port D. Nothing answered
+    and it stopped at NET_BAD. Port D now acknowledges the last command, as
+    MAME's rchase2_drive_board_r simulates it.
+
+Commit 54946b6 on 2026-11-04 by Ian
+
+    i960: hold an external interrupt that can't be taken yet
+
+    When a line was raised while another interrupt was waiting (or the CPU's
+    priority was too high), it went to the interrupt table's pending bits. Model
+    2's lines stay asserted until the game acknowledges them, and Sky Target's
+    interrupt table is in ROM: the pending bits were lost, the vblank line never
+    dropped and no more vblank interrupts came. Its sound queue is sent from the
+    vblank handler (no sound), and coins weren't counted.
+
+    The line is now held and taken as soon as nothing else is waiting and the
+    CPU's priority allows it.
+
+Commit 214dc84 on 2026-11-04 by Ian
+
+    Model 2: Virtua Cop light guns (original-board I/O)
+
+    The model1io2 board's BIOS copies its gun registers to the DPRAM at 80-88:
+    P1 Y, P1 X, P2 Y, P2 X (16-bit, little endian), then the off-screen bits.
+    Fill them from the gun inputs, with MAME's Virtua Cop ranges.
+
+Commit 566864d on 2026-11-04 by Ian
+
+    Model 1/2: HighLevelGeometrizer option, on by default
+
+    LowLevelGeometrizer (default on) becomes HighLevelGeometrizer, default on:
+    the geometrizer is simulated unless it is turned off, so the default is the
+    fast option (Virtual-On: about 130 fps simulated, 93 low level). Model 1 now
+    also simulates it by default. Command line:
+    -high-level-geometrizer / -no-high-level-geometrizer. The note in the GUI
+    (Model 1/2 only), the default Supermodel.ini and the save state mismatch 
+    message follow.
+
+Commit 58a0758 on 2026-11-04 by Ian
+
+    Real3D: initialise m_layout and m_configRegisters
+
+Commit e149164 on 2026-11-04 by Ian
+
+    Model 2: joystick inputs for the games that read them
+
+    The Model 2 entries for games with a joystick and buttons (Virtua Fighter 2,
+    Fighting Vipers, Last Bronx, Dead or Alive, Sonic Championship, Dynamite
+    Cop, Zero Gunner, Pilot Kids, Air Walkers, Dynamite Baseball, Water Ski, Top
+    Skater: 33 sets) listed the fighting buttons but not the joystick1/joystick2
+    input groups, so the stick was not read and the characters could not move.
+    Generated again with them.
+
+Commit ebc22ad on 2026-11-04 by Ian
+
+    GUI: mark PowerPCFrequency and New3DEngine as Model 3 only
+
+    Both only affect Model 3 (the PowerPC, the Real3D renderers). The GUI shows
+    "(Model 3 only)" beside them, and the default Supermodel.ini says so above
+    New3DEngine.
+
+Commit 134b7c9 on 2026-11-04 by Ian
+
+    Inputs: joystick buttons 1-128 (was 32)
+
+    The input layer named and accepted joystick buttons 1-32 only, while 
+    DirectInput reads 128 (DIJOYSTATE2): buttons 33 and up of arcade encoders,
+    button boxes and wheels could not be mapped. JOY<n>_BUTTON1-128 now parse
+    and map. A button beyond the device's own count still gives an empty source,
+    and input detection already ignores inputs held when it starts, so stuck
+    high buttons can't take a binding.
+
+Commit 00fedf5 on 2026-11-04 by Ian
+
+    GUI: list only the games in the ROM folder, with a "Show all" checkbox
+
+    The game list showed every supported game, the ones without a zip in the ROM
+    folder greyed out, which got long with all of Model 2. Now only the games in
+    the ROM folder are listed; a "Show all supported games" checkbox above the
+    list shows the others too (greyed out, as before), with a count of the
+    supported games found. Unticking it clears a selection that is no longer
+    listed.
+
+Commit 55cad39 on 2026-11-03 by Ian
+
+    Model 2: original I/O board, Desert Tank leaves test mode
+
+    Desert Tank reads I/O board DPRAM byte 0E at boot (a fourth input port); we
+    left it 0, a pressed switch, so the game always entered test mode and 
+    restarted into it on exit. Bytes 0E/0F now read FF (nothing pressed).
+
+    The gear bits of IN1 (4-6, active high) are Daytona's 4-speed shifter only;
+    other games' IN1 bits 4-6 are active low buttons (Desert Tank's machine gun
+    and cannon read as held).
+
+    Desert Tank now runs its attract mode; Daytona's frames are unchanged.
+
+Commit 17b427f on 2026-11-03 by Ian
+
+    Model 2: all of MAME's Model 2 sets, per-game controls and protection
+
+    Games.xml now has every set in MAME's sega/model2.cpp (90, clones with their
+    parents), generated from it: ROM layout with the ROM_COPY mirrors, stepping,
+    inputs, 315-5881 keys, the Digital Sound Board ROMs. Names are MAME's: our
+    hotd and von were MAME's hotdo and vonu. The 9 hand-made entries were
+    reproduced exactly; manxtt's input type was misspelled
+    (shift_updown), so its bike controls were off.
+
+    Controls: each game's layout follows its MAME input port set (a table 
+    generated with Games.xml): fighting games (4 buttons and a joystick per 
+    player), Virtua Striker, Virtual-On's twin sticks (not mapped before), 
+    Daytona, Desert Tank, Sega Rally, the bikes (Motor Raid: punch, kick), Indy
+    500 / Touring Car / Super GT / Over Rev, Sky Target, the analog guns (Rail
+    Chase 2, Gunblade NY, Behind Enemy Lines), Power Sled, Ski Super G, Wave
+    Runner, Water Ski, Top Skater and the light guns (HotD, Virtua Cop 2, with
+    their ranges).
+
+    Protection and extra boards, as MAME:
+    - 315-5881 (Dynamite Cop, Zero Gunner, Pilot Kids): Model 3's CCrypto,
+     RAM at 1D80000, registers at 1D90000.
+    - 317-0229 (Dead or Alive): Sega315_5838, ported from MAME.
+    - Daytona USA To The MAXX and GTX 2004 protection reads.
+    - MAME's program patches (Zero Gunner, Pilot Kids, Power Sled Main).
+    - Last Bronx: the simulated geometrizer's mesh commands.
+    - Digital Sound Board (Model 3's DSB1/DSB2): Touring Car, Top Skater.
+
+    Not done: Virtua Cop's original-board light guns, Rail Chase 2's I/O board
+    CPU, Air Walkers' players 3/4. Tested only the families with ROMs at hand
+    (Daytona, Sega Rally, VF2, Manx TT, Fighting Vipers, Virtual-On, HotD, Ski
+    Super G, Wave Runner): unchanged boot and attract.
+
+Commit f46e987 on 2026-11-03 by Ian
+
+    GameLoader: prefer the game named as the zip, else the first listed
+
+    A zip with several complete games (MAME's merged sets hold a parent and its
+    clones) loaded the first complete clone alphabetically, so a merged 
+    daytona.zip loaded daytona93. Now a complete game named as the zip file is
+    chosen; otherwise, among several candidates, the one listed first in 
+    Games.xml (a family's parent, then its clones in their order).
+
+Commit 708b0b2 on 2026-11-03 by Ian
+
+    Allow the emulator window to be resized, we don't need to be stuck at the
+    chosen resolution anymore.
+
+Commit 508b9c9 on 2026-11-03 by Ian
+
+    Model 1/2: LowLevelGeometrizer option, on by default
+
+    One core option for both platforms: LowLevelGeometrizer runs the video 
+    board's geometrizer DSP programs (low level, more accurate); off, they are
+    simulated (high level, faster). Model 2: 2B games only, 2A and 2C are always
+    simulated. It replaces Model1Geometrizer (default on) and 
+    Model2GeometrizerLLE (default off), so 2B games now run the low level 
+    geometrizer by default; 2B states made with the simulation load only with it
+    off (the error says so).
+
+    In the GUI's Core tab, in the default Supermodel.ini (with a comment), and
+    on the command line (-low-level-geometrizer,
+    -no-low-level-geometrizer). Settings can now carry a note the GUI shows 
+    beside the control (ValueRange::SetNote); this one says "Model 1/2 only".
+
+Commit fbfad40 on 2026-11-03 by Ian
+
+    Model 1/2: wide screen (WideScreen, WideBackground)
+
+    With WideScreen the 3D is drawn over the whole width of the window instead
+    of the 4:3 area: the renderer maps native x to the full width
+    (xMap uniform; the quad geometry shader maps back to native pixels from the
+    centre), the fragment shaders keep taking native pixels from the 4:3 area (x
+    < 0 or > 495 beyond it). The tilemap layers stay 4:3; with WideBackground
+    the bottom one is stretched over the whole width.
+
+    So that polygons beyond the 4:3 picture aren't clipped away, viewport sides
+    at the screen's left or right edge are moved out by the extra width in
+    native pixels (CModel1Render::WideExtension()):
+    - Model 1: the view frustum and the batches' clip rectangles
+     (CGeometry::SetWideExtension), with the C++ geometry and the DSPs.
+    - Model 2: MAME's clip planes, rebuilt after a state load, and
+     BuildGPU()'s clip rectangles (CVideo::SetWideExtension). The window
+     commands come to our rasterizer from either geometrizer, so the
+     simulation and the low level geometrizer work the same. Not for the
+    software renderers.
+
+    Checked in attract mode at 1920x1080: Daytona USA, Virtual-On (both 
+    geometrizers, the same frames), Virtua Racing, Virtua Fighter. Without 
+    WideScreen the output is unchanged. Objects the games cull themselves can
+    still pop in at the sides.
+
+Commit 02f0f20 on 2026-11-03 by Ian
+
+    Model 2: 2B sound board UART, SCSP replies to the main board
+
+    Model 2B's UART is at 0x009c0000 and 0x009c0004 (byte 0 of each word, MAME's
+    model2b_crx_mem), not 0x01c80000; it wasn't mapped, so Cyber Troopers
+    Virtual-On and Fighting Vipers never reached their sound board and had no
+    sound.
+
+    The SCSP's MIDI output now also goes to the UART's input, as MAME's 
+    midi_out_cb -> write_rxd (SCSP_SetMidiOutCallback, through 
+    CSoundBoard::SetMIDIOutCallback). Model 3 sets no receiver, so its output is
+    still discarded. Not for Manx TT DX, where the Model 1 board replies.
+
+Commit d2768a4 on 2026-11-03 by Ian
+
+    Model 2: i960 takes an interrupt right after the instruction raising it
+
+    Interrupts were only checked at the start of each timeslice. Daytona USA 
+    masks its sound interrupt (intena = 1) while it adds a command to its sound
+    queue, and re-enables it (0x401) after. Re-enabling raises the UART TxRDY
+    interrupt at once; taken at the next timeslice it landed inside the next
+    queue update, after the count was read and before it was written back, so
+    the count went one too high. The sender then sent stale entries and skipped
+    real ones: after a game the attract music command (AE 10 08) was lost and
+    the attract mode was silent.
+
+    execute_run now takes a pending immediate interrupt after each instruction,
+    as MAME's resync on set_input_line does. Old save states made after a game
+    keep the wrong count until the game's next sound reset.
+
+Commit 47a4d55 on 2026-11-03 by Ian
+
+    Model 2: quad rendering without screen-linear varyings (AMD holes)
+
+    On an AMD GPU with quad rendering, The House of the Dead's floor near the 
+    camera had a black wedge missing (triangles were fine, NVIDIA was fine). 
+    Those quads have corners behind the eye. The quad shader's per-pixel terms
+    (the corners relative to the pixel and the triangle areas) were 
+    noperspective outputs of the geometry shader, and the near clip was at w =
+    0, putting clipped vertices at infinity. NVIDIA rasterizes these without
+    clipping; AMD clips, the noperspective values at the new vertices come out
+    wrong and the fragments are discarded as outside the quad.
+
+    The geometry shader now passes the corners and their cross products flat, 
+    and the fragment shader computes the terms from them and the pixel's 
+    position. The edge barycentrics are perspective-interpolated, and the near 
+    plane is at w = 1/1024 (the board's nearest w is about 0.6) for both 
+    triangles and quads.
+
+    Confirmed fixed on the AMD machine; on NVIDIA 32 frames of HotD match the 
+    previous output within 4/255 on a few dozen pixels.
+
+Commit 3676c59 on 2026-11-03 by Ian
+
+    Model 2: light guns reload with the off-screen input alone
+
+    The House of the Dead reloads when the trigger is pulled with the gun off 
+    screen. The off-screen input (InputOffscreen, the right mouse button by 
+    default) now also pulls the trigger, so it reloads on its own, without 
+    InputAutoTrigger. The gun also counts as off screen within 5% of an edge of
+    its range, as in MAME, so shooting with the mouse moved out of the window
+    reloads too.
+
+Commit 5aca475 on 2026-11-03 by Ian
+
+    Model 2: Sega Ski Super G and Manx TT Superbike DX
+
+    Sega Ski Super G (2C, MAME's skisuprg) and Manx TT Superbike DX (2A, manxtt)
+    are added to Games.xml with their inputs.
+
+    Both games check a drive board at power-on (Ski Super G's ski board, Manx TT
+    DX's motion slider: new drive_board type "Motion"). It is simulated on the
+    315-5649's ports: commands on port E, replies on port D. The board answers
+    the power-on sequence (CF, then CE) paced by the commands it gets, then is
+    ready: the ski board then works like Model 3's Ski Champ board
+    (Dx selects status, DIP switches or foot sensors), the motion slider answers
+    CD. No motion or vibration. Its state is saved.
+
+    Inputs: the ski controls (swing, incline, select 1-3, pole buttons) and the
+    bikes' throttle, brake, lean and shift up/down (MAME's ports).
+
+    Manx TT DX also has a Model 1 sound board beside the SCSP one. Both get the
+    UART's output and the Model 1 board's replies go back to it. Its audio is
+    mixed into the SCSP board's frame (as a DSB, through the new 
+    CModel1SoundBoard::MixFrameInto), so there is one audio output.
+
+Commit e44685c on 2026-11-03 by Ian
+
+    Model 2: 2B save states record which geometrizer made them
+
+    The geometrizer's own SHARC program state only exists with the low level 
+    geometrizer (Model2GeometrizerLLE), so a state made with one can't be loaded
+    with the other. 2B states now carry a "Model 2 geometrizer mode" block;
+    loading one made with the other geometrizer fails with an error naming the
+    setting to change. States without the block were made by the simulation.
+
+    Also a debugging aid: SUPERMODEL_MODEL2_GEO_DISASM=start,end disassembles 
+    the uploaded geometrizer program to the log (low level only).
+
+Commit 3379d19 on 2026-11-03 by Ian
+
+    Model 2: faster SHARC round-to-zero float add and multiply
+
+    In round-to-zero mode the result is now truncated by clearing the low 29 
+    mantissa bits of the double result, instead of a float conversion, a 
+    remainder test and nextafter. A float product is exact in a double; a sum is
+    too unless TwoSum's error term is non-zero, and that only changes the 
+    truncation when the double sum is exactly a float and the error points 
+    towards zero. That case, and results near underflow or overflow, still take
+    the previous path.
+
+    The per-instruction DMA and IOP timer steps are skipped with an inline test
+    when idle (the calls did nothing then).
+
+    Bit-identical: 100M random and edge-case operand pairs match the previous 
+    code, and the 2B geometrizer's output hash over 1500 frames of Virtual-On is
+    unchanged.
+
+Commit 6a1489d on 2026-11-03 by Ian
+
+    Model 2: SHARC round-to-zero keeps infinite operands infinite
+
+    In round-to-zero mode (MODE1 TRUNC) the float ALU and multiplier replaced 
+    every infinite result with NORM.MAX, including inf * x and inf + x. On the 
+    ADSP-2106x NORM.MAX only replaces an overflow of finite operands; an 
+    infinite operand gives infinity, and inf * 0 gives NaN.
+
+    Virtual-On computes the shadow's light angle from the length of the light 
+    vector's horizontal part (x * RSQRTS(x), refined). For a straight down light
+    that length is 0: on the chip RSQRTS(0) = inf, inf * inf = inf, inf * 0 =
+    NaN, and the NaN angle is clamped to 33.75 degrees. With inf * inf =
+    NORM.MAX the angle was 90 degrees and the shadow's 1/cos scale
+    -20848, so shadows were drawn as a black streak to the horizon.
+
+Commit fcb92e7 on 2026-11-03 by Ian
+
+    Model 2: Sega Model 2 / 2A / 2B / 2C support
+
+    Ported from MAME (i960 main CPU, MB86234 TGP on the MB86233 core, SHARC 
+    ADSP-21062 for 2B, MB86235 TGPx4 for 2C, geometrizer and rasterizer), with 
+    CPU fixes from reviews against the manuals. Includes a GPU renderer, the 
+    System 24 tilemap shared with Model 1, the SCSP and Model 1 sound boards, 
+    the comm board (networked over the net board link), light guns, save states
+    and NVRAM. 2B can also run the geometrizer's own program on a SHARC.
+
+    Games: Daytona USA, Virtua Fighter 2, Sega Rally Championship, Fighting 
+    Vipers, Cyber Troopers Virtual-On, The House of the Dead.
+
+Commit f28306d on 2026-11-01 by Ian
+
+    Model 1: faster MB86233 interpreter and geometrizer FIFOs
+
+    Force the per-instruction helpers inline, pick the ALU post ops with bit 
+    masks, skip alu_pre when there is no ALU op, handle a/b/d/p inline in 
+    read_reg/write_reg and dispatch ld/mov subop 7 in the same switch. The FIFO
+    consumer's empty check now uses its cached head index instead of pulling the
+    producer's cache line on every word.
+
+    Output is bit-identical (hash of 1500 frames of DSP output in vf, vr, 
+    wingwar and swa). DSP time per frame drops ~31% run sequentially and
+    ~33% threaded (vf 2.76 -> 1.85 ms).
+
+Commit 20ce437 on 2026-11-01 by Ian
+
+    Model 1: clip to the far edge of the viewport's last column and row
+
+    MAME clips polygons at the viewport's last pixel coordinates (x2, y2); its 
+    integer rasterizer still fills that column and row, but a GPU only fills 
+    pixels whose centres are inside, so the 3D stopped one pixel short of the 
+    right and bottom of the viewport. Clip at x2 + 1 and y2 + 1 instead (the 
+    scissor still limits drawing to the viewport).
+
+Commit 9422c6c on 2026-10-31 by Ian
+
+    Model 1: NetMerc boots and plays; sort the games list
+
+    NetMerc: Games.xml entry, the default battery-backed RAM contents
+    (netmerc_nvram.bin, as MAME), the headset pose MAME uses (fixed, looking 
+    forward) written to the I/O board RAM at reset, and its controls on the 
+    analog joystick inputs. Its sound is unusable: sample ROM mpr-18134 is a 
+    blank dump in every known set.
+
+    Games.xml: the Model 1 entries moved into alphabetical order among the Model
+    3 games (clones still follow their parents).
+
+Commit a6b153b on 2026-10-31 by Ian
+
+    Model 1: faster, simpler System 24 tilemap drawing
+
+    Layers are drawn in runs of up to 8 pixels within one tile and one window 
+    mask cell, so the mask bit, tile word and character row are read once per 
+    run instead of per pixel, and runs of the wrong category or hidden by the 
+    mask are skipped (as the Model 3 tile generator does). MAME's per-rectangle 
+    wraparound cases and the duplicated split-mode paths are replaced by one 
+    span routine driven per line. Checked pixel for pixel against the previous 
+    code in all four games (every layer, both opaque settings, all split and 
+    line scroll modes in use). The tile layers take ~0.4 ms a frame instead of
+    ~1.2.
+
+Commit a154c77 on 2026-10-31 by Ian
+
+    Model 1: run the four geometrizer DSPs on their own threads
+
+    Like the board, the 5571s and 5572s now run at the same time, one thread 
+    each, joined by lock-free single producer/consumer FIFOs; the output is the
+    same as running them in turn (which is still done with fewer than four
+    cores). Each chip's bus and CPU state are on their own cache lines, as are
+    the FIFO indices. The DSPs take 2.9 ms a frame instead of 7.6
+    (Virtua Fighter unthrottled: ~85 -> ~160 fps).
+
+Commit 47a1841 on 2026-10-31 by Ian
+
+    Model 1: run the geometrizer DSPs for real, align the C++ geometry with them
+
+    The four video board DSPs (315-5571 x2, 315-5572 x2) run their own programs
+    on the display list each frame (Model1Geometrizer, default on for testing);
+    their output stream is decoded into the existing clip, z-sort and batch
+    code. A debug comparison mode
+    (SUPERMODEL_MODEL1_GEOCOMPARE) checks the C++ simulation against them 
+    polygon by polygon; from it, the C++ path now decides facing from the sign
+    of V.n and adds specular as the DSPs do. New Games.xml regions for the DSP
+    programs and their table ROMs.
+
+Commit fcfa75c on 2026-10-31 by Ian
+
+    Model 1: throttle, gunner stick and flight view inputs
+
+    New input groups: "throttle" (analog axis plus up/down keys that move the
+    lever and leave it there), "analog_joystick2" (Star Wars Arcade gunner stick
+    and buttons) and "flight_view4" (Wing War's view buttons, so they no longer
+    share keys with its weapons). Wing War's throttle was never polled before;
+    Star Wars Arcade no longer borrows the driving controls.
+
+Commit 567cf3f on 2026-10-31 by Ian
+
+    Model 1: clamp lighting terms before converting to integers
+
+    Huge or NaN normals (seen in Virtua Racing) made the specular term overflow,
+    and the resulting negative luminance indexed outside the colour translation
+    table, crashing about 15 s into attract mode.
+
+Commit bae1887 on 2026-10-31 by Ian
+
+    MB86233: only count down c0/c1 on a taken zc0/zc1 branch
+
+    MAME also decremented the counter on an untaken !zc0/!zc1 branch, which 
+    sends the 315-5571 geometrizer's triangle dispatch into the wrong handler.
+    No change for the TGP programs, which only use plain zc0/zc1.
+
+Commit 7fb8bcc on 2026-10-31 by Ian
+
+    Model 1: lighting from the geometrizer DSP programs
+
+    Match the 315-5571/5572 geometrizer code: integer luminance sums with only
+    the total clamped, two-sided diffuse for double-sided polygons seen from
+    behind, unnormalized light vector and normals, 3-bit specular power, and
+    face normals computed from the vertices when command 7 bit 1 is set
+    (VF, Virtua Racing and Wing War use it per object). Keep the 6-bit colour 
+    translation index: the games load a 64-step ramp.
+
+Commit 8ce6e03 on 2026-10-30 by Ian
+
+    Add Sega Model 1 emulation (work in progress)
+
+    Ported from MAME (BSD-3-Clause): NEC V60 CPU, Fujitsu MB86233 TGP 
+    coprocessor, System 24 tilemaps, Model 1 sound board (68000, YM3438 via 
+    ymfm, 2x MultiPCM, i8251 link), and the video board geometrizer simulation.
+    The I/O board is simulated.
+
+    The 3D is drawn by a new OpenGL renderer: MAME's transform, clipping and 
+    painter's z-sort, with only the rasterization on the GPU at the output 
+    resolution, plus two-pass crack filling. MAME's software rasterizer is kept
+    as a debug reference (Model1SoftwareRender).
+
+    Games: Virtua Fighter, Virtua Racing, Wing War, Star Wars Arcade (US and 
+    Japan, with the DSB1 MPEG board).
+
+    Also fixes some V60 bugs found by checking MAME's core against NEC's manual:
+    unscaled index in [/addr](Rx) writes, signed MUL overflow, host divide
+    faults in DIVX/DIVUX/REM.W, 32-bit bit fields, MOVCFD.H fill range and
+    CMPCF.
+
+    Debug environment variables (SUPERMODEL_MODEL1_*) are still in the code.
+
+Commit 7c5360f on 2026-11-05 by Ian
+
+    Makefile.Win32: rebuild the resources when the icon changes
+
+Commit 5fd4d73 on 2026-11-05 by Ian
+
+    Windows: program icon (Resources/supermodel.ico)
+
+    The MSVC project compiles MSVC/Supermodel.rc and the MinGW build's 
+    SupermodelResources.rc gains the same icon. It is the exe's icon in Explorer
+    and, as SDL uses the first icon resource, the window and taskbar icon.
+
+Commit 5831c3e on 2026-11-05 by Ian
+
+    Startup banner: print the build date instead of the version
+
+    The version string (0.3a-WIP) isn't updated between builds, so the banner 
+    now shows the date Main.cpp was compiled, as YYYY-MM-DD (ISO 8601, read the 
+    same everywhere). Clean release builds always compile it.
+
+Commit 63138ac on 2026-11-05 by dukeeeey
+
+    Merge pull request #364 from cerroverb/dsb-fifo-ordering
+
+    DSB: make FIFO write index atomic
+Commit a6cdad2 on 2026-11-04 by cerroverb
+
+    DSB: use std::atomic for the FIFO write index
+
+    Builds on every compiler, including MSVC.
+
+Commit 65e039b on 2026-11-04 by cerroverb
+
+    DSB: publish FIFO writes with release/acquire ordering
+
+    The PPC thread writes the FIFO and the sound thread reads it. On weakly 
+    ordered CPUs a reader could see the new index before the data.
+
+Commit d7cc56c on 2026-11-02 by njz3
+
+    Net board link: cabinets started seconds apart link
+
+    Two Sega Rally 2 cabinets started 1 to 4 s apart never linked: the first 
+    stayed on CHECKING NETWORK NOW, the second on a black screen. Started 30 s 
+    apart, they linked. Reported by the Image borne session on Racecab1 and 
+    Racecab2 (5d535cd, simulated net board). Two faults together:
+
+    - The network server listened from the start of Supermodel (Main.cpp),
+     before the net board registered its handlers (CNetBoardLink, made when
+     the game loads). The cabinet still loading accepted the other's
+     connection, did not know its NBJ1 and closed it.
+    - The simulated board whose output connection was closed then waited for
+     the previous machine without opening it again (ConnectProc called
+     Connect() only before). Both waited forever.
+
+    CNetBoardLink now starts the server once its handlers are registered, and 
+    Main.cpp starts it itself only for the Pro-1000. While waiting for the 
+    previous machine, the simulated board opens its output connection again if
+    the next machine closed it, at most once a second (kReconnectMS).
+
+    Checked in agent mode with two hidden Supermodels on 127.0.0.1:
+    - A fake second cabinet takes the first one's connection and closes it, as
+     the loading cabinet did. With a460b59 the first never reopens it and
+     neither links (the cabinets' logs). With this change it reopens it and
+     both link (machine 1 of 2, master; 2 of 2, slave).
+    - Starts 0, 1 and 4 s apart (Sega Rally 2) and 1 s apart (Scud Race) link
+     every time.
+    - The emulated net board linked to itself starts and connects as before.
+
+    FFBRework.md 2.17.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit a460b59 on 2026-10-31 by njz3
+
+    Z80: conditional JR, RET and CALL, and LDDR take their Zilog cycles
+
+    The conditional jumps, returns and calls were charged the same whether the 
+    condition held or not: the cycle table's cost of a failed condition. When it 
+    holds, a JR now takes 12 cycles (5 more), a RET 11 (6 more), a CALL 17 (7 
+    more), with the JRC, RETC and CALLCC macros. LDDR did its whole copy in one 
+    instruction, charged 0 cycles: it now copies a byte per execution as LDIR 
+    does, 21 cycles each, 16 for the last byte (ED B8 at 16 in the table).
+
+    Asked by the owner after the Hikaruloader session, replaying EPR-20512 on
+    its own Z80, saw its NMIs still drift up to 1 000-1 300 cycles from
+    Supermodel's. Checked instruction by instruction on a test program run with
+    the core (each taken and not taken, a 16-byte LDDR): all at Zilog's cycles.
+    The drive board programs' first NMIs do not move, but Star Wars Trilogy's
+    EPR-21119's, by 5 cycles: its simulation's FirstNmiCycles follows.
+
+    Checked again in agent mode on whole games from power-up: the six emulated 
+    boards start and play; the simulations replayed on their inputs differ at no 
+    NMI; with -simulate-driveboard the same commands with the same values, as 
+    many effects and the same race. Scud Race's DSB1 plays the same tracks at
+    the same MPEG positions as 4e5aa3d. CPIR, CPDR, INIR, INDR, OTIR and OTDR
+    are still done in one step. FFBRework.md 2.16.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 4e5aa3d on 2026-10-31 by njz3
+
+    Z80: DJNZ and LDIR take their Zilog cycles
+
+    DJNZ was charged 8 cycles whether it jumped or not: it now takes 13 when it 
+    jumps. LDIR did its whole copy in one instruction, charged 0 cycles (its
+    entry in the ED table was 0): it now copies a byte per execution and runs
+    again while BC is not 0, 21 cycles each, 16 for the last byte, so that an
+    interrupt can come in the middle, as on the Z80.
+
+    Found with the Hikaruloader session, whose Z80 ran EPR-20512 (NASCAR
+    Arcade's drive board) with 16 % more cycles at start-up. Counted instruction
+    by instruction from reset to the CTC's start, the drive board program took 1
+    607 042 cycles against Zilog's 1 860 648; every other instruction agreed. It
+    now takes 1 860 648.
+
+    The drive boards start about two frames later (the first NMI in frame 14 for 
+    Sega Rally 2 and Star Wars Trilogy, 15 for Scud Race, 16 for Scud Race Plus, 
+    17 for Daytona USA 2), so the simulated programs' FirstNmiCycles follow. 
+    Checked in agent mode on whole games from power-up: the six emulated boards 
+    start and play; the simulations replayed on their inputs differ at no NMI; 
+    with -simulate-driveboard the same commands at the same frames and the same 
+    race. Scud Race's DSB1 (also a Z80) plays the same tracks at the same MPEG 
+    positions (-no-threads, so that the sound follows the frames). The billboard
+    (Virtua Fighter 3, Fighting Vipers 2) was not tried. FFBRework.md 2.16.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 5d535cd on 2026-10-31 by njz3
+
+    Write directory that cannot be written: read the usual files, write nothing
+
+    The owner's rule replaces the fallback of 13853f7: the usual places (the 
+    settings, NVRAM and save states next to Supermodel) are templates and are 
+    never written, even when the write directory cannot be used. Two emulators 
+    started by accident on one write directory, one failing, must not break
+    them.
+
+    A write directory that cannot be created or written, or into which the usual 
+    Supermodel.ini cannot be copied, now stays the write target, so every write 
+    fails: the settings are read from the usual Supermodel.ini, NVRAM and save 
+    states from their usual places (GetReadPath), and no NVRAM save, menu Save, 
+    default settings file or log file is written anywhere. The error goes to 
+    stderr and the log output, and the notice over the game says so: "Cannot 
+    write to the write folder", the path, "Nothing is saved: the settings and
+    the game saves are read from the usual folders and not written." Flycast is
+    told the same rule and wording.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 13853f7 on 2026-10-31 by njz3
+
+    Write directory: not used when it cannot be written, said in the log and on
+    screen
+
+    A write directory (-write-dir, WriteDirectory) that cannot be created or 
+    written, checked at start-up with a probe file in its Config folder, or into 
+    which the usual Supermodel.ini cannot be copied, is no longer used:
+    everything is read and written in the usual places, as without it. Until now
+    its errors were ignored, so the game ran with the built-in settings (the
+    file read was the missing copy) and every NVRAM save failed.
+
+    The reason is printed on stderr and logged once the log is open, and a 
+    notification shows over the game for 20 seconds from its first frame, in the 
+    words of Flycast's, which behaves the same since the owner's decision:
+    "Cannot write to the write folder", the path, "The settings and the game
+    saves are read and written in the usual folders instead." No message box,
+    which would stop a cabinet.
+
+    GameMenu::Notify and DrawNotification: a message over the game, the menu
+    open or not, drawn with ImGui without changing the mouse pointer
+    (HideCursor).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 3f4cca1 on 2026-10-29 by Benjamin
+
+    Merge upstream/master (036af1c): tile generator posted writes, quad shader
+    precision, PowerPC idle skip
+
+    TileGen.cpp and TileGen.h taken from upstream: its posted-write timing (busy
+    2.5 pixels, complete 6.3 pixels) replaces this branch's palette/tile RAM
+    split for Scud Race's test screens.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 036af1c on 2026-10-29 by Ian
+
+    Add skip idle function for faster powerpc emulation.
+
+Commit ee27353 on 2026-10-29 by Ian
+
+    Fix a corner case in quad shader where precison can be bad. Fixes some
+    issues in ocean hunter
+
+Commit b25b264 on 2026-10-28 by Ian
+
+    fix build
+
+Commit 16c8b90 on 2026-10-28 by Ian
+
+    Improve the memory timing of the tilegen
+
+Commit 046193d on 2026-10-28 by njz3
+
+    HideCursor on by default
+
+    The mouse pointer is hidden over the window during a game unless HideCursor
+    is set to false, as linuxloader's HIDE_CURSOR is on by default. The settings
+    menu
+    (Tab) still shows it while it is open.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 6555f22 on 2026-10-28 by njz3
+
+    HideCursor: the mouse pointer hidden over the window, shown in the settings
+    menu
+
+    A new setting, HideCursor (linuxloader's HIDE_CURSOR; --set 
+    Display.HIDE_CURSOR), hides the mouse pointer while it is over the window 
+    during a game in any display mode, as full screen already did. The settings 
+    menu (Tab) shows it while it is open; its Display page has the checkbox, 
+    applied when the menu closes, and its Save buttons write it. Off by default; 
+    not in the launcher.
+
+    DirectInput showed and hid the pointer with Win32's ShowCursor, whose
+    display count moves one step at each call: a pointer hidden in full screen
+    could not be shown by the menu, which uses SDL's cursor. It now uses SDL's
+    cursor too.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
 
 Commit f0f6045 on 2026-10-27 by njz3
 

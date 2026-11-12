@@ -8,24 +8,18 @@ Cette image disque est basée sur un Windows 10 entreprise dont la configuration
 a été adaptée aux racecabs.
 Elle propose un frontend **AttractMode Plus**, avec la plupart des jeux et
 émulateurs pré-configurés pour être jouables immédiatement en mode retour de
-force. Hyperspin est toujours présent sur le disque mais **n'est plus le
-frontend lancé au démarrage** : tout ce qui concerne les listes de jeux se
-passe désormais dans `C:\Racecab\AttractPlus`.
+force. Tout ce qui concerne les listes de jeux se passe dans
+`C:\Racecab\AttractPlus`.
 Les dernières versions des émulateurs sont utilisés, en particulier :
 - MAME pour les jeux anciens, ou ceux des générations 90/2000 de Namco ou Taito par exemple.
 - sm2-emu pour Sega Model 2, MAME proposant les mêmes jeux en seconde liste
 - Supermodel pour Sega Model 3
 - Flycast pour Naomi 1/2 et Atomiswave
-- Demul pour les jeux Gaelco ou Hikaru
+- hikaruloader pour les jeux Gaelco ou Hikaru
 - Dolphin pour les jeux Triforce
 - Teknoparrot pour les jeux sur plateforme PC
 
-> **Note (17/10/2026) :** Nebula Model 2 (`Model2 v1.1a`) est toujours installé
-> mais **ne figure plus dans aucune liste de jeux**. Pour Sega Model 2, l'image
-> n'utilise plus que sm2-emu et MAME. Manx TT SuperBike, Motor Raid et Wave
-> Runner, que lui seul lançait, sont passés sur sm2-emu, en solo comme en link.
-
-Le retour de force est soit natif à la plateforme ou à l'émulateur (model2,
+Le retour de force est soit natif à la plateforme ou à l'émulateur (sm2-emu,
 supermodel), soit généré par le FFB plugin de Boomslangnz. Il a été réglé dans
 le BackForceFeeder afin de restituer au plus juste les effets originaux quand
 c'est possible.
@@ -76,13 +70,6 @@ Broadcast address: 192.168.1.255
 
 Mettre réseau privé et désactiver le Firewall.
 
-> **Note:**
-Pour le jeu en réseau sur model 2 emulator (Sega Rally, Daytona 1, etc.)
-if faut impérativement activer le support des trames de longues taille (3kB)
-soit via une option de votre carte réseau, soit activer l'option "Jumbo Frames"
-dans votre carte Ethernet (MTU >3kB) et avoir un switch Ethernet 1GBit qui 
-supporte les "Jumbo Frames".
-
 ![Configuration réseau](Utils/images/networkconfig.png "Configuration réseau").
 
 ## Softs pré-installés
@@ -91,7 +78,7 @@ Le chemin C:\Racecab\Utils est ajouté dans la variable d'environement PATH du s
 Sont pré-installés :
 - Les redistribuables VC Runtime Visual C++ (x86 et x64) en version 2010 (vcr100), 2012 (vcr110), 2013 (vcr120), 2015-2022 (vcr140).
 - Dans les composants Windows (ajout/suppresion de composants) : DirectX (ajout composants graphiques windows), DirectPlay (ajout legacy componants/DirectPlay), Lecteur Multimedia
-- La font BebasNeue.ttf (héritage de RocketLauncher, qui n'est plus installé ; certains thèmes s'en servent encore)
+- La font BebasNeue.ttf (certains thèmes s'en servent)
 - Les utilitaires comme VLC, TightVNC, WinMerge, Putty, Teamviewer, Firefox.
 - vJoy 2.2.2.0 (un périphérique, 4 axes dans l'ordre X, Y, Z, Rx, 32 boutons, tous les effets actifs), BFF
 - Si vous voulez passer en mode TESTSIGN ON (pour vjoy non signé sous Windows 11 par exemple), utiliser Universal Watermark Disabler
@@ -132,15 +119,10 @@ jeu en particulier, supprimez le raccourci `startAttractModePlus.bat` et créez
 En cas de changement ou de ré-installation de vjoy, re mettre vJoy en volant 
 à retour de force via le plugin FFB dans :
 ```
-C:\Racecab\Emulators\Demul_07a_[180428]_Gaelco
-C:\Racecab\Emulators\Demul_07a_[180428]_Gaelco_SD
-C:\Racecab\Emulators\Demul_07a_[180428]_Hikaru
 C:\Racecab\Emulators\Flycast
 C:\Racecab\Emulators\Flycast LINK
 C:\Racecab\Emulators\Mame
 C:\Racecab\Emulators\Mame LINK
-C:\Racecab\Emulators\Model2 v1.1a
-C:\Racecab\Emulators\Model2 v1.1a LINK
 C:\Racecab\Emulators\Supermodel
 C:\Racecab\Emulators\Supermodel LINK
 ```
@@ -148,8 +130,6 @@ C:\Racecab\Emulators\Supermodel LINK
 Teknoparrot:
 ```
 C:\Racecab\Games\Batman - Raw Thrills PC Based\ZeusSP
-C:\Racecab\Games\Battle Gear 4 Tuned 2.8 - Taito Type X +
-C:\Racecab\Games\Battle Gear 4 Tuned 2.8 Professional Edition - Taito Type X +
 C:\Racecab\Games\Chase H.Q. 2 - Taito Type X 2
 C:\Racecab\Games\Daytona Championship USA\Sega\Daytona
 C:\Racecab\Games\Daytona Championship USA New Season Edition\Sega\Daytona
@@ -209,7 +189,7 @@ On lance le script du mode vidéo voulu, par exemple
    - lit `set_cab_id.bat` pour connaître la cabine en place ;
    - recopie par `XCOPY` les variantes des émulateurs restés en dehors du
      moteur : `mame<RES>.ini` des trois MAME (normal, LINK, Namco LINK),
-     `Emulator<RES>.ini` et `scripts<RES>` de Model 2, `GFX<RES>.ini` de
+     `GFX<RES>.ini` de
      Dolphin et des deux Triforce ;
    - appelle `Build-Config.ps1 -Res <RES>` pour tout le reste : sm2-emu,
      Supermodel, Flycast, les listes de jeux d'AttractMode Plus et les profils
@@ -315,7 +295,7 @@ configuration **active** reste à deux. Ce qui existe pour `_link_cab3` et
 | `Supermodel LINK\NVRAM_link_cab3\`, `NVRAM_link_cab4\` | `Build-Config.ps1` |
 | `sm2-emu LINK\saves_link_cab3\`, `saves_link_cab4\` | `Build-Config.ps1` |
 | `Mame LINK\` et `Mame Namco LINK\nvram_link_cab3\`, `nvram_link_cab4\` | les lanceurs link (`-nvram_directory nvram%CAB_ID%`) |
-| `Model2 v1.1a LINK\NVDATA_link_cab3\`, `_cab4\` ; `Flycast LINK\data_link_cab3\`, `_cab4\` | rien : modèles à recopier à la main dans le dossier vivant |
+| `Flycast LINK\data_link_cab3\`, `_cab4\` | rien : modèles à recopier à la main dans le dossier vivant |
 
 Les lanceurs link de **linuxloader** et de **windowsloader** lisent aussi
 `set_cab_network<CAB_ID>.bat`, mais ne savent faire que deux bornes : toute
@@ -443,7 +423,7 @@ déjà être dans la bonne résolution au lancement : c'est le rôle des
 `BORDERLESS_STRETCH` et `true` dans les deux dernières colonnes, un
 `SetXXX.bat`, les colonnes `FLYCAST_*`, `SUPERMODEL_*` et `MAME_*` (celles
 de 1280x240), et les variantes clonées de 1280x240 : les `GFX_<RES>.ini` de Dolphin et des Triforce, et les listes `TeknoParrot` et
-`Bike3D`. Model 2 Emulator, abandonné, n'a pas de variante 1920x240.
+`Bike3D`.
 
 ### La résolution dans les profils TeknoParrot
 
@@ -485,7 +465,8 @@ Tous les jeux sauf certains Teknoparrot qui ne supportent que la HD 16/9e.
 > kHz. Chaque ligne correspond à un script du dossier `Utils` : s'il n'y a pas
 > de script, la résolution n'est pas prévue par l'image.
 
-Seuls les jeux : MAME, model 2, model 3 et Naomi (Flycast) fonctionnent.
+Seuls les jeux : MAME, Model 2 (sm2-emu), Model 3 (Supermodel) et Naomi
+(Flycast) fonctionnent.
 
 ## Super-résolution d'une fenêtre : SuperResScaler
 
@@ -557,9 +538,8 @@ L'image est passée d'un fichier `.bat` par jeu à **un lanceur générique par
 | `Flycast` / `Flycast LINK` | `RunFlycastGame.cmd` | `RunFlycastLinkGame.cmd` |
 | `Mame` / `Mame LINK` | `RunMAMEGame.cmd` | `RunMAMELinkGame.cmd` |
 | `Mame Namco LINK` | — | `RunMAMENamcoLinkGame.cmd` |
-| `Model2 v1.1a` / `... LINK` | `RunModel2Game.cmd` | `RunModel2LinkGame.cmd` |
 | `Teknoparrot<version>` | `RunTeknoParrotGame.cmd` | `RunTeknoParrotLinkGame.cmd` |
-| `Dolphin`, `Triforce`, `Demul_*` | `RunDolphinGame.cmd`, `RunTriforceGame.cmd`, `RunDemulGame.cmd` | — |
+| `Dolphin`, `Triforce` | `RunDolphinGame.cmd`, `RunTriforceGame.cmd` | — |
 
 AttractPlus les appelle toujours de la même façon, définie dans
 `AttractPlus\emulators\<Ému>.cfg` :
@@ -591,7 +571,7 @@ continue de l'attendre et que BFF garde le titre qu'il lit.
 
 Deux mécanismes, selon l'émulateur.
 
-**Par le dossier** — sm2-emu, Supermodel, Flycast, MAME, Model 2 : le dossier
+**Par le dossier** — sm2-emu, Supermodel, Flycast, MAME : le dossier
 `<Ému>` porte la configuration et les NVRAM solo, le dossier `<Ému> LINK` les
 siennes pour le link. Le joueur choisit en prenant la liste Single ou la liste
 Multi dans AttractPlus, ce qui appelle l'un ou l'autre lanceur. **On peut donc
@@ -779,7 +759,7 @@ placé dans le dossier du jeu ou de l'émulateur qui va le lancer.
 
 Nommer votre fichier .bat de manière unique et identifiable facilement. Si 
 possible, prendre un nom sans espace et qui correspont à un nom de rom unique.
-Par exemple : "daytonas.bat" dans le dossier de `C:\Racecab\Emulators\Model2 v1.1a`
+Par exemple : "daytonas.bat" dans le dossier de `C:\Racecab\Emulators\sm2-emu`
 (rom "daytonas" pour le jeu Daytona Saturn Ads).
 
 Au besoin, placez les arguments dont vous avez besoin dans le .bat.
@@ -947,7 +927,7 @@ fonctionne, il faut d'abord le fermer pour pouvoir modifier les fichiers.
 ## Configuration de vos boutons/axes
 
 Pour configurer les contrôles pour votre propre panel/cablage, le mieux est 
-de ne changer que le mapping des boutons par type d'émulateur (MAME, Model 2,
+de ne changer que le mapping des boutons par type d'émulateur (MAME, sm2-emu,
 Supermodel, TP), puis d'utiliser la page "Explorer" de ControlSet pour 
 copier-coller uniquement le mapping des entrées brutes, et/ou le calibrage 
 des axes vers plusieurs ControlSets simultanément.
@@ -1005,13 +985,6 @@ touche **Entrée** valide les boîtes de DLL (`FFBBlaster.dll` et consorts), la
 touche **Échap** ferme les « Erreur d'application ». Puis vérifier qu'il ne
 reste pas de processus de jeu, et remettre la résolution avec le script
 `Utils\SetLCD_1920x1080p.bat`.
-
-## Jeux Model 2 en mode Link
-
-Pour avoir un bon fonctionnement en mode Link (MULTI) il est obligatoire
-d'avoir un switch 1Gbs et d'activer le mode "Jumbo Frame", voir au début
-de ce document.
-La touche pour quitter l'émulateur est Alt+F4.
 
 ## Jeux Model 2 — sm2-emu
 
@@ -1080,11 +1053,6 @@ Le `rompath` déclaré dans `AttractPlus\emulators\Sm2.cfg` ne sert qu'au
 balayage des listes de jeux par AttractPlus : **il n'a aucun effet au
 lancement**, puisque le lanceur passe seulement `--game <rom>` et laisse
 l'émulateur résoudre le chemin.
-
-> Le dossier `Emulators\Model2Roms` appartient à l'ancien Model 2 Emulator
-> v1.1a. **sm2-emu n'y regarde jamais.** Une archive qui n'est que là est
-> invisible pour lui — c'est ce qui a fait échouer Manx TT, Motor Raid et
-> Wave Runner pendant des mois, et ça n'avait rien d'un défaut d'émulation.
 
 Deux conséquences utiles :
 
@@ -1242,11 +1210,7 @@ et non du jeu : avec balayage du volant il en emet **353**. Deux autres erreurs
 du meme genre ont ete corrigees le 22/10/2026 — Over Rev, Touring Car et Super
 GT 24h donnaient zero parce qu'ils restaient bloques sur leur ecran de choix de
 mode, qui se pilote AU VOLANT (« STEERING WHEEL TO SELECT / GASPEDAL TO
-DECIDE » s'affiche a l'ecran) ; avec le balayage ils donnent 98 a 122. Et
-Battle Gear 4 Tuned Professional Edition donne 952 contre 16 607 pour le Tuned
-ordinaire, alors que c'est le **meme `game4.exe`** : seule l'option TeknoParrot
-`Professional Edition Hold Gear` les separe, et le harnais ne passe pas les
-vitesses.
+DECIDE » s'affiche a l'ecran) ; avec le balayage ils donnent 98 a 122.
 
 ### Le dossier d'écriture unique (`-write-dir`)
 
@@ -1985,9 +1949,6 @@ règle clavier de leur profil BFF :
 
 | Jeu                    | Émulateur                 | Pour quitter                                                       |
 |------------------------|---------------------------|--------------------------------------------------------------------|
-| Smashing Drive         | Demul (Gaelco)            | Alt+F4                                                             |
-| Sega Nascar            | Demul (Hikaru)            | Alt+F4                                                             |
-| Star Wars Racer Arcade | Demul (Hikaru)            | Alt+F4                                                             |
 | Batman                 | TeknoParrot (Raw Thrills) | Alt+F4                                                             |
 | Outrun 2 SP DX         | TeknoParrot (Lindbergh)   | Alt+F4                                                             |
 | Sega Racing Classic    | TeknoParrot               | Alt+F4                                                             |

@@ -9,7 +9,7 @@
   ####    ### ##  ##      ####   ####    ##   ##  ####    ### ##  ####    ####
                  ####
 
-                       A Sega Model 3 Arcade Emulator.
+                     A Sega Model Series Arcade Emulator.
                    Copyright 2003-2026 The Supermodel Team
 
 
@@ -298,9 +298,10 @@ InternalHeight; native, the default, is the size the image has in the window).
 Smaller is lighter for a small graphics card, larger smooths the edges.  It also
 has the display mode (a window, full screen or a borderless window covering the
 screen, each with the frame keeping its shape or stretched), the window's size
-or the screen's resolution, the frame rate limit, vertical sync and the frame
-rate display.  A window can also be resized by dragging its edges: its new size
-becomes the resolution.
+or the screen's resolution, the frame rate limit, vertical sync, the frame rate
+display and HideCursor (the mouse pointer hidden over the window in any display
+mode; this menu shows it while it is open).  A window can also be resized by
+dragging its edges: its new size becomes the resolution.
 
 Its 'Controls' page lists the devices found (keyboard, mouse, joysticks); 'Map'
 opens a device's page, with the game's inputs, what each is bound to on that
@@ -1290,6 +1291,13 @@ not.  All options are case sensitive.
 
     ----------------
 
+    Option:         -version
+                    --version
+
+    Description:    Prints the version and quits.
+
+    ----------------
+
     Option:         -print-games
 
     Description:    Lists all supported ROM sets.  Not all supported ROM sets
@@ -1325,8 +1333,13 @@ not.  All options are case sensitive.
                     <path>/Supermodel.log.  Games.xml, Music.xml, NVRAM files
                     and save states are read from there first, else from their
                     usual places.  A relative path is relative to Supermodel's
-                    directory.  Without it (the default), nothing changes.  Same
-                    as the WriteDirectory setting, which it overrides.
+                    directory.  If it cannot be created or written, nothing
+                    is saved: the settings, NVRAM files and save states are
+                    read from their usual places, which are never written
+                    (they are the templates), every write fails, an error is
+                    printed, and a message shows over the game for 20
+                    seconds.  Without it (the default), nothing changes.
+                    Same as the WriteDirectory setting, which it overrides.
 
     ----------------
 
@@ -1396,6 +1409,16 @@ not.  All options are case sensitive.
                     performance.  The optimum frequency will vary from game to
                     game and system to system.  Valid values for <f> are 1 to
                     1000.
+
+    ----------------
+
+    Option:         -no-idle-skip
+
+    Description:    Executes PowerPC idle loops (loops that only wait for an
+                    interrupt to change memory) in full.  By default they are
+                    detected and skipped up to the next event, which saves host
+                    CPU time without changing emulated timing.  Use this option
+                    if a game behaves differently with idle skipping enabled.
 
     ----------------
 
@@ -1688,6 +1711,16 @@ All settings are case sensitive.
 
     ----------------
 
+    Name:           IdleSkip
+
+    Argument:       Integer.
+
+    Description:    If set to 1 (the default), PowerPC idle loops are skipped;
+                    if set to 0, they are executed in full.  Equivalent to the
+                    '-idle-skip' and '-no-idle-skip' command line options.
+
+    ----------------
+
     Name:           ROMDirectory
 
     Argument:       String.
@@ -1819,6 +1852,19 @@ All settings are case sensitive.
                     If set to 0, the frame rate is not computed.  Disabled by
                     default.  Equivalent to the '-show-fps' command line
                     option.
+
+    ----------------
+
+    Name:           HideCursor
+
+    Argument:       Boolean.
+
+    Description:    Hides the mouse pointer while it is over the window during
+                    a game, in any display mode (it is always hidden in full
+                    screen).  The settings menu (Tab) shows it while it is
+                    open.  On by default.  Set in the settings menu's Display
+                    page, or with --set Display.HIDE_CURSOR (linuxloader's
+                    name).
 
     ----------------
 
@@ -2067,7 +2113,8 @@ All settings are case sensitive.
                     command bytes also go out as 'm3ffb = XX' (hexadecimal, next
                     to RawDrive), and a client driving a real drive board with
                     them (BackForceFeeder in its raw mode) may send back the
-                    byte the board replied, 'm3ffb_rx = XX' (hexadecimal). With
+                    byte the board replied, 'm3ffb_rx = XX' (hexadecimal). On
+                    Model 2 these are 'm2ffb' and 'm2ffb_rx'. With
                     this setting true, the default, the game reads that reply
                     in place of the emulated board's from the first one
                     received until that client disconnects; the emulated board
@@ -2375,6 +2422,49 @@ All settings are case sensitive.
 
     ----------------
 
+    Name:           InputThrottle
+                    InputThrottleUp
+                    InputThrottleDown
+
+    Argument:       String.
+
+    Description:    Mappings for the throttle lever in the Model 1 flight games
+                    'Wing War' and 'Star Wars Arcade'.  InputThrottle is an
+                    analog axis; the up and down buttons move the lever and
+                    leave it where it is (the axis takes over when moved).
+                    Can only be set in the 'Global' section.
+
+    ----------------
+
+    Name:           InputFlightView1
+                    InputFlightView2
+                    InputFlightView3
+                    InputFlightView4
+
+    Argument:       String.
+
+    Description:    Mappings for the four view buttons in 'Wing War'.  Can
+                    only be set in the 'Global' section.
+
+    ----------------
+
+    Name:           InputAnalogJoy2Down
+                    InputAnalogJoy2Left
+                    InputAnalogJoy2Right
+                    InputAnalogJoy2Up
+                    InputAnalogJoy2X
+                    InputAnalogJoy2Y
+                    InputAnalogJoy2Trigger
+                    InputAnalogJoy2Trigger2
+
+    Argument:       String.
+
+    Description:    Mappings for the second (gunner's) analog joystick and its
+                    two buttons in 'Star Wars Arcade'.  Can only be set in the
+                    'Global' section.
+
+    ----------------
+
     Name:           InputGunDown
                     InputGunDown2
                     InputGunLeft
@@ -2606,6 +2696,7 @@ Supermodel includes code from the following projects:
     - Amp by Tomislav Uzalec
     - The OpenGL Extension Wrangler Library (GLEW):
                                 http://glew.sourceforge.net
+    - MAME:                     https://www.mamedev.org
 
 The OpenGL Extension Wrangler Library
 Copyright (C) 2002-2008, Milan Ikits <milan ikits[]ieee org>
@@ -2635,3 +2726,54 @@ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
 CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
 THE POSSIBILITY OF SUCH DAMAGE.
+
+Parts of Supermodel, mainly its Sega Model 1 and Model 2 support, are based on
+code from MAME.  The files concerned say so in the comment at the top of each
+file.  Supermodel as a whole, including those files, is distributed under the
+GNU General Public License (see LICENSE.txt).  The authors of that code made it
+available under the following license:
+
+Copyright (c) Aaron Giles
+Copyright (c) Andreas Naive
+Copyright (c) Angelo Salese
+Copyright (c) Ariane Fugmann
+Copyright (c) David Haywood
+Copyright (c) ElSemi
+Copyright (c) Ernesto Corvi
+Copyright (c) Farfetch'd
+Copyright (c) Matthew Daniels
+Copyright (c) Miguel Angel Horna
+Copyright (c) Morten Shearman Kirkegaard
+Copyright (c) Olivier Galibert
+Copyright (c) Peter Wilhelmsen
+Copyright (c) R. Belmont
+Copyright (c) Robbbert
+Copyright (c) Samuel Neves
+Copyright (c) smf
+Copyright (c) Ville Linde
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

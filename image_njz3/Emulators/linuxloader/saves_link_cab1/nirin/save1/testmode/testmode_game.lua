@@ -1,0 +1,10 @@
+--define
+TRUE = 1
+FALSE = 0
+PCB_ID = 1
+IS_BATTLE = TRUE
+GAME_DIFFICULTY = 1
+LAP = 3
+SELECT_TIME = 1
+CHECK_SUM = 7
+

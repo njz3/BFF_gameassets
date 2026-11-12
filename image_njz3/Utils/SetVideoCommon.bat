@@ -4,10 +4,6 @@
 :: CAB_ID is the "link" filename extension, set by caller's, like "_single"
 CALL set_cab_id.bat
 
-:: Hyperspin
-XCOPY /Y /I "C:\Racecab\Hyperspin\Databases\1P\1P%RES_EXT%.xml" "C:\Racecab\Hyperspin\Databases\1P\1P.xml"
-XCOPY /Y /I "C:\Racecab\Hyperspin\Databases\MULTI\MULTI%RES_EXT%.xml" "C:\Racecab\Hyperspin\Databases\MULTI\MULTI.xml"
-
 :: MAME : mame.ini par Build-Config (gabarits, voir targets.csv)
 :: Virtua Racing : le SetXXX.bat appelant vient de poser la NVRAM au format de
 :: l ecran dans Mame\nvram\vr. Avec le dossier d ecriture, MAME lit d abord
@@ -23,13 +19,6 @@ if defined WRITEDIR_ROOT if exist "%WRITEDIR_ROOT%\mame_single\nvram\vr\" RMDIR 
 :: resolution : ils ne sont reposes que lorsque la cabine change.
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Racecab\Utils\config\Build-Config.ps1" -Res %RES_EXT%
 IF ERRORLEVEL 1 ECHO *** Build-Config a echoue : configuration incomplete ***
-
-:: model 2
-XCOPY /Y /I "%EMULATORS_DIR%\Model2 v1.1a\Emulator%RES_EXT%.ini" "%EMULATORS_DIR%\Model2 v1.1a\Emulator.ini"
-XCOPY /Y /I "%EMULATORS_DIR%\Model2 v1.1a LINK\Emulator%RES_EXT%.ini" "%EMULATORS_DIR%\Model2 v1.1a LINK\Emulator.ini"
-:: model 2 LINK
-XCOPY /E /H /C /Y /I "%EMULATORS_DIR%\Model2 v1.1a\scripts%RES_EXT%" "%EMULATORS_DIR%\Model2 v1.1a\scripts"
-XCOPY /E /H /C /Y /I "%EMULATORS_DIR%\Model2 v1.1a LINK\scripts%RES_EXT%" "%EMULATORS_DIR%\Model2 v1.1a LINK\scripts"
 
 :: Dolphin NGC
 XCOPY /Y /I "%EMULATORS_DIR%\Dolphin\dolphin\User\Config\GFX%RES_EXT%.ini" "%EMULATORS_DIR%\Dolphin\dolphin\User\Config\GFX.ini"

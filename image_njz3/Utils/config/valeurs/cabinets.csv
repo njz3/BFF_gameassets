@@ -11,9 +11,12 @@
 # (emu.cfg, section [network]) : cab1 est le serveur (ActAsServer), les
 # autres s y connectent (server = adresse de cab1) ; ISPUsername = le nom.
 # Enable et EmulateBBA reprennent LINK_ACTIF.
-CAB;LINK_ACTIF;IP_LOCALE;MASQUE;IP_SUIVANTE;PORT_LOCAL;PORT_SUIVANT;INDEX_CABINET;FORCE_FFB;FLYCAST_SERVEUR_LOCAL;FLYCAST_SERVEUR;FLYCAST_NOM
-_single;false;;;;1970;1970;0;100;false;;racecab1
-_link_cab1;true;192.168.1.4;255.255.255.0;192.168.1.5;1970;1970;0;30;true;;racecab1
-_link_cab2;true;192.168.1.5;255.255.255.0;192.168.1.4;1970;1970;1;30;false;192.168.1.4;racecab2
-_link_cab3;true;192.168.1.6;255.255.255.0;192.168.1.7;1970;1970;2;30;false;192.168.1.4;racecab3
-_link_cab4;true;192.168.1.7;255.255.255.0;192.168.1.4;1970;1970;3;30;false;192.168.1.4;racecab4
+# HIKARU_LINK / HIKARU_SUIVANTE : le link de hikaruloader (section [Network] de
+# son ini) : COMMUNICATION MODE du BIOS (MASTER une seule fois par anneau) et la
+# borne suivante dans l anneau, en TCP sur PORT_LOCAL / PORT_SUIVANT.
+CAB;LINK_ACTIF;IP_LOCALE;MASQUE;IP_SUIVANTE;PORT_LOCAL;PORT_SUIVANT;INDEX_CABINET;FORCE_FFB;FLYCAST_SERVEUR_LOCAL;FLYCAST_SERVEUR;FLYCAST_NOM;HIKARU_LINK;HIKARU_SUIVANTE
+_single;false;;;;1970;1970;0;100;false;;racecab1;NO_LINK;127.0.0.1
+_link_cab1;true;192.168.1.4;255.255.255.0;192.168.1.5;1970;1970;0;30;true;;racecab1;MASTER;192.168.1.5
+_link_cab2;true;192.168.1.5;255.255.255.0;192.168.1.4;1970;1970;1;30;false;192.168.1.4;racecab2;SLAVE;192.168.1.4
+_link_cab3;true;192.168.1.6;255.255.255.0;192.168.1.7;1970;1970;2;30;false;192.168.1.4;racecab3;SLAVE;192.168.1.7
+_link_cab4;true;192.168.1.7;255.255.255.0;192.168.1.4;1970;1970;3;30;false;192.168.1.4;racecab4;SLAVE;192.168.1.4

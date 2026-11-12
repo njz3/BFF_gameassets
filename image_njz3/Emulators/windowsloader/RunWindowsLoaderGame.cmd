@@ -33,6 +33,7 @@ CD /d "%~dp0"
 
 set GAME=
 set GARGS=
+set REGLAGES=
 if /I "%ROM%"=="SR3"                     set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - Original\Rally\Rally.exe"
 if /I "%ROM%"=="SR3StandardEdition"      set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - StandardEdition\Rally\Rally.exe"
 if /I "%ROM%"=="SR3AlpineEdition"        set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - AlpineEdition\Rally\Rally.exe"
@@ -55,8 +56,11 @@ if /I "%ROM%"=="KODrive"                 set "GAME=C:\Racecab\Games\K.O. Drive  
 if /I "%ROM%"=="SSASR"                   set "GAME=C:\Racecab\Games\Sonic & Sega All Stars Racing - SEGA Ringwide\game.exe"
 if /I "%ROM%"=="BattleGear4Tuned"        set "GAME=C:\Racecab\Games\Battle Gear 4 Tuned 2.8 - Taito Type X +\game.exe"
 if /I "%ROM%"=="BattleGear4Tuned"        set "GARGS=_MTS_FULL_SCREEN_"
-if /I "%ROM%"=="BattleGear4Pro"          set "GAME=C:\Racecab\Games\Battle Gear 4 Tuned 2.8 Professional Edition - Taito Type X +\game.exe"
+:: Battle Gear 4 Pro : le meme jeu que Tuned, en cabine Professional
+if /I "%ROM%"=="BattleGear4Pro"          set "GAME=C:\Racecab\Games\Battle Gear 4 Tuned 2.8 - Taito Type X +\game.exe"
 if /I "%ROM%"=="BattleGear4Pro"          set "GARGS=_MTS_FULL_SCREEN_"
+:: Borne Pro : meme programme et meme nom court (bg4) que la Tuned, le reglage pour ce lancement seulement
+if /I "%ROM%"=="BattleGear4Pro"          set "REGLAGES=--set Game.CABINET=PRO"
 if /I "%ROM%"=="BattleGear4"             set "GAME=C:\Racecab\Games\Battle Gear 4 - Taito Type X+\game.exe"
 if /I "%ROM%"=="BattleGear4"             set "GARGS=_MTS_FULL_SCREEN_"
 if /I "%ROM%"=="ChaseHQ2"                set "GAME=C:\Racecab\Games\Chase H.Q. 2 - Taito Type X 2\game.exe"
@@ -64,6 +68,7 @@ if /I "%ROM%"=="GtiClub3"                set "GAME=C:\Racecab\Games\GTI Club Sup
 if /I "%ROM%"=="WastelandRacers"         set "GAME=C:\Racecab\Games\Wasteland Racers 2071 - Trio Tech PC Based\Arcade.exe"
 if /I "%ROM%"=="MKDX118"                 set "GAME=C:\Racecab\Games\Mario Kart Arcade GP DX V1.18 - Namco ES3\MK_AGP3_FINAL.exe"
 if /I "%ROM%"=="MKDX"                    set "GAME=C:\Racecab\Games\Mario Kart Arcade GP DX (V1.10 - Mod FR 1h) - Namco ES3\MK_AGP3_FINAL.exe"
+if /I "%ROM%"=="MKDX106"                 set "GAME=C:\Racecab\Games\Mario Kart Arcade GP DX V1.06.35 OF - Namco ES3\Mario Kart GP DX v1.06.35 OF\MK_AGP3_FINAL.exe"
 if /I "%ROM%"=="D1GP"                    set "GAME=C:\Racecab\Games\D1GP Arcade - Taito Type X2\game.exe"
 if /I "%ROM%"=="LGS"                     set "GAME=C:\Racecab\Games\Let's Go Safari - SEGA Ringwide\GameSampR_RingWide.exe"
 if /I "%ROM%"=="SRG"                     set "GAME=C:\Racecab\Games\Storm Racer G - SEGA Arcade PC Based\bin\racing.exe"
@@ -98,7 +103,7 @@ set VARIANTE=single
 if not defined WRITEDIR_ROOT CALL "..\..\Utils\set_writedir.bat"
 set ECRITURE=
 if defined WRITEDIR_ROOT set ECRITURE=--write-dir "%WRITEDIR_ROOT%\windowsloader_%VARIANTE%"
-windowsloader.exe %ECRITURE% "%GAME%" %GARGS%
+windowsloader.exe %ECRITURE% %REGLAGES% "%GAME%" %GARGS%
 
 :: leave caller
 EXIT

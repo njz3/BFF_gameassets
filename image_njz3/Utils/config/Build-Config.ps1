@@ -105,8 +105,10 @@ function LireCabId {
 function EcrireCabId([string]$valeur) {
     # Edition en place : on ne touche ni aux fins de ligne ni aux commentaires.
     $t = [IO.File]::ReadAllText($SetCabId)
-    $neuf = [regex]::Replace($t, '(?m)^(\s*set\s+CAB_ID\s*=\s*)\S+[^\r\n]*', "`${1}$valeur")
-    if ($neuf -eq $t) { throw "set CAB_ID introuvable dans $SetCabId" }
+    $motif = '(?m)^(\s*set\s+CAB_ID\s*=\s*)\S+[^\r\n]*'
+    # Tester la presence, pas un changement : reposer la meme cabine est permis.
+    if (-not [regex]::IsMatch($t, $motif)) { throw "set CAB_ID introuvable dans $SetCabId" }
+    $neuf = [regex]::Replace($t, $motif, "`${1}$valeur")
     if (-not $WhatIf) { [IO.File]::WriteAllText($SetCabId, $neuf) }
 }
 
@@ -477,9 +479,16 @@ foreach ($t in $cibles) {
                 "garde    {0}  (pas de dossier d ecriture)" -f $t.TARGET
             } else {
                 if (-not (Test-Path -LiteralPath $source)) { throw "original absent : $source" }
-                $original = [IO.File]::ReadAllText($source) -replace "`r`n", "`n"
+                # Un fichier binaire (une NVRAM, qui contient des octets nuls)
+                # se compare octet par octet : relu comme du texte, deux
+                # contenus differents pourraient sembler egaux.
+                $octets = [IO.File]::ReadAllBytes($source)
+                $binaire = $octets -contains [byte]0
+                $original = if ($binaire) { [Convert]::ToBase64String($octets) } else { [IO.File]::ReadAllText($source) -replace "`r`n", "`n" }
                 $copies = @(Get-ChildItem -Path (Join-Path $ecriture $t.TARGET) -File -ErrorAction SilentlyContinue)
-                $effacees = @($copies | Where-Object { ([IO.File]::ReadAllText($_.FullName) -replace "`r`n", "`n") -ne $original })
+                $effacees = @($copies | Where-Object {
+                    $lu = if ($binaire) { [Convert]::ToBase64String([IO.File]::ReadAllBytes($_.FullName)) } else { [IO.File]::ReadAllText($_.FullName) -replace "`r`n", "`n" }
+                    $lu -ne $original })
                 if (-not $WhatIf) { foreach ($c in $effacees) { Remove-Item -LiteralPath $c.FullName -Force } }
                 $noms = ($effacees | ForEach-Object { Split-Path -Leaf (Split-Path -Parent $_.FullName) }) -join ', '
                 "{0}{1}  ({2} copie(s) dans {3}, {4} {5}{6})" -f $(if ($WhatIf) { '[essai] efface ' } else { 'efface   ' }),

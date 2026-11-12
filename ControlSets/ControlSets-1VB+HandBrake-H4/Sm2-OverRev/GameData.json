@@ -1,0 +1,14 @@
+{
+  "GameName": "overrev,overrevb",
+  "Description": "Jaleco Over Rev",
+  "ExecType": 1,
+  "OutputType": 3,
+  "ProcessName": "sm2-emu",
+  "MainWindowTitle": "*Over Rev*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

@@ -2,5 +2,5 @@
 CONSOLESTATE /Min
 
 killProcess.vbs "BackForceFeeder.exe"
-CALL killHyperspin.bat
+CALL killAttractModePlus.bat
 shutdown /r /t 1

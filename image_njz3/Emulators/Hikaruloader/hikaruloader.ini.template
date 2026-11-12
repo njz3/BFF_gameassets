@@ -1,0 +1,337 @@
+# Gabarit de hikaruloader.ini pour Build-Config (Utils\config\targets.csv) : ne pas
+# modifier hikaruloader.ini ni link\hikaruloader.ini, ils sont reecrits a chaque passage.
+# Deux sorties : hikaruloader.ini (solo, graine de Saves\hikaruloader_single) et
+# link\hikaruloader.ini (la cabine de cette machine, que RunHikaruloaderLinkGame.cmd
+# pose dans Saves\hikaruloader<CAB_ID>). Valeurs : resolutions.csv (MODE_FENETRE :
+# sans bordure, etire en super-resolution ; ECHELLE_RENDU) et cabinets.csv (HIKARU_LINK,
+# HIKARU_SUIVANTE, PORT_LOCAL, PORT_SUIVANT). COMM_BOARD = SIMULATED : deux bornes au plus ;
+# a partir de trois, PROGRAM sur toutes. Le retour de force reste le natif
+# (DirectInput vers vJoy, relaye par BFF) : aucun reglage FFB ici (03/11/2026).
+# Hikaruloader settings, written by the settings window (Tab, then Save).
+# Each save writes the whole file again, these comments with it: comments
+# of your own would be lost. A setting left out takes its default.
+# The controls are in controls.ini, beside this file.
+
+[Display]
+
+# The 3D drawn at 1 to 6 times the board's 640x480 (854x480 in
+# widescreen): 2 gives 1280x960, then fitted to the window. The 2D
+# layers (texts, logos) keep theirs. Taken at once. Default: 1
+RENDER_SCALE = {{ECHELLE_RENDU}}
+
+# The frame the picture is shown in, and how the picture fills it, as in
+# linuxloader, Supermodel, Flycast and sm2-emu: ORIGINAL, the picture's own
+# shape (4:3, 16:9 in widescreen); 4:3 or 16:9, that frame with the whole
+# picture in it, black bars where the shapes differ; 4:3_STRETCH or
+# 16:9_STRETCH, the picture fills the frame, deformed; 4:3_CROP or
+# 16:9_CROP, it fills it at its own shape, cut at the sides or above and
+# below. DISPLAY_MODE then fits the frame to the window or the screen,
+# or stretches it. Taken at once. Default: ORIGINAL
+ASPECT_RATIO = ORIGINAL
+
+# The part a cropped ASPECT_RATIO keeps: -100 (left or top) to 100 (right
+# or bottom), 0 the middle. Default: 0
+CROP_POSITION = 0
+
+# A cropped ASPECT_RATIO: true bends the parts it would cut onto the
+# frame's edges, as on a cylinder seen from the front, so the whole
+# picture stays visible. Default: false
+CROP_BARREL = false
+
+# With CROP_BARREL: the middle shown undistorted, in % of the frame.
+# Default: 60
+BARREL_CENTER = 60
+
+# With CROP_BARREL: the cylinder's radius in % of the frame (small bends
+# hard at the edge, large compresses evenly). Default: 50
+BARREL_RADIUS = 50
+
+# WINDOW; FULLSCREEN, the whole screen at the desktop's resolution;
+# BORDERLESS, a window without borders covering the screen: the frame
+# at its shape in the middle. Each also _STRETCH (WINDOW_STRETCH...): the
+# frame fills the window or the screen. On a CRT at a super resolution
+# (1920x240), the screen's real shape as ASPECT_RATIO (4:3 or 16:9) and a
+# _STRETCH mode. Default: WINDOW
+DISPLAY_MODE = {{MODE_FENETRE}}
+
+# The window's size, 1 to 4 times the Hikaru's 640x480 (it can also be
+# resized with the mouse). Default: 1
+WINDOW_SCALE = 1
+
+# The picture at whole multiples of its size only (1x, 2x, 3x...), for
+# even pixels, the frame's bars larger: true or false. Not with a
+# stretched or cropped picture, nor a stretched DISPLAY_MODE. Default: false
+INTEGER_SCALE = false
+
+# OPENGL (3.1); VULKAN and D3D11 are to come. Read at the start.
+# Default: OPENGL
+GRAPHICS_API = OPENGL
+
+# Vertical sync: true or false. Default: false
+VSYNC = false
+
+# Waits between frames to hold FPS_TARGET: true or false.
+# Default: true
+FPS_LIMITER_ENABLED = true
+
+# The frame rate held, 10 to 240 frames a second. Default: 60.0
+FPS_TARGET = 60.0
+
+# The frame rate shown over the picture (F12 toggles it): true or false.
+# Default: false
+FPS_OVERLAY_ENABLED = false
+
+# The frame number in the title bar, to report a glitch's frame: true or
+# false. Default: false
+TITLE_FRAME_NUMBER = false
+
+# The mouse pointer hidden over the window: true or false.
+# Default: false
+HIDE_CURSOR = true
+
+# The frames drawn by a thread of their own while the next one is
+# emulated: faster when the drawing slows the game, but the picture
+# comes a frame later. Taken at the game's start: true or false.
+# Default: true
+THREADED_RENDERING = true
+
+# The translucent polygons sorted at each pixel, from the farthest,
+# as the board blends them: right where they cross. It needs OpenGL
+# 4.3 and no MSAA; false sorts each mesh as a whole, lighter for a
+# weak graphics card. true or false. Default: true
+SORT_TRANSLUCENT_PIXELS = true
+
+# The 3D at 16:9 (854x480): the scene seen wider, its middle as the
+# game draws it. The game may leave objects out at the sides. Taken at
+# the game's start: true or false. Default: false
+WIDESCREEN = {{HIKARU_LARGE}}
+
+# The 2D layers (texts, logos) in widescreen: CENTERED, at 4:3 in the
+# middle; STRETCHED, to the whole width. Default: CENTERED
+WIDESCREEN_2D = CENTERED
+
+# The picture scaled to the window: NEAREST, sharp pixels (even at whole
+# multiples only); LINEAR, smooth (down to 240 rows, each the mean of two
+# instead of one in two dropped). Default: NEAREST
+SCALING_FILTER = NEAREST
+
+# The 3D scenery's distance, 1.0 to 4.0 times the game's: the detailed
+# models and the fog that much farther (not what the game itself leaves
+# out). Default: 1.0
+DRAW_DISTANCE = 1.0
+
+# Around the picture where the window is wider than its frame: OFF,
+# black; BLUR, the picture's own edges blurred and dimmed; IMAGE, the
+# game's bezel picture in Batocera's format, artwork/bezels/<set>.png
+# and <set>.info (the screen's place in it; without, where the picture
+# is see-through), a clone taking its parent's, else
+# artwork/bezels/default.png; black without any. The game's picture goes
+# in the bezel's screen, as ASPECT_RATIO places it. Taken at once.
+# Default: OFF
+BEZEL = OFF
+
+[Enhancements]
+
+# Beyond the board's own picture, all off by default, each taken at
+# once. The 3D's edges antialiased, by multisampling: 0 (none), 2, 4 or 8
+# samples a pixel (the graphics card's most at most). Default: 0
+MSAA = 0
+
+# The textures seen at a slant (roads, floors) kept sharp, anisotropic
+# filtering: 1 (none), 2, 4, 8 or 16. Default: 1
+ANISOTROPY = 1
+
+# The textures enlarged by Scale2x, the edges of their flat colours
+# (texts, signs) kept sharp: 1 (none), 2 or 4 times. More memory, slower
+# uploads. Default: 1
+TEXTURE_SCALE = 1
+
+# The 3D's edges smoothed once drawn (FXAA): cheaper than MSAA, a little
+# blurrier. true or false. Default: false
+FXAA = false
+
+# A glow around the 3D's bright parts (bloom): 0 (none) to 100 %.
+# Default: 0
+BLOOM = 0
+
+# A CRT's look on a flat screen, its scanlines and its phosphors' mask:
+# 0 (none) to 100 %; best from 960 rows up. Not drawn with a CRT_PRESET,
+# whose mask it would beat with. Default: 0
+CRT_FILTER = 0
+
+# A CRT's look by a libretro shader preset (.glslp, as 86Box runs
+# them), over the whole picture, in CRT_FILTER's place: NONE, or its
+# name in data/crt beside the program: Lola Retro's (MIT, by Zoki),
+# lola-retro/sega-monitor-29 and lola-retro/sega-projector-50 (the
+# cabinets' screens), lola-retro/pc-monitor-vga (also -good, -premium,
+# -premium-plus, -extreme, each also -flat: PC monitors); or a .glslp
+# file's path. Their tube stays 4:3. Taken at once. Default: NONE
+CRT_PRESET = NONE
+
+[Picker]
+
+# The folder of the MAME romsets (<game>.zip or .7z, its parent's,
+# hikaru's), or several separated by ';', looked in in that order
+# (D:\roms;E:\mame\roms).
+# Default: empty, the roms folder beside the program
+GAMES_DIR = 
+
+# The folder all that is written goes to, so that the rest of the disk
+# can stay read only (a cabinet under Windows' Unified Write Filter):
+# these settings, controls.ini and the log at its root, each game's nvram,
+# states and dumps in <folder>/<game>/. The settings and a game's nvram
+# are copied there from their usual places when it has none, then read
+# there only. Relative: to the program's folder. Taken at the start from
+# the hikaruloader.ini beside the program only; the --write-dir option
+# wins. Default: empty, none
+WRITE_DIR = 
+
+# The interface's language: auto (Windows'), en, fr, or another
+# data/lang/<code>.po. Default: auto
+LANGUAGE = auto
+
+# The log, hikaruloader.log: what to send with a problem report. Written
+# beside the program, or at the write directory's root when there is
+# one; the previous start's kept as hikaruloader.old.log. Taken at the
+# next start: true or false. Default: true
+LOG_FILE = true
+
+# The picker's pictures downloaded from the Arcade Database
+# (adb.arcadeitalia.net, by motoschifo) into cache/artwork, one game at a
+# time, those of the games found; yours in artwork/ beside the program
+# (<set>.png or .jpg, or MAME's titles/, snap/, flyers/, marquees/) show
+# either way: true or false. Default: false
+ARTWORK_DOWNLOAD = false
+
+# The game last started, selected when the picker opens. Default: empty
+LAST_GAME = 
+
+[Emulation]
+
+# The SH-4s' code: DYNAREC, translated to x86-64; INTERPRETER, one
+# instruction at a time. The same machine either way. Default: DYNAREC
+CPU_CORE = DYNAREC
+
+# How the CPUs find their RAM and ROM: PAGE_TABLE, at once; REGIONS,
+# searched one after the other; FASTMEM, at their own addresses in the
+# PC's address space (512 MB reserved per SH-4). Default: PAGE_TABLE
+MEMORY_ACCESS = PAGE_TABLE
+
+# The SH-4s' clock in MHz, 20 to 200 (the board's). Their timers, the
+# MIE and the sound keep real time whatever it is; the faster, the more of
+# the PC the waits the games poll take (at 200, their boots run below 60
+# frames a second). Air Trix needs 100 at least: below, its skater's
+# body is missing. From the game's start. Default: 100
+SH4_CLOCK = 150
+
+# The board's country, which the games read for their language and
+# texts: AUTO, the one its EEPROM holds (the BIOS's COUNTRY SETTING);
+# JAPAN, USA, EXPORT, AUSTRALIA or KOREA, written to the game's EEPROM
+# at its start. Default: AUTO
+REGION = EXPORT
+
+# The JVS I/O board's own CPU running its program, as on the cabinet,
+# instead of its simulation: the 837-13551's TMP90PH44 running 315-6215
+# (MAME's jvs13551 set), NASCAR Arcade's 837-13741 running epr-21868
+# (the 18wheelr set). Without the file, the simulation, said in the log.
+# From the game's start: true or false. Default: false
+IO_BOARD_PROGRAM = false
+
+# The security chips answering as the boards' do: the ROM board's X76F100
+# secure EEPROM and the main board's 93C46 from their images (x76f100.ic85
+# and 93c46.ic115, in the newer MAME hikaru sets), the BOOTROM's check of
+# them run instead of skipped; NASCAR Arcade's Actel FPGA as the chip.
+# From the game's start: true or false. Default: false
+SECURITY_CHIPS = false
+
+[Sound]
+
+# The PC's speakers: AUTO, those the sound card has; MONO, STEREO, 2.1,
+# QUAD, 5.1 or 7.1. The cabinet's rear speakers go to the rear ones, or
+# into the front without; the subwoofer gets all of the sound, low-passed;
+# the center none. Default: AUTO
+OUTPUT = AUTO
+
+# The front/rear balance, 0 to 100: 0 the front alone, 100 the rear alone,
+# 50 both at their full level. Default: 50
+BALANCE = 50
+
+# The volume, 0 to 100 percent. Default: 100
+VOLUME = 100
+
+# The sound of the game's attract, while nobody plays: AUTO, as its EEPROM
+# holds it (the BIOS's ADVERTISE SOUND, off on a new board); OFF or ON,
+# written to the game's EEPROM at its start. Default: AUTO
+ATTRACT_SOUND = ON
+
+# The sound kept ahead in the output, 20 to 200 milliseconds: less, the
+# sound closer to the picture, but gaps when a frame comes late; more,
+# safer on a slow PC. The drift of the sound card's clock is followed
+# either way. Default: 50
+LATENCY = 50
+
+# The sound chips' emulation: OPTIMIZED keeps their channels' registers
+# and their effects' program decoded until the game writes them, and runs
+# their drivers' scan loops at once; INTERPRETED decodes them at each
+# sample and runs one instruction at a time, slower, the reference. The
+# same sound either way; changed at once. Default: OPTIMIZED
+SOUND_CORE = OPTIMIZED
+
+[Network]
+
+# The cabinets' link (the BIOS's COMMUNICATION MODE): AUTO, as the game's
+# EEPROM holds it (NO_LINK on a new board); NO_LINK, MASTER, SLAVE or RELAY,
+# written to the EEPROM at the game's start. One master per ring; a relay
+# (SGNASCAR's monitor) does not play. Default: AUTO
+LINK = {{HIKARU_LINK}}
+
+# The communication board: SIMULATED, its program's work done by
+# Hikaruloader, two cabinets at most; PROGRAM, its 68000 running the
+# program the game gives it, as on the board: up to 4 cabinets for Star
+# Wars Racer Arcade and Virtual-On, 8 for NASCAR Arcade. The same in all
+# the cabinets of a ring. From the game's start. Default: SIMULATED
+COMM_BOARD = SIMULATED
+
+# The ring, over TCP: the previous cabinet connects to this one's PORT_IN,
+# this one to the next cabinet's ADDRESS_OUT and PORT_OUT, the last one to
+# the master. A master alone is its own next (127.0.0.1 and its PORT_IN).
+# Defaults: 1970, 127.0.0.1, 1970
+PORT_IN = {{PORT_LOCAL}}
+ADDRESS_OUT = {{HIKARU_SUIVANTE}}
+PORT_OUT = {{PORT_SUIVANT}}
+
+[Outputs]
+
+# The cabinet's lamps and NASCAR Arcade's drive board commands, sent to the
+# tools that drive real ones (MAMEHooker, BackForceFeeder, DOFLinx...) in
+# MAME's network protocol, as Supermodel and sm2-emu send them: a TCP
+# server on PORT, one "name = value" line at each change. Default: false
+NETWORK = false
+
+# The server's TCP port (MAME's 8000; another one for a second instance).
+# Default: 8000
+PORT = 8000
+
+# When a game starts, "mame_start = <set>" and the TCP port go once in a
+# UDP datagram to this port on 127.0.0.1, as Supermodel sends them
+# (BackForceFeeder waits for it); 0 sends none. Default: 8001
+ANNOUNCE_PORT = 8001
+
+[Input]
+
+# The Controls page numbers a joystick's buttons from 1, as Windows and
+# vJoy do (true), or from 0, as SDL and controls.ini do (false): the file
+# keeps SDL's numbers either way. Default: true
+BUTTONS_FROM_ONE = true
+
+# How far a wheel turns from one end to the other for the game's wheel
+# (NASCAR Arcade): 0, its whole turn; 270, 360, 540, 900 or 1080 degrees,
+# the game's wheel then at its end before the wheel's. A wheel's or a
+# joystick's axis (JOY<n>_AXIS_<a>), not a game controller's stick. The
+# force feedback's centring spring follows. Taken at once. Default: 0
+WHEEL_ROTATION = 0
+
+# The degrees the wheel turns from one end to the other, as its driver is
+# set (Logitech G HUB, Thrustmaster's or Fanatec's control panel): what
+# WHEEL_ROTATION is taken from, 90 to 3600. Default: 900
+WHEEL_RANGE = 900

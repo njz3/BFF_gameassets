@@ -30,13 +30,29 @@ CD /d "%~dp0"
 
 set JEUX=C:\Racecab\Games
 set GAME=
+if /I "%ROM%"=="DeadHeat"         set "GAME=%JEUX%\Dead Heat - Namco ES1\a.elf"
+if /I "%ROM%"=="DeadHeatRiders"   set "GAME=%JEUX%\Dead Heat Riders - Namco N2\a.elf"
+if /I "%ROM%"=="GaelcoTR"         set "GAME=%JEUX%\Gaelco Championship Tuning Race - Gaelco PC Based\home\joc2001\joc2004\salidas\car"
 if /I "%ROM%"=="HummerXT"         set "GAME=%JEUX%\Hummer Extreme - SEGA Lindbergh\disk0\hummer_Master.elf"
 if /I "%ROM%"=="ID4Exp"           set "GAME=%JEUX%\Initial D 4 Export (Fr Traduction) - SEGA Lindbergh\id4.elf"
 :: Pas d Initial D 4 japonais : son link passe par un routeur et un DHCP
 :: (192.168.37.254) que le chargeur ne remplace pas, meme sous Linux.
 if /I "%ROM%"=="ID5"              set "GAME=%JEUX%\Initial D 5 Export - SEGA Lindbergh\id5.exe"
+if /I "%ROM%"=="MaxHeat3D"        set "GAME=%JEUX%\Maximum Heat 3D - Namco ES1\a.elf"
+:: Nirin : duel, une borne repond YES a Accept challengers? et court, l autre
+:: repond YES a Challenge rivals? (link verifie le 01/11/2026)
+if /I "%ROM%"=="Nirin"            set "GAME=%JEUX%\Nirin - Namco ES1\exec\a.elf"
 if /I "%ROM%"=="or2spdlx"         set "GAME=%JEUX%\Outrun 2 SP SDX - SEGA Lindbergh\disk0\Jennifer\Jennifer"
+if /I "%ROM%"=="RingRiders"       set "GAME=%JEUX%\Ring Riders - Gaelco PC Based\home\joc2001\joc2003\salidas\gameport"
+if /I "%ROM%"=="RTuned"           set "GAME=%JEUX%\R-Tuned Ultimate Street Racing - SEGA Lindbergh\dsr_HD_FFB"
 if /I "%ROM%"=="segartv"          set "GAME=%JEUX%\Sega Race TV - SEGA Lindbergh\drive.elf"
+if /I "%ROM%"=="TokyoCop"         set "GAME=%JEUX%\Tokyo Cop - Gaelko PC Based\home\joc2001\joc2001\salidas\gameport"
+if /I "%ROM%"=="WMMT3"            set "GAME=%JEUX%\Wangan Midnight Maximum Tune 3 (Export) - Namco N2\main"
+:: Maximum Tune 3DX+ : linuxloader 20261101 et plus (cle HASP) ; reglage de
+:: la borne dans tmp\data\etc\testmode.lua (pas tmp\data comme Maximum Tune 3).
+:: Duel : une borne choisit Accepting VS et court, l autre repond YES a
+:: Buy in race and challenge.
+if /I "%ROM%"=="WMMT3DXP"         set "GAME=%JEUX%\Wangan Midnight Maximum Tune 3DX+ (Japan) - Namco N2\main"
 if not defined GAME (
     echo Jeu sans link connu : "%ROM%"
     exit /b 2
@@ -69,7 +85,15 @@ if /I "%CAB_ID%"=="_link_cab1" (set "IP1=%LOCALIP%" & set "IP2=%NEXTIP%") else (
 ::                  sur les bornes)
 ::   Sega Race TV   SRTV_IPADDRESS = cette borne
 ::   Initial D 4/5  ID_IP_SEAT_1/2 = les deux sieges, les memes partout
-:: Le numero de cabine ou de siege est dans la NVRAM du jeu (menu de test).
+::   Namco (Dead Heat, Dead Heat Riders, Max Heat 3D, Maximum Tune 3),
+::   Gaelco (Tuning Race, Ring Riders, Tokyo Cop) et R-Tuned : ces memes
+::   cles, le chargeur traduit leurs adresses vers celles des bornes (link
+::   verifie avec exactement cette ligne, 31/10/2026)
+:: Le numero de cabine ou de siege est dans la NVRAM du jeu (menu de test) :
+:: testmode_game_options.bin (Namco ES1/N2), testmode\testmode_game.lua
+:: (Nirin : PCB_ID, IS_BATTLE), tmp\data\testmode.lua (Maximum Tune 3),
+:: switch.bin (Gaelco), sram.bin (R-Tuned), poses par borne dans
+:: saves_link_cabN.
 set RESEAU=--set Network.ENABLE_NETWORK_PATCHES=true
 set RESEAU=%RESEAU% --set Network.OR2_IPADDRESS=%LOCALIP% --set Network.OR2_NETMASK=255.255.255.0
 set RESEAU=%RESEAU% --set Network.SRTV_IPADDRESS=%LOCALIP%

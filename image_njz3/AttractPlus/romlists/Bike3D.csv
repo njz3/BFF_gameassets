@@ -1,5 +1,5 @@
 #Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
-atvtracka;ATV Track (set 1);RunAltRomname;;2002;Gaelco;Bike *FFB*;0;0;;preliminary;1;raster;Demul_07a_[180428]_Gaelco_ATVTrack\RunDemulGame.cmd;;;;;;;
+atvtracka;ATV Track (set 1);Hikaruloader;;2002;Gaelco;Bike *FFB*;0;0;;preliminary;1;raster;;;;;;;;
 harley;Harley Davidson;Supermodel;;;;Bike;;;;;;;;;;;;;;
 manxttc;Manx TT SuperBike;Sm2;;;;Bike;;;;;;;;;;;;;;
 motoraid;Motor Raid;Sm2;;;;Bike;;;;;;;;;;;;;;

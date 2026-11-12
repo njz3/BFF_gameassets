@@ -1,5 +1,5 @@
 #Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
-atvtracka;ATV Track (set 1);RunAltRomname;;2002;Gaelco;Bike *FFB*;0;0;;preliminary;1;raster;Demul_07a_[180428]_Gaelco_ATVTrack\RunDemulGame.cmd;;;;;;;
+atvtracka;ATV Track (set 1);Hikaruloader;;2002;Gaelco;Bike *FFB*;0;0;;preliminary;1;raster;;;;;;;;
 harley;Harley Davidson;Supermodel;;;;Bike;;;;;;;;;;;;;;
 manxttc;Manx TT SuperBike;Sm2;;;;Bike;;;;;;;;;;;;;;
 motoraid;Motor Raid;Sm2;;;;Bike;;;;;;;;;;;;;;
@@ -10,11 +10,11 @@ stunrun;S.T.U.N. Runner (rev 6);MAME;;1989;Atari Games;Bike;1;0;joystick (analog
 waverunr;Wave Runner;Sm2;;1995;Sega;Bike;2;0;joystick (8-way),joystick (8-way);preliminary;1;raster;;;;6;;;;
 wldrider;Wild Riders;Flycast;;2001;Wow Entertainment / Sega;Bike;2;0;joystick (8-way),joystick (8-way);preliminary;1;raster;naomi2;;;6;;;;
 wrungp;Wave Runner GP;Flycast;;2001;CRI / Sega;Bike;2;0;joystick (8-way),joystick (8-way);preliminary;1;raster;naomi;;;6;;;;
-DeadHeatRiders;DeadHeat Riders;TeknoParrot2026-06;;;;Bike;;;;;;;;;;;;;;
-FrenzyExpress;Frenzy Express;TeknoParrot2026-06;;;;Bike;;;;;;;;;;;;;;
+DeadHeatRiders;DeadHeat Riders;LinuxLoader;;;;Bike;;;;;;;;;;;;;;
+FrenzyExpress;Frenzy Express;WindowsLoader;;;;Bike;;;;;;;;;;;;;;
 FNFSB;Fast'N Furious SuperBikes;TeknoParrot2026-06;;;;Bike;;;;;;;;;;;;;;
 FNFSB2;Fast'N Furious SuperBikes 2;TeknoParrot2026-06;;;;Bike;;;;;;;;;;;;;;
-#Nirin;Nirin;TeknoParrot2026-06;;;;Bike;;;;;;;;;;;;;;
-RingRiders;Ring Riders;TeknoParrot2026-06;;;;Bike;;;;;;;;;;;;;;
+Nirin;Nirin;LinuxLoader;;;;Bike;;;;;;;;;;;;;;
+RingRiders;Ring Riders;LinuxLoader;;;;Bike *FFB*;;;;;;;;;;;;;;
 SnoCross;Snow Cross;TeknoParrot2026-06;;;;Bike;;;;;;;;;;;;;;
 StormRider;Storm Rider;TeknoParrot2026-06;;;;Bike;;;;;;;;;;;;;;

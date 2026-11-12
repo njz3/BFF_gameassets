@@ -4,10 +4,11 @@
   "ExecType": 0,
   "OutputType": 3,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "tokyobus.bat",
+  "MainWindowTitle": "*[tokyobus]*",
   "PriorityLevel": 0,
   "AddressesValues": [],
   "MatchingWordValues": [],
   "ForceSoundVolume": -1.0,
-  "ScriptFilename": "init.lua"
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
 }

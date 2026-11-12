@@ -1,0 +1,14 @@
+{
+  "GameName": "SWDC",
+  "Description": "Sega World Driver Championship",
+  "ExecType": 4,
+  "OutputType": 0,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[SWDC]*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

@@ -59,9 +59,11 @@ The disk image is designed to run in MBR mode, so don't use UEFI mode and select
 ## FIRST BOOT
 
 On first start-up, give Windows time to boot up and install your drivers. Once 
-the disk has booted up, you should see the Hyperspin game selection screen.
-Exit Hyperspin by pressing “ESC” to go to the "Exit?" menu, then "V" to confirm
-"Exit". You'll now have the Windows desktop and can continue the
+the disk has booted up, you should see the AttractMode Plus game selection
+screen.
+**Do not use its "Exit" menu: on this image it shuts the PC down.** To reach
+the Windows desktop, press the Windows key (or Alt+Tab), or run
+`C:\Racecab\Utils\killAttractModePlus.bat`. You can then continue the
 configuration.
 
 If you can connect your PC to the Internet, first run Windows Update to get 
@@ -90,7 +92,8 @@ Once the "Default" ControlSet is calibrated, open the "ControlSets" page, then
 open the "Explorer" page, then select "Default" on the left and all ControlSets
 on the right. Click on "data selection" and check "Axes.json". Finally, launch
 the copy to overwrite the game data and set the calibration. Close all pages
-and this step is complete. You can restart the PC to have the Hyperspin menu.
+and this step is complete. You can restart the PC (or run
+`C:\Racecab\Utils\startAttractModePlus.bat`) to have the AttractMode Plus menu.
 
 ## NETWORK CONFIGURATION (MULTIPLAYER/LINK MODE)
 
@@ -112,13 +115,6 @@ support up to 8 or 16 machines in multiplayer mode.
 
 Also in network configuration, set private network and disable the
 Firewall.
-
-> **Note:**
-For network gaming on model 2 emulator (Sega Rally, Daytona 1, etc.) you need
-to enable support for long frames (3kB) either via an option on your network 
-board driver, or enable the "Jumbo Frames" (MTU >3kB) option in the Ethernet
-board adapter properties, and have a 1GBit Ethernet switch that supports 
-"Jumbo Frames".
 
 ![Configuration réseau](Utils/images/networkconfig.png "Configuration réseau").
 
@@ -219,10 +215,12 @@ mode UEFI et sélectionnez le mode de démarrage "Legacy BIOS" (MBR).
 
 Au premier démarrage, laisser le temps à Windows de démarrer puis installer
 vos drivers. 
-Une fois le disque démarré, vous devrier avoir l'écran Hyperspin de sélection
-de jeu. Quittez Hyperspin en faisant "ESC" pour aller au menu "Exit?", puis "V"
-pour confirmer "Exit". Vous allez à présent avoir le bureau Windows et vous 
-pouvez poursuivre la configuration.
+Une fois le disque démarré, vous devriez avoir l'écran AttractMode Plus de
+sélection de jeu.
+**N'utilisez pas son menu "Exit" : sur cette image, il éteint le PC.** Pour
+atteindre le bureau Windows, appuyez sur la touche Windows (ou Alt+Tab), ou
+lancez `C:\Racecab\Utils\killAttractModePlus.bat`. Vous pouvez ensuite
+poursuivre la configuration.
 
 Si vous pouvez connecter votre PC à internet, lancez en premier Windows Update
 pour récupérer vos drivers automatiquement.
@@ -251,8 +249,9 @@ Une fois le ControlSet "Default" calibré, ouvrir la page "Données jeu",
 puis ouvrir la page "Explorer", puis sélectionner à gauche "Default" et à droite
 tous les ControlSets. Cliquer sur "sélection données" et cocher "Axes.json". Enfin 
 lancer la copie pour écraser les données des jeux et mettre le calibrage.
-Fermer toutes les pages et cette étape est terminée. Vous pouvez relancer le PC pour
-avoir le menu Hyperspin.
+Fermer toutes les pages et cette étape est terminée. Vous pouvez relancer le PC
+(ou lancer `C:\Racecab\Utils\startAttractModePlus.bat`) pour avoir le menu
+AttractMode Plus.
 
 
 ## CONFIGURATION RESEAU (MODE MULTIPLAYER/LINK)
@@ -277,13 +276,6 @@ supportent jusqu'à 8 ou 16 machines en multiplayer.
 
 Toujours dans la configuration réseau, mettre réseau privé et désactivez le
 Firewall.
-
-> **Note:**
-Pour le jeu en réseau sur model 2 emulator (Sega Rally, Daytona 1, etc.)
-if faut impérativement activer le support des trames de longues taille (3kB)
-soit via une option de votre carte réseau, soit activer l'option "Jumbo Frames"
-dans votre carte Ethernet (MTU >3kB) et avoir un switch Ethernet 1GBit qui 
-supporte les "Jumbo Frames".
 
 ![Configuration réseau](Utils/images/networkconfig.png "Configuration réseau").
 

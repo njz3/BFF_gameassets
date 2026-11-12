@@ -20,12 +20,12 @@ CD /d "%~dp0"
 :: keeps waiting on it and BFF keeps the title it reads
 :: Dossier d ecriture (bornes sous UWF) : Saves\mame<CAB_ID>. MAME y ecrit tout
 :: et lit les fichiers en place tant qu il n en a pas enregistre la, dont les
-:: NVRAM de nvram<CAB_ID>
+:: NVRAM de nvram, posees par Build-Config depuis nvram<CAB_ID> (targets.csv)
 set VARIANTE=%CAB_ID:~1%
 if not defined WRITEDIR_ROOT CALL "..\..\Utils\set_writedir.bat"
 set ECRITURE=
 if defined WRITEDIR_ROOT set ECRITURE=-writedir "%WRITEDIR_ROOT%\mame_%VARIANTE%"
-mame.exe %GAME% %ECRITURE% -nvram_directory nvram%CAB_ID% -comm_localport %LOCALPORT% -comm_remoteport %NEXTPORT% -comm_localhost %LOCALIP% -comm_remotehost %NEXTIP%
+mame.exe %GAME% %ECRITURE% -comm_localport %LOCALPORT% -comm_remoteport %NEXTPORT% -comm_localhost %LOCALIP% -comm_remotehost %NEXTIP%
 
 :: leave caller
 EXIT

@@ -1,0 +1,14 @@
+{
+  "GameName": "SSASR",
+  "Description": "",
+  "ExecType": 4,
+  "OutputType": 3,
+  "ProcessName": "gam*",
+  "MainWindowTitle": "*sonic*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

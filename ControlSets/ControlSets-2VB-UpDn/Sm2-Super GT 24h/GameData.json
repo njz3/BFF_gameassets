@@ -1,0 +1,14 @@
+{
+  "GameName": "sgt24h",
+  "Description": "Jaleco Super GT 24h",
+  "ExecType": 1,
+  "OutputType": 3,
+  "ProcessName": "sm2-emu",
+  "MainWindowTitle": "*Super GT 24h*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

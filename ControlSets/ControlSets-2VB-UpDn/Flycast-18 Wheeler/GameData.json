@@ -4,10 +4,11 @@
   "ExecType": 0,
   "OutputType": 3,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "18wheels.bat",
+  "MainWindowTitle": "*[18wheelr]*",
   "PriorityLevel": 1,
   "AddressesValues": [],
   "MatchingWordValues": [],
   "ForceSoundVolume": -1.0,
-  "ScriptFilename": "init.lua"
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
 }

@@ -35,11 +35,10 @@ Emulators\sm2-emu\sm2-emu.ini;Emulators\sm2-emu\sm2-emu.ini.template;_single;TEM
 Emulators\sm2-emu LINK\sm2-emu.ini;Emulators\sm2-emu\sm2-emu.ini.template;__CAB__;TEMPLATE;
 Emulators\Supermodel\Config\Supermodel.ini;Emulators\Supermodel\Config\Supermodel.ini.template;_single;TEMPLATE;
 Emulators\Supermodel LINK\Config\Supermodel.ini;Emulators\Supermodel\Config\Supermodel.ini.template;__CAB__;TEMPLATE;
-# MAME : mame.ini selon la resolution. Un gabarit pour Mame et Mame LINK
-# (memes cles), un pour Mame Namco LINK (MAME 0.251).
+# MAME : mame.ini selon la resolution, un gabarit pour Mame et Mame LINK
+# (memes cles).
 Emulators\Mame\mame.ini;Emulators\Mame\mame.ini.template;_single;TEMPLATE;
 Emulators\Mame LINK\mame.ini;Emulators\Mame\mame.ini.template;_single;TEMPLATE;
-Emulators\Mame Namco LINK\mame.ini;Emulators\Mame Namco LINK\mame.ini.template;_single;TEMPLATE;
 # Affichage des deux chargeurs selon la resolution (MODE_FENETRE), dans leur
 # ini. linuxloader lit la copie de son ini faite dans son dossier d ecriture
 # (Saves\linuxloader_<identite>) : la cible STALE efface celles qui ne sont
@@ -47,6 +46,12 @@ Emulators\Mame Namco LINK\mame.ini;Emulators\Mame Namco LINK\mame.ini.template;_
 Emulators\linuxloader\linuxloader.ini;Emulators\linuxloader\linuxloader.ini.template;_single;TEMPLATE;
 linuxloader_*\linuxloader.ini;Emulators\linuxloader\linuxloader.ini;_single;STALE;
 Emulators\windowsloader\windowsloader.ini;Emulators\windowsloader\windowsloader.ini.template;_single;TEMPLATE;
+# hikaruloader (Nascar, Star Wars Racer Arcade, 03/11/2026) : un seul dossier pour le solo et le
+# link. L ini du solo, a cote de l exe, est la graine que hikaruloader recopie dans
+# Saves\hikaruloader_single ; celui du link, pour la cabine de cette machine (section [Network]),
+# va dans link\, que RunHikaruloaderLinkGame.cmd pose dans Saves\hikaruloader<CAB_ID>.
+Emulators\Hikaruloader\hikaruloader.ini;Emulators\Hikaruloader\hikaruloader.ini.template;_single;TEMPLATE;
+Emulators\Hikaruloader\link\hikaruloader.ini;Emulators\Hikaruloader\hikaruloader.ini.template;__CAB__;TEMPLATE;
 Emulators\Flycast\emu.cfg;Emulators\Flycast\emu.cfg.template;_single;TEMPLATE;
 Emulators\Flycast LINK\emu.cfg;Emulators\Flycast\emu.cfg.template;__CAB__;TEMPLATE;
 # Les copies de reglages que sm2-emu, Supermodel, Flycast, MAME et
@@ -64,6 +69,8 @@ flycast_link_cab*\emu.cfg;Emulators\Flycast LINK\emu.cfg;_single;STALE;
 mame_single\mame.ini;Emulators\Mame\mame.ini;_single;STALE;
 mame_link_cab*\mame.ini;Emulators\Mame LINK\mame.ini;_single;STALE;
 windowsloader_*\windowsloader.ini;Emulators\windowsloader\windowsloader.ini;_single;STALE;
+hikaruloader_single\hikaruloader.ini;Emulators\Hikaruloader\hikaruloader.ini;_single;STALE;
+hikaruloader_link_cab*\hikaruloader.ini;Emulators\Hikaruloader\link\hikaruloader.ini;_single;STALE;
 # Les NVRAM (FOLDER). Le dossier vivant est ce que l emulateur recopie dans
 # son dossier d ecriture au premier lancement ; WRITEDIR dit lequel vider
 # quand on pose d autres NVRAM.
@@ -82,6 +89,37 @@ Emulators\Flycast LINK\data;Emulators\Flycast LINK\data{{CAB}};__CAB__;FOLDER;;f
 # solo et au link : le lanceur link lui donne ce dossier en place, range par
 # jeu comme son dossier d ecriture, pour amorcer celles de la cabine.
 Emulators\linuxloader\saves;Emulators\linuxloader\saves{{CAB}};__CAB__;FOLDER;;linuxloader{{CAB}};yes
+# Les NVRAM de MAME, rangees par jeu. MAME (njz3 FFB edition) ecrit dans son
+# dossier d ecriture (-writedir des lanceurs) et y relit d abord ; a defaut,
+# il lit le dossier en place, qui sert donc d amorce. Le lanceur link lit le
+# dossier en place, nvram, comme le solo ; on ne vide que le sous-dossier
+# nvram du dossier d ecriture, pas les cfg. Les jeux Namco y sont aussi (MAME
+# njz3, C139 reecrit) : Mame Namco LINK (MAME 0.251) est retire le 03/11/2026.
+Emulators\Mame\nvram;Emulators\Mame\nvram_single;_single;FOLDER;;mame_single\nvram;yes
+Emulators\Mame LINK\nvram;Emulators\Mame LINK\nvram{{CAB}};__CAB__;FOLDER;;mame{{CAB}}\nvram;yes
+# Virtua Racing : les scripts de resolution posent vr_16_9 ou vr_4_3 dans
+# Mame\nvram\vr, et dans Mame LINK\nvram\vr les variantes de la cabine (le
+# format est l octet 10 de ioboard_eeprom, protege par un CRC ; chaque
+# nvram_link_cabN a son vr_16_9 et son vr_4_3, a son numero de link). La copie
+# que MAME en garde dans son dossier d ecriture masquerait ce choix : effacee
+# si elle differe, MAME la refait depuis celle posee. A placer apres les
+# cibles FOLDER de MAME.
+mame_single\nvram\vr\nvram;Emulators\Mame\nvram\vr\nvram;_single;STALE;
+mame_single\nvram\vr\ioboard_eeprom;Emulators\Mame\nvram\vr\ioboard_eeprom;_single;STALE;
+# MAME LINK : le numero de borne de Power Drift Link, Midnight Run, Winding Heat et GTI Club est un
+# DIP switch de MAME, dans le cfg du jeu, pas dans sa NVRAM : un cfg par cabine (cfg_link_cabN), pose
+# a chaque passage. La copie que MAME garde dans son dossier d ecriture (lue en premier) est effacee
+# si elle differe. OPTIONAL : pas de cfg pour pdriftl en cabines 3 et 4 (non teste).
+Emulators\Mame LINK\cfg\pdriftl.cfg;Emulators\Mame LINK\cfg{{CAB}}\pdriftl.cfg;__CAB__;VARIANT;yes
+Emulators\Mame LINK\cfg\midnrun.cfg;Emulators\Mame LINK\cfg{{CAB}}\midnrun.cfg;__CAB__;VARIANT;yes
+Emulators\Mame LINK\cfg\windheat.cfg;Emulators\Mame LINK\cfg{{CAB}}\windheat.cfg;__CAB__;VARIANT;yes
+Emulators\Mame LINK\cfg\gticlub.cfg;Emulators\Mame LINK\cfg{{CAB}}\gticlub.cfg;__CAB__;VARIANT;yes
+mame_link_cab*\cfg\pdriftl.cfg;Emulators\Mame LINK\cfg\pdriftl.cfg;_single;STALE;
+mame_link_cab*\cfg\midnrun.cfg;Emulators\Mame LINK\cfg\midnrun.cfg;_single;STALE;
+mame_link_cab*\cfg\windheat.cfg;Emulators\Mame LINK\cfg\windheat.cfg;_single;STALE;
+mame_link_cab*\cfg\gticlub.cfg;Emulators\Mame LINK\cfg\gticlub.cfg;_single;STALE;
+mame_link_cab*\nvram\vr\nvram;Emulators\Mame LINK\nvram\vr\nvram;_single;STALE;
+mame_link_cab*\nvram\vr\ioboard_eeprom;Emulators\Mame LINK\nvram\vr\ioboard_eeprom;_single;STALE;
 # Les listes de jeux d AttractPlus : tous les jeux MAME, sm2-emu, Supermodel
 # et Flycast tournent en basse resolution, mais pas tous les TeknoParrot ni
 # tous les jeux de moto. Les variantes basse resolution ne retirent pas les

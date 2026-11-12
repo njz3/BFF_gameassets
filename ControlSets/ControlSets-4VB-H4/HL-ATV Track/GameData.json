@@ -1,0 +1,13 @@
+{
+  "GameName": "atvtracka,atvtrack",
+  "Description": "ATV Track (hikaruloader)",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "hikaruloader",
+  "MainWindowTitle": "*[atvtracka]*|*[atvtrack]*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

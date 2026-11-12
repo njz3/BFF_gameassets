@@ -1,11 +1,17 @@
 #Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
-acedrive;Ace Driver: Racing Evolution (World, AD2);MAMENamcoMulti;;1994;Namco;Racing *FFB*;2;0;joystick (vertical2-way),paddle,pedal,joystick (8-way);imperfect;1;raster;;;;4;;;;
-victlap;Ace Driver: Victory Lap (World, ADV2 Ver.B);MAMENamcoMulti;;1996;Namco;Racing *FFB*;2;0;joystick (vertical2-way),paddle,pedal,joystick (8-way);imperfect;1;raster;;;;4;;;;
-raverace;Rave Racer (World, RV2 Ver.B);MAMENamcoMulti;;1995;Namco;Racing *FFB*;1;0;joystick (8-way),paddle,pedal;imperfect;1;raster;;;;4;;;;
-ridgerac;Ridge Racer (World, RR2 Ver.B);MAMENamcoMulti;;1993;Namco;;1;0;joystick (8-way),paddle,pedal;imperfect;1;raster;;;;3;;;;
-ridgera2;Ridge Racer 2 (World, RRS2);MAMENamcoMulti;;1994;Namco;;1;0;joystick (8-way),paddle,pedal;imperfect;1;raster;;;;3;;;;
+acedrive;Ace Driver: Racing Evolution (World, AD2);MAMEMulti;;1994;Namco;Racing *FFB*;2;0;joystick (vertical2-way),paddle,pedal,joystick (8-way);imperfect;1;raster;;;;4;;;;
+victlap;Ace Driver: Victory Lap (World, ADV2 Ver.B);MAMEMulti;;1996;Namco;Racing *FFB*;2;0;joystick (vertical2-way),paddle,pedal,joystick (8-way);imperfect;1;raster;;;;4;;;;
+raverace;Rave Racer (World, RV2 Ver.B);MAMEMulti;;1995;Namco;Racing *FFB*;1;0;joystick (8-way),paddle,pedal;imperfect;1;raster;;;;4;;;;
+ridgera2;Ridge Racer 2 (World, RRS2);MAMEMulti;;1994;Namco;;1;0;joystick (8-way),paddle,pedal;imperfect;1;raster;;;;3;;;;
 vr;Virtua Racing;MAMEMulti;;1991;Sega;Racing *FFB*;1;0;paddle,pedal;preliminary;1;raster;;;;9;;;;
 vformula;Virtua Formula;MAMEMulti;;1991;Sega;;1;0;paddle,pedal;preliminary;1;raster;;;;9;;;;
 f1lap;F1 Super Lap (World);MAMEMulti;;1993;Sega;;1;0;paddle,pedal;imperfect;1;raster;;;;3;;;;
 orunners;OutRunners (World);MAMEMulti;;1992;Sega;Racing *FFB*;2;0;paddle,pedal,paddle,pedal;imperfect;2;raster;;;;5;;;;
 radr;Rad Rally (World);MAMEMulti;;1991;Sega;;1;0;paddle,pedal;imperfect;1;raster;;;;1;;;;
+winrun91;Winning Run '91 (Japan) (1991/03/05, Main Ver 1.0, Sub Ver 1.0);MAMEMulti;;1991;Namco;;1;0;joystick (vertical2-way),paddle,pedal;imperfect;1;raster;;;;;;;;
+winrungp;Winning Run Suzuka Grand Prix (Japan) (89/12/03, Ver.02);MAMEMulti;;1989;Namco;;1;0;joystick (vertical2-way),paddle,pedal;imperfect;1;raster;;;;;;;;
+finalap3;Final Lap 3 (World, Rev C);MAMEMulti;;1992;Namco;;1;0;paddle,pedal;imperfect;1;raster;;;;1;;;;
+pdriftl;Power Drift - Link Version (Japan, Rev A);MAMEMulti;;1988;Sega;Racing *FFB*;1;0;paddle,pedal;good;1;raster;;;;1;;;;
+midnrun;Midnight Run: Road Fighter 2 (EAA, Euro v1.11);MAMEMulti;;1995;Konami;;1;0;joystick (3 (half4)-way),paddle,pedal;imperfect;1;raster;;;;3;;;;
+windheat;Winding Heat (EAA, Euro v2.11);MAMEMulti;;1996;Konami;;1;0;joystick (3 (half4)-way),paddle,pedal;imperfect;1;raster;;;;3;;;;
+gticlub;GTI Club: Rally Cote D'Azur (ver EAA);MAMEMulti;;1996;Konami;Racing *FFB*;1;0;joystick (vertical2-way),paddle,pedal;imperfect;1;raster;;;;5;;;;

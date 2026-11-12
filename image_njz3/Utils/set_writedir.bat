@@ -5,7 +5,7 @@
 :: reste assuree par l'echange de dossiers de Build-Config.
 ::
 :: Renseigner WRITEDIR_ROOT pour activer le dossier d'ecriture des lanceurs de
-:: linuxloader, windowsloader, Flycast, MAME (sauf Mame Namco LINK, 0.251),
+:: linuxloader, windowsloader, Flycast, MAME,
 :: sm2-emu et Supermodel. Le chemin doit etre la SEULE exclusion UWF du disque.
 :: Un sous-dossier par emulateur et par identite :
 ::   <WRITEDIR_ROOT>\<emulateur>_single         lanceurs solo
