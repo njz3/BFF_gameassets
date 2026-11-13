@@ -14,6 +14,227 @@
 
                                  CHANGE LOG
 
+Commit 899dda6 on 2026-11-12 by njz3
+
+    Merge upstream/master (65ec91d): DSB and MPEG sound, Virtua Cop 2, Model 1
+    near plane
+
+    No conflicts. FFBRework.md 2.20 (sound and link checks of the previous
+    merge) and 2.21 (sound checks of this one).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 65ec91d on 2026-11-10 by dukeeeey
+
+    Merge pull request #378 from gm-matthew/near-plane
+
+    Adjust near plane; fixes course map in Daytona 1
+Commit 804d5ed on 2026-11-10 by gm-matthew
+
+    adjust near plane; fixes course map in Daytona 1
+
+Commit efbdc86 on 2026-11-08 by Bart Trzynadlowski
+
+    DSB1: Emulate stereo register (routes audio stream channels left/right)
+    (#376)
+Commit 1e7bfe0 on 2026-11-08 by gm-matthew
+
+    Model 2: raise the sound IRQ two cycles after an IRQ mask write (Virtua Cop
+    2 music)
+
+    Port of gm-matthew's MAME fix, mamedev/mame PR 14645 (MT09313): Virtua Cop 2 
+    unmasks the sound interrupt at 5A570 and saves its sound queue count in the
+    next instruction. Taken in between, the handler sees the old count and the
+    byte is never sent: sound effects and music commands were lost (stage music
+    A0 10 04).
+
+    The mask takes effect at once; the sound interrupt check runs two i960
+    cycles after the writing instruction (CI960::CallAfterCycles). A pending
+    check is run before a save state.
+
+Commit 239a77b on 2026-11-08 by Ian
+
+    Star Wars Arcade: MPEG music plays (DSB status RxRDY, bit-aligned frames)
+
+    - DSB1 status (port F1) bit 1 is the i8251's RxRDY: set it whenever a byte
+     is waiting. SWA polls it, so a lone command such as "play" was never read.
+    - SWA's MPEG frames start 3 bits into a byte. minimp3 only finds
+    byte-aligned
+     frames, so the track was skipped whole. The bit offset is found when a
+     track starts and each frame is decoded from a re-aligned copy; byte-aligned
+     tracks (Model 3) decode as before.
+
+Commit ec80873 on 2026-11-07 by njz3
+
+    Merge upstream/master (d51bdb3): STL threads, Model 2 lamps and billboard
+
+    - Model 2 port E: drive board, wheel board, else the Versus City billboard;
+     RawDrive on every port E command (as upstream), m2ffb only with a drive
+    board.
+    - Model2Comm and SimNetBoard keep the link reconnection; CThread::GetTicks()
+     and CThread::Sleep() replaced by a steady_clock TicksMS() and sleep_for.
+    - Rules.inc keeps WriteDirectory.cpp and takes Thread.cpp.
+    - FFBRework.md 2.20.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit d51bdb3 on 2026-11-07 by Ian
+
+    Merge branch 'master' of https://github.com/trzy/Supermodel
+
+Commit 4294dcf on 2026-11-07 by Ian
+
+    Games.xml: the missing Model 1 sets (Wing War US, Japan and R360, Virtua
+    Formula)
+
+    The Model 1 clones in MAME 0.289 that weren't listed, as child sets of 
+    wingwar and vr with only the ROMs that differ (MAME's split sets):
+
+    - wingwaru, wingwarj: boot ROMs and sound program
+    - wingwar360: boot and data ROMs. The R360 control board's ROMs aren't
+     listed, as the board isn't emulated
+    - vformula: program, boot and data ROMs. The communication board's ROM
+     isn't listed, as the board isn't emulated
+
+    Model 2 and Model 3 have all of MAME's sets.
+
+Commit 67c0072 on 2026-11-07 by Ian
+
+    Model 2: a timer written with 0 expires at the write (Over Rev's stuck
+    sound)
+
+    A timer's expiry was only checked after the i960's slice. Over Rev stops a 
+    timer in its interrupt handler by writing 0 with that timer's interrupt 
+    disabled, then enables it again, so the expired timer then interrupted again
+    and again. Each time, the handler resent the same byte of its 3-byte sound
+    command, and MIDI running status turned the repeats into several commands.
+    At the start of the second race these started a looping sound until all 32
+    of the sound driver's voices were taken; the driver's voice allocation then
+    returned through an unbalanced stack (a game bug) and the sound 68000
+    crashed, leaving the sound stuck in a loop.
+
+    A count of 0 now runs out at the write, raising the interrupt only if it is
+    enabled at that moment.
+
+Commit 1c0bca7 on 2026-11-07 by Ian
+
+    Model 2 renderer: upload texture RAM only when written, cheaper shader on
+    AMD
+
+    Both 2 MB texture sheets were uploaded every frame, and the integer-format 
+    uploads are slow on AMD's driver. The board now marks a sheet dirty when it 
+    writes to it (and on reset and state loads), and the renderer uploads only 
+    dirty sheets, clearing the flag.
+
+    In the fragment shader:
+    - log2Table is a uniform: AMD's compiler copied the indexed constant array
+     to scratch memory for every pixel
+    - sheetBlock() branches instead of using ?:, so only one sheet is fetched
+    - the second mip level (or the microtexture) is only fetched when its
+     blend weight isn't 0
+
+Commit ff92a99 on 2026-11-07 by dukeeeey
+
+    Merge pull request #373 from trzy/bart/threads
+
+    Replace SDL concurrency with STL (C++17)
+Commit 991187c on 2026-11-07 by Bart Trzynadlowski
+
+    SCSP: restore SCSP_Deinit(), now empty
+
+    It pairs with SCSP_Init() like the other components' init and shutdown 
+    calls, so CSoundBoard keeps calling it even though the MIDI mutex no longer
+    needs freeing.
+
+Commit 58405d0 on 2026-11-07 by Bart Trzynadlowski
+
+    Makefiles: generate the Musashi 68K sources once in parallel builds
+
+    The rule for the five generated files listed them as separate explicit 
+    targets, which GNU make treats as five rules sharing a recipe. With -j, make
+    started the generator once per file at the same time; each run truncates and
+    rewrites all five files, so a late run could empty a file that was already
+    being compiled, failing the build intermittently.
+
+    A multi-target pattern rule tells make that one run of the recipe makes all
+    of the targets, in every GNU make version (grouped targets, &:, need 4.3,
+    and macOS ships 3.81).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 725a419 on 2026-11-07 by Bart Trzynadlowski
+
+    SDL audio: update rate control with the audio lock held
+
+    In frame-driven mode, PlayCallback() resets rateErrorFiltered after an 
+    under-run (RestartQueue()) with the audio lock held, while OutputAudio() 
+    updated it in UpdateRateControl() after releasing the lock. ThreadSanitizer 
+    reports this as a data race with -no-threads. Compute the playback rate 
+    inside the lock that already reads the queue length.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit cc1cd21 on 2026-11-07 by Bart Trzynadlowski
+
+    SCSP: read the MIDI FIFO pointers under MIDILock in CheckPendingIRQ
+
+    CheckPendingIRQ() compared MidiW and MidiR without the lock, while the main
+    board thread pushes MIDI input (SCSP_MidiIn) under it, so TSan reported a
+    data race on MidiW from the sound board thread
+    (SCSP_DoMasterSamples -> CheckPendingIRQ). Sample the FIFO state under the
+    lock, as the other accesses do. No caller holds MIDILock when it calls
+    CheckPendingIRQ (SCSP_ReadCommonReg unlocks first), so the non-recursive
+    lock can't deadlock. Emulated behaviour is unchanged.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 8fd599a on 2026-11-07 by Bart Trzynadlowski
+
+    SDL audio: make the enabled flag atomic
+
+    SetAudioEnabled() writes the flag on the main thread while PlayCallback() 
+    reads it on SDL's audio thread, which ThreadSanitizer reports as a data 
+    race. The emulator threads are already paused before audio is disabled, so
+    the callback only needs to see the new value soon, not to be stopped, and an
+    atomic is enough.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 7532e6e on 2026-11-07 by Bart Trzynadlowski
+
+    Threads: use the STL directly, remove CThread, CMutex, CSemaphore, CCondVar
+
+    Model 3 and PRO-1000 own std::thread, std::mutex and std::condition_variable
+    members instead of wrapper pointers. The debugger keeps recursive mutexes
+    because CCPUDebug::WaitCommand re-enters its own lock through
+    CDebugger::ReleasePrimary.
+
+    Thread.h is now small: Thread::Start() starts a named thread that blocks
+    asynchronous signals, Thread::SetCurrentName() names the calling thread, and
+    Thread::Semaphore stands in for the C++20 one.
+
+    Lock errors are no longer caught: they can only come from programming 
+    errors. Failing to create a thread still falls back to single-threaded 
+    emulation. sndBrdWakeNotify is now initialized, and SCSP_Deinit, which only
+    freed the MIDI mutex, is gone.
+
+Commit 4926081 on 2026-11-07 by Ian
+
+    MB86233: no NaN or infinity in the TGP's floating point (Desert Tank's
+    bunker)
+
+    An exponent of 255 is an ordinary (huge) number, taken as the largest finite
+    value, and a result that overflows saturates; a NaN result (0/0) is 0.
+    Desert Tank's attract mode checks the cannon shell against an object through
+    a null pointer, reading the program ROM's FFFFFFFF words: as IEEE NaNs the
+    distance came back NaN (negative) and the shell hit at the muzzle. On the
+    board it flies on and destroys the bunker.
+
+Commit d0cdfa1 on 2026-11-07 by dukeeeey
+
+    Merge pull request #371 from DirtBagXon/rchase2-ROM-mirror
+
+    rchase2: Mirror and rename roms to latest MAME findings.
 Commit 73ef237 on 2026-11-07 by njz3
 
     Model 2 drive boards: RawDrive, m2ffb and replies on every board
@@ -35,6 +256,79 @@ Commit 33235d6 on 2026-11-07 by njz3
 
     Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
 
+Commit bb6e18e on 2026-11-06 by Bart Trzynadlowski
+
+    CThread: implement on the STL instead of SDL, name every thread
+
+    Thread.cpp no longer uses SDL and moves from OSD/SDL to OSD. The CThread API
+    is unchanged, so its callers are too. What SDL did implicitly is kept: 
+    mutexes are recursive, threads block asynchronous signals, and a thread that
+    is never waited on is reported as a runaway rather than terminating the
+    program.
+
+    CThread::SetCurrentThreadName() names the calling thread on macOS, Linux and
+    Windows 10+, and every std::thread Supermodel creates now calls it.
+
+    Test_Thread.cpp is a standalone test of the wrapper.
+
+Commit 68d3e29 on 2026-11-07 by DirtBag Xon
+
+    rchase2: Mirror and rename roms to latest MAME findings. Corrects the
+    audible sample streams
+
+    References: 
+    https://github.com/mamedev/mame/commit/81d5ced8cb129e2cb722753e7c89c5662cb301ce 
+    https://github.com/mamedev/mame/commit/85cbd7b0a94f00a5354b089d8b1a7fc2254a9eb3
+
+Commit b9cc0d6 on 2026-11-07 by Ian
+
+    Merge branch 'master' of https://github.com/trzy/Supermodel
+
+Commit 0683b6e on 2026-11-07 by Ian
+
+    Model 2: lamp outputs and the Versus City billboard (Last Bronx)
+
+    Port F of the 315-5649 I/O chip (2A/2B/2C) drives the lamp outputs, with 
+    Model 3's bit layout (MAME's lamp_output_w), and port E the raw drive 
+    output. Last Bronx's billboard (837-11854, EPR-18022, the same board as 
+    Model 3's versus cabinets) takes its commands on port E: Model 3's 
+    CBillBoard is run when the game has drive_board Billboard, the ROM is 
+    present and outputs are on. Its ROM is optional in Games.xml.
+
+Commit 6b1fd8e on 2026-11-06 by Ian
+
+    Model 2: draw the frame buffer in render test mode (Last Bronx's title logo)
+
+    The i960 writes Last Bronx's title screen into the 3D frame buffer and sets
+    render test mode. As MAME's draw_framebuffer(), the bank of the frame is
+    shown in place of the 3D, over the tilemaps below it, through the scroll
+    colour table and gamma, placed by the sync registers.
+
+Commit 0d88eeb on 2026-11-06 by Ian
+
+    Model 2B: the SHARC's slice ends when it wakes the i960
+
+    The SHARC's slice was sized while the i960 was halted waiting for its 
+    result, so it ran on to the end of the line after posting it. Last Bronx 
+    sends one 8-word command per result: each round trip took a line instead of
+    a few microseconds, and the game ran at about half speed.
+
+Commit 87b51eb on 2026-11-06 by Bart Trzynadlowski
+
+    Model 1: geometrizer threads obey MultiThreaded, full FIFOs can't hang
+
+    -no-threads now also runs the four geometrizer DSPs in turn. Previously only
+    the CPU core count decided this.
+
+    A write to a full FIFO waited forever if no chip was going to drain it: when
+    the chips run in turn, or when the next chip has hit its cycle limit. The
+    word is now dropped and the frame fails.
+
+Commit 23762d0 on 2026-11-06 by dukeeeey
+
+    Merge pull request #369 from pnixon-afk/pr/model3-lostworld-reload
+
+    Add Lost World border reload input
 Commit 95bc1cb on 2026-11-06 by njz3
 
     Merge upstream/master (345c3ad): Model 1, Model 2, version series 0.4
@@ -95,6 +389,10 @@ Commit 345c3ad on 2026-11-06 by Bart Trzynadlowski
     0.4, remove build bot
 
     * Rules.inc: fix how version is read for Windows Command Prompt
+Commit 2000bc8 on 2026-11-06 by Peter Nixon
+
+    Add Lost World border reload input
+
 Commit 2d833a0 on 2026-11-06 by Ian
 
     Model 2: Top Skater's speed meter at the bottom left, not the centre

@@ -1,11 +1,11 @@
 #Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
 Batman;Batman;TeknoParrot-latest;;;;Racing *FFB*;;;;;;;;;;;;;;
 Cars;Cars;TeknoParrotCmd2025-04;;;;;;;;;;;Cars.bat;;;;;;;
-CrazySpeed;Crazy Speed;RunAltRomname;;;;;;;;;;;C:\Racecab\Games\CrazySpeed\release\CrazySpeed.cmd;;;;;;;
-CruisnBlast;Cruis'n Blast;TeknoParrot2026-06;;;;Racing *FFB*;;;;;;;;;;;;;;
-DirtyDrivin;Dirty Drivin;TeknoParrot2025-04;;;;Racing *FFB*;;;;;;;;;;;;;;
-FNF;Fast'N Furious;TeknoParrot2025-04;;;;;;;;;;;;;;;;;;
-FNFDrift;Fast'N Furious Tokyo Drift;TeknoParrot2025-04;;;;;;;;;;;;;;;;;;
-FNFSC;Fast'N Furious SuperCars;TeknoParrot2025-04;;;;;;;;;;;;;;;;;;
-H2Overdrive;H2 Overdrive;TeknoParrot2025-04;;;;Racing *FFB*;;;;;;;;;;;;;;
-NicktoonsNitro;Nicktoons Nitro;TeknoParrot2025-04;;;;;;;;;;;;;;;;;;
+#CrazySpeed;Crazy Speed;RunAltRomname;;;;;;;;;;;C:\Racecab\Games\CrazySpeed\release\CrazySpeed.cmd;;;;;;;
+CruisnBlast;Cruis'n Blast;TeknoParrot-latest;;;;Racing *FFB*;;;;;;;;;;;;;;
+DirtyDrivin;Dirty Drivin;TeknoParrot-latest;;;;Racing *FFB*;;;;;;;;;;;;;;
+FNF;Fast'N Furious;TeknoParrot-latest;;;;;;;;;;;;;;;;;;
+FNFDrift;Fast'N Furious Tokyo Drift;TeknoParrot-latest;;;;;;;;;;;;;;;;;;
+#FNFSC;Fast'N Furious SuperCars;TeknoParrot-latest;;;;;;;;;;;;;;;;;;
+H2Overdrive;H2 Overdrive;TeknoParrot-latest;;;;Racing *FFB*;;;;;;;;;;;;;;
+NicktoonsNitro;Nicktoons Nitro;TeknoParrot-latest;;;;;;;;;;;;;;;;;;

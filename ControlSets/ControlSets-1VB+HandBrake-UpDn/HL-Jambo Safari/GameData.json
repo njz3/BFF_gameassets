@@ -1,0 +1,13 @@
+{
+  "GameName": "jambo",
+  "Description": "Jambo! Safari on Hikaruloader",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "hikaruloader",
+  "MainWindowTitle": "*[jambo]*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

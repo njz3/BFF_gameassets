@@ -1,0 +1,13 @@
+{
+  "GameName": "crzytaxi",
+  "Description": "Crazy Taxi on Hikaruloader",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "hikaruloader",
+  "MainWindowTitle": "*[crzytaxi]*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua"
+}

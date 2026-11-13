@@ -27,6 +27,9 @@ CD /d "%~dp0"
 :: AltRomname tells them apart. Handed over rather than duplicated.
 if /I "%ROM:~-5%"=="_link" (
     CALL "%~dp0RunTeknoParrotLinkGame.cmd" %ROM%
+    REM Resolution choisie remise si le jeu l a changee (Raw Thrills : 1920x1080 a la sortie) ; rien sinon
+    "C:\Racecab\Utils\SetResolution.exe" RESTORE -noprompt >nul 2>&1
+    
     EXIT
 )
 
@@ -45,6 +48,10 @@ if not defined LAUNCH set LAUNCH=TeknoParrotUi.exe --profile=%GAME% --startMinim
 
 :: After the game, for the few that need it
 CALL :post_%ROM% 2>NUL
+
+REM Resolution choisie remise si le jeu l a changee (Raw Thrills : 1920x1080 a la sortie) ; rien sinon
+
+"C:\Racecab\Utils\SetResolution.exe" RESTORE -noprompt >nul 2>&1
 
 EXIT
 
@@ -83,7 +90,7 @@ goto :eof
 :: --------------------------------------------------------------------
 
 :post_Cars
-killProcess.vbs sdaemon.exe
+cscript //nologo //B "C:\Racecab\Utils\killProcess.vbs" sdaemon.exe
 goto :eof
 
 :prep_Daytona3USA

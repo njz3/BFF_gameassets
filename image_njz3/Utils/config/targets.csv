@@ -120,6 +120,13 @@ mame_link_cab*\cfg\windheat.cfg;Emulators\Mame LINK\cfg\windheat.cfg;_single;STA
 mame_link_cab*\cfg\gticlub.cfg;Emulators\Mame LINK\cfg\gticlub.cfg;_single;STALE;
 mame_link_cab*\nvram\vr\nvram;Emulators\Mame LINK\nvram\vr\nvram;_single;STALE;
 mame_link_cab*\nvram\vr\ioboard_eeprom;Emulators\Mame LINK\nvram\vr\ioboard_eeprom;_single;STALE;
+# Virtua Racing sous sm2-emu, de meme : les scripts de resolution posent saves\vr_16_9 ou vr_4_3 sur
+# saves\vr.* (sm2-emu et sm2-emu LINK, les paires de la cabine) ; la copie du dossier d ecriture
+# est effacee quand elle en differe, l emulateur la refait au lancement suivant.
+sm2-emu_single\vr\vr.nv;Emulators\sm2-emu\saves\vr.nv;_single;STALE;
+sm2-emu_single\vr\vr.eeprom;Emulators\sm2-emu\saves\vr.eeprom;_single;STALE;
+sm2-emu_link_cab*\vr\vr.nv;Emulators\sm2-emu LINK\saves\vr.nv;_single;STALE;
+sm2-emu_link_cab*\vr\vr.eeprom;Emulators\sm2-emu LINK\saves\vr.eeprom;_single;STALE;
 # Les listes de jeux d AttractPlus : tous les jeux MAME, sm2-emu, Supermodel
 # et Flycast tournent en basse resolution, mais pas tous les TeknoParrot ni
 # tous les jeux de moto. Les variantes basse resolution ne retirent pas les

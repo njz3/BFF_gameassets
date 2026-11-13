@@ -1,0 +1,158 @@
+[
+  {
+    "RawOutputIdx": 0,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      0
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 1,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      1
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 2,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      2
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 3,
+    "Board": 1,
+    "MappedRawOutputBit": [],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 4,
+    "Board": 1,
+    "MappedRawOutputBit": [],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 5,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      3
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 6,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      6
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 7,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      7
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 8,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      8
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 9,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      9
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 10,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      10
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 11,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      11
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 12,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      12
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 13,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      13
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 14,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      14
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  },
+  {
+    "RawOutputIdx": 15,
+    "Board": 1,
+    "MappedRawOutputBit": [
+      15
+    ],
+    "MappedGroup": null,
+    "SequenceDelay_ms": 2000,
+    "Sequence": 0
+  }
+]

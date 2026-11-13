@@ -295,8 +295,19 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Service</ButtonName>
+      <DirectInputButton>
+        <Button>50</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
       <InputMapping>Service1</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons2</BindNameDi>
+      <BindName>Joystick Buttons2</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -318,8 +329,19 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Coin</ButtonName>
+      <DirectInputButton>
+        <Button>48</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
       <InputMapping>Coin1</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Buttons0</BindNameDi>
+      <BindName>Joystick Buttons0</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>

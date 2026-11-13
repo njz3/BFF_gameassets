@@ -1,0 +1,178 @@
+[
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 0,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 1,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 2,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 3,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 4,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 5,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 6,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": true,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 7,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 8,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 9,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 10,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 11,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 12,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 13,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 14,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  },
+  {
+    "Name": "",
+    "IsInvertedLogic": false,
+    "IsToggle": false,
+    "Source": 1,
+    "SourceName": "",
+    "SourceBit": 15,
+    "Type": 0,
+    "ValueBase": 0,
+    "SourceOutput": 0
+  }
+]

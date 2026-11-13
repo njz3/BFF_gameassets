@@ -1,0 +1,14 @@
+{
+  "GameName": "sgdrvsim",
+  "Description": "Sega Driving Simulator",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[sgdrvsim]*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}
