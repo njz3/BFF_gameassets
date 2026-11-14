@@ -10,7 +10,7 @@ TITLE [%ROM%]
 :: Change current directory to the folder that contains this file
 CD /d "%~dp0"
 
-set GAME=../SupermodelRoms/%ROM%.zip
+set GAME=../MameRoms/%ROM%.zip
 :: Lunch emulator
 :: Every option is in Config\Supermodel.ini (Build-Config template)
 :: Dossier d ecriture (bornes sous UWF) : Saves\supermodel_single, que
@@ -19,7 +19,7 @@ set VARIANTE=single
 if not defined WRITEDIR_ROOT CALL "..\..\Utils\set_writedir.bat"
 set ECRITURE=
 if defined WRITEDIR_ROOT set ECRITURE=-write-dir="%WRITEDIR_ROOT%\supermodel_%VARIANTE%"
-supermodel.exe %ECRITURE% %GAME%
+supermodel.exe %ECRITURE% %GAME% -game=%ROM%
 
 :: leave caller
 EXIT

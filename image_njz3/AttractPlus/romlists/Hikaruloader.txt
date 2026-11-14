@@ -1,0 +1,6 @@
+#Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
+crzytaxi;Crazy Taxi;Hikaruloader;;2000;Sega;Racing;2;;;;;;;;;;;;;
+jambo;Jambo Safari;Hikaruloader;;;;;;;;;;;;;;;;;;
+smashdrv;Smash Drive;Hikaruloader;;2002;Gaelco;Racing *FFB*;0;0;;preliminary;1;raster;;;;;;;;
+sgnascar;Sega Nascar;Hikaruloader;;2000;Sega / Electronic Arts;Racing *FFB*;0;0;;preliminary;1;raster;;;;;;;;
+swracer;Star Wars Racer Arcade;Hikaruloader;;2000;Sega / Lucas Arts;Racing;0;0;;preliminary;1;raster;;;;;;;;

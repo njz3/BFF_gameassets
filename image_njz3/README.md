@@ -793,7 +793,7 @@ Les visuels des menus d'affichage, eux, sont dans
 `C:\Racecab\AttractPlus\menu-art`.
 
 Ajouter ensuite une ligne dans la liste du jeu, par exemple
-`C:\Racecab\AttractPlus\romlists\Supermodel.txt`. Le format est un CSV à
+`C:\Racecab\AttractPlus\romlists\Model3Supermodel.txt`. Le format est un CSV à
 **21 colonnes séparées par des points-virgules**, dont l'en-tête est rappelé
 en première ligne du fichier :
 
@@ -818,7 +818,7 @@ quoi lancer. Par exemple `Supermodel.cfg` :
 executable              cmd.exe
 args                    /c start "[name]" /WAIT RunSupermodelGame.cmd [name]
 workdir                 C:/Racecab/Emulators/Supermodel
-rompath                 C:/Racecab/Emulators/SupermodelRoms
+rompath                 C:/Racecab/Emulators/MameRoms
 romext                  .zip
 ```
 
@@ -892,7 +892,7 @@ déplacez les lignes dans le fichier ; pour cacher un jeu, mettez un `#` en
 début de ligne.
 
 Les listes sont dans `C:\Racecab\AttractPlus\romlists`, une par affichage —
-`Supermodel.txt`, `Flycast.txt`, `MAME3D.txt`, `TeknoParrot.txt`, et leur
+`Model3Supermodel.txt`, `Naomi.txt`, `MAME3D.txt`, `TeknoParrot.txt`, les listes par émulateur (`Keisho.txt`, `Supermodel.txt`, `Flycast.txt`, `Hikaruloader.txt`, menu `Emulators.txt`), et leur
 équivalent `...Multi.txt` pour le mode link. Chaque liste existe aussi en
 `.csv`, au contenu identique : **modifiez les deux**.
 

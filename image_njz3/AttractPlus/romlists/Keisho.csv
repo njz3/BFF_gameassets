@@ -1,0 +1,21 @@
+#Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
+daytona;Daytona USA;Keisho;;1994;Sega;Racing *FFB*;8;0;paddle,pedal;preliminary;1;raster;;;;9;;;;
+daytonas;Daytona USA Saturn Ads;Keisho;;1994;Sega;Racing *FFB*;8;0;paddle,pedal;preliminary;1;raster;;;;9;;;;
+#daytonagtx;Daytona USA GTX;Keisho;;1994;Sega;;8;0;paddle,pedal;preliminary;1;raster;;;;9;;;;
+indy500;Indy 500;Keisho;;1995;Sega;Racing *FFB*;2;0;paddle,pedal;preliminary;1;raster;;;;9;;;;
+overrev;Over Rev;Keisho;;1997;Jaleco Ltd.;Racing *FFB*;2;;;;;;;;;;;;;
+sgt24h;Super GT 24h;Keisho;;1996;Jaleco Ltd.;Racing *FFB*;;;;;;;;;;;;;;
+srallyc;Sega Rally Championship;Keisho;;1993;Sega;Racing *FFB*;2;0;paddle,pedal;preliminary;1;raster;;;;1;;;;
+stcc;Sega Touring Car Championship;Keisho;;1996;Sega;Racing *FFB*;2;0;paddle,pedal;preliminary;1;raster;;;;9;;;;
+vr;Virtua Racing;Keisho;;1992;Sega;Racing *FFB*;1;0;paddle,pedal;preliminary;1;raster;;;;9;;;;
+daytona2;Daytona USA 2 Battle On The Edge;Keisho;;;;Racing *FFB*;;;;;;;;;;;;;;
+dayto2pe;Daytona USA 2 Power Edition;Keisho;;;;Racing *FFB*;;;;;;;;;;;;;;
+dirtdvls;Dirt Devils;Keisho;;1998;Sega;Racing *FFB*;2;;;;;;;;;;;;;
+eca;Emergency Call Ambulance;Keisho;;1999;Sega;Racing *FFB*;1;;;;;;;;;;;;;
+lemans24;Le Mans 24;Keisho;;1996;Sega;Racing *FFB*;1;;;;;;;;;;;;;
+scud;Scud Race;Keisho;;1996;Sega;Racing *FFB*;2;;;;;;;;;;;;;
+scudplus;Scud Race Plus;Keisho;;1996;Sega;Racing *FFB*;;;;;;;;;;;;;;
+srally2;Sega Rally 2;Keisho;;1998;Sega;Rally;;;;;;;;;;;;;;
+manxttc;Manx TT SuperBike;Keisho;;;;Bike;;;;;;;;;;;;;;
+motoraid;Motor Raid;Keisho;;;;Bike;;;;;;;;;;;;;;
+waverunr;Wave Runner;Keisho;;1995;Sega;Bike;2;0;joystick (8-way),joystick (8-way);preliminary;1;raster;;;;6;;;;
