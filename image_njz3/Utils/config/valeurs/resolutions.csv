@@ -11,7 +11,7 @@
 # rend.WideScreen). Dans emu.cfg et pas en -config : les jeux a plusieurs
 # cartes relancent d autres Flycast qui ne lisent que emu.cfg.
 #
-# ETIRER : display_stretch de sm2-emu, true dans ces memes modes : l image
+# ETIRER : display_stretch de Keisho, true dans ces memes modes : l image
 # 4:3 est etiree a toute la fenetre sans bordure.
 # SUPERMODEL_LARGE / SUPERMODEL_UPSCALE : WideScreen et WideBackground,
 # UpscaleMode du Supermodel.ini (gabarit) : 16:9 elargi, filtre des couches

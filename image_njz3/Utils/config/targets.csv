@@ -31,8 +31,8 @@
 # que lorsque la cabine change vraiment, jamais sur un changement de
 # resolution. Voir l en-tete de Build-Config.ps1.
 TARGET;SOURCE;CAB;TYPE;OPTIONAL;WRITEDIR;TREE
-Emulators\sm2-emu\sm2-emu.ini;Emulators\sm2-emu\sm2-emu.ini.template;_single;TEMPLATE;
-Emulators\sm2-emu LINK\sm2-emu.ini;Emulators\sm2-emu\sm2-emu.ini.template;__CAB__;TEMPLATE;
+Emulators\Keisho\keisho.ini;Emulators\Keisho\keisho.ini.template;_single;TEMPLATE;
+Emulators\Keisho LINK\keisho.ini;Emulators\Keisho\keisho.ini.template;__CAB__;TEMPLATE;
 Emulators\Supermodel\Config\Supermodel.ini;Emulators\Supermodel\Config\Supermodel.ini.template;_single;TEMPLATE;
 Emulators\Supermodel LINK\Config\Supermodel.ini;Emulators\Supermodel\Config\Supermodel.ini.template;__CAB__;TEMPLATE;
 # MAME : mame.ini selon la resolution, un gabarit pour Mame et Mame LINK
@@ -54,14 +54,14 @@ Emulators\Hikaruloader\hikaruloader.ini;Emulators\Hikaruloader\hikaruloader.ini.
 Emulators\Hikaruloader\link\hikaruloader.ini;Emulators\Hikaruloader\hikaruloader.ini.template;__CAB__;TEMPLATE;
 Emulators\Flycast\emu.cfg;Emulators\Flycast\emu.cfg.template;_single;TEMPLATE;
 Emulators\Flycast LINK\emu.cfg;Emulators\Flycast\emu.cfg.template;__CAB__;TEMPLATE;
-# Les copies de reglages que sm2-emu, Supermodel, Flycast, MAME et
+# Les copies de reglages que Keisho, Supermodel, Flycast, MAME et
 # windowsloader font dans leur dossier d ecriture (--write-dir des lanceurs,
 # pour UWF) : chacun recopie ou relit son original tant qu il n y en a pas, il
 # suffit donc d effacer celles qui ne sont plus a jour. Les dossiers suivent
 # la convention <emulateur>_<identite> de set_writedir.bat.
 # A placer apres les cibles qui regenerent les originaux.
-sm2-emu_single\sm2-emu.ini;Emulators\sm2-emu\sm2-emu.ini;_single;STALE;
-sm2-emu_link_cab*\sm2-emu.ini;Emulators\sm2-emu LINK\sm2-emu.ini;_single;STALE;
+keisho_single\keisho.ini;Emulators\Keisho\keisho.ini;_single;STALE;
+keisho_link_cab*\keisho.ini;Emulators\Keisho LINK\keisho.ini;_single;STALE;
 supermodel_single\Config\Supermodel.ini;Emulators\Supermodel\Config\Supermodel.ini;_single;STALE;
 supermodel_link_cab*\Config\Supermodel.ini;Emulators\Supermodel LINK\Config\Supermodel.ini;_single;STALE;
 flycast_single\emu.cfg;Emulators\Flycast\emu.cfg;_single;STALE;
@@ -76,13 +76,13 @@ hikaruloader_link_cab*\hikaruloader.ini;Emulators\Hikaruloader\link\hikaruloader
 # quand on pose d autres NVRAM.
 Emulators\Supermodel\NVRAM;Emulators\Supermodel\NVRAM_single;_single;FOLDER;;supermodel_single
 Emulators\Supermodel LINK\NVRAM;Emulators\Supermodel LINK\NVRAM{{CAB}};__CAB__;FOLDER;;supermodel{{CAB}}
-# Les NVRAM de sm2-emu. Comme pour Supermodel, l identite MASTER/SLAVE et le
+# Les NVRAM de Keisho. Comme pour Supermodel, l identite MASTER/SLAVE et le
 # numero de voiture sont un reglage DU JEU, dans sa backup RAM, pose une fois
 # par cabine au menu de service - l emulateur n y est pour rien, son
 # link_cabinet_index ne sert qu a une ligne de journal. Sans ces deux cibles,
 # un clonage de disque donnerait deux cabines maitres qui ne s apparient pas.
-Emulators\sm2-emu\saves;Emulators\sm2-emu\saves_single;_single;FOLDER;;sm2-emu_single
-Emulators\sm2-emu LINK\saves;Emulators\sm2-emu LINK\saves{{CAB}};__CAB__;FOLDER;;sm2-emu{{CAB}}
+Emulators\Keisho\saves;Emulators\Keisho\saves_single;_single;FOLDER;;keisho_single
+Emulators\Keisho LINK\saves;Emulators\Keisho LINK\saves{{CAB}};__CAB__;FOLDER;;keisho{{CAB}}
 Emulators\Flycast\data;Emulators\Flycast\data_single;_single;FOLDER;;flycast_single
 Emulators\Flycast LINK\data;Emulators\Flycast LINK\data{{CAB}};__CAB__;FOLDER;;flycast{{CAB}}
 # linuxloader prend sinon les NVRAM d un jeu dans le dossier du jeu, commun au
@@ -120,14 +120,14 @@ mame_link_cab*\cfg\windheat.cfg;Emulators\Mame LINK\cfg\windheat.cfg;_single;STA
 mame_link_cab*\cfg\gticlub.cfg;Emulators\Mame LINK\cfg\gticlub.cfg;_single;STALE;
 mame_link_cab*\nvram\vr\nvram;Emulators\Mame LINK\nvram\vr\nvram;_single;STALE;
 mame_link_cab*\nvram\vr\ioboard_eeprom;Emulators\Mame LINK\nvram\vr\ioboard_eeprom;_single;STALE;
-# Virtua Racing sous sm2-emu, de meme : les scripts de resolution posent saves\vr_16_9 ou vr_4_3 sur
-# saves\vr.* (sm2-emu et sm2-emu LINK, les paires de la cabine) ; la copie du dossier d ecriture
+# Virtua Racing sous Keisho, de meme : les scripts de resolution posent saves\vr_16_9 ou vr_4_3 sur
+# saves\vr.* (Keisho et Keisho LINK, les paires de la cabine) ; la copie du dossier d ecriture
 # est effacee quand elle en differe, l emulateur la refait au lancement suivant.
-sm2-emu_single\vr\vr.nv;Emulators\sm2-emu\saves\vr.nv;_single;STALE;
-sm2-emu_single\vr\vr.eeprom;Emulators\sm2-emu\saves\vr.eeprom;_single;STALE;
-sm2-emu_link_cab*\vr\vr.nv;Emulators\sm2-emu LINK\saves\vr.nv;_single;STALE;
-sm2-emu_link_cab*\vr\vr.eeprom;Emulators\sm2-emu LINK\saves\vr.eeprom;_single;STALE;
-# Les listes de jeux d AttractPlus : tous les jeux MAME, sm2-emu, Supermodel
+keisho_single\vr\vr.nv;Emulators\Keisho\saves\vr.nv;_single;STALE;
+keisho_single\vr\vr.eeprom;Emulators\Keisho\saves\vr.eeprom;_single;STALE;
+keisho_link_cab*\vr\vr.nv;Emulators\Keisho LINK\saves\vr.nv;_single;STALE;
+keisho_link_cab*\vr\vr.eeprom;Emulators\Keisho LINK\saves\vr.eeprom;_single;STALE;
+# Les listes de jeux d AttractPlus : tous les jeux MAME, Keisho, Supermodel
 # et Flycast tournent en basse resolution, mais pas tous les TeknoParrot ni
 # tous les jeux de moto. Les variantes basse resolution ne retirent pas les
 # lignes, elles les COMMENTENT avec un #, donc le fichier garde sa structure.

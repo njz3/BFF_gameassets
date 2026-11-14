@@ -11,7 +11,7 @@
 :: maitre ou esclave) est dans ses NVRAM, sous
 ::   <WRITEDIR_ROOT>\linuxloader<CAB_ID>\<jeu>\
 :: posees depuis un modele capture au menu de service, comme pour Supermodel
-:: et sm2-emu. Le solo garde les siennes dans linuxloader_single.
+:: et Keisho. Le solo garde les siennes dans linuxloader_single.
 ::
 :: Appel : %~nx0 <nom> [test]   par exemple or2spdlx
 ::   test : demarre le jeu dans son menu de test, avec les reglages link de la

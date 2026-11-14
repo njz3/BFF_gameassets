@@ -8,9 +8,9 @@ XCOPY /E /H /C /Y /I "%EMULATORS_DIR%\Mame\nvram\vr_4_3" "%EMULATORS_DIR%\Mame\n
 :: Same format for the link cabinet, from its own variants (Mame LINK\nvram\vr_*,
 :: laid by Build-Config from nvram_link_cabN): they keep its link number
 XCOPY /E /H /C /Y /I "%EMULATORS_DIR%\Mame LINK\nvram\vr_4_3" "%EMULATORS_DIR%\Mame LINK\nvram\vr"
-:: VR on sm2-emu, the same format: the pair in saves\vr_4_3 onto saves\vr.* (the link folder's are its own cabinet's)
-XCOPY /H /C /Y "%EMULATORS_DIR%\sm2-emu\saves\vr_4_3\*" "%EMULATORS_DIR%\sm2-emu\saves\"
-XCOPY /H /C /Y "%EMULATORS_DIR%\sm2-emu LINK\saves\vr_4_3\*" "%EMULATORS_DIR%\sm2-emu LINK\saves\"
+:: VR on Keisho, the same format: the pair in saves\vr_4_3 onto saves\vr.* (the link folder's are its own cabinet's)
+XCOPY /H /C /Y "%EMULATORS_DIR%\Keisho\saves\vr_4_3\*" "%EMULATORS_DIR%\Keisho\saves\"
+XCOPY /H /C /Y "%EMULATORS_DIR%\Keisho LINK\saves\vr_4_3\*" "%EMULATORS_DIR%\Keisho LINK\saves\"
 
 CALL SetVideoCommon.bat
 

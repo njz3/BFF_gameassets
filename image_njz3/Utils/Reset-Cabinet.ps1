@@ -22,7 +22,7 @@
        la sienne) et les temoins de l'assistant d'etalonnage, ce que faisait
        reset_ssd_params.bat ;
     5. Build-Config -Cabine <cabine> -ForcerNvram : identite de cabine et
-       NVRAM reposees depuis leurs modeles (Supermodel, sm2-emu, Flycast,
+       NVRAM reposees depuis leurs modeles (Supermodel, Keisho, Flycast,
        MAME, linuxloader) ;
     6. recopie les reglages link de windowsloader que Build-Config ne pose pas :
        saves_link_cabN dans Saves\windowsloader_link_cabN (Sonic, Sega Racing

@@ -12,7 +12,7 @@ CALL set_cab_id.bat
 CALL set_writedir.bat
 if defined WRITEDIR_ROOT if exist "%WRITEDIR_ROOT%\mame_single\nvram\vr\" RMDIR /S /Q "%WRITEDIR_ROOT%\mame_single\nvram\vr"
 
-:: Flycast, Supermodel et sm2-emu passent par la table de cibles :
+:: Flycast, Supermodel et Keisho passent par la table de cibles :
 :: Utils\config\targets.csv dit quel fichier vient de quel gabarit ou de
 :: quelle variante, et sous quelle identite de cabine.
 :: Build-Config ne touche PAS aux dossiers NVRAM sur un changement de

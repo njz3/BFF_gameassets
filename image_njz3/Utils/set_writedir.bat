@@ -6,7 +6,7 @@
 ::
 :: Renseigner WRITEDIR_ROOT pour activer le dossier d'ecriture des lanceurs de
 :: linuxloader, windowsloader, Flycast, MAME,
-:: sm2-emu et Supermodel. Le chemin doit etre la SEULE exclusion UWF du disque.
+:: Keisho et Supermodel. Le chemin doit etre la SEULE exclusion UWF du disque.
 :: Un sous-dossier par emulateur et par identite :
 ::   <WRITEDIR_ROOT>\<emulateur>_single         lanceurs solo
 ::   <WRITEDIR_ROOT>\<emulateur><CAB_ID>        lanceurs link (set_cab_id.bat)

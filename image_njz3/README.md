@@ -12,14 +12,14 @@ force. Tout ce qui concerne les listes de jeux se passe dans
 `C:\Racecab\AttractPlus`.
 Les dernières versions des émulateurs sont utilisés, en particulier :
 - MAME pour les jeux anciens, ou ceux des générations 90/2000 de Namco ou Taito par exemple.
-- sm2-emu pour Sega Model 2, MAME proposant les mêmes jeux en seconde liste
+- Keisho pour Sega Model 2, MAME proposant les mêmes jeux en seconde liste
 - Supermodel pour Sega Model 3
 - Flycast pour Naomi 1/2 et Atomiswave
 - hikaruloader pour les jeux Gaelco ou Hikaru
 - Dolphin pour les jeux Triforce
 - Teknoparrot pour les jeux sur plateforme PC
 
-Le retour de force est soit natif à la plateforme ou à l'émulateur (sm2-emu,
+Le retour de force est soit natif à la plateforme ou à l'émulateur (Keisho,
 supermodel), soit généré par le FFB plugin de Boomslangnz. Il a été réglé dans
 le BackForceFeeder afin de restituer au plus juste les effets originaux quand
 c'est possible.
@@ -191,7 +191,7 @@ On lance le script du mode vidéo voulu, par exemple
      moteur : `mame<RES>.ini` des trois MAME (normal, LINK, Namco LINK),
      `GFX<RES>.ini` de
      Dolphin et des deux Triforce ;
-   - appelle `Build-Config.ps1 -Res <RES>` pour tout le reste : sm2-emu,
+   - appelle `Build-Config.ps1 -Res <RES>` pour tout le reste : Keisho,
      Supermodel, Flycast, les listes de jeux d'AttractMode Plus et les profils
      TeknoParrot ;
    - Build-Config laisse enfin le témoin `C:\Racecab\Configured_for<RES>.txt`.
@@ -201,7 +201,7 @@ ligne par fichier à produire, et traite chaque ligne selon son type.
 
 | Type | Ce qu'il fait | Exemples |
 |---|---|---|
-| `TEMPLATE` | remplit un `.template` : chaque `{{MOT_CLE}}` reçoit sa valeur | `sm2-emu.ini`, `Supermodel.ini`, `emu.cfg` de Flycast |
+| `TEMPLATE` | remplit un `.template` : chaque `{{MOT_CLE}}` reçoit sa valeur | `keisho.ini`, `Supermodel.ini`, `emu.cfg` de Flycast |
 | `VARIANT` | recopie le fichier tout fait dont le nom porte `{{RES}}` ou `{{CAB}}` | `TeknoParrot{{RES}}.txt`, `GFX_<RES>.ini` de Dolphin |
 | `FOLDER` | **rien du tout** sur un changement de résolution | les NVRAM |
 | `XML` | écrit largeur et hauteur *dans* les profils TeknoParrot | les profils de `UserProfiles\` |
@@ -239,12 +239,12 @@ powershell -ExecutionPolicy Bypass -File C:\Racecab\Utils\config\Build-Config.ps
 2. **Il régénère la configuration** avec la ligne `_link_cab2` de
    `cabinets.csv` : adresse locale, adresse de la borne suivante, ports,
    index de cabine, force du retour de force en link. C'est ce qui produit le
-   `sm2-emu.ini` et le `Supermodel.ini` du dossier LINK, et l'`emu.cfg` de
+   `keisho.ini` et le `Supermodel.ini` du dossier LINK, et l'`emu.cfg` de
    Flycast LINK. La résolution en place est gardée.
 3. **Il repose les NVRAM**, et c'est le seul moment où il le fait. Pour chaque
    cible `FOLDER`, il compare le témoin `_cabine.txt` du dossier vivant à la
    nouvelle cabine. S'ils diffèrent, il recopie le dossier modèle
-   (`NVRAM_link_cab2` pour Supermodel, `saves_link_cab2` pour sm2-emu) dans le
+   (`NVRAM_link_cab2` pour Supermodel, `saves_link_cab2` pour Keisho) dans le
    dossier vivant, puis réécrit le témoin.
 
 Pourquoi des dossiers modèles plutôt qu'un réglage : le mode link et le numéro
@@ -291,9 +291,9 @@ configuration **active** reste à deux. Ce qui existe pour `_link_cab3` et
 | Fichiers des cabines 3 et 4 | Lus par |
 |---|---|
 | `Utils\set_cab_network_link_cab3.bat`, `_cab4.bat` (adresses et ports du tableau ci-dessus) | les lanceurs `Mame LINK` et `Mame Namco LINK`, à chaque lancement |
-| les lignes `_link_cab3` et `_link_cab4` de `Utils\config\valeurs\cabinets.csv` (adresses, index 2 et 3, client Flycast du serveur 192.168.1.4, `ISPUsername` racecab3 / racecab4) | `Build-Config.ps1` : `sm2-emu.ini`, `Supermodel.ini` et `emu.cfg` de Flycast LINK, **obligatoires** (sans elles, `-Cabine _link_cab3` échoue) |
+| les lignes `_link_cab3` et `_link_cab4` de `Utils\config\valeurs\cabinets.csv` (adresses, index 2 et 3, client Flycast du serveur 192.168.1.4, `ISPUsername` racecab3 / racecab4) | `Build-Config.ps1` : `keisho.ini`, `Supermodel.ini` et `emu.cfg` de Flycast LINK, **obligatoires** (sans elles, `-Cabine _link_cab3` échoue) |
 | `Supermodel LINK\NVRAM_link_cab3\`, `NVRAM_link_cab4\` | `Build-Config.ps1` |
-| `sm2-emu LINK\saves_link_cab3\`, `saves_link_cab4\` | `Build-Config.ps1` |
+| `Keisho LINK\saves_link_cab3\`, `saves_link_cab4\` | `Build-Config.ps1` |
 | `Mame LINK\` et `Mame Namco LINK\nvram_link_cab3\`, `nvram_link_cab4\` | les lanceurs link (`-nvram_directory nvram%CAB_ID%`) |
 | `Flycast LINK\data_link_cab3\`, `_cab4\` | rien : modèles à recopier à la main dans le dossier vivant |
 
@@ -307,7 +307,7 @@ Pour fermer l'anneau sur quatre, seule la cabine 2 change de suivante :
    `192.168.1.4` à `192.168.1.6` ;
 2. dans `Utils\set_cab_network_link_cab2.bat`, pour MAME : `NEXTIP=192.168.1.6`
    et `NEXTPORT=15114` ;
-3. sur les cabines 1 et 2, remplacer dans `Emulators\sm2-emu LINK\` le
+3. sur les cabines 1 et 2, remplacer dans `Emulators\Keisho LINK\` le
    contenu de `saves_link_cab1` et `saves_link_cab2` par celui de
    `saves_link_cab1_4bornes` et `saves_link_cab2_4bornes` : Super GT 24h et
    Over Rev y sont en `LINK MAX 4`. À deux bornes, ce réglage les bloque sur
@@ -361,11 +361,11 @@ Cinq types de cible :
 
 | Type | Ce que c'est | Exemple |
 |---|---|---|
-| `TEMPLATE` | un `.template` à mots-clés `{{AINSI}}` → le fichier produit | `sm2-emu.ini`, `Supermodel.ini`, `emu.cfg` de Flycast |
+| `TEMPLATE` | un `.template` à mots-clés `{{AINSI}}` → le fichier produit | `keisho.ini`, `Supermodel.ini`, `emu.cfg` de Flycast |
 | `VARIANT` | un fichier déjà écrit, choisi par son nom → recopié | `TeknoParrot{{RES}}.txt` |
 | `FOLDER` | un dossier modèle → recopié dans le dossier vivant | les NVRAM, **et seulement au changement de cabine** |
 | `XML` | la résolution écrite *dans* les profils TeknoParrot | les 100 profils de `UserProfiles\` |
-| `STALE` | les copies de réglages du dossier d'écriture → effacées si elles diffèrent de l'original | `linuxloader.ini`, `emu.cfg`, `Supermodel.ini`, `sm2-emu.ini`, `mame.ini`, `windowsloader.ini` |
+| `STALE` | les copies de réglages du dossier d'écriture → effacées si elles diffèrent de l'original | `linuxloader.ini`, `emu.cfg`, `Supermodel.ini`, `keisho.ini`, `mame.ini`, `windowsloader.ini` |
 
 Les mots-clés sont en anglais depuis le 28/10/2026 ; colonnes de `targets.csv` :
 `TARGET;SOURCE;CAB;TYPE;OPTIONAL;WRITEDIR;TREE`. Pour une cible `FOLDER`,
@@ -380,7 +380,7 @@ plutôt que de déposer une configuration à trous.
 
 ### Les listes de jeux suivent la résolution
 
-Tous les jeux MAME, sm2-emu, Supermodel et Flycast tournent en basse
+Tous les jeux MAME, Keisho, Supermodel et Flycast tournent en basse
 résolution, mais pas tous les TeknoParrot ni tous les jeux de moto. Les
 variantes `romlists\TeknoParrot<RES>.txt` et `Bike3D<RES>.txt` ne retirent pas
 les lignes, elles les **commentent** avec un `#`, donc le fichier garde sa
@@ -402,12 +402,12 @@ déjà être dans la bonne résolution au lancement : c'est le rôle des
 |---|---|---|
 | linuxloader | `DISPLAY_MODE = BORDERLESS_STRETCH` | `linuxloader.ini`, gabarit, colonne `MODE_FENETRE` ; Build-Config efface les copies périmées de `Saves\linuxloader_*` (cible `STALE`), que linuxloader lit à la place de l'original |
 | windowsloader | `DISPLAY_MODE = BORDERLESS_STRETCH` | `windowsloader.ini`, gabarit, colonne `MODE_FENETRE` (pas de dossier d'écriture : il lit l'ini de son dossier) |
-| sm2-emu | `display_stretch = true` (avec `borderless_fullscreen = true`) | `sm2-emu.ini`, gabarit, colonne `ETIRER` |
+| Keisho | `display_stretch = true` (avec `borderless_fullscreen = true`) | `keisho.ini`, gabarit, colonne `ETIRER` |
 | Supermodel | `FullScreen`, `BorderlessFullScreen`, `Stretch` à `true` | `Supermodel.ini`, gabarit, colonne `ETIRER` |
 | Flycast | `window:fullscreen=yes` (déjà sans bordure) et `rend.StretchToFill = yes` | `emu.cfg`, gabarit, colonne `FLYCAST_ETIRER` |
 | MAME | `keepaspect 0` (déjà étiré par `unevenstretch`) | `mame.ini`, gabarits (`Mame\mame.ini.template` pour Mame et Mame LINK, `Mame Namco LINK\mame.ini.template`), colonnes `ASPECT` et `MAME_*` |
 
-> **sm2-emu : `display_stretch`, pas `aspect_mode = stretch`.** `aspect_mode`
+> **Keisho : `display_stretch`, pas `aspect_mode = stretch`.** `aspect_mode`
 > ne garde que 4:3 ou 16:9 ; l'ancienne valeur `stretch` est encore lue, mais un
 > `display_stretch = false` réenregistré par une version récente l'écrase.
 > Et **`aspect_mode = 16:9`, que l'image pose en HD, n'est pas un format
@@ -465,7 +465,7 @@ Tous les jeux sauf certains Teknoparrot qui ne supportent que la HD 16/9e.
 > kHz. Chaque ligne correspond à un script du dossier `Utils` : s'il n'y a pas
 > de script, la résolution n'est pas prévue par l'image.
 
-Seuls les jeux : MAME, Model 2 (sm2-emu), Model 3 (Supermodel) et Naomi
+Seuls les jeux : MAME, Model 2 (Keisho), Model 3 (Supermodel) et Naomi
 (Flycast) fonctionnent.
 
 ## Super-résolution d'une fenêtre : SuperResScaler
@@ -533,7 +533,7 @@ L'image est passée d'un fichier `.bat` par jeu à **un lanceur générique par
 
 | Dossier | Solo | Link |
 |---|---|---|
-| `sm2-emu` / `sm2-emu LINK` | `RunSm2Game.cmd` | `RunSm2LinkGame.cmd` |
+| `Keisho` / `Keisho LINK` | `RunKeishoGame.cmd` | `RunKeishoLinkGame.cmd` |
 | `Supermodel` / `Supermodel LINK` | `RunSupermodelGame.cmd` | `RunSupermodelLinkGame.cmd` |
 | `Flycast` / `Flycast LINK` | `RunFlycastGame.cmd` | `RunFlycastLinkGame.cmd` |
 | `Mame` / `Mame LINK` | `RunMAMEGame.cmd` | `RunMAMELinkGame.cmd` |
@@ -571,7 +571,7 @@ continue de l'attendre et que BFF garde le titre qu'il lit.
 
 Deux mécanismes, selon l'émulateur.
 
-**Par le dossier** — sm2-emu, Supermodel, Flycast, MAME : le dossier
+**Par le dossier** — Keisho, Supermodel, Flycast, MAME : le dossier
 `<Ému>` porte la configuration et les NVRAM solo, le dossier `<Ému> LINK` les
 siennes pour le link. Le joueur choisit en prenant la liste Single ou la liste
 Multi dans AttractPlus, ce qui appelle l'un ou l'autre lanceur. **On peut donc
@@ -759,7 +759,7 @@ placé dans le dossier du jeu ou de l'émulateur qui va le lancer.
 
 Nommer votre fichier .bat de manière unique et identifiable facilement. Si 
 possible, prendre un nom sans espace et qui correspont à un nom de rom unique.
-Par exemple : "daytonas.bat" dans le dossier de `C:\Racecab\Emulators\sm2-emu`
+Par exemple : "daytonas.bat" dans le dossier de `C:\Racecab\Emulators\Keisho`
 (rom "daytonas" pour le jeu Daytona Saturn Ads).
 
 Au besoin, placez les arguments dont vous avez besoin dans le .bat.
@@ -927,7 +927,7 @@ fonctionne, il faut d'abord le fermer pour pouvoir modifier les fichiers.
 ## Configuration de vos boutons/axes
 
 Pour configurer les contrôles pour votre propre panel/cablage, le mieux est 
-de ne changer que le mapping des boutons par type d'émulateur (MAME, sm2-emu,
+de ne changer que le mapping des boutons par type d'émulateur (MAME, Keisho,
 Supermodel, TP), puis d'utiliser la page "Explorer" de ControlSet pour 
 copier-coller uniquement le mapping des entrées brutes, et/ou le calibrage 
 des axes vers plusieurs ControlSets simultanément.
@@ -948,7 +948,7 @@ de paramètres.
 
 Tous les émulateurs de l'image partagent la même convention, relevée dans
 leurs propres configurations (les `cfg` par jeu de MAME, `Supermodel.ini`,
-`sm2-emu.ini`, les `mappings` de Flycast) :
+`keisho.ini`, les `mappings` de Flycast) :
 
 | Entrée vJoy | Rôle |
 |:--|:--|
@@ -986,11 +986,11 @@ touche **Échap** ferme les « Erreur d'application ». Puis vérifier qu'il ne
 reste pas de processus de jeu, et remettre la résolution avec le script
 `Utils\SetLCD_1920x1080p.bat`.
 
-## Jeux Model 2 — sm2-emu
+## Jeux Model 2 — Keisho
 
 ### `link_cabinet_index` ne sert à rien
 
-Le fichier `sm2-emu.ini` contient un champ `link_cabinet_index`. **Il n'a
+Le fichier `keisho.ini` contient un champ `link_cabinet_index`. **Il n'a
 aucun effet sur le link.** Vérifié dans le code (`src/main.cpp`,
 `configure_cabinet_link`) : il n'est lu qu'à deux endroits, le champ
 « Cabinet number » de l'interface graphique et une ligne de journal INFO. Il
@@ -1016,7 +1016,7 @@ et le jeu reste indéfiniment sur `NETWORK CHECKING`.
 
 À faire **une fois par cabine et par jeu**, sur la cabine 2 :
 
-1. Lancer le jeu depuis le dossier `sm2-emu LINK`.
+1. Lancer le jeu depuis le dossier `Keisho LINK`.
 2. Bouton **TEST** (bouton 2 du panneau) → `TEST MODE`.
 3. Descendre sur `GAME SYSTEM`, valider avec **START**.
 4. Sur la ligne `LINK ID`, changer la valeur jusqu'à `SLAVE`
@@ -1039,16 +1039,16 @@ Les touches du menu sont rappelées en bas de l'écran : `GREEN` curseur haut,
 à une configuration en place alors que le jeu démarre aux valeurs d'usine.
 Même piège que pour Supermodel.
 
-### sm2-emu réécrit son `.ini` en quittant
+### Keisho réécrit son `.ini` en quittant
 
-L'émulateur persiste ses réglages dans `sm2-emu.ini` à la fermeture. Un
+L'émulateur persiste ses réglages dans `keisho.ini` à la fermeture. Un
 fichier produit par `Build-Config.ps1` peut donc être réécrit par l'émulateur
 avec ses propres valeurs. **Régénérer la configuration quand l'émulateur est
 fermé**, et vérifier après coup si le réglage compte.
 
 ### Le dossier de ROMs : `rom_dir`, et rien d'autre
 
-**C'est `rom_dir` de `sm2-emu.ini` qui décide**, et il vaut `..\MameRoms`.
+**C'est `rom_dir` de `keisho.ini` qui décide**, et il vaut `..\MameRoms`.
 Le `rompath` déclaré dans `AttractPlus\emulators\Sm2.cfg` ne sert qu'au
 balayage des listes de jeux par AttractPlus : **il n'a aucun effet au
 lancement**, puisque le lanceur passe seulement `--game <rom>` et laisse
@@ -1080,8 +1080,8 @@ Il faut un romset MAME plus récent qui contienne ce dump. Rien à corriger
 dans l'émulateur ni dans la configuration.
 
 > **Comment diagnostiquer un jeu qui ne démarre pas** : lancer
-> `sm2-emu.exe --game <rom> --log-level debug` depuis le dossier de
-> l'émulateur et lire la sortie. sm2-emu **n'ouvre jamais de boîte de
+> `keisho.exe --game <rom> --log-level debug` depuis le dossier de
+> l'émulateur et lire la sortie. Keisho **n'ouvre jamais de boîte de
 > dialogue** : il écrit des lignes `[ERROR] …` et quitte avec le code 1.
 > Une boîte « Fatal Error » visible à l'écran vient donc d'autre chose —
 > méfiance en particulier avec les boîtes d'erreur Windows orphelines, qui
@@ -1098,7 +1098,7 @@ séquence ou directement un shifter H4 via le decodeur du BFF.
 
 ### Configuration par gabarits
 
-Comme sm2-emu et Flycast, Supermodel n'a qu'un gabarit,
+Comme Keisho et Flycast, Supermodel n'a qu'un gabarit,
 `Supermodel\Config\Supermodel.ini.template`, partagé par `Supermodel`
 (identité `_single`) et `Supermodel LINK` (cabine de la machine). **Tout** y
 est, plus rien ne passe en ligne de commande : les lanceurs écrivent
@@ -1186,7 +1186,7 @@ Les lanceurs utilisent `-input-system=dinput -force-feedback`, donc un retour
 de force DirectInput sur le peripherique vJoy. Mais **compter les paquets
 mesure a quel point la force VARIE, pas si le canal fonctionne.**
 
-sm2-emu ne renvoie la force que si elle change d'au moins 256/32767, soit
+Keisho ne renvoie la force que si elle change d'au moins 256/32767, soit
 0,8 % (`worth_sending` dans `input.cpp`). Supermodel se comporte de meme. Or
 toute la force depend de la position du volant : ressort de panneau, ressorts
 et freins de la drive board. **Volant immobile, la force est constante, donc
@@ -1346,7 +1346,7 @@ sous-dossier du write-dir servent.
 ## Jeux Naomi — Flycast
 
 **Configuration.** Un seul gabarit, `Flycast\emu.cfg.template`, pour les deux
-dossiers, comme celui de sm2-emu : le solo le remplit avec l'identité
+dossiers, comme celui de Keisho : le solo le remplit avec l'identité
 `_single`, Flycast LINK avec la cabine de la machine. Ce qui dépend de la
 cabine vient de `cabinets.csv`, section `[network]` d'`emu.cfg` :
 

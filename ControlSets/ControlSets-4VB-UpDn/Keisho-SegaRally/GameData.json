@@ -1,0 +1,14 @@
+{
+  "GameName": "srallyc,srallycb,srallyp",
+  "Description": "Sega Rally Championship",
+  "ExecType": 1,
+  "OutputType": 3,
+  "ProcessName": "keisho",
+  "MainWindowTitle": "*Sega Rally*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}
