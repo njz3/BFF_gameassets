@@ -1,0 +1,14 @@
+{
+  "GameName": "overrev",
+  "Description": "Jaleco Over Rev",
+  "ExecType": 2,
+  "OutputType": 3,
+  "ProcessName": "supermodel*",
+  "MainWindowTitle": "*Over Rev*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

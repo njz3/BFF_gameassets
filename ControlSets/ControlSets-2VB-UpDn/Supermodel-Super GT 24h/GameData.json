@@ -1,0 +1,14 @@
+{
+  "GameName": "sgt24h",
+  "Description": "Jaleco Super GT 24h",
+  "ExecType": 2,
+  "OutputType": 3,
+  "ProcessName": "supermodel*",
+  "MainWindowTitle": "*Super GT 24h*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}
