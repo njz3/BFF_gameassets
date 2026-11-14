@@ -133,12 +133,23 @@ example:
 This will load 'scud.zip' (Scud Race) and run it in full screen mode.
 
 A MAME merged ROM set keeps the parent and all of its clones in the parent's ZIP
-file.  Supermodel then loads one of the clones; '-game' picks the game instead:
+file.  Supermodel then loads the game named like the ZIP file (the parent);
+'-game' picks another one:
 
     supermodel daytona2.zip -game=dayto2pe
 
-A clone can also come from a ZIP file of its own holding only its own files,
-next to its parent's ZIP file, from which the rest is read.
+A clone's ZIP file name that does not exist is looked for in its parent's: with
+only daytona2.zip in the folder, 'supermodel roms/dayto2pe.zip' loads dayto2pe
+from daytona2.zip.  So a folder of MAME merged sets serves both MAME and
+Supermodel, the clones given by their own names.  A clone can also come from a
+ZIP file of its own holding only its own files, next to its parent's ZIP file,
+from which the rest is read.
+
+The drive boards' ROMs MAME's sets lack (EPR-19338A for Emergency Call
+Ambulance and Le Mans 24, EPR-18261 for Le Mans 24 and Indy 500...) can be put
+in the ROM folder as loose files, under the names Games.xml gives (e.g.,
+epr-19338a.bin): a file missing from the ZIP files is read from there, checked
+by its CRC32, so MAME's ZIP files need not be changed.
 
 Initially, inputs are assigned according to the settings in 'Supermodel.ini',
 located in the 'Config' subdirectory.
@@ -289,8 +300,13 @@ the image at its proportions, the top and bottom curved onto the edges:
 During a game, the settings menu (Tab) changes these settings, applied at once,
 and saves them in the settings file in use, or with 'Save for this game' in the
 game's own settings file (see 'The Configuration File').  The game is paused
-while the menu is open; Escape or Tab closes it.  Its pages follow those of the
-other emulators of the cabinets' front-end (linuxloader, windowsloader).
+while the menu is open, and the wheel's force feedback stops until it closes (as
+with the pause key); Escape or Tab closes it.  Its pages follow those of the
+other emulators of the cabinets' front-end (linuxloader, windowsloader,
+hikaruloader), in windowsloader's order: Game, Controls, Display, Sound, Force
+feedback, Emulation, Outputs and network, About.  The pages scroll above the
+Save buttons, which stay in view.  A setting read only when a game starts says
+"Takes effect at the next start." under it.
 
 Its 'Display' page also has the internal resolution: the size the image is drawn
 at, fitted at its shape, then scaled into the frame (InternalWidth and
@@ -311,14 +327,24 @@ stays.  'Reset...' sets the device's bindings back to Supermodel's defaults.
 The page also has the BackgroundInput setting.  The bindings are saved with the
 other settings, as 'Input...' lines.
 
-Its force feedback part has the ForceFeedback and SimulateDriveBoard settings
+Its 'Force feedback' page has the ForceFeedback and SimulateDriveBoard settings
 (from the next start), the device that plays the effects (ForceFeedbackDevice:
 automatic, the joysticks the steering is bound to, or one of the joysticks with
 force feedback, e.g., a Microsoft wheel playing them while the steering is read
 from vJoy), their strength and direction (ForceFeedbackGain,
 ForceFeedbackInvert), what the game asks now (constant force, spring, friction,
 damper, vibration) and the limits per effect of the input system in use.  These
-apply at once: the effects stop where they played and start again as set.
+apply when the menu closes: the effects stop where they played and start again
+as set.  Its 'Drive board' part has the board's strength switches
+(ForceFeedbackStrength, from the next start) and PanelSpring.
+
+Its 'Sound' page has the sound and music volumes (SoundVolume, MusicVolume) and
+FlipStereo, applied at once, and, from the next start, the channels, the
+balances and whether the sound and music boards are emulated.  Its 'Emulation'
+page has, from the next start, Model 3's PowerPCFrequency, New3DEngine and
+QuadRendering, Model 1's and Model 2's HighLevelGeometrizer, MultiThreaded,
+GPUMultiThreaded and SimulateDriveBoard.  Its 'About' page gives the version,
+the licence, the libraries used and the log file.
 
 The menu's 'Game' page describes the game running (title, ROM set, hardware,
 drive and network boards) and shows its notes from Config/GameNotes.txt: how to
@@ -326,11 +352,13 @@ change the region, special modes, cabinet setup (see 'Game-Specific Comments and
 Tips').  The file is plain text, read each time the menu opens, and its format
 is explained at its top; Page Up and Page Down scroll long notes.
 
-Its 'Outputs' page lists what the game sends on the outputs (-outputs=net or
+Its 'Outputs and network' page lists what the game sends on the outputs (-outputs=net or
 win): each name, its type, its meaning and the last value sent, such as the
 cabinet lamps the game lights and its drive board's command bytes.  The same
 list, without values, is under the Outputs settings in the Misc tab of the
-configuration window (Supermodel started without arguments).
+configuration window (Supermodel started without arguments).  Below, the network
+board's settings (Network, SimulateNet, PortIn, PortOut, AddressOut), from the
+next start.
 
 By default, Supermodel limits the frame rate to 60 frames per second.  This has
 no impact on performance except when the frame rate exceeds 60 FPS on fast
@@ -666,7 +694,25 @@ Force feedback is presently supported in 'Scud Race' (including 'Scud Race
 Plus'), 'Daytona USA 2' (both editions), and 'Sega Rally 2' on Windows only. To
 enable it, use the '-force-feedback' option.
 
-Drive board ROMs are required.  They first appear in the MAME 0.143u6 ROM
+The Model 1 and Model 2 racing games have it too, from their drive boards'
+programs, emulated or simulated (the same program's logic, interrupt by
+interrupt; from sm2-emu's boards and BackForceFeeder's annotated EPROM
+listings): Virtua Racing and Virtua Formula (EPR-15111, in no MAME set: else
+simulated), Daytona USA (EPR-16488A), Sega Rally Championship (EPR-17891), Indy
+500, Sega Touring Car Championship, Over Rev and Super GT 24h (EPR-18261, the
+same board as Le Mans 24's on Model 3; MAME's sets have it for stcc only).  The
+Daytona USA and Sega Rally boards calibrate at power-up by driving the wheel
+one way then the other (8 to 85 seconds): a force feedback wheel that cannot
+move then (held, or not playing the effects) makes the board give up, and no
+force comes until the game is reset.  Virtua Racing's board is set (DIP switch
+4 ON) not to calibrate.  Virtua Racing sends its board nothing with CABINET TYPE
+STANDARD (TEST, GAME SYSTEM): a blank NVRAM in Supermodel gets the game's own
+factory settings, which are not STANDARD, so nothing needs changing.
+
+Drive board ROMs are optional: without one, the game runs without its drive
+board, or for the Model 1 and Model 2 programs with the board simulated (see
+'-simulate-driveboard').  They can be in the game's ZIP file or beside it in the
+ROM folder (see 'Running Games').  They first appear in the MAME 0.143u6 ROM
 catalog and at the time of this writing, have not yet widely proliferated.
 
     Game            Drive Board ROM File    Size        Checksum (CRC32)
@@ -678,8 +724,8 @@ catalog and at the time of this writing, have not yet widely proliferated.
 The sizes and checksums must match those listed above.  The file names may be
 different but will almost certainly contain the same identifying numbers.
 Ensure that the appropriate drive board ROM files are present in the
-corresponding games' ZIP archives, otherwise Supermodel will silently proceed
-without force feedback.
+corresponding games' ZIP archives or beside them, otherwise Supermodel will
+proceed without force feedback (a line in the log says so).
 
 Force feedback will only work with the DirectInput (the default on Windows) and
 XInput input systems.  XInput is intended only for XBox 360 controllers, which
@@ -1441,7 +1487,12 @@ not.  All options are case sensitive.
                     given.  Everything Supermodel prints goes to its
                     standard error; its standard output carries the protocol:
                     one command a line, one answer.  Once the game is loaded,
-                    Supermodel writes 'ready GAME WIDTH HEIGHT', then answers:
+                    Supermodel writes 'ready GAME WIDTH HEIGHT', then answers.
+                    A state given with '-load-state' that cannot be loaded
+                    (missing, truncated, another version's) stops Supermodel
+                    with exit code 1 before 'ready': the program reads the
+                    end of the output instead of a game run from power-on.
+                    The commands:
 
                       step [N]            Runs N frames (1 by default).
                                           Answer: 'ok FRAME' followed by the
@@ -1494,6 +1545,20 @@ not.  All options are case sensitive.
 
                     Force feedback still goes to the device the inputs are
                     mapped to.  'Scripts/ffbtest/smagent.py' is a Python client.
+
+                    NVRAM works as in a normal run: when the game's .nv file
+                    is missing, Supermodel starts with a blank backup RAM and
+                    the game writes its own factory settings into it, saved
+                    on exit.  Supermodel creates no settings of its own.  The
+                    factory settings of the twin cabinet sets, such as Scud
+                    Race (scud) and Daytona USA 2 (daytona2), are LINK ID
+                    MASTER: without '-net' the game restarts its boot over and
+                    over on 'DRIVE BOARD INITIALIZING', and with '-net' a
+                    single instance waits on 'THIS IS MASTER CONTROLLER' for
+                    a slave.  To test such a set alone, give it an NVRAM set
+                    to LINK ID SINGLE in the test menu, run two linked
+                    instances, or use a deluxe set (scuddx, dirtdvls), which
+                    starts alone.
 
     ----------------
 
@@ -1635,10 +1700,20 @@ not.  All options are case sensitive.
                         EPR-20985   Daytona USA 2
                         EPR-20512   Sega Rally 2
                         EPR-18261   Le Mans 24 (CABINET TYPE TWIN-NORMAL),
-                                    the Model 2 drive board of Indy 500
+                                    the Model 2 drive board of Indy 500,
+                                    Sega Touring Car Championship, Over Rev
+                                    and Super GT 24h
                         EPR-21119   Star Wars Trilogy (joystick)
+                        EPR-16488A  Daytona USA (Model 2)
+                        EPR-17891   Sega Rally Championship (Model 2)
+                        EPR-15111   Virtua Racing (Model 1)
 
-                    The billboard is still emulated.  The drive board's ROM is needed either way.  A
+                    The billboard is still emulated.  The Model 3 programs
+                    read their tables from the drive board's ROM, which they
+                    need either way.  The Model 1 and Model 2 programs do not:
+                    without the ROM (MAME's sets have none of them but stcc's
+                    EPR-18261; Virtua Racing's EPR-15111 is in no MAME set),
+                    they are simulated whatever this option says.  A
                     save state keeps the mode it was made in; a save state of
                     an emulated drive board loads in the simulated mode too.
 
@@ -1972,6 +2047,36 @@ All settings are case sensitive.
 
     ----------------
 
+    Name:           ForceFeedbackStrength
+
+    Argument:       Integer, 1 to 8 (1 by default).
+
+    Description:    The drive board's strength DIP switches, as an operator
+                    sets them on a cabinet: 1 all OFF, as the boards leave the
+                    factory (and as sm2-emu has them), 8 the most.  Each
+                    board's program adds them to every force it works out
+                    (Model 3's servo boards' programs: bits 2-4 of DIP 1;
+                    EPR-18261: 0 to 7; Daytona USA and Virtua Racing: 0 to 28
+                    of 63; Sega Rally: 0 to 7).  Read when the board starts.
+                    It was 5 by default before November 2026.  Set in the
+                    settings menu's Force feedback page.
+
+    ----------------
+
+    Name:           PanelSpring
+
+    Argument:       Integer, 0 to 100 (percent; 20 by default).
+
+    Description:    The light centring spring of the Daytona USA, Sega Rally
+                    and Virtua Racing panels, whose drive boards drive the
+                    wheel through a clutch and make up for that spring: in
+                    percent of Sega Rally's strongest torque, played as a
+                    centring effect while the board is running.  The other
+                    panels have none.  Set in the settings menu's Force
+                    feedback page (sm2-emu's wheel_panel_spring).
+
+    ----------------
+
     Name:           ForceFeedbackDevice
 
     Argument:       String: a joystick's name, as the input system gives it
@@ -1984,7 +2089,7 @@ All settings are case sensitive.
                     feedback.  Automatic, or that joystick not connected at
                     the start: the joysticks the steering (or the analog
                     joystick, the ski) is bound to.  Set in the settings
-                    menu's Controls page, or with --set
+                    menu's Force feedback page, or with --set
                     ForceFeedback.FFB_DEVICE.
 
     ----------------
@@ -1998,7 +2103,7 @@ All settings are case sensitive.
                     of what the game asks (the limits per effect, such as
                     DirectInputSelfCenterMax, apply after it), and the
                     constant force's direction inverted.  Set in the settings
-                    menu's Controls page, or with --set
+                    menu's Force feedback page, or with --set
                     ForceFeedback.FFB_STRENGTH and FFB_INVERT.
 
     ----------------

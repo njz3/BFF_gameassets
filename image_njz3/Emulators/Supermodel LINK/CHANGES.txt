@@ -14,6 +14,122 @@
 
                                  CHANGE LOG
 
+Commit 4a15e20 on 2026-11-14 by njz3
+
+    In-game menu as windowsloader's, per-game settings as hikaruloader's; pause
+    stops the force feedback
+
+    - The Tab menu's pages in windowsloader's order: Game, Controls, Display,
+     Sound (volumes, channels, balances, sound boards), Force feedback (its own
+     page, with the drive board's strength switches and PanelSpring),
+     Emulation (PowerPCFrequency, the 3D engine, HighLevelGeometrizer, threads,
+     SimulateDriveBoard), Outputs and network, About. The pages scroll above the
+     buttons, which stay in view; "Takes effect at the next start." under the
+     settings read at start-up.
+    - From hikaruloader: <game>.ini is now this game's differences, read over
+     Supermodel.ini (an older complete copy works the same): Save for all games,
+     Save for <set> alone (what differs from the common settings), Common
+     settings (the game's file removed); "What the game receives" in Controls;
+     gamepad navigation (SDL game controllers opened while the menu is open
+     only); Add and Default buttons for the bindings.
+    - Paused or in the menu, the wheel's effects stop; resumed, the drive
+    board's
+     are played again (Model 1, 2 and 3).
+    - Agent mode: menu page game|controls|display|sound|ffb|emulation|outputs|
+     about, menu common.
+    - FFBRework.md: the upstream 2806f14 merge's check (2.22), this port and the
+     menu (2.23, 2.24).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit e74f677 on 2026-11-14 by njz3
+
+    Model 1 and Model 2 force feedback from sm2-emu: drive boards emulated or
+    simulated
+
+    The owner's force feedback work for sm2-emu (Keisho), ported:
+    - Indy 500, Touring Car, Over Rev, Super GT 24h (EPR-18261) run on Model 3's
+     CWheelBoard, the same board as Le Mans 24's: two powers, the motor brake,
+     63 the full force, the strength switches effective. CModel2DirectDriveBoard
+     (16 the full force, no brake) is gone. Without the ROM (MAME's sets but
+     stcc's) the program is simulated.
+    - Daytona USA and Sega Rally (CModel2DriveBoard): the motor's way and power
+     at each interrupt; the frame's mean torque, the clutch's brake (no way set)
+     against the wheel's speed, Sega Rally's chopped torque as a vibration, and
+     the panel's light spring (PanelSpring, 20 % by default).
+    - Their programs simulated (ClutchProgramSim, SimulateDriveBoard or the ROM
+     missing): EPR-16488A, EPR-17891, EPR-15111, from behavioural specs of
+     BackForceFeeder's annotated listings and sm2-emu's boards. Against the
+     emulated Z80 on the inputs it read: 0 differences for 16488A and 17891,
+     0.03 % for 15111 (its motor computed in cooperative tasks). An interrupt
+     at a frame's end reads the next frame's command and wheel, as the Z80 does
+     (delays measured with SUPERMODEL_DRIVEBOARD_COMPARE).
+    - Virtua Racing and Virtua Formula (Model 1): the board's command from dual
+     port RAM byte 11, its reply on IN2, the outputs RawDrive and m2ffb;
+     EPR-15111 (in no MAME set: else simulated) on CModel2DriveBoard with DSW1
+     on port 25, DSW2 on 26, both seats set not to calibrate, one seat played.
+    - ForceFeedbackStrength defaults to 1, the switches all OFF as the boards
+     leave the factory (was 5).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 59834e9 on 2026-11-14 by njz3
+
+    ROM sets: a clone found in its parent's merged zip, optional ROMs as loose
+    files
+
+    For one folder of MAME merged sets shared by MAME and Supermodel:
+    - a clone's zip that does not exist (scudplus.zip) is looked for in its
+     parent's (scud.zip), the clone loaded;
+    - the files of optional regions missing from the zips (the drive boards'
+     programs MAME's sets lack: EPR-19338A for eca and lemans24...) are read as
+     loose files beside the zip, by the name Games.xml gives, checked by CRC32.
+
+    A merged zip given without -game already loaded the set named like it; the 
+    README said a clone.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 69a5e63 on 2026-11-14 by njz3
+
+    Agent mode: a -load-state that cannot be loaded stops before 'ready'
+
+    A missing, truncated or invalid initial state made the agent's client run 
+    the game from power-on unaware. Now Supermodel exits with code 1 before 
+    writing 'ready' (the client reads the end of the output).
+    CBlockFile::Complete checks that the blocks run to the end of the file, so a
+    truncated state is refused rather than loaded in part. Without the agent
+    mode nothing changes.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 451efbe on 2026-11-14 by njz3
+
+    Merge remote-tracking branch 'upstream/master' into dev/ffbedition
+
+Commit 6d54028 on 2026-11-14 by njz3
+
+    README: agent mode and the twin sets' factory NVRAM (LINK ID MASTER)
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 2806f14 on 2026-11-13 by Ian
+
+    Merge branch 'master' of https://github.com/trzy/Supermodel
+
+Commit 3650f39 on 2026-11-13 by Ian
+
+    Model 2: texture parameter command takes an entry number, not a byte offset
+    (Gunblade NY explosions)
+
+    The geometrizer's texture parameter command (06) starts with the entry to 
+    write. MAME shifted it right by two; Gunblade NY writes plain entry numbers
+    (0x1a for entry 26, the buildings), so its explosion flash (ambient 62, 
+    fading to 0) went to entry 6 and the buildings stayed black. Checked against 
+    the 2B geometrizer program in compare mode: over Gunblade's attract the luma 
+    differences drop from ~48600 to ~1400. Games that write the whole table from 
+    entry 0 are unaffected.
+
 Commit 899dda6 on 2026-11-12 by njz3
 
     Merge upstream/master (65ec91d): DSB and MPEG sound, Virtua Cop 2, Model 1
