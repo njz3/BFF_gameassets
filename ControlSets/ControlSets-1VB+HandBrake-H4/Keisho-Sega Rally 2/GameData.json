@@ -1,0 +1,14 @@
+{
+  "GameName": "srally2",
+  "Description": "SR2",
+  "ExecType": 1,
+  "OutputType": 3,
+  "ProcessName": "keisho",
+  "MainWindowTitle": "*Sega Rally 2*",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

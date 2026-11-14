@@ -1,0 +1,14 @@
+{
+  "GameName": "daytona2,dayto2pe",
+  "Description": "Sega Daytona USA 2 Serie",
+  "ExecType": 1,
+  "OutputType": 3,
+  "ProcessName": "keisho",
+  "MainWindowTitle": "*Daytona USA 2*",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

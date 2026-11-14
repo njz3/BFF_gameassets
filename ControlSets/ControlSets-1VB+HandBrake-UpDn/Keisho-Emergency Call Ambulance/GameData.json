@@ -1,0 +1,14 @@
+{
+  "GameName": "eca",
+  "Description": "ECA",
+  "ExecType": 1,
+  "OutputType": 3,
+  "ProcessName": "keisho",
+  "MainWindowTitle": "*Emergency Call Ambulance*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

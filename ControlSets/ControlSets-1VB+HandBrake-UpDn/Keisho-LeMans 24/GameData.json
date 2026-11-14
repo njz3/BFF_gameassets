@@ -1,0 +1,14 @@
+{
+  "GameName": "lemans24",
+  "Description": "Le Mans 24 ",
+  "ExecType": 1,
+  "OutputType": 3,
+  "ProcessName": "keisho",
+  "MainWindowTitle": "*Le Mans 24*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}
