@@ -14,6 +14,77 @@
 
                                  CHANGE LOG
 
+Commit 0ba1cdd on 2026-11-14 by njz3
+
+    Model 1 and Model 2 outputs: the cabinet lamps of Model 1, the game state
+    read from RAM
+
+    Found in agent mode for this fork (no other emulator's tables used):
+    - Model 1's lamps (I/O board byte 0F, laid out as Model 2's lamp port):
+     LampStart, LampView1-4 (Virtua Racing's VR buttons), LampLeader, RawLamps.
+    - New outputs, read from RAM once a frame while outputs are on: Credits,
+     P1/P2_Ammo, P1/P2_Life, P1/P2_CtmRecoil (a shot, or the game's own gun
+     motor bits on Gunblade NY and Behind Enemy Lines), P1/P2_Damaged. The light
+     gun games (Virtua Cop 1 and 2, House of the Dead, Rail Chase 2, Gunblade
+    NY,
+     Behind Enemy Lines) and the credits of 16 more Model 2 games and Virtua
+     Fighter and Star Wars Arcade, each checked against the screen; clones only
+     where checked.
+    - The in-game menu's and the launcher's outputs table lists them with their
+     meaning.
+    - Agent mode: a light gun's trigger is set as AutoTrigger (AutoTrigger2).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit b63f5af on 2026-11-14 by njz3
+
+    Model 2B/2C wide screen: the coprocessor program's off-screen test widened
+
+    Some Model 2B and 2C games ask their geometry coprocessor whether an object 
+    is on the 4:3 screen before drawing it. With WideScreen, the test is found
+    in the program the game uploads, by its instructions rather than its
+    address, and its horizontal limits (+-248) become the wide image's (+-342 at
+    16:9), re-done when the width changes, undone in save states and when wide
+    screen is off. Three forms: SHARC immediates (Fighting Vipers, Sonic the
+    Fighters), the limits the i960 sends every frame (Rail Chase 2, Gunblade NY,
+    Virtual On), the TGPx4's (House of the Dead, whose scenery now reaches the
+    edges). The 2A programs have no such test. Written from the programs
+    themselves; SUPERMODEL_MODEL2_COPRO_DUMP writes the uploaded programs,
+    disassembled.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 1b0ff93 on 2026-11-14 by njz3
+
+    Telemetry for the Model 1 and Model 2 racing games
+
+    The telemetry's decoders now read any machine (IDecoder::Decode takes the 
+    emulator), with the same keys, client commands and Forza datagram as before.
+    - Model 2 (Model2Games.cpp): the decoders the owner wrote for sm2-emu,
+     ported: Daytona USA, Sega Rally, Indy 500, Touring Car, Over Rev, Super GT
+     24h, Motor Raid, Wave Runner, Desert Tank, Manx TT, and the clones with
+     addresses of their own. Checked side by side with sm2-emu on the same ROMs
+     (Sega Rally bit for bit; the others alike in kind).
+    - Model 1 (Model1Games.cpp): Virtua Racing and Virtua Formula, found in RAM
+     here: state, clocks, laps, the 16 cars' places, angles, speed, gear, rpm,
+     surface under each wheel. Checked against the screen over whole races.
+    - The gaps in seconds are left out for a car standing (endless on the grid).
+    - Agent mode: ram and poke read and write the Model 1 and Model 2 main CPU's
+     bus too (poke's 4 bytes as two halves on the V60's 16-bit bus).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit c005ee3 on 2026-11-14 by njz3
+
+    ROM sets: a loose ROM file found by its CRC32, whatever its name
+
+    A drive board ROM beside the zip was only found under the name Games.xml 
+    gives it (epr-18261.ic9): the cabinets' epr-18261.bin left Le Mans 24 
+    without its board. The folder's loose files (not archives, at most 4 MB) are 
+    now matched by CRC32; by name only for a file Games.xml gives no CRC32 for.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
 Commit 4a15e20 on 2026-11-14 by njz3
 
     In-game menu as windowsloader's, per-game settings as hikaruloader's; pause
