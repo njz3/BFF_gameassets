@@ -939,8 +939,10 @@ To change the region, enter Test mode and perform the following series of short
 presses: 4 short, 2 long, 2 short, 1 long.
 
 The ROMs hold a fifth course, FOREST, complete but in no menu.  The 'Game' page
-of the settings menu (Tab) adds it to the practice's course selection (the
-ForestCourse setting of the '[ srally2 ]' section).
+of the settings menu (Tab), or the game's 'Game Options' button in the list of
+the configuration window (Supermodel started without a ROM), adds it to the
+practice's course selection (the ForestCourse setting of the '[ srally2 ]'
+section).
 
 
 Ski Champ
@@ -2323,14 +2325,19 @@ All settings are case sensitive.
                     adds FOREST, a complete course of the game's that no menu
                     shows, as a fifth panel of the practice's course
                     selection.  Turned on or off on the 'Game' page of the
-                    settings menu (Tab), which saves it in that section at
-                    once; it takes effect at the next course selection (the
-                    game's own program is given back when turned off).  The
-                    panel's photo is built in; a 256x128 BMP file,
-                    Config/srally2_forest.bmp, replaces it if there.  The
-                    practice's rival drives FOREST's own line (the ROMs held
-                    a copy of MOUNTAIN's route there).  The title shown at
-                    the race's start and the music remain MOUNTAIN's.
+                    settings menu (Tab), or in the window of the game's 'Game
+                    Options' button in the configuration window's list, which
+                    save it in that section at once; it takes effect at the
+                    next course selection (the game's own program is given
+                    back when turned off).  The panel's photo is built in; a
+                    256x128 BMP file, Config/srally2_forest.bmp, replaces it
+                    if there.  The practice's rival drives FOREST's own line
+                    (the ROMs held a copy of MOUNTAIN's route there).  FOREST's
+                    weather (SNOWY's falling particles, which its textures
+                    have no snowflake for) falls as rain, and the car's
+                    reflections (a texture FOREST makes much more opaque) are
+                    made as faint as on the other courses.  The title shown
+                    at the race's start and the music remain MOUNTAIN's.
                     Linked cabinets choosing FOREST all need it on.
 
     ----------------

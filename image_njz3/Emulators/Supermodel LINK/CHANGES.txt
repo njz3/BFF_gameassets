@@ -14,6 +14,79 @@
 
                                  CHANGE LOG
 
+Commit 7532a91 on 2026-11-16 by njz3
+
+    Sega Rally 2 FOREST: rain instead of broken snow, the car's reflections made
+    faint
+
+    FOREST's weather is SNOWY's falling particles, whose snowflake texture its 
+    bank lacks (a banner's corner there): during FOREST's races they fall as
+    rain, a drop of the patch's drawn in a texture FOREST does not use, the
+    particles sent there by a texture offset (a routine in place of the debug
+    names RND_C_* around the game's draw call), faster, spread over their box's
+    height (FOREST's start leaves them at one height: drops in bursts), and not
+    under the gorge's rocks (FOREST's sector never advances, its weather table
+    unused). The car's reflection layers get a 32x32 texture from FOREST far
+    more opaque than the other courses': its alpha is divided by 8 while racing
+    there.
+
+    CReal3D's texture overlays: RGBA4 mipmaps, and overlays scaling the alpha of 
+    the game's own texels (made again at each write of the game's).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit b329de3 on 2026-11-16 by njz3
+
+    In-game menu: the emulator's keys on the About page
+
+    The inputs of the UI group (save and load state, change slot, pause, reset, 
+    the menu, full screen, volumes, NVRAM, crosshairs, frame limit, dumps, 
+    screenshot) with their bindings as set now, what some do, how to change them
+    (InputUI... in the settings file, or -config-inputs), and the menu's own
+    keys.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 5006984 on 2026-11-16 by njz3
+
+    Configuration window: a Game Options button for each game of the list
+
+    It opens the in-game menu's Game page for that game: its description, the 
+    game patches offered for its ROM set (now listed by ROM set in 
+    Src/Model3/GamePatches.h, which the emulator uses too) and its notes. A
+    patch turned on or off there is saved at once in the game's section of the
+    settings file, as from the in-game menu (Sega Rally 2's FOREST course,
+    ForestCourse). The list's Version column takes what the others leave, so the
+    buttons show in the window as it opens.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit d30a511 on 2026-11-16 by njz3
+
+    Model 3 drive board: the NMIs every 16000 cycles, the last instruction's
+    overrun counted
+
+    The drive boards' programs set the Z80 CTC to 500 Hz (channel 0 8 MHz / 16 / 
+    250, channel 1 counting it by 4): an NMI every 16000 cycles. The timer was 
+    reloaded with the full period after each NMI, so the cycles the last 
+    instruction ran past it were lost and every NMI came one instruction late: 
+    499.84 Hz measured (EPR-20512, EPR-19338A, EPR-20985, EPR-18261). The next 
+    NMI is now one period after this one was due: 500.02 Hz (the rest the 
+    frame's own overrun).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit fa59add on 2026-11-16 by njz3
+
+    Merge remote-tracking branch 'upstream/master' into dev/ffbedition
+
+    Upstream 3434abb (Ian): Model 2 tilemaps drawn a line at a time as the beam
+    reaches each line, the texture parameter index by board, the rasterizer's
+    window command counting windows, the colour conversion's output levels
+    named.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
 Commit 9532434 on 2026-11-16 by njz3
 
     Sega Rally 2: the hidden FOREST course in the practice's course selection
@@ -52,6 +125,41 @@ Commit b3354f9 on 2026-11-16 by njz3
      state loaded.
 
     Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 3434abb on 2026-11-15 by Ian
+
+    Model 2: count windows in the rasterizer's window command
+
+    Each window starts a new layer, depth sorted on its own. The count was kept 
+    in the simulated geometrizer's window command (as MAME), so with the 2B 
+    geometrizer program every polygon landed in one layer and Sonic 
+    Championship's shadows sorted into the fighters. The rasterizer now counts 
+    the window command itself, so both geometrizers' windows count. The 
+    simulation's output is unchanged.
+
+Commit 70451cb on 2026-11-15 by Ian
+
+    Model 2: name the output black and white levels of the colour conversion
+    (values unchanged)
+
+Commit 7b26355 on 2026-11-15 by Ian
+
+    Model 2: draw the tilemaps a line at a time, as the beam reaches each line
+
+    The tilemaps were drawn once after the last line of the frame. Gunblade NY 
+    clears and redraws its credit text from the last line of the frame into the 
+    first lines of the next, so with free play set, the text was caught half 
+    cleared. Each line is now drawn just before it runs, as Model 3's tilegen 
+    does. DrawLayer takes an optional line range (Model 1 is unchanged).
+
+Commit 7bde776 on 2026-11-15 by Ian
+
+    Model 2: texture parameter index depends on the board
+
+    Model 2/2A games send the position of the entry's first value (4 values per 
+    entry), so it's divided by 4 (as MAME does). 2B/2C games send the entry
+    number itself. The previous commit used the entry number on every board,
+    which broke VF2's darker replay characters.
 
 Commit 0ba1cdd on 2026-11-14 by njz3
 
