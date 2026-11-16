@@ -14,6 +14,45 @@
 
                                  CHANGE LOG
 
+Commit 9532434 on 2026-11-16 by njz3
+
+    Sega Rally 2: the hidden FOREST course in the practice's course selection
+
+    srally2's program has eight courses; FOREST (1) is complete in the ROMs but 
+    no menu leads to it. A game patch (ForestCourse in the [ srally2 ] section, 
+    the Game page of the in-game menu):
+    - The program patched in RAM once copied from CROM, outside the course
+     selection, and given back when turned off: the carousel of four panels
+     turns as one of five, FOREST the fifth; linked cabinets vote among five.
+    - FOREST's panel: MOUNTAIN's models copied to the end of VROM, their photo
+     and title on a texture the selection does not show (overlaid while it
+     is): a photo of the course built in (Srally2ForestPhoto.h, a frame of a
+     race on it; Config/srally2_forest.bmp replaces it), the title drawn.
+    - Its rival: FOREST's bank held a copy of MOUNTAIN's route, and its route
+     length MOUNTAIN's (the rival left the road, then stopped at 3.4 km). A
+     route along FOREST's own line (the program's, a 4256 m lap) is written in
+     its place, 426 points a lap. Still MOUNTAIN's on FOREST: the title at the
+    race's start and the music.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit b3354f9 on 2026-11-16 by njz3
+
+    Game patches in the in-game menu, texture overlays in the Real3D
+
+    - IEmulator: game patches (GetGamePatches, SetGamePatch), changes to a
+     game's program and data that bring back what its ROMs hold but its menus
+     do not show, each a setting of the game's own section.
+    - The in-game menu's Game page lists them with a check box, saved at once in
+     the game's section of Supermodel.ini (SetINIFileValues can now write there
+     alone); agent mode: menu patch KEY on|off.
+    - CReal3D: texture overlays, a game's textures replaced for a while by the
+     emulator's (with their mipmaps); what the game uploads there meanwhile is
+     kept aside and given back when they are hidden. Cleared by a reset or a
+     state loaded.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
 Commit 0ba1cdd on 2026-11-14 by njz3
 
     Model 1 and Model 2 outputs: the cabinet lamps of Model 1, the game state
