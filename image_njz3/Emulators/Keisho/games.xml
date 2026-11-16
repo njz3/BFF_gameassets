@@ -8373,7 +8373,7 @@
     </roms>
   </game>
 
-  <game name="lostwsga" board="model3">
+  <game name="lostwsga" board="model3" gun_handheld="true">
     <title>The Lost World</title>
     <version>Japan, Revision A</version>
     <manufacturer>Sega</manufacturer>
@@ -8384,11 +8384,20 @@
       <input type="analog_gun1"/>
       <input type="analog_gun2"/>
     </inputs>
+    <!-- Points: the game's factory GUN ADJUSTMENT values. -->
     <analog>
-      <channel index="0" control="p1x"/>
-      <channel index="1" control="p1y"/>
-      <channel index="2" control="p2x"/>
-      <channel index="3" control="p2y"/>
+      <channel index="0" control="p1x">
+        <point at="0" value="0x18"/><point at="0.5" value="0x76"/><point at="1" value="0xd5"/>
+      </channel>
+      <channel index="1" control="p1y">
+        <point at="0" value="0x0c"/><point at="0.5" value="0x6e"/><point at="1" value="0xcf"/>
+      </channel>
+      <channel index="2" control="p2x">
+        <point at="0" value="0x1d"/><point at="0.5" value="0x7b"/><point at="1" value="0xde"/>
+      </channel>
+      <channel index="3" control="p2y">
+        <point at="0" value="0x05"/><point at="0.5" value="0x6c"/><point at="1" value="0xc7"/>
+      </channel>
     </analog>
     <!-- Outputs. The guns have no recoil of their own, so a shot follows the
          trigger while the player is in the game. Addresses are this set's. -->
@@ -8461,7 +8470,7 @@
     </roms>
   </game>
 
-  <game name="lostwsgp" parent="lostwsga" board="model3">
+  <game name="lostwsgp" parent="lostwsga" board="model3" gun_handheld="true">
     <!-- build 1997/06/24, location test or preview version, about half of game is available, Stage 3-2 ends with "Coming Soon?" -->
     <title>The Lost World</title>
     <version>Location Test</version>
@@ -9674,7 +9683,7 @@
     </roms>
   </game>
 
-  <game name="vf3" board="model3">
+  <game name="vf3" board="model3" side_fill="stretch">
     <title>Virtua Fighter 3</title>
     <version>Japan, Revision D</version>
     <manufacturer>Sega</manufacturer>
