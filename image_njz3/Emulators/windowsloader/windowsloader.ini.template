@@ -21,3 +21,9 @@ DISPLAY_MODE = {{MODE_FENETRE}}
 ; anglais). Choix du proprietaire, 28/10/2026 : AUTO.
 [Launcher]
 LANGUAGE = AUTO
+
+; Battle Gear 4 Tuned et Pro : NESYS hors ligne. Depuis la 20261116-2,
+; windowsloader envoie sinon les requetes NESYS du jeu vers 124.146.156.106
+; sur Internet (defaut de la release). Choix du proprietaire, 16/11/2026 : OFF.
+[Game.bg4]
+NESYS_SERVER = OFF

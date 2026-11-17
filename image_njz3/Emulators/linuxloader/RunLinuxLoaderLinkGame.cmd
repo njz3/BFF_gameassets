@@ -30,6 +30,10 @@ CD /d "%~dp0"
 
 set JEUX=C:\Racecab\Games
 set GAME=
+:: Cruis'n Blast : link du jeu lui-meme (Network On, machine ID 1 / 2 dans le
+:: menu de l operateur), sans cle reseau : le chargeur lui donne l adresse
+:: de cette borne ; reglages amorces depuis saves\cruisnblast (17/11/2026)
+if /I "%ROM%"=="CruisnBlast"      set "GAME=%JEUX%\Cruisn Blast 1.25 - Raw Thrills PC based\game"
 if /I "%ROM%"=="DeadHeat"         set "GAME=%JEUX%\Dead Heat - Namco ES1\a.elf"
 if /I "%ROM%"=="DeadHeatRiders"   set "GAME=%JEUX%\Dead Heat Riders - Namco N2\a.elf"
 if /I "%ROM%"=="GaelcoTR"         set "GAME=%JEUX%\Gaelco Championship Tuning Race - Gaelco PC Based\home\joc2001\joc2004\salidas\car"

@@ -29,6 +29,7 @@ CD /d "%~dp0"
 
 set JEUX=C:\Racecab\Games
 set GAME=
+if /I "%ROM%"=="CruisnBlast"      set "GAME=%JEUX%\Cruisn Blast 1.25 - Raw Thrills PC based\game"
 if /I "%ROM%"=="DeadHeat"         set "GAME=%JEUX%\Dead Heat - Namco ES1\a.elf"
 if /I "%ROM%"=="DeadHeatRiders"   set "GAME=%JEUX%\Dead Heat Riders - Namco N2\a.elf"
 if /I "%ROM%"=="dhriders"         set "GAME=%JEUX%\Dead Heat Riders - Namco N2\a.elf"

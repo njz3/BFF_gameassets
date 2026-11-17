@@ -4,6 +4,7 @@ BattleGear4Pro;Battle Gear 4 Pro;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 BattleGear4Tuned;Battle Gear 4 Tuned;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 ChaseHQ2;Chase HQ 2;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 CrazyRide;Crazy Ride;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
+CruisnBlast;Cruis'n Blast;LinuxLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 D1GP;D1GP;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 Daytona3;Daytona 3;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 Daytona3NSE;Daytona 3 New Season Edition;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;

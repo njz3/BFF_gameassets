@@ -1,8 +1,7 @@
 #Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
-Model 2 Keisho Multi;Model 2;@;;1992-1995;Sega;;;;;;;;;;;;;;;
-Model 3 Multi;Model 3;@;;1995-1999;Sega;;;;;;;;;;;;;;;
+Sega Model 1-2-3 Multi;Sega Model 1-2-3;@;;1992-1999;Sega;;;;;;;;;;;;;;;
 Naomi Multi;Naomi;@;;1999-2005;Sega;;;;;;;;;;;;;;;
 MAME Multi;MAME;@;;1980-2010;Various;;;;;;;;;;;;;;;
 Other Multi;Other;@;;1990-2010;Various;;;;;;;;;;;;;;;
-Arcade loaders multi;Arcade loaders multi;@;;2005-2020;Various;;;;;;;;;;;;;;;
+Arcade PC loaders multi;Arcade PC loaders multi;@;;2005-2020;Various;;;;;;;;;;;;;;;
 Raw Multi;Raw Multi;@;;1992-2005;Various;;;;;;;;;;;;;;;

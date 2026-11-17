@@ -306,7 +306,9 @@ PORT_OUT = {{PORT_SUIVANT}}
 # tools that drive real ones (MAMEHooker, BackForceFeeder, DOFLinx...) in
 # MAME's network protocol, as Supermodel and sm2-emu send them: a TCP
 # server on PORT, one "name = value" line at each change. Default: false
-NETWORK = false
+# Racecab (17/11/2026): on, as Supermodel and Flycast send theirs: the lamps for BFF, and
+# the drive board commands of the Raw entry (RunHikaruloaderRawGame.cmd)
+NETWORK = true
 
 # The server's TCP port (MAME's 8000; another one for a second instance).
 # Default: 8000

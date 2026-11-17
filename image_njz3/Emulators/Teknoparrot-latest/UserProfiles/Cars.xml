@@ -585,8 +585,19 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Brake Button/Pedal</ButtonName>
+      <DirectInputButton>
+        <Button>8</Button>
+        <IsAxis>true</IsAxis>
+        <IsAxisMinus>true</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>b8eecd00-6f62-11ee-8002-444553540000</JoystickGuid>
+      </DirectInputButton>
       <InputMapping>P1Button5</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameDi>Joystick Z -</BindNameDi>
+      <BindName>Joystick Z -</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>

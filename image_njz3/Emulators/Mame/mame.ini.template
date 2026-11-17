@@ -260,6 +260,8 @@ bench                     0
 # OSD VIDEO OPTIONS
 #
 video                     {{MAME_VIDEO}}
+hires3d                   {{MAME_HIRES3D}}
+widescreen                {{MAME_LARGE}}
 numscreens                1
 window                    0
 maximize                  1

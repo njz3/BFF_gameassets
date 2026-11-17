@@ -1,6 +1,17 @@
 #Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
+18wheelr;18 Wheelers;Hikaruloader;;2003;Sega;Racing;;;;;;;;;;;;;;
+clubk2k3;Club Kart 2003;Hikaruloader;;2003;Sega;Racing;2;;;;;;;;;;;;;
+clubkrt;Club Kart European Session;Hikaruloader;;2001;Sega;Racing;2;;;;;;;;;;;;;
 crzytaxi;Crazy Taxi;Hikaruloader;;2000;Sega;Racing;2;;;;;;;;;;;;;
+f355twin;F355 Challenge;Hikaruloader;;1999;Sega;Racing *FFB*;2;;;;;;;;;;;;;
+f355twn2;F355 Challenge 2 International Courses;Hikaruloader;;2000;Sega;Racing *FFB*;2;;;;;;;;;;;;;
+ftspeed;Faster Than Speed;Hikaruloader;;2001;;Racing *FFB*;;;;;;;;;;;;;;
+initd;Initial D;Hikaruloader;;2003;Sega;Racing *FFB*;2;;;;;;;;;;;;;
+initdexp;Initial D Export;Hikaruloader;;2003;Sega;Racing *FFB*;2;;;;;;;;;;;;;
+initdv2e;Initial D 2 Export;Hikaruloader;;;;Racing *FFB*;;;;;;;;;;;;;;
+initdv3e;Initial D 3 Export;Hikaruloader;;;;Racing *FFB*;;;;;;;;;;;;;;
 jambo;Jambo Safari;Hikaruloader;;;;;;;;;;;;;;;;;;
-smashdrv;Smash Drive;Hikaruloader;;2002;Gaelco;Racing *FFB*;0;0;;preliminary;1;raster;;;;;;;;
-sgnascar;Sega Nascar;Hikaruloader;;2000;Sega / Electronic Arts;Racing *FFB*;0;0;;preliminary;1;raster;;;;;;;;
-swracer;Star Wars Racer Arcade;Hikaruloader;;2000;Sega / Lucas Arts;Racing;0;0;;preliminary;1;raster;;;;;;;;
+kingrt66;King of Route 66;Hikaruloader;;;;;;;;;;;;;;;;;;
+maxspeed;Maximum Speed;Hikaruloader;;;;Racing *FFB*;;;;;;;;;;;;;;
+sgdrvsim;Sega Driving Simulator;Hikaruloader;;;;;;;;;;;;;;;;;;
+tokyobus;Tokyo Bus Guide;Hikaruloader;;;;;;;;;;;;;;;;;;

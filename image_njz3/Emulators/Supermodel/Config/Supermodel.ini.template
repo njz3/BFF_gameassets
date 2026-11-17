@@ -48,7 +48,7 @@ ShowFrameRate = true
 InputSystem = "dinput"
 ForceFeedback = true
 Outputs = "net"
-
+ROMDirectory = ../MameRoms/
 
 ; Graphics
 New3DEngine = true

@@ -13,8 +13,8 @@ wrungp;Wave Runner GP;Flycast;;2001;CRI / Sega;Bike;2;0;joystick (8-way),joystic
 DeadHeatRiders;DeadHeat Riders;LinuxLoader;;;;Bike;;;;;;;;;;;;;;
 FrenzyExpress;Frenzy Express;WindowsLoader;;;;Bike;;;;;;;;;;;;;;
 FNFSB;Fast'N Furious SuperBikes;TeknoParrot-latest;;;;Bike;;;;;;;;;;;;;;
-FNFSB2;Fast'N Furious SuperBikes 2;TeknoParrot2026-06;;;;Bike;;;;;;;;;;;;;;
+FNFSB2;Fast'N Furious SuperBikes 2;TeknoParrot-latest;;;;Bike;;;;;;;;;;;;;;
 Nirin;Nirin;LinuxLoader;;;;Bike;;;;;;;;;;;;;;
 RingRiders;Ring Riders;LinuxLoader;;;;Bike *FFB*;;;;;;;;;;;;;;
-SnoCross;Snow Cross;TeknoParrot2026-06;;;;Bike;;;;;;;;;;;;;;
+SnoCross;Snow Cross;TeknoParrot-latest;;;;Bike;;;;;;;;;;;;;;
 StormRider;Storm Rider;TeknoParrot-latest;;;;Bike;;;;;;;;;;;;;;

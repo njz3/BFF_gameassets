@@ -23,19 +23,26 @@
 # super-resolution, bgfx au-dela). MAME_NAMCO_ASPECT et MAME_NAMCO_FILTRE ne
 # servent plus : Mame Namco LINK (0.251), qui les lisait, est retire (03/11/2026).
 #
+# MAME_HIRES3D : hires3d de mame3d (gabarit mame.ini, Mame et Mame LINK), la 3D des jeux qui
+# l ont (Model 1, Namco System 22/23, Midway V-Unit, HNG64, Voodoo...) dessinee N fois sa
+# resolution : 1 en 15 kHz, 2 de 512x384 a 1280x960, 3 en 1920x1080, 4 en 2560x1440, 6 en
+# 3840x2160 (choix du proprietaire, 17/11/2026).
+# MAME_LARGE : widescreen de mame3d (meme gabarit), le hack 16:9 des jeux qui l ont, 1 aux
+# resolutions 16:9 seulement (demande du proprietaire, 17/11/2026) ; textes au centre en 4:3.
+#
 # HIKARU_LARGE : WIDESCREEN de hikaruloader, true aux resolutions 16:9 seulement ; false en 4:3
 # et en super-resolution (4:3 etire a toute la fenetre).
 #
-RES;LARGEUR;HAUTEUR;PLEIN_ECRAN;ECHELLE_RENDU;METHODE_ECHELLE;ASPECT;UPSCALE_2D;MODE_FENETRE;ETIRER;FLYCAST_RENDU;FLYCAST_VRES;FLYCAST_ETIRER;FLYCAST_LARGE;SUPERMODEL_LARGE;SUPERMODEL_UPSCALE;MAME_GARDER_ASPECT;MAME_POLICE;MAME_VIDEO;MAME_NAMCO_ASPECT;MAME_NAMCO_FILTRE;HIKARU_LARGE
-_320x240;320;240;true;1;nearest;4:3;faithful;BORDERLESS;false;240;480;no;no;false;0;1;uismall;d3d;auto;1;false
-_512x384;512;384;true;1;nearest;4:3;faithful;BORDERLESS;false;480;480;no;no;false;0;1;uismall;d3d;auto;1;false
-_640x480;640;480;true;1;bilinear;4:3;faithful;BORDERLESS;false;480;480;no;no;false;0;1;default;d3d;auto;1;false
-_1024x384;1024;384;true;1;bilinear;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false
-_1024x768;1024;768;true;2;bilinear;4:3;faithful;BORDERLESS;false;720;720;no;no;false;0;1;default;d3d;auto;1;false
-_1280x240;1280;240;true;1;nearest;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false
-_1920x240;1920;240;true;1;nearest;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false
-_1280x480;1280;480;true;1;bilinear;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false
-_1280x960;1280;960;true;2;bilinear;4:3;faithful;BORDERLESS;false;960;720;no;no;false;0;1;default;bgfx;auto;1;false
-_1920x1080;1920;1080;true;2;bilinear;16:9;faithful;BORDERLESS;false;960;720;no;yes;true;2;1;default;bgfx;16:9;0;true
-_2560x1440;2560;1440;true;3;bilinear;16:9;faithful;BORDERLESS;false;1440;720;no;yes;true;2;1;default;bgfx;16:9;0;true
-_3840x2160;3840;2160;true;4;bilinear;16:9;faithful;BORDERLESS;false;2160;720;no;yes;true;2;1;default;bgfx;16:9;0;true
+RES;LARGEUR;HAUTEUR;PLEIN_ECRAN;ECHELLE_RENDU;METHODE_ECHELLE;ASPECT;UPSCALE_2D;MODE_FENETRE;ETIRER;FLYCAST_RENDU;FLYCAST_VRES;FLYCAST_ETIRER;FLYCAST_LARGE;SUPERMODEL_LARGE;SUPERMODEL_UPSCALE;MAME_GARDER_ASPECT;MAME_POLICE;MAME_VIDEO;MAME_NAMCO_ASPECT;MAME_NAMCO_FILTRE;HIKARU_LARGE;MAME_HIRES3D;MAME_LARGE
+_320x240;320;240;true;1;nearest;4:3;faithful;BORDERLESS;false;240;480;no;no;false;0;1;uismall;d3d;auto;1;false;1;0
+_512x384;512;384;true;1;nearest;4:3;faithful;BORDERLESS;false;480;480;no;no;false;0;1;uismall;d3d;auto;1;false;2;0
+_640x480;640;480;true;1;bilinear;4:3;faithful;BORDERLESS;false;480;480;no;no;false;0;1;default;d3d;auto;1;false;2;0
+_1024x384;1024;384;true;1;bilinear;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false;2;0
+_1024x768;1024;768;true;2;bilinear;4:3;faithful;BORDERLESS;false;720;720;no;no;false;0;1;default;d3d;auto;1;false;2;0
+_1280x240;1280;240;true;1;nearest;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false;1;0
+_1920x240;1920;240;true;1;nearest;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false;1;0
+_1280x480;1280;480;true;1;bilinear;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false;2;0
+_1280x960;1280;960;true;2;bilinear;4:3;faithful;BORDERLESS;false;960;720;no;no;false;0;1;default;bgfx;auto;1;false;2;0
+_1920x1080;1920;1080;true;2;bilinear;16:9;faithful;BORDERLESS;false;960;720;no;yes;true;2;1;default;bgfx;16:9;0;true;3;1
+_2560x1440;2560;1440;true;3;bilinear;16:9;faithful;BORDERLESS;false;1440;720;no;yes;true;2;1;default;bgfx;16:9;0;true;4;1
+_3840x2160;3840;2160;true;4;bilinear;16:9;faithful;BORDERLESS;false;2160;720;no;yes;true;2;1;default;bgfx;16:9;0;true;6;1
