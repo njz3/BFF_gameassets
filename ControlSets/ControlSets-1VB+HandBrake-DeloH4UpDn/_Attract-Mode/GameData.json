@@ -3,11 +3,12 @@
   "Description": "Attract mode launcher",
   "ExecType": 0,
   "OutputType": 0,
-  "ProcessName": "attract*",
+  "ProcessName": "attractplus*",
   "MainWindowTitle": "*",
   "PriorityLevel": -1,
   "AddressesValues": [],
   "MatchingWordValues": [],
   "ForceSoundVolume": -1.0,
-  "ScriptFilename": "init.lua"
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
 }

@@ -8,18 +8,21 @@
       {
         "Type": 1,
         "Index": 4,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 1,
         "Index": 5,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -28,8 +31,9 @@
       1,
       0
     ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
-    "HoldTime_ms": 2000,
+    "HoldTime_ms": 3000,
     "IsInvertedLogic": false,
     "KeyAPI": 3
   }

@@ -2,12 +2,13 @@
   "GameName": "srallyc",
   "Description": "Sega Rally Championship",
   "ExecType": 2,
-  "OutputType": 2,
+  "OutputType": 3,
   "ProcessName": "supermodel*",
   "MainWindowTitle": "*Sega Rally Championship*",
   "PriorityLevel": 1,
   "AddressesValues": [],
   "MatchingWordValues": [],
   "ForceSoundVolume": -1.0,
-  "ScriptFilename": "init.lua"
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
 }

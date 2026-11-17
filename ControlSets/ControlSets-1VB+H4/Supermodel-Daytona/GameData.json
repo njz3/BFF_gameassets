@@ -2,12 +2,13 @@
   "GameName": "daytona,daytonas,daytonagtx",
   "Description": "Sega Daytona USA",
   "ExecType": 2,
-  "OutputType": 2,
+  "OutputType": 3,
   "ProcessName": "supermodel*",
   "MainWindowTitle": "*Daytona USA - *",
   "PriorityLevel": 1,
   "AddressesValues": [],
   "MatchingWordValues": [],
   "ForceSoundVolume": -1.0,
-  "ScriptFilename": "init.lua"
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
 }

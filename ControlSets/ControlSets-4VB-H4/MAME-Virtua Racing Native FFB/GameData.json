@@ -4,10 +4,11 @@
   "ExecType": 3,
   "OutputType": 2,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "vr_nativeFFB.bat",
+  "MainWindowTitle": "*[vr_nativeFFB]*",
   "PriorityLevel": 1,
   "AddressesValues": [],
   "MatchingWordValues": [],
   "ForceSoundVolume": -1.0,
-  "ScriptFilename": "init.lua"
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
 }

@@ -12,6 +12,7 @@
       23
     ],
     "IsNeutralFirstBtn": true,
+    "Board": 1,
     "LeftRightRawInputIndex": 10,
     "RightRawInputIndex": 11,
     "UpRawInputIndex": 8,

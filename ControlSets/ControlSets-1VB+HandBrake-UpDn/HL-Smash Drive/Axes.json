@@ -1,51 +1,86 @@
 [
   {
     "vJoyAxisIndex": 0,
-    "RawAxisType": 0,
+    "SourceBoard": 1,
+    "SourceAxis": 0,
+    "SourceKind": 0,
+    "WheelSourceChecked": true,
     "ControlPoints": [
-      "0.105738705738706,0",
-      "0.501343101343101,0.5",
-      "0.873992673992674,1"
+      "0,1",
+      "1,0"
     ],
+    "CurveScale": 1,
+    "Role": 1,
     "IsNegativeDirection": true,
     "IsFullRangeAxis": false,
-    "RawMin_cts": 0,
-    "RawMax_cts": 4095
+    "WheelDegrees": 270,
+    "BrakeSourceBoard": 1,
+    "BrakeSourceAxis": -1,
+    "BrakeSourceKind": 0,
+    "CombineRule": 0,
+    "WheelCurveChecked": true
   },
   {
     "vJoyAxisIndex": 1,
-    "RawAxisType": 0,
+    "SourceBoard": 1,
+    "SourceAxis": 1,
+    "SourceKind": 0,
+    "WheelSourceChecked": true,
     "ControlPoints": [
-      "0.13,0.5",
-      "0.739438339438339,0"
+      "0,0.5",
+      "1,0"
     ],
+    "CurveScale": 1,
+    "Role": 2,
     "IsNegativeDirection": true,
     "IsFullRangeAxis": false,
-    "RawMin_cts": 0,
-    "RawMax_cts": 4095
+    "WheelDegrees": 270,
+    "BrakeSourceBoard": 1,
+    "BrakeSourceAxis": -1,
+    "BrakeSourceKind": 0,
+    "CombineRule": 0,
+    "WheelCurveChecked": true
   },
   {
     "vJoyAxisIndex": 2,
-    "RawAxisType": 0,
+    "SourceBoard": 1,
+    "SourceAxis": 2,
+    "SourceKind": 0,
+    "WheelSourceChecked": true,
     "ControlPoints": [
-      "0.18,0.5",
-      "0.554822954822955,0"
+      "0,0.5",
+      "1,0"
     ],
+    "CurveScale": 1,
+    "Role": 2,
     "IsNegativeDirection": true,
     "IsFullRangeAxis": false,
-    "RawMin_cts": 0,
-    "RawMax_cts": 4095
+    "WheelDegrees": 270,
+    "BrakeSourceBoard": 1,
+    "BrakeSourceAxis": -1,
+    "BrakeSourceKind": 0,
+    "CombineRule": 0,
+    "WheelCurveChecked": true
   },
   {
     "vJoyAxisIndex": 3,
-    "RawAxisType": 0,
+    "SourceBoard": 1,
+    "SourceAxis": 3,
+    "SourceKind": 0,
+    "WheelSourceChecked": true,
     "ControlPoints": [
-      "0.4,0.5",
-      "0.6,0"
+      "0,0",
+      "1,1"
     ],
-    "IsNegativeDirection": true,
+    "CurveScale": 1,
+    "Role": 3,
+    "IsNegativeDirection": false,
     "IsFullRangeAxis": false,
-    "RawMin_cts": 0,
-    "RawMax_cts": 4095
+    "WheelDegrees": 270,
+    "BrakeSourceBoard": 1,
+    "BrakeSourceAxis": -1,
+    "BrakeSourceKind": 0,
+    "CombineRule": 0,
+    "WheelCurveChecked": true
   }
 ]

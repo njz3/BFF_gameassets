@@ -4,10 +4,11 @@
   "ExecType": 0,
   "OutputType": 3,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "f355.bat|f355dlx.bat",
+  "MainWindowTitle": "*[f355]*|*[f355dlx]*",
   "PriorityLevel": 1,
   "AddressesValues": [],
   "MatchingWordValues": [],
   "ForceSoundVolume": -1.0,
-  "ScriptFilename": "init.lua"
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
 }

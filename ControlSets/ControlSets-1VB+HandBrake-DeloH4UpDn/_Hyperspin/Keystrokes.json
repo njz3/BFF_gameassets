@@ -9,18 +9,21 @@
       {
         "Type": 4,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.85,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -29,6 +32,7 @@
       0,
       0
     ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 0,
     "IsInvertedLogic": false,
@@ -44,18 +48,21 @@
       {
         "Type": 4,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.15,
         "InvSign": true
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -64,6 +71,7 @@
       0,
       0
     ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 0,
     "IsInvertedLogic": false,
@@ -79,18 +87,21 @@
       {
         "Type": 4,
         "Index": 2,
+        "Board": 1,
         "Threshold": 0.25,
         "InvSign": true
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -99,6 +110,7 @@
       0,
       0
     ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 0,
     "IsInvertedLogic": false,
@@ -113,18 +125,21 @@
       {
         "Type": 4,
         "Index": 3,
+        "Board": 1,
         "Threshold": 0.25,
         "InvSign": true
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -133,6 +148,7 @@
       0,
       0
     ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 0,
     "IsInvertedLogic": false,
@@ -148,18 +164,21 @@
       {
         "Type": 1,
         "Index": 4,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 1,
         "Index": 5,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -168,6 +187,7 @@
       1,
       0
     ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 2000,
     "IsInvertedLogic": false,
@@ -183,18 +203,21 @@
       {
         "Type": 1,
         "Index": 5,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -203,6 +226,7 @@
       0,
       0
     ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 0,
     "IsInvertedLogic": false,
@@ -218,18 +242,21 @@
       {
         "Type": 1,
         "Index": 6,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -238,6 +265,7 @@
       0,
       0
     ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 0,
     "IsInvertedLogic": false,
@@ -253,18 +281,21 @@
       {
         "Type": 1,
         "Index": 5,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 1,
         "Index": 6,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -273,6 +304,7 @@
       1,
       0
     ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 1000,
     "IsInvertedLogic": false,
@@ -288,18 +320,21 @@
       {
         "Type": 1,
         "Index": 4,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 1,
         "Index": 5,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -308,6 +343,7 @@
       1,
       0
     ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 4000,
     "IsInvertedLogic": false,
@@ -323,18 +359,21 @@
       {
         "Type": 1,
         "Index": 10,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -343,6 +382,7 @@
       0,
       0
     ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 0,
     "IsInvertedLogic": false,
@@ -358,18 +398,21 @@
       {
         "Type": 1,
         "Index": 9,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -378,6 +421,7 @@
       0,
       0
     ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 0,
     "IsInvertedLogic": false,
@@ -393,18 +437,21 @@
       {
         "Type": 1,
         "Index": 4,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       },
       {
         "Type": 0,
         "Index": 1,
+        "Board": 1,
         "Threshold": 0.75,
         "InvSign": false
       }
@@ -413,76 +460,7 @@
       0,
       0
     ],
-    "AxisTolerance_pct": 0.1,
-    "HoldTime_ms": 0,
-    "IsInvertedLogic": false,
-    "KeyAPI": 1
-  },
-  {
-    "UniqueName": "SHIFTDOWNDELO",
-    "CombinedKeyStrokes": [
-      74,
-      0
-    ],
-    "KeySources": [
-      {
-        "Type": 1,
-        "Index": 23,
-        "Threshold": 0.75,
-        "InvSign": false
-      },
-      {
-        "Type": 0,
-        "Index": 1,
-        "Threshold": 0.75,
-        "InvSign": false
-      },
-      {
-        "Type": 0,
-        "Index": 1,
-        "Threshold": 0.75,
-        "InvSign": false
-      }
-    ],
-    "KeySourcesOperators": [
-      0,
-      0
-    ],
-    "AxisTolerance_pct": 0.1,
-    "HoldTime_ms": 0,
-    "IsInvertedLogic": false,
-    "KeyAPI": 1
-  },
-  {
-    "UniqueName": "SHIFTUPDELO",
-    "CombinedKeyStrokes": [
-      70,
-      0
-    ],
-    "KeySources": [
-      {
-        "Type": 1,
-        "Index": 24,
-        "Threshold": 0.75,
-        "InvSign": false
-      },
-      {
-        "Type": 0,
-        "Index": 1,
-        "Threshold": 0.75,
-        "InvSign": false
-      },
-      {
-        "Type": 0,
-        "Index": 1,
-        "Threshold": 0.75,
-        "InvSign": false
-      }
-    ],
-    "KeySourcesOperators": [
-      0,
-      0
-    ],
+    "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
     "HoldTime_ms": 0,
     "IsInvertedLogic": false,

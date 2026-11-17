@@ -33,7 +33,7 @@
     ],
     "KeyCommands": [],
     "AxisTolerance_pct": 0.1,
-    "HoldTime_ms": 2000,
+    "HoldTime_ms": 3000,
     "IsInvertedLogic": false,
     "KeyAPI": 3
   }

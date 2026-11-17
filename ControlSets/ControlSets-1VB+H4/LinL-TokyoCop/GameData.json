@@ -4,10 +4,11 @@
   "ExecType": 4,
   "OutputType": 0,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "Tokyocop.bat",
+  "MainWindowTitle": "*[tokyocop]*",
   "PriorityLevel": 0,
   "AddressesValues": [],
   "MatchingWordValues": [],
   "ForceSoundVolume": -1.0,
-  "ScriptFilename": "init.lua"
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
 }
