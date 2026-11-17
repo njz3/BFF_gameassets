@@ -1,0 +1,2 @@
+# linuxloader link saves are laid byte for byte on the cabinets: no line-ending conversion
+image_njz3/Emulators/linuxloader/saves_link_cab*/** -text
