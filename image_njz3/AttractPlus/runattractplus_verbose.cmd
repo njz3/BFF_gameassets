@@ -1,0 +1,1 @@
+attractplus.exe --loglevel debug
