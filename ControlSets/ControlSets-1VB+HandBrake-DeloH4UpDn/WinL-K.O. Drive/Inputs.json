@@ -194,7 +194,7 @@
   {
     "Board": 1,
     "RawInputIdx": 16,
-    "Name": "Rx0",
+    "Name": "",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -206,7 +206,7 @@
   {
     "Board": 1,
     "RawInputIdx": 17,
-    "Name": "Rx1",
+    "Name": "",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -218,7 +218,7 @@
   {
     "Board": 1,
     "RawInputIdx": 18,
-    "Name": "Rx2/H4.1",
+    "Name": "H4.1",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -230,7 +230,7 @@
   {
     "Board": 1,
     "RawInputIdx": 19,
-    "Name": "Rx3/H4.2",
+    "Name": "H4.2",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -242,7 +242,7 @@
   {
     "Board": 1,
     "RawInputIdx": 20,
-    "Name": "Rx4/H4.3",
+    "Name": "H4.3",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -254,7 +254,7 @@
   {
     "Board": 1,
     "RawInputIdx": 21,
-    "Name": "Rx5/H4.4",
+    "Name": "H4.4",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -266,7 +266,7 @@
   {
     "Board": 1,
     "RawInputIdx": 22,
-    "Name": "Rx6/H4.Dn",
+    "Name": "H4.Dn",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -278,7 +278,7 @@
   {
     "Board": 1,
     "RawInputIdx": 23,
-    "Name": "Rx7/H4.Up",
+    "Name": "H4.Up",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -290,7 +290,7 @@
   {
     "Board": 1,
     "RawInputIdx": 24,
-    "Name": "",
+    "Name": "Rx0",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -302,7 +302,7 @@
   {
     "Board": 1,
     "RawInputIdx": 25,
-    "Name": "",
+    "Name": "Rx1",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -314,7 +314,7 @@
   {
     "Board": 1,
     "RawInputIdx": 26,
-    "Name": "",
+    "Name": "Rx2",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -326,7 +326,7 @@
   {
     "Board": 1,
     "RawInputIdx": 27,
-    "Name": "",
+    "Name": "Rx3",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -338,7 +338,7 @@
   {
     "Board": 1,
     "RawInputIdx": 28,
-    "Name": "",
+    "Name": "Rx4",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -350,7 +350,7 @@
   {
     "Board": 1,
     "RawInputIdx": 29,
-    "Name": "",
+    "Name": "Rx5",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -362,7 +362,7 @@
   {
     "Board": 1,
     "RawInputIdx": 30,
-    "Name": "",
+    "Name": "Rx6",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
@@ -374,7 +374,7 @@
   {
     "Board": 1,
     "RawInputIdx": 31,
-    "Name": "",
+    "Name": "Rx7",
     "AutoFirePeriod_ms": 100,
     "HoldTime_ms": 0,
     "ValidateDelay_ms": 0,
