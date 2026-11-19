@@ -1,0 +1,406 @@
+STATE MACHINE: GeneralPurpose
+
+PARAMS:
+ Type: SM_GP_Params
+ Members: 1
+    SM_Common_Params common
+
+STATES:
+MSLEEP           float
+
+SLOOP            unsigned int
+
+LABEL            string,
+
+GOTO             string,
+
+GOSUB            string,
+
+RETURN          
+
+INTERRUPT        string,
+
+DO               int
+
+LOOP            
+
+EXIT            
+
+SET_PARAM        strings[2],
+
+PRINT            string,
+
+//               string,
+
+/*               string,
+
+                 string,
+
+*/               string,
+
+MOVE             e_n_dest, e_n_speed, e_cb_absolute, i_dist,
+
+MOVE_TO          e_cb_move, e_n_xyz, e_n_frames, e_n_easein, e_n_easeout, e_cb_rotate, e_n_rot[3], e_n_rot_frames, e_n_rot_easein, e_n_rot_easeout, e_cb_scale, e_n_scale[3], e_n_scale_frames, e_n_scale_easein, e_n_scale_easeout, e_cb_center_pivot, i_StartTime, i_startxyz[3], i_startxyzr[3], i_startxyzs[3],
+
+SHOW            
+
+HIDE            
+
+SET_OUTLINE      e_cb_on, e_n_size, e_n_outline_rgba[4], e_n_inside_rgba[4],
+
+RUN_PROGRAM      e_s_Program, e_cb_wait_on_program, i_progoid,
+
+RUN_FREE_PROGRAM e_s_Program, e_cb_wait_on_program, i_progoid,
+
+RUN_PROGRAM_WITH_PARAMS_PTRSWITCH_PROGRAM   e_s_Name,
+
+SLEEP            float
+
+SLEEP_RAW        e_n_Frames, i_n_ElapstedMS,
+
+SLEEP_RND        e_n_minFrames, e_n_maxFrames,
+
+GOSUB_RND        labels[10],
+
+GOTO_RND         labels[10],
+
+SET_RECOVERY_POINT
+
+GOTO_RECOVERY_POINT
+
+BR_ONFLAG        e_s_flag, e_n_flagVal, e_s_label,
+
+BR_ON_TRIGGER    e_s_Trigger, e_s_brLabel, e_cb_GoSub,
+
+BR_ON_NOT_TRIGGER e_s_Trigger, e_s_brLabel, e_cb_GoSub,
+
+BR_ON_ADJUSTMENT e_s_Group, e_s_Adj, e_s_brLabel, e_cb_GoSub,
+
+BR_ON_SPLINEFRAME e_n_Frame, e_s_brLabel,
+
+SET_NAME         e_s_Name,
+
+SEND_LOCAL_EVENT e_s_Name, e_cb_Self, e_cb_Kids, e_cb_Siblings, e_cb_Parent,
+
+SEND_ACTOR_EVENT e_s_ActorName, e_s_EventName,
+
+DROP_EVENT_ACTION e_s_Name,
+
+SETTRIGGER       e_s_Name,
+
+CLRTRIGGER       e_s_Name,
+
+DELTRIGGER       e_s_Name,
+
+SETTRIG_IF_TRIG  e_s_If, e_s_ThenSet,
+
+SETTRIG_IF_NOT_TRIG e_s_If, e_s_ThenSet,
+
+CAM_TRIGGER      e_n_Frame, e_s_Trig,
+
+WAITFOR_TRIGGER  e_s_Name, e_n_Timeout, e_cb_SetTriggerOnTimeout,
+
+WAITFOR_ACTOR    e_s_actorNames[10], e_n_Timeout, e_cb_KillActorsOnTimeout, i_sent_die_eaction,
+
+WAITFOR_WITH_BRANCH e_n_timeOut, waitObjNames[10], e_s_allDeadBr, e_s_exitTrigger, e_s_exitTrigBr, e_cb_KillObjsOnTimeout, e_cb_SetTriggerOnTimeout, i_sent_die_eaction,
+
+WAITFOR_ACTOR_BRANCH e_n_timeOut, waitObjNames[10], e_s_allDeadBr, e_s_exitTrigger, e_s_exitTrigBr, e_cb_KillObjsOnTimeout, e_cb_SetTriggerOnTimeout, i_sent_die_eaction,
+
+WAITFOR_OBJ      e_s_actorNames[10], e_n_Timeout, e_cb_KillActorsOnTimeout, i_sent_die_eaction,
+
+WAITFOR_TRAVEL  CAMERA_SELECT    e_cbg_3d, e_cbg_cm2, e_cbg_cm3, e_cbg_cm4, e_cbg_cm5,
+
+CAMERA_SPLINEWATCH e_n_Frame,
+
+CAMERA_SPLINEWATCH_ABS e_n_Frame,
+
+CAMERA           e_s_Name, e_n_speed, e_cb_UseRawTime,
+
+CAMERA_RESET    CAMERA_LOOP      e_s_Name, e_n_speed, e_cb_UseRawTime,
+
+CAMERA_SPLINEHOLDCAMERA_SPLINERUNCAMERA_SPEED     float
+
+CAMERA_SPLINESKIPTO e_n_Frame,
+
+CAMERA_CONDITIONALSKIPTO e_s_Label, e_n_Frame, e_cb_Enabled, e_cb_GotoLabel,
+
+CAMERA_SPLINE2   e_s_Spline, e_n_speed, e_cb_loop, e_cb_after,
+
+CAMERA_WATCH_ACT e_s_Actor, e_n_OffsetX, e_n_OffsetY, e_n_OffsetDist, i_target_vel,
+
+CAMERA_SET_FOV   e_n_FOV, e_n_frames, i_n_OriginalFOV,
+
+CAMERA_SHAKE     e_cb_Shake, e_n_Intensity, e_n_Seconds, e_n_Period, e_cb_RotOnly, e_cb_TransOnly, e_cb_Spring, e_n_DispX, e_n_DispY, e_n_DispZ, e_n_ForceX, e_n_ForceY, e_n_ForceZ, e_n_SmoothX, e_n_SmoothY, e_n_SmoothZ, e_n_DirX, e_cb_RndDirX, e_n_DirY, e_cb_RndDirY, e_n_DirZ, e_cb_RndDirZ, e_n_MaxOscillations, e_cb_FootStep, e_s_Name, e_n_StartFrame, e_n_EndFrame, e_n_MinDist, e_n_MaxDist, e_s_SFX, e_n_SFX_Vol, i_n_oid, i_n_foot_state[4], i_n_last_sfx_tick,
+
+CAMERA_SHAKE_SIMPLE e_n_Intensity, e_n_Seconds, e_n_Period,
+
+GAME_SPEED       e_n_Speed, e_n_Blendms,
+
+GUN_SPEED        e_n_Speed,
+
+SPLINE           e_s_Spline, e_n_speed, e_cb_loop, e_cb_gcol, e_cb_pkill,
+
+SPLINE_SPEED     e_n_Speed, e_n_Time,
+
+SPLINE_GCOL_PARAMS e_n_LookForward, e_n_LookBack,
+
+SPLINE_SKIP      e_n_Frame,
+
+SPLINE_SKIPTO    e_n_Frame,
+
+SPLINE_HOLD     
+
+SPLINE_RUN      
+
+SPLINE_STEP     
+
+SPLINEWATCH      e_n_Frame,
+
+SPLINE_TO_VEL   
+
+ANIM_CHANNEL     e_n_Channel,
+
+ANIM             e_s_Anim, e_n_speed, e_n_blendFrames, e_cb_loop, e_cb_blend_out, e_cb_snap, e_cb_sync, e_cb_realtime,
+
+BAN_SPEED        e_n_Speed, e_n_Time,
+
+ANIMWATCH        e_n_Frame,
+
+ANIMWATCH_TRAVEL e_n_Frame,
+
+ANIM_SKIPTO      e_n_Frame,
+
+ANIM_SYNC        e_s_ObjToSync, e_s_ObjTarget,
+
+TRANS            e_cb_x, e_n_x, e_cb_y, e_n_y, e_cb_z, e_n_z, e_cb_add, e_cb_multiply, e_cb_cam_space, e_cb_projectile_space,
+
+TRANS_VEL        e_cb_x, e_n_x, e_cb_y, e_n_y, e_cb_z, e_n_z, e_cb_add, e_cb_multiply, e_cb_cam_space, e_cb_projectile_space,
+
+TRANS_ACC        e_cb_x, e_n_x, e_cb_y, e_n_y, e_cb_z, e_n_z, e_cb_add, e_cb_multiply, e_cb_cam_space, e_cb_projectile_space,
+
+ROT              e_cb_x, e_n_x, e_cb_y, e_n_y, e_cb_z, e_n_z, e_cb_add, e_cb_multiply, e_cb_cam_space, e_cb_projectile_space,
+
+ROT_VEL          e_cb_x, e_n_x, e_cb_y, e_n_y, e_cb_z, e_n_z, e_cb_add, e_cb_multiply, e_cb_cam_space, e_cb_projectile_space,
+
+ROT_ACC          e_cb_x, e_n_x, e_cb_y, e_n_y, e_cb_z, e_n_z, e_cb_add, e_cb_multiply, e_cb_cam_space, e_cb_projectile_space,
+
+SCALE            e_cb_x, e_n_x, e_cb_y, e_n_y, e_cb_z, e_n_z, e_cb_add, e_cb_multiply, e_cb_cam_space, e_cb_projectile_space,
+
+SCALE_VEL        e_cb_x, e_n_x, e_cb_y, e_n_y, e_cb_z, e_n_z, e_cb_add, e_cb_multiply, e_cb_cam_space, e_cb_projectile_space,
+
+SCALE_ACC        e_cb_x, e_n_x, e_cb_y, e_n_y, e_cb_z, e_n_z, e_cb_add, e_cb_multiply, e_cb_cam_space, e_cb_projectile_space,
+
+TRANS_BOUNDS     e_cbg_min, e_cbg_max, e_n_x, e_n_y, e_n_z,
+
+TRANS_VEL_BOUNDS e_cbg_min, e_cbg_max, e_n_x, e_n_y, e_n_z,
+
+ROT_BOUNDS       e_cbg_min, e_cbg_max, e_n_x, e_n_y, e_n_z,
+
+ROT_VEL_BOUNDS   e_cbg_min, e_cbg_max, e_n_x, e_n_y, e_n_z,
+
+SCALE_BOUNDS     e_cbg_min, e_cbg_max, e_n_x, e_n_y, e_n_z,
+
+ROT_VEL_BOUNDS   e_cbg_min, e_cbg_max, e_n_x, e_n_y, e_n_z,
+
+CLEAR_BOUNDS     e_cb_trans, e_cb_tvel, e_cb_rot, e_cb_rvel, e_cb_scale, e_cb_svel, e_cb_all,
+
+TRANS_RAND       e_cb_x, e_cb_posNegX, e_n_xmin, e_n_xmax, e_cb_y, e_cb_posNegY, e_n_ymin, e_n_ymax, e_cb_z, e_cb_posNegZ, e_n_zmin, e_n_zmax, e_cb_add, e_cb_multiply,
+
+ROT_RAND         e_cb_x, e_cb_posNegX, e_n_xmin, e_n_xmax, e_cb_y, e_cb_posNegY, e_n_ymin, e_n_ymax, e_cb_z, e_cb_posNegZ, e_n_zmin, e_n_zmax, e_cb_add, e_cb_multiply,
+
+TRANS_VEL_RAND   e_cb_x, e_cb_posNegX, e_n_xmin, e_n_xmax, e_cb_y, e_cb_posNegY, e_n_ymin, e_n_ymax, e_cb_z, e_cb_posNegZ, e_n_zmin, e_n_zmax, e_cb_add, e_cb_multiply,
+
+ROT_VEL_RAND     e_cb_x, e_cb_posNegX, e_n_xmin, e_n_xmax, e_cb_y, e_cb_posNegY, e_n_ymin, e_n_ymax, e_cb_z, e_cb_posNegZ, e_n_zmin, e_n_zmax, e_cb_add, e_cb_multiply,
+
+TRANS_WAIT       e_cb_x, e_x_params, e_cb_y, e_y_params, e_cb_z, e_z_params, e_n_frames,
+
+TRANS_VEL_WAIT   e_cb_x, e_x_params, e_cb_y, e_y_params, e_cb_z, e_z_params, e_n_frames,
+
+ROT_WAIT         e_cb_x, e_x_params, e_cb_y, e_y_params, e_cb_z, e_z_params, e_n_frames,
+
+ROT_VEL_WAIT     e_cb_x, e_x_params, e_cb_y, e_y_params, e_cb_z, e_z_params, e_n_frames,
+
+SCALE_WAIT       e_cb_x, e_x_params, e_cb_y, e_y_params, e_cb_z, e_z_params, e_n_frames,
+
+TRANS_BR         e_cb_x, e_x_params, e_cb_y, e_y_params, e_cb_z, e_z_params, e_s_Label, e_cb_GoSub,
+
+TRANS_VEL_BR     e_cb_x, e_x_params, e_cb_y, e_y_params, e_cb_z, e_z_params, e_s_Label, e_cb_GoSub,
+
+ROT_BR           e_cb_x, e_x_params, e_cb_y, e_y_params, e_cb_z, e_z_params, e_s_Label, e_cb_GoSub,
+
+ROT_VEL_BR       e_cb_x, e_x_params, e_cb_y, e_y_params, e_cb_z, e_z_params, e_s_Label, e_cb_GoSub,
+
+SCALE_BR         e_cb_x, e_x_params, e_cb_y, e_y_params, e_cb_z, e_z_params, e_s_Label, e_cb_GoSub,
+
+SCALE_FRAMES     e_n_frames, e_cb_x, e_n_start_x, e_n_end_x, e_cb_y, e_n_start_y, e_n_end_y, e_cb_z, e_n_start_z, e_n_end_z, i_startTick,
+
+BLEND            e_cb_on, e_n_alpha, e_cb_relative,
+
+ZBUFFER          e_cb_DepthWrite_on, e_cb_DepthWrite_off,
+
+SWAP_RES         e_s_Name,
+
+SWAP_SHADER      e_s_Name,
+
+SWAP_TEX         e_s_Name,
+
+USE_SCREENGRAB_TEX
+
+USE_BLANK_TEX    e_cbg_on, e_cbg_off,
+
+USE_VERT_COLORS  e_cbg_on, e_cbg_off,
+
+USE_BILLBOARD_Y  e_cbg_on, e_cbg_off,
+
+SET_LIGHTGROUP   int
+
+SET_ENVMAP       e_s_Name,
+
+SET_REFLECTIVITY float
+
+SET_VSYNC        e_cbg_on, e_cbg_off,
+
+SET_REFLECTION_PLANE e_cbg_on, e_cbg_off, e_n_Index,
+
+TIMED_COLOR_SET  e_cb_red, e_n_r, e_cb_green, e_n_g, e_cb_blue, e_n_b, e_cb_alpha, e_n_a, e_n_millisec, e_cb_Multiply, e_cb_Add, i_n_startR, i_n_startG, i_n_startB, i_n_startA,
+
+KILLPRIME       
+
+KILL_PROG        e_s_Name,
+
+KILL_ACTOR       e_s_actorNames[10],
+
+KILL_BY_NAME     e_s_Name,
+
+KILL_BY_RESNAME  e_s_Name,
+
+ADVANCE         
+
+KILL_GROUP       e_s_Name,
+
+KILL_OBJGROUP    e_s_Name,
+
+HIDE_GROUP       e_s_Name,
+
+SHOW_GROUP       e_s_Name,
+
+SOUND_PLAY       e_s_Name, e_n_Vol, e_cb_Loop, e_cbg_High, e_cbg_Med, e_cbg_Low, e_cb_AttachToPrime,
+
+SOUND_PLAY_BGM   e_s_Name, e_n_Vol, e_cb_Loop, e_cbg_High, e_cbg_Med, e_cbg_Low, e_cb_AttachToPrime,
+
+SOUND_PLAY_REP   e_s_Name, e_n_Vol, e_n_Cnt, e_n_InvervalMS, e_cbg_High, e_cbg_Med, e_cbg_Low, e_cb_AttachToPrime, i_LastPlay,
+
+SOUND_PLAY_VO    e_s_Name, e_n_Duration, e_n_Vol,
+
+SOUND_RUMBLE_PLAY e_s_Name, e_n_Vol, e_cb_Loop, e_cbg_High, e_cbg_Med, e_cbg_Low, e_cb_AttachToPrime,
+
+SOUND_RUMBLE_PLAY_REP e_s_Name, e_n_Vol, e_n_Cnt, e_n_InvervalMS, e_cbg_High, e_cbg_Med, e_cbg_Low, e_cb_AttachToPrime, i_LastPlay,
+
+SOUND_STOP       e_s_Name,
+
+SOUND_EXPIRE     e_s_Name, e_n_TimeMS,
+
+SOUND_SET_VOLUME e_s_Name, e_n_Vol, e_n_FadeTimeMS,
+
+SOUND_DUCK       e_s_Name, e_n_ToVol, e_n_TimeMS, e_n_BlendMS,
+
+SOUND_DUCK_ALL   int
+
+SOUND_SET_PAN    e_s_Name, e_n_LeftAmt,
+
+SOUND_SET_RANGE  e_n_DepthStart, e_n_DepthRange, e_n_DepthRolloff, e_n_PanRange, e_n_PanRatio,
+
+SOUND_SET_POSITION e_s_Name, e_n_x, e_n_y, e_n_z, e_s_Spline, e_cbg_3d, e_cbg_cm2, e_cbg_cm3, e_cbg_cm4, e_cbg_cm5,
+
+SOUND_PAUSE      e_s_Name,
+
+SOUND_RESUME     e_s_Name,
+
+SOUND_ATTACH_TO_PRIME e_s_Name,
+
+SOUND_ATTACH_TO_OBJ e_s_ObjName, e_s_SoundName,
+
+SOUND_LOAD_BANK  e_s_Name,
+
+FSOUND_PLAY      e_s_Name,
+
+FSOUND_REVERB_STARTFSOUND_REVERB_STOPFSOUND_AMBIENT_START e_s_Name,
+
+FSOUND_AMBIENT_STOPFSOUND_PLAY_VO   e_s_Name,
+
+ATTACH_LIGHT     e_s_light, e_s_bone, e_n_speed,
+
+ATTACH_TO_ACTOR  e_s_Actor, e_s_Joint, e_cb_bindspace, e_cb_2dproj, e_n_proj_z, e_cb_no_trans, e_cb_no_rots, e_cb_snap_to_rot, e_s_offsetspline, e_cb_offsetvel, e_n_x, e_n_y, e_n_z, e_cb_kill, e_cb_bake2vel, e_cb_hideWithPrime,
+
+ATTACH_FXGROUP   e_s_fxgroup, e_s_joint, e_cb_addoffset, e_cb_bindspace, e_n_x, e_n_y, e_n_z, e_cb_kill,
+
+CREATE_FXGROUP   e_s_fxgroup,
+
+Kill_FXGROUP     e_s_fxgroup, e_cb_attached,
+
+Kill_FXGROUP_FROM_PRIME e_s_fxgroup, e_cb_attached,
+
+ATTACH_ACTOR_TO_ME e_s_Actor, e_s_Joint, e_cb_bindspace, e_cb_2dproj, e_n_proj_z, e_cb_no_trans, e_cb_no_rots, e_cb_snap_to_rot, e_s_offsetspline, e_cb_offsetvel, e_n_x, e_n_y, e_n_z, e_cb_kill, e_cb_bake2vel, e_cb_hideWithPrime,
+
+ATTACHMENT_TO_VEL e_s_AttachmentName, e_cb_CreateNewVel, e_s_VelName,
+
+COL_OFF         
+
+FUR_PARAMS_SET   e_s_Name,
+
+POSTFX           e_s_Name, e_n_blendms, e_cb_RawTime,
+
+TRAVEL           e_n_blendTime, e_n_frames, e_n_SpeedLookBack, e_n_SpeedLookForward, e_n_TurnLookBack, e_n_TurnLookForward, e_cb_PitchAndTurn, i_track_ids[8], i_apercent,
+
+TRAVEL_OVERRIDE  e_s_Name,
+
+POP_BONE_ACTION 
+
+CAM_TEX_SET      e_cbg_Slot1, e_cbg_Slot2, e_cbg_Slot3, e_cbg_Slot4,
+
+CAM_TEX_DISABLE 
+
+CAM_TEX_USE      e_cbg_Slot1, e_cbg_Slot2, e_cbg_Slot3, e_cbg_Slot4,
+
+SET_CLIPBOX      e_n_nw_corner, e_n_se_corner,
+
+VIDEO_PLAY       e_s_Name, e_cb_loop, e_cb_primekill, e_cb_ignoretime,
+
+VIDEO_STOP       e_s_Name,
+
+VIDEO_READY      e_s_Name,
+
+VIDEO_WATCH      e_n_Frame,
+
+VIDEO_GOTO_FRAME e_n_Frame, e_cb_relative,
+
+VIDEO_SET_SPEED  e_n_Speed,
+
+VIDEO_STOP_BY_NAME e_s_Name,
+
+BLOWER           e_n_Intensity,
+
+BLOWER_TEMP      e_n_Intensity, e_n_Seconds,
+
+FX_SWIPE         e_n_Frames, e_n_Border, e_cb_Vert, e_cb_SwipeOff, e_n_Distance,
+
+VEL_ADD          e_s_Name, e_cb_LinkBefore, e_s_LinkPoint,
+
+VEL_SELECT       e_s_Name,
+
+SPLINE_ADD       e_s_Name, e_cb_LinkBefore, e_s_LinkPoint,
+
+SPLINE_SELECT    e_s_Name,
+
+LAYOUT_ITEM_SWAPRES e_s_Item, e_s_Subitem, e_s_Res,
+
+LAYOUT_ITEM_SETALPHA e_s_Item, e_s_Subitem, e_n_Alpha,
+
+LAYOUT_ITEM_SETCOLOR e_s_Item, e_s_Subitem, e_n_r, e_n_g, e_n_b,
+
+RESTART_LEVEL   
+
+EA_GET_SM_PARAM 
+
+SET_LOGFILE      e_s_Name,
+

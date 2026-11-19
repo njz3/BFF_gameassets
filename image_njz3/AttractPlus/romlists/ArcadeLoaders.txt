@@ -40,7 +40,6 @@ SR3;Sega Rally 3;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 SWDC;Sega World Drivers Championship;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 Showdown;Showdown;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 SSASR;Sonic & Sega All-Stars Racing;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
-SR3StandardEdition;SR3 Standard Edition;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 SRG;Storm Racer G;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 TokyoCop;Tokyo Cop;LinuxLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 VirtuaRLimit;Virtua RLimit;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;

@@ -58,13 +58,6 @@ if /I "%ROM%"=="SRC"                     set "GAME=C:\Sega Racing Classic\d1a.ex
 :: pendant son decompte de 15 s. Les editions speciales ne marchent qu en
 :: link : elles passent ici, et non plus par TeknoParrot (03/11/2026).
 if /I "%ROM%"=="SR3"                     set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - Original\Rally\Rally.exe"
-if /I "%ROM%"=="SR3AlpineEdition"        set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - AlpineEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3ArticEdition"         set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - ArticEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3CanyonEdition"        set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - CanyonEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3MasterEdition"        set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - MasterEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3SafariEdition"        set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - SafariEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3TropicalEdition"      set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - TropicalEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3TropicalEdition478"   set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - TropicalEdition478\Rally\Rally.exe"
 if /I "%ROM%"=="Daytona3"                set "GAME=C:\Racecab\Games\Daytona Championship USA\Sega\Daytona\Daytona.exe"
 :: Daytona 3 NSE : course a deux verifiee le 31/10/2026, comme Daytona 3
 if /I "%ROM%"=="Daytona3NSE"             set "GAME=C:\Racecab\Games\Daytona Championship USA New Season Edition\Sega\Daytona\Daytona.exe"

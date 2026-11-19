@@ -35,14 +35,6 @@ set GAME=
 set GARGS=
 set REGLAGES=
 if /I "%ROM%"=="SR3"                     set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - Original\Rally\Rally.exe"
-if /I "%ROM%"=="SR3StandardEdition"      set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - StandardEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3AlpineEdition"        set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - AlpineEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3ArticEdition"         set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - ArticEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3CanyonEdition"        set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - CanyonEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3MasterEdition"        set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - MasterEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3SafariEdition"        set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - SafariEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3TropicalEdition"      set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - TropicalEdition\Rally\Rally.exe"
-if /I "%ROM%"=="SR3TropicalEdition478"   set "GAME=C:\Racecab\Games\Sega Rally 3 - SEGA Europa R - TropicalEdition478\Rally\Rally.exe"
 if /I "%ROM%"=="Daytona3"                set "GAME=C:\Racecab\Games\Daytona Championship USA\Sega\Daytona\Daytona.exe"
 if /I "%ROM%"=="Daytona3NSE"             set "GAME=C:\Racecab\Games\Daytona Championship USA New Season Edition\Sega\Daytona\Daytona.exe"
 if /I "%ROM%"=="FR"                      set "GAME=C:\Racecab\Games\Ford Racing Full Blown - SEGA Arcade PC Based\FordRacing\fordracing.exe"

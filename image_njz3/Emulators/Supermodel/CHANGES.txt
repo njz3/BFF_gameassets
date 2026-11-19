@@ -14,6 +14,405 @@
 
                                  CHANGE LOG
 
+Commit 6a3f1e6 on 2026-11-18 by njz3
+
+    ECA: EPR-20512 only; centring spring 30 % on its Game page, linear torque
+    always
+
+    Tried on a cabinet, the other drive board programs ECA offered (Daytona 2's 
+    EPR-20985, Scud Race's EPR-19338A/19338, Le Mans 24's EPR-18261, the Naomi 
+    boards of F355 Challenge and 18 Wheeler) are unplayable: Games.xml now has 
+    EPR-20512 alone for ECA's drive board, so the Game page no longer offers a 
+    choice; a ROM_driveboard_program left in a file is ignored.
+
+    With the centring spring at 40 %, the knocks of 3 Hz with the wheel held are 
+    almost gone (cabinet). EcaSpring is now 30 % by default and set on ECA's
+    Game page only, saved at once in its section as the game patches are; it
+    left the Force feedback page and the Save buttons.
+
+    EcaLinearTorque is gone: ECA's torque always loses the step of its table.
+
+    README, GameNotes, FFBRework.md 2.28.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 1d5df85 on 2026-11-18 by njz3
+
+    ECA: centring spring under EPR-20512's torque; strength switches out of the
+    menu
+
+    With the wheel held at a large angle, ECA's torque knocks at about 3 Hz: it 
+    is mostly the front tyres' aligning moment (the car's 0x958), which flips 
+    between about +85 (grip) and -27 (slide) every 20 frames or so. Daytona 2's 
+    board, the dedicated cabinet's, makes its own centring spring, which hides 
+    it; with Sega Rally 2's EPR-20512, ECA sets only the weakest servo spring
+    (FC 0C, 9 %).
+
+    EcaSpring (40 % by default, 0-100): with EPR-20512, emulated or simulated, 
+    the centring spring played while the board's own is on is the stronger of 
+    the board's and this one. The Tab menu's Force feedback page has it under 
+    Linear torque; it applies when the menu closes.
+
+    The Tab menu's "Strength switches" (ForceFeedbackStrength) is gone: the DIP 
+    switches set bank 1 as a whole. The setting is still read from the files 
+    that have it, when bank 1 is not set for the game.
+
+    FFBRework.md 2.28, README.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 4948140 on 2026-11-17 by njz3
+
+    ECA: every drive board program to choose, linear torque; DIP switches per
+    game
+
+    ECA's "Drive board program" list now also offers Scud Race Plus's EPR-19338, 
+    Le Mans 24's EPR-18261 and the Naomi boards of F355 Challenge (EPR-21867)
+    and 18 Wheeler (EPR-23000), each found by its CRC in the folder's ROM sets.
+
+    The Naomi boards are emulated in CWheelBoard: their servo registers, written 
+    08-0F, are read as F8-FF; until their status byte says the wheel is 
+    calibrated, the wheel they read is the one their torque moves; their power 
+    levels give 100/90/80/60 %. With ECA they calibrate but send no torque: ECA 
+    never sends FE, their start command.
+
+    EcaLinearTorque (on by default, ECA with EPR-20512 only): ECA's table sends 
+    the magnitudes 0, 1, 5, 9 for torques 1 to 4, then torque + 5, so each
+    return through the centre was a jolt of 18 (+9 to -9 in a frame). The
+    magnitude becomes the torque itself, as Sega Rally 2 sends it: 87 changes of
+    9 or more in a minute of racing down to 2, the strongest torque 23 down to
+    18.
+
+    DriveBoardDIP1/DriveBoardDIP2: the drive board's DIP switches per game (8 
+    characters, '1' ON), over the board's own and ForceFeedbackStrength, for
+    every Model 1/2/3 drive board, emulated or simulated (EPR-18261's board:
+    switch n is bit 8 - n). The Tab menu's Force feedback page shows them, the
+    program's CRC and what it does with each switch; IEmulator::GetDriveBoard
+    for it.
+
+    FFBRework.md 2.27, README, GameNotes.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 74960e8 on 2026-11-17 by njz3
+
+    Model 1/2 Transparency setting in the Tab menu (after the merge of upstream
+    0b82a98)
+
+    Upstream/master 0b82a98 (Model 2 z-sort fixes, Model 1/2 renderer in its own 
+    frame buffer, the Transparency setting, a commented FOREST patch block for 
+    srally2 in Games.xml) was merged without conflicts; the merge commit is 
+    e557d71, whose message (another session's commit, made while the merge was 
+    waiting for its tests) only speaks of eastereggs.md.
+
+    - Tab menu, Emulation page: "Translucent polygons" (Original, Moire, Blend),
+     from the next start; saved with the menu's other settings.
+    - FFBRework.md 2.26: the merge and its checks (35 Model 2 attracts identical
+     but segawski and indy500, the intended z-sort change; ECA, Transparency).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit e557d71 on 2026-11-17 by njz3
+
+    eastereggs.md in English, English screenshot names
+
+    The hidden content report translated; its patch status brought up to date
+    (ECA region menu and Scud video tests done, GameNotes note fixed). 
+    Screenshots renamed: scud_hidden_video_menu.png, scud_hidden_vehicles.png, 
+    scud_test_states_3c_5b.png.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 99dfc60 on 2026-11-17 by njz3
+
+    Unlock ROM patches (ECA region menu, Scud video tests, SR2 secrets, Daytona
+    2 Hornet), hidden content report
+
+    Patches generated by Scripts/RomPatches/unlocks.py from the program EPROMs
+    (original bytes checked), all cold-boot verified in agent mode:
+    - eca/region_menu.xml: COUNTRY ASSIGNMENTS (stubbed out) opens with VIEW
+     CHANGE held + Test.
+    - scud/video_tests.xml: the developers' VIDEO TEST MENU in the test menu
+     (OBJECT TEST shows the 3D models, Scud Plus's tank, rocket car and bus).
+    - srally2/secrets.xml: Sega Rally 1 cars and cone game without the 30 days /
+     100 games condition, option for the 120-day attract hint; works with
+    FOREST.
+    - daytona2/hornet.xml: the Hornet with VR1, VR4, VR2, VR4, VR1 alone.
+
+    GameNotes: these patches, ECA's force feedback (EPR-20512, the program
+    choice). eastereggs.md + eastereggs/: hidden content scan of Scud Race,
+    Daytona 2, ECA, Le Mans 24, Dirt Devils, Harley-Davidson (menus, objects,
+    addresses).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit a52f112 on 2026-11-17 by njz3
+
+    ECA: the drive board program is selectable, EPR-20512 by default
+
+    ECA's drive board program was never dumped. The game sends a direct signed 
+    torque (00-3F one way, 40-7F the other), which is Sega Rally 2's EPR-20512 
+    protocol: it relays the torque to the servo board (FE = 80 +- magnitude) 
+    with the same start-up. Scud Race's EPR-19338A, used until now, plays the 
+    bytes as its own effects (38 % of the torques the wrong way), and so does 
+    Daytona 2's EPR-20985, which converted cabinets keep (conversion kit).
+
+    - Games.xml: a region's <file ... choice="title"/> lists alternative files.
+     For eca's driveboard_program: EPR-20512 (default), EPR-20985, EPR-19338A.
+    - GameLoader: setting ROM_<region> = the file's name (read like the other
+     early game settings), Game::rom_choices. A missing optional file is also
+     found by CRC32 in the folder's other zips, in a single pass (srally2.zip,
+     daytona2.zip, scud.zip...).
+    - Tab menu, Game page: "ROM files" / "Drive board program" combo, used from
+     the game's next start.
+    - --set accepts ROM_<region> and Patch_<patch> keys.
+    - README: ECA's force feedback and how to choose the program.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 6799f23 on 2026-11-16 by njz3
+
+    Sega Rally 2 FOREST as a ROM patch of the program EPROMs (forest.xml)
+
+    The FOREST course as a patch of the four program EPROMs alone
+    (EPR-20632 to EPR-20635, on sockets), so a real board can run it: 
+    Scripts/RomPatches/srally2_forest.py makes Assets/Patches/srally2/ 
+    forest.xml from the game's ROMs (ppcasm.py assembles its PowerPC routines,
+    rompatch.py writes the XML).
+
+    Base: the practice's carousel of five panels, FOREST's practice clock, its
+    rival's route along its line, its race's end. Options: its panel
+    (a photo and title of the patch's over MOUNTAIN's panel, in polygon RAM), 
+    its title before the race (a CGM image of the patch's), rain (a drop 
+    texture, none under the rocks), faint reflections, the championship's fifth
+    stage (its results label composed by a routine from the labels on the
+    screen), and the music (MOUNTAIN's, or another of the game's tracks, some
+    used by no course). Each part keeps the EPROMs' CRCs (two bytes a lane): the
+    test menu's MEMORY TEST says GOOD whatever options are on.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit e6bc7ca on 2026-11-16 by njz3
+
+    ROM patches: XML patches of a game's ROM files, with options, in Game
+    Options
+
+    A patch (Assets/Patches/<ROM set>/<patch>.xml, described in 
+    Src/RomPatches.h) holds its title and description, the patches it needs or
+    cannot go with, its changes to the game's files (bytes at offsets, each file
+    named with its CRC32: none of the game's own data), and its options (on or
+    off, or one of several values), each described, with its own requirements,
+    conflicts and changes. GameLoader applies the patches turned on as the files
+    load (a patch for other versions of the files, or whose requirements are not
+    met, or that changes bytes another does, is left out, and the Game page says
+    why).
+
+    The Game page (Tab menu and the launcher's Game Options) lists them: turning
+    one on turns on what it needs and off what it conflicts with; saved at once
+    in the game's section (Patch_<patch>, Patch_<patch>_<option>), from the next
+    start. "Write the patched ROM files" there, or
+    -dump-patched-roms, writes the files they change to PatchedROMs/<ROM set>/,
+    to program a real board's EPROMs.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit aa39fa8 on 2026-11-16 by njz3
+
+    Sega Rally 2 FOREST: the championship's fifth stage (ForestChampionship)
+
+    A second setting of the emulator's patch, with ForestCourse: the 
+    championship runs DESERT, MOUNTAIN, SNOWY, RIVIERA, then FOREST. The stages'
+    list and count at the championship's start, the stages' times in five words
+    of the patch's (read and written through routines of its), the final results
+    and the name entry on five rows, the fifth labelled FOREST
+    (made from the DESERT and SNOWY labels on the screen). The label's tiles are
+    given back without the name table's entries when the screen changes
+    (they came back over the podium).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit be4d4b9 on 2026-11-16 by njz3
+
+    Agent mode: "watch" over the tile generator's and polygon RAM's writes too,
+    "blocks"
+
+    The write watch also records the main CPU's writes to the tile generator
+    (0xF1000000 on: name tables, patterns) and to polygon RAM (0x98000000 on, 
+    DMAs included). "blocks" gives the watched range's 256-byte blocks written 
+    since, however many the writes (the 4096 writes "writes" keeps are not 
+    enough to map which polygon RAM a game uses).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 0b82a98 on 2026-11-16 by Ian
+
+    Model 1/2 renderer: always draw the frame in its own frame buffer
+
+    The frame buffer with the stencil buffer that Transparency=2 (blend) needs 
+    is now created in Init() (called again when the output size changes) and 
+    every frame is drawn in it and copied to the target, instead of creating it 
+    on first use in blend mode, tracking its size and switching targets per 
+    frame. If it can't be created, frames are drawn in the target as before
+    (blend without the stencil: overlapping translucent polygons darker).
+
+    At 496x384 the default (original) matches the build before the Transparency
+    setting in Virtua Fighter and Virtual On; Daytona USA differs by 1-2 edge
+    pixels in 3 of 10 frames.
+
+Commit 1183edf on 2026-11-16 by Ian
+
+    Model 1/2: Transparency setting (original, moire, blend)
+
+    How the hardware's translucency, Model 1's moire quads and Model 2's 
+    checkerboard polygons, is drawn. Model 1/2 only: Model 3 doesn't use it.
+
+      0 original  every other pixel of the output, a 1x1 checkerboard at any
+                 resolution (counted from the viewable area's top left, so at
+                 496x384 it is the hardware's pattern) [default]
+     1 moire     every other pixel of the native 496x384 grid, scaled with the
+                 resolution (the previous behaviour)
+     2 blend     blended 50% with what is behind
+
+    Transparency in Supermodel.ini, -transparency=<n>, and the GUI (Video).
+
+    Blend: the polygons are drawn back to front, as before. Overlapping 
+    translucent polygons must blend a pixel once, as the hardware's checkerboard 
+    draws the same pixels again (Virtua Fighter's shadows are several 
+    overlapping quads, which went near black), so the frame is drawn in a frame 
+    buffer with a stencil buffer (the window's has none) and copied to the 
+    target: an opaque polygon clears a pixel's stencil, a translucent one only 
+    blends where it is clear and sets it. Opaque and translucent polygons are 
+    drawn in runs, in order. Two different translucent objects overlapping show 
+    the farther one where they overlap (the hardware: the nearer one). Model 1 
+    moire quads aren't drawn grown for crack filling when blended.
+
+    At 496x384, original matches the previous build in Daytona USA, Virtua 
+    Fighter and Virtual On. The software renderer is unchanged (the native 
+    checkerboard).
+
+Commit dcb87af on 2026-11-16 by Ian
+
+    Model 2: z-sort value from the polygon's own z, plus the z-sort mode's
+    offset
+
+    The z-sort value is converted from the polygon's z before clipping, by its 
+    sort type (previous, min or max). The z-sort mode's offset (bits 22-8 of its 
+    word, ignored until now) is added to the signed value and the result clamped 
+    to 0-FFFF, so a negative z (a polygon with some of it behind the camera, 
+    sorted by its min z) sorts nearest unless the offset keeps it above 0. Last 
+    Bronx and Virtual On set an offset (41004000); Daytona, Desert Tank,
+    Dynamite Cop, Fighting Vipers, Indy 500, Sonic Championship, VF2 and Wave
+    Runner none
+    (40800000).
+
+    This replaces the workarounds for a negative z: sorting it farthest
+    (44ccf10), by the max z (1b4b752) and by the min z of the part on screen
+    (a31efb7). Dynamite Cop's hull alongside the camera still covers the davits. 
+    Indy 500's attract (both courses, from boot) shows its track throughout. 14 
+    games' states are unchanged except a few hundred scattered pixels in four 
+    Indy 500 frames.
+
+Commit 0800d4e on 2026-11-16 by Ian
+
+    Model 2: the 2B buffer controller parses the display list with the function
+    table
+
+    The game writes each function's command length and data length (bit 7: LOOP)
+    at boot (function port 00800004/8 + 0x10 n); they were discarded. The 
+    display list is now fed by parsing it with them: a function word, its 
+    command words, then its data (a count and count x length words, or with LOOP
+    attribute and data blocks until an attribute with its low four bits zero).
+    Jumps (bit 31) are followed only where a function is read. This replaces
+    telling functions from data by the SHARC instruction reading them
+    (Fighting Vipers' program's R0 = DM(M0, I0)), which only held for that 
+    program.
+
+    The frame ends at the first FF000000 output after the end function (0F) was
+    fed, instead of a second FF000000 with no list read since the first
+    (e9e07c1): a mid-list command 0 can't end it.
+
+    The table is saved in states; states saved before get the 2B games' tables 
+    merged. With the low level geometrizer the parse agrees with the instruction
+    on every read in Last Bronx, Sonic Championship and Virtual On
+    (Virtual On's dummy function 10 has command length 0 but a data word that is 
+    fed either way), and their frames are unchanged.
+
+Commit a31efb7 on 2026-11-16 by Ian
+
+    Model 2: a polygon crossing the eye's plane sorts by the min z of its
+    visible part
+
+    A min z sorted polygon with part of it behind the camera sorted by its max z
+    (1b4b752), the far end, so it went behind what was in front of it: Dynamite 
+    Cop's hull alongside the camera at the start of the attract (z -1.4 to 95) 
+    went behind the davits on the deck above it (73-94), which showed through. 
+    It now sorts by the min z of its part on screen, after clipping. Indy 500's 
+    catch fence near the camera now covers the stands instead of missing; MAME's 
+    nearest (0), which hid Indy 500's track and Virtual On's robot's feet, is 
+    still not used. 13 other games' states unchanged except Sonic Championship's 
+    ring edge bushes, which now reach over the floor's edge at the left.
+
+Commit 21acfe8 on 2026-11-16 by Ian
+
+    Uncomment the lines in the xml to load hidden track in sega rally 2
+
+Commit 05401da on 2026-11-16 by njz3
+
+    Sega Rally 2 FOREST: a practice clock as the other courses'
+
+    The practice's time tables (mode 2, five difficulties) gave FOREST 999 s, so
+    its clock never ran. Now 60 s at the start and a credit at each of its three 
+    checkpoints a lap (sectors 0x2B, 0x8D, the lap's end, already in the
+    program), each the time of the section that follows at MOUNTAIN's required
+    average speed scaled to 47 m/s at the first difficulty (laps of about 91 s).
+    Checked with the autopilot: credits at every checkpoint, the race finished
+    with 3.9 s left.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 4ae999f on 2026-11-16 by njz3
+
+    Agent mode: "watch" and "writes", the Model 3 main CPU's writes to a range
+    of RAM
+
+    Each write recorded with the PowerPC's PC and LR (at most 4096 until taken),
+    to find the code behind a variable (found Sega Rally 2's timer, checkpoints
+    and stage times this way).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit 8df7274 on 2026-11-16 by njz3
+
+    Sega Rally 2 FOREST: the race's end no longer hangs the game
+
+    After CLEARED the staff roll replays the race with shots read from tables by 
+    course index (0x11664: FOREST is 4) that have four entries only: FOREST read
+    a null or bogus pointer, drew an object of 0xFF bytes, reserved a huge stack 
+    frame and the PowerPC jumped to 0xFFFFFFFC (a black screen, the game hung). 
+    Tables of five in RAM that stays zero (0x13EA40), their code redirected
+    (0x27E80, 0x28CC8), FOREST's end and staff roll shots beside its road, and 
+    its replay cameras (the third table's empty fifth entry) one following the
+    car. Checked in agent mode: FINISH, CLEARED, the staff roll on FOREST, the
+    ranking, GAME OVER and the attract; the other courses read the same pointers
+    as before; turned off, every word is the program's again.
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit b67fbad on 2026-11-16 by njz3
+
+    Agent mode: "pc", where the Model 3 PowerPC is between two frames
+
+    Its PC, LR, r1 and r3, to find a hang or a loop (found Sega Rally 2's FOREST 
+    end-of-race hang).
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit c602f5f on 2026-11-16 by njz3
+
+    Merge remote-tracking branch 'upstream/master' into dev/ffbedition
+
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
 Commit 7532a91 on 2026-11-16 by njz3
 
     Sega Rally 2 FOREST: rain instead of broken snow, the car's reflections made
@@ -75,6 +474,16 @@ Commit d30a511 on 2026-11-16 by njz3
     frame's own overrun).
 
     Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Commit e9e07c1 on 2026-11-16 by Ian
+
+    Model 2: 2B geometrizer program's frame end is a repeated FF000000
+
+    The program marks the commands it sends with FF, so a command 0 is FF000000,
+    the same word it pads the frame end with. Last Bronx's command 1 with a zero
+    count sends one mid-list: taken as the end, the program was stopped there
+    and the rest of the frame (one of the fighters) was lost. The end is now a
+    second FF000000 with no display list word read since the first.
 
 Commit fa59add on 2026-11-16 by njz3
 

@@ -66,8 +66,13 @@ if not exist "%GAME%" (
 :: Le suffixe suit la convention de l image : <emulateur>_<variante>.
 set VARIANTE=single
 if not defined WRITEDIR_ROOT CALL "..\..\Utils\set_writedir.bat"
+:: Au premier lancement d un jeu, linuxloader amorce son dossier d ecriture
+:: depuis saves_single\<jeu> (modele solo de l image : Cruis'n Blast etalonne,
+:: hors reseau, 18/11/2026), puis depuis le dossier du jeu pour le reste. Un
+:: fichier deja present n est jamais remplace. Pas saves : Build-Config y pose
+:: le modele link de la cabine (reseau, numero de machine).
 set ECRITURE=
-if defined WRITEDIR_ROOT set ECRITURE=--write-dir "%WRITEDIR_ROOT%\linuxloader_%VARIANTE%"
+if defined WRITEDIR_ROOT set ECRITURE=--write-dir "%WRITEDIR_ROOT%\linuxloader_%VARIANTE%" --seed-dir saves_single
 
 :: Lunch emulator
 :: Affichage selon la resolution : DISPLAY_MODE de linuxloader.ini (gabarit de Build-Config, colonne MODE_FENETRE).

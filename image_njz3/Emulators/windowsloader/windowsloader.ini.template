@@ -27,3 +27,9 @@ LANGUAGE = AUTO
 ; sur Internet (defaut de la release). Choix du proprietaire, 16/11/2026 : OFF.
 [Game.bg4]
 NESYS_SERVER = OFF
+
+; Sega Rally 3 (edition Original, lanceur SR3) : les circuits de Sega Rally
+; Revo en course rapide et en championnat, depuis la 20261118-1 (pas en link).
+; Les 8 autres editions ne sont plus lancees. Choix du proprietaire, 18/11/2026.
+[Game.segarally3]
+REVO_DIR = C:\Racecab\Games\Sega Rally 3 Revo - PC

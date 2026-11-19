@@ -1,6 +1,5 @@
 #Name;Title;Emulator;CloneOf;Year;Manufacturer;Category;Players;Rotation;Control;Status;DisplayCount;DisplayType;AltRomname;AltTitle;Extra;Buttons;Series;Language;Region;Rating
 SR3;Sega Rally 3;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
-SR3StandardEdition;SR3 Standard Edition;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 Daytona3;Daytona 3;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 Daytona3NSE;Daytona 3 New Season Edition;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;
 FR;Ford Racing;WindowsLoader;;;;Racing *FFB*;;;;;;;;;;;;;;

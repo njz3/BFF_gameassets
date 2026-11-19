@@ -344,8 +344,10 @@ from vJoy), their strength and direction (ForceFeedbackGain,
 ForceFeedbackInvert), what the game asks now (constant force, spring, friction,
 damper, vibration) and the limits per effect of the input system in use.  These
 apply when the menu closes: the effects stop where they played and start again
-as set.  Its 'Drive board' part has the board's strength switches
-(ForceFeedbackStrength, from the next start) and PanelSpring.
+as set.  Its 'Drive board' part has PanelSpring; its 'DIP
+switches' part the board's two banks of switches, one by one, for the game
+alone (DriveBoardDIP1, DriveBoardDIP2, from the next start), with what the
+board's program does with them.
 
 Its 'Sound' page has the sound and music volumes (SoundVolume, MusicVolume) and
 FlipStereo, applied at once, and, from the next start, the channels, the
@@ -815,6 +817,31 @@ and more, are shown during a game on the 'Game' page of the settings menu (Tab),
 from Config/GameNotes.txt.
 
 
+ROM Patches
+-----------
+
+A ROM patch changes a game's ROM files as they load: a hidden course, a fix, a
+translation.  Each is an XML file in Assets/Patches/<ROM set>/ (for example
+Assets/Patches/srally2/forest.xml), with what it does and its options.  The
+'Game' page of the settings menu (Tab), or a game's 'Game Options' button in
+the list of the configuration window, lists the game's patches: each is turned
+on or off there, its options too (on or off, or one of their values), saved at
+once in the game's section of the settings file (Patch_<patch> = true, and
+Patch_<patch>_<option> = true, false or a value), from the game's next start.
+A patch may need another (turned on with it) or not go with one (turned off).
+A patch changes only the files the game's ROMs have (each of its files named
+with its CRC32): with other versions it is not applied, and the 'Game' page
+says why.
+
+'Write the patched ROM files' on that page, or the command line option
+-dump-patched-roms, writes the files the patches turned on change, patched,
+into PatchedROMs/<ROM set>/: to program the EPROMs of a real board (the
+Sega Rally 2 patch changes the four program EPROMs, on sockets).
+
+A patch's format is described in Src/RomPatches.h; Scripts/RomPatches/
+rompatch.py writes one from a game's files and its patched files.
+
+
 Cyber Troopers Virtual-On Oratorio Tangram
 ------------------------------------------
 
@@ -853,6 +880,24 @@ shifts: Shift Up, Shift Up, Shift Down, Shift Down, Shift Up.
 Supermodel presently only emulates a sequential shifter but cabinets with a 4-
 way H-type shifter exist and the shift sequence on this units is: 3, 3, 4, 4, 3
 or 1, 1, 2, 2, 1.
+
+Force feedback: ECA's sets have no drive board program.  The game sends the
+wheel's torque directly (a signed value in each byte), as Sega Rally 2 does to
+its drive board, so Supermodel uses Sega Rally 2's program, epr-20512.bin: put
+it in eca.zip or beside it, or keep srally2.zip in the same folder (it is found
+there by its checksum).  The other drive board programs (Daytona USA 2's, which
+the manual's "DRIVE BD DUT" suggests, Scud Race's, Le Mans 24's, the Naomi
+boards') were tried on a cabinet and are not offered: none was playable.  The
+torque goes to the board as the game works it out: ECA's own table adds a step
+to it (1, then 5, then 9 as it starts to grow, a push for the cabinet's motor
+to start), which makes every return of the wheel through the centre a jolt:
+Supermodel takes the step out (the strongest torque is then 18 against 23,
+STEERING REACTION at 4).  ECA's torque is mostly the front tyres' aligning
+moment: with a large steering angle they grip and slide in turn, and the
+torque flips every third of a second or so, knocks with the wheel held.
+EcaSpring (30 % by default; Game Options, Game page, "Centring spring", saved
+in ECA's section) plays a centring spring under the game's torque during the
+race.
 
 
 Fighting Vipers 2
@@ -938,11 +983,16 @@ To change the region, enter Test mode and perform the following series of short
 (press and release) and long (press and hold for 4-5 seconds) Service button
 presses: 4 short, 2 long, 2 short, 1 long.
 
-The ROMs hold a fifth course, FOREST, complete but in no menu.  The 'Game' page
-of the settings menu (Tab), or the game's 'Game Options' button in the list of
-the configuration window (Supermodel started without a ROM), adds it to the
-practice's course selection (the ForestCourse setting of the '[ srally2 ]'
-section).
+The ROMs hold a fifth course, FOREST, complete but in no menu.  The ROM patch
+'FOREST, the hidden fifth course' (Assets/Patches/srally2/forest.xml; see ROM
+Patches above) adds it to the practice's course selection, with its clock, its
+rival's road and its race's end; its options: its own panel and title before
+the race, rain, faint reflections on the cars, a fifth championship stage, and
+the music (MOUNTAIN's by default, or another of the game's tracks, some used
+by no course).  It patches the program EPROMs only, so a real board can run it
+too (its MEMORY TEST still says GOOD: each part of the patch keeps the EPROMs'
+CRCs).  The emulator's own patch (the ForestCourse setting) does part of this in
+Supermodel only, and does nothing with the ROM patch on.
 
 
 Ski Champ
@@ -2077,8 +2127,10 @@ All settings are case sensitive.
                     (Model 3's servo boards' programs: bits 2-4 of DIP 1;
                     EPR-18261: 0 to 7; Daytona USA and Virtua Racing: 0 to 28
                     of 63; Sega Rally: 0 to 7).  Read when the board starts.
-                    It was 5 by default before November 2026.  Set in the
-                    settings menu's Force feedback page.
+                    It was 5 by default before November 2026.  The settings
+                    menu no longer has it: its DIP switches (DriveBoardDIP1)
+                    set the whole bank, these switches included, and replace
+                    this setting for the game.
 
     ----------------
 
@@ -2093,6 +2145,41 @@ All settings are case sensitive.
                     centring effect while the board is running.  The other
                     panels have none.  Set in the settings menu's Force
                     feedback page (sm2-emu's wheel_panel_spring).
+
+    ----------------
+
+    Name:           DriveBoardDIP1, DriveBoardDIP2
+
+    Argument:       String of 8 characters, switches 1 to 8: '1' ON, '0'
+                    OFF (empty by default).
+
+    Description:    The drive board's two banks of DIP switches, emulated or
+                    simulated, Model 1, 2 and 3 alike: a bank set replaces the
+                    board's own switches, ForceFeedbackStrength included (e.g.
+                    DriveBoardDIP1 = 00111100, switches 1-3 to 1-6 ON).
+                    Empty, or anything but eight 0s and 1s: the board's own.
+                    Switch n is bit n - 1 of the byte the program reads, a
+                    switch ON reading 0; on EPR-18261's board it is bit 8 - n
+                    (measured).  Read when the board starts (a line of the log
+                    gives the byte).  Set for one game in the settings menu's
+                    Force feedback page, which shows what the game's board
+                    program does with each switch.
+
+    ----------------
+
+    Name:           EcaSpring
+
+    Argument:       Integer, 0 to 100 (percent; 30 by default).
+
+    Description:    Emergency Call Ambulance only (its drive board program,
+                    Sega Rally 2's EPR-20512): a centring spring played under
+                    the game's torque while the board's own spring is on (the
+                    race; the board's is 9 %, and the stronger of the two
+                    plays), against the knocks of the game's torque with the
+                    wheel held.  0: the board's alone.  Set in the settings
+                    menu's Game page for ECA, saved at once in its section
+                    ([ eca ]); changed there, it applies when the menu
+                    closes.
 
     ----------------
 
@@ -2336,8 +2423,10 @@ All settings are case sensitive.
                     weather (SNOWY's falling particles, which its textures
                     have no snowflake for) falls as rain, and the car's
                     reflections (a texture FOREST makes much more opaque) are
-                    made as faint as on the other courses.  The title shown
-                    at the race's start and the music remain MOUNTAIN's.
+                    made as faint as on the other courses.  The race's end
+                    (the staff roll after CLEARED, the ranking) has FOREST's
+                    own shots (the game hung there).  The title shown at the
+                    race's start and the music remain MOUNTAIN's.
                     Linked cabinets choosing FOREST all need it on.
 
     ----------------
