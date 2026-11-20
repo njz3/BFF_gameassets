@@ -6,7 +6,7 @@ CONSOLESTATE /Min
 set ROM=%~1
 :: set the title with the _raw suffix : BFF lit ce nom entre crochets
 :: pour choisir son profil, et bascule en mode brut sur ce suffixe
-TITLE [%ROM%_raw]
+TITLE [%ROM%_raw]-Flycast
 
 :: Change current directory to the folder that contains this file
 CD /d "%~dp0"

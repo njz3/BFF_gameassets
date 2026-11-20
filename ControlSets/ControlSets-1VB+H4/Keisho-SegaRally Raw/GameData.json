@@ -1,0 +1,14 @@
+{
+  "GameName": "srallyc,srallycb,srallyp",
+  "Description": "Sega Rally Championship (raw, M2PAC)",
+  "ExecType": 1,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[srallyc_raw]-Keisho*",
+  "PriorityLevel": 2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

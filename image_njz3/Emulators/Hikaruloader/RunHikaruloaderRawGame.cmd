@@ -35,7 +35,7 @@ if "%~1"=="" goto :aide
 CONSOLESTATE /Min
 
 set ROM=%~1
-TITLE [%ROM%_raw]
+TITLE [%ROM%_raw]-Hikaruloader
 CD /d "%~dp0"
 
 if not defined WRITEDIR_ROOT CALL "..\..\Utils\set_writedir.bat"

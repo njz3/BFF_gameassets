@@ -4,7 +4,7 @@
   "ExecType": 4,
   "OutputType": 2,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "*[BattleGear4]*|*[BattleGear4Tuned]*",
+  "MainWindowTitle": "*[BattleGear4]-WindowsLoader*|*[BattleGear4Tuned]-WindowsLoader*",
   "PriorityLevel": 0,
   "AddressesValues": [],
   "MatchingWordValues": [],

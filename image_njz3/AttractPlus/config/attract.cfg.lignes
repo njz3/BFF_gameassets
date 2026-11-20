@@ -1,0 +1,6 @@
+# Lignes que Build-Config pose dans attract.cfg (cible LINES de targets.csv) : le reste du
+# fichier reste a AttractPlus, qui le reecrit quand on change un reglage dans son menu.
+# aspect_ratio (Attract-Mode Plus ffbedition, 20/11/2026) : le cadre ou tout est dessine, etire
+# sur tout l ecran ; 4:3 en super-resolution, original ailleurs (ASPECT_AP de resolutions.csv).
+general
+    aspect_ratio            {{ASPECT_AP}}

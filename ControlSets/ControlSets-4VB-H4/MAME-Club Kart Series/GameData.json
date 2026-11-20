@@ -1,0 +1,14 @@
+{
+  "GameName": "clubk2k3,clubkrt,clubkcyc,clubkprz,clubkpzb",
+  "Description": "Club Kart on Flycast",
+  "ExecType": 3,
+  "OutputType": 2,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[clubk2k3]-MAME*|*[clubkcyc]-MAME*|*[clubkprz]-MAME*|*[clubkpzb]-MAME*|*[clubkrt]-MAME*",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

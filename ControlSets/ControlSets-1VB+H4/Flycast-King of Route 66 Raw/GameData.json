@@ -1,0 +1,14 @@
+{
+  "GameName": "kingrt66",
+  "Description": "King of Route 66 on Flycast (raw, M2PAC)",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[kingrt66_raw]-Flycast*",
+  "PriorityLevel": 2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

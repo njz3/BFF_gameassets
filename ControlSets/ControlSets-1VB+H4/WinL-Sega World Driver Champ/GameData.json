@@ -4,7 +4,7 @@
   "ExecType": 4,
   "OutputType": 0,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "*[SWDC]*",
+  "MainWindowTitle": "*[SWDC]-WindowsLoader*",
   "PriorityLevel": 0,
   "AddressesValues": [],
   "MatchingWordValues": [],

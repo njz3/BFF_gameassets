@@ -16,7 +16,7 @@
   "PermanentSpring": 0.0,
   "Force_Kp": 1.0,
   "Spring_TrqDeadband": 0.0,
-  "Spring_Kp": 2.0,
+  "Spring_Kp": 1.5,
   "Spring_Bv": 0.1,
   "Spring_Ki": 0.0,
   "Damper_Bv": 0.1,

@@ -1,0 +1,14 @@
+{
+  "GameName": "initd,initdexp,initdv2e,initdv2j,initdv3e,initdv3j,inidv3cy",
+  "Description": "Initial D 123 series running on Flycast",
+  "ExecType": 3,
+  "OutputType": 2,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[inidv3cy]-MAME*|*[initd]-MAME*|*[initdexp]-MAME*|*[initdv2e]-MAME*|*[initdv2j]-MAME*|*[initdv3e]-MAME*|*[initdv3j]-MAME*",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

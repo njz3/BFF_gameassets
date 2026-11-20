@@ -1,0 +1,14 @@
+{
+  "GameName": "lemans24",
+  "Description": "Le Mans 24  (raw, M2PAC)",
+  "ExecType": 2,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[lemans24_raw]-Supermodel*",
+  "PriorityLevel": 2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

@@ -16,9 +16,10 @@ CONSOLESTATE /Min
 set ROM=%~n1
 if "%ROM%"=="" ( echo Usage: %~n0 ^<game^> & exit /b 1 )
 
-:: The title BFF reads. Between brackets, and nothing else, so that
-:: [id5] can never be taken for the [id58] of another game.
-TITLE [%ROM%]
+:: The title BFF reads: the name between brackets, then the emulator, so
+:: that [id5] can never be taken for the [id58] of another game, nor the
+:: same name for the game of another emulator.
+TITLE [%ROM%]-TeknoParrot
 
 CD /d "%~dp0"
 

@@ -1,0 +1,14 @@
+{
+  "GameName": "batlgear,batlgr2,batlgr3",
+  "Description": "Battle Gear 1, 2, 3",
+  "ExecType": 3,
+  "OutputType": 2,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[batlgear]-MAME*|*[batlgr2]-MAME*|*[batlgr3]-MAME*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

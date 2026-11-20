@@ -15,7 +15,8 @@
 # 4:3 est etiree a toute la fenetre sans bordure.
 # SUPERMODEL_LARGE / SUPERMODEL_UPSCALE : WideScreen et WideBackground,
 # UpscaleMode du Supermodel.ini (gabarit) : 16:9 elargi, filtre des couches
-# 2D. La super-resolution (plein ecran sans bordure, image etiree) suit ETIRER.
+# 2D. Supermodel est toujours en plein ecran sans bordure (gabarit) ; seul son
+# Stretch (image etiree) suit ETIRER, en super-resolution.
 #
 # MAME_* : mame.ini des trois MAME (gabarits). MAME_GARDER_ASPECT = keepaspect
 # (0 en super-resolution : image etiree), MAME_POLICE = uifont (uismall en
@@ -33,16 +34,24 @@
 # HIKARU_LARGE : WIDESCREEN de hikaruloader, true aux resolutions 16:9 seulement ; false en 4:3
 # et en super-resolution (4:3 etire a toute la fenetre).
 #
-RES;LARGEUR;HAUTEUR;PLEIN_ECRAN;ECHELLE_RENDU;METHODE_ECHELLE;ASPECT;UPSCALE_2D;MODE_FENETRE;ETIRER;FLYCAST_RENDU;FLYCAST_VRES;FLYCAST_ETIRER;FLYCAST_LARGE;SUPERMODEL_LARGE;SUPERMODEL_UPSCALE;MAME_GARDER_ASPECT;MAME_POLICE;MAME_VIDEO;MAME_NAMCO_ASPECT;MAME_NAMCO_FILTRE;HIKARU_LARGE;MAME_HIRES3D;MAME_LARGE
-_320x240;320;240;true;1;nearest;4:3;faithful;BORDERLESS;false;240;480;no;no;false;0;1;uismall;d3d;auto;1;false;1;0
-_512x384;512;384;true;1;nearest;4:3;faithful;BORDERLESS;false;480;480;no;no;false;0;1;uismall;d3d;auto;1;false;2;0
-_640x480;640;480;true;1;bilinear;4:3;faithful;BORDERLESS;false;480;480;no;no;false;0;1;default;d3d;auto;1;false;2;0
-_1024x384;1024;384;true;1;bilinear;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false;2;0
-_1024x768;1024;768;true;2;bilinear;4:3;faithful;BORDERLESS;false;720;720;no;no;false;0;1;default;d3d;auto;1;false;2;0
-_1280x240;1280;240;true;1;nearest;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false;1;0
-_1920x240;1920;240;true;1;nearest;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false;1;0
-_1280x480;1280;480;true;1;bilinear;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false;2;0
-_1280x960;1280;960;true;2;bilinear;4:3;faithful;BORDERLESS;false;960;720;no;no;false;0;1;default;bgfx;auto;1;false;2;0
-_1920x1080;1920;1080;true;2;bilinear;16:9;faithful;BORDERLESS;false;960;720;no;yes;true;2;1;default;bgfx;16:9;0;true;3;1
-_2560x1440;2560;1440;true;3;bilinear;16:9;faithful;BORDERLESS;false;1440;720;no;yes;true;2;1;default;bgfx;16:9;0;true;4;1
-_3840x2160;3840;2160;true;4;bilinear;16:9;faithful;BORDERLESS;false;2160;720;no;yes;true;2;1;default;bgfx;16:9;0;true;6;1
+# ASPECT_CHARGEURS : ASPECT_RATIO de windowsloader, linuxloader et hikaruloader.
+# 4:3 en super-resolution (1024x384, 1280x240, 1920x240, 1280x480) : la forme
+# reelle du CRT, un jeu 16:9 garde ses bandes noires et n est que double en
+# largeur par BORDERLESS_STRETCH ; ORIGINAL ailleurs (choix du proprietaire, 20/11/2026).
+#
+# ASPECT_AP : aspect_ratio d AttractPlus (ffbedition), meme regle : 4:3 en super-resolution,
+# le menu dessine dans un cadre 4:3 etire a tout l ecran ; original ailleurs (choix du
+# proprietaire, 20/11/2026). Pose par la cible LINES (attract.cfg.lignes).
+RES;LARGEUR;HAUTEUR;PLEIN_ECRAN;ECHELLE_RENDU;METHODE_ECHELLE;ASPECT;UPSCALE_2D;MODE_FENETRE;ETIRER;FLYCAST_RENDU;FLYCAST_VRES;FLYCAST_ETIRER;FLYCAST_LARGE;SUPERMODEL_LARGE;SUPERMODEL_UPSCALE;MAME_GARDER_ASPECT;MAME_POLICE;MAME_VIDEO;MAME_NAMCO_ASPECT;MAME_NAMCO_FILTRE;HIKARU_LARGE;MAME_HIRES3D;MAME_LARGE;ASPECT_CHARGEURS;ASPECT_AP
+_320x240;320;240;true;1;nearest;4:3;faithful;BORDERLESS;false;240;480;no;no;false;0;1;uismall;d3d;auto;1;false;1;0;ORIGINAL;original
+_512x384;512;384;true;1;nearest;4:3;faithful;BORDERLESS;false;480;480;no;no;false;0;1;uismall;d3d;auto;1;false;2;0;ORIGINAL;original
+_640x480;640;480;true;1;bilinear;4:3;faithful;BORDERLESS;false;480;480;no;no;false;0;1;default;d3d;auto;1;false;2;0;ORIGINAL;original
+_1024x384;1024;384;true;1;bilinear;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false;2;0;4:3;4:3
+_1024x768;1024;768;true;2;bilinear;4:3;faithful;BORDERLESS;false;720;720;no;no;false;0;1;default;d3d;auto;1;false;2;0;ORIGINAL;original
+_1280x240;1280;240;true;1;nearest;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false;1;0;4:3;4:3
+_1920x240;1920;240;true;1;nearest;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false;1;0;4:3;4:3
+_1280x480;1280;480;true;1;bilinear;4:3;faithful;BORDERLESS_STRETCH;true;480;480;yes;no;false;0;0;uismall;d3d;auto;1;false;2;0;4:3;4:3
+_1280x960;1280;960;true;2;bilinear;4:3;faithful;BORDERLESS;false;960;720;no;no;false;0;1;default;bgfx;auto;1;false;2;0;ORIGINAL;original
+_1920x1080;1920;1080;true;2;bilinear;16:9;faithful;BORDERLESS;false;960;720;no;yes;true;2;1;default;bgfx;16:9;0;true;3;1;ORIGINAL;original
+_2560x1440;2560;1440;true;3;bilinear;16:9;faithful;BORDERLESS;false;1440;720;no;yes;true;2;1;default;bgfx;16:9;0;true;4;1;ORIGINAL;original
+_3840x2160;3840;2160;true;4;bilinear;16:9;faithful;BORDERLESS;false;2160;720;no;yes;true;2;1;default;bgfx;16:9;0;true;6;1;ORIGINAL;original

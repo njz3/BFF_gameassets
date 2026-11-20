@@ -1,0 +1,14 @@
+{
+  "GameName": "jambo",
+  "Description": "Jambo! Safari on Hikaruloader (raw, M2PAC)",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[jambo_raw]-Hikaruloader*",
+  "PriorityLevel": 2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

@@ -4,7 +4,7 @@
   "ExecType": 0,
   "OutputType": 2,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "*[fzeroax]*",
+  "MainWindowTitle": "*[fzeroax]-Triforce*",
   "PriorityLevel": 0,
   "AddressesValues": [],
   "MatchingWordValues": [],

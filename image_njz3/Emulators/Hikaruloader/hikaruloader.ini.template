@@ -27,7 +27,9 @@ RENDER_SCALE = {{ECHELLE_RENDU}}
 # 16:9_CROP, it fills it at its own shape, cut at the sides or above and
 # below. DISPLAY_MODE then fits the frame to the window or the screen,
 # or stretches it. Taken at once. Default: ORIGINAL
-ASPECT_RATIO = ORIGINAL
+# Column ASPECT_CHARGEURS of resolutions.csv: 4:3 in super-resolution (the
+# CRT's real shape, with a _STRETCH DISPLAY_MODE), ORIGINAL elsewhere.
+ASPECT_RATIO = {{ASPECT_CHARGEURS}}
 
 # The part a cropped ASPECT_RATIO keeps: -100 (left or top) to 100 (right
 # or bottom), 0 the middle. Default: 0

@@ -1,0 +1,14 @@
+{
+  "GameName": "monacogp",
+  "Description": "Monaco GP",
+  "ExecType": 3,
+  "OutputType": 2,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[monacogp]-MAME*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

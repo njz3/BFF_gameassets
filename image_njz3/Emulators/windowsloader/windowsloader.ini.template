@@ -15,6 +15,10 @@
 ;
 [Display]
 DISPLAY_MODE = {{MODE_FENETRE}}
+; Forme du cadre (colonne ASPECT_CHARGEURS) : 4:3 en super-resolution, la forme
+; reelle du CRT, pour qu un jeu 16:9 garde ses bandes et ne soit que double en
+; largeur par BORDERLESS_STRETCH ; ORIGINAL ailleurs (20/11/2026).
+ASPECT_RATIO = {{ASPECT_CHARGEURS}}
 
 ; Langue du selecteur et du menu (Tab), depuis la 20261028-3 : AUTO suit la
 ; langue d affichage de Windows (francais si Windows est en francais, sinon

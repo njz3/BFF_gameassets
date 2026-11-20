@@ -1,0 +1,14 @@
+{
+  "GameName": "wangmid,wangmid2",
+  "Description": "Wangan Midnight Maximum Tune 1, 2",
+  "ExecType": 3,
+  "OutputType": 2,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[wangmid]-MAME*|*[wangmid2]-MAME*",
+  "PriorityLevel": 0,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

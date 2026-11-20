@@ -30,12 +30,14 @@
 
 
 [ Global ]
-; Display, from the monitor resolution (Build-Config, resolutions.csv): ETIRER
-; is set in super-resolution modes (borderless full screen, stretched image).
+; Display, from the monitor resolution (Build-Config, resolutions.csv): always a
+; borderless window covering the screen at the desktop's resolution, never a plain
+; window nor a video mode change. Stretch (below) follows ETIRER: the image fills
+; the screen in the super-resolution modes, keeps its shape elsewhere.
 XResolution = {{LARGEUR}}
 YResolution = {{HAUTEUR}}
-FullScreen = {{ETIRER}}
-BorderlessFullScreen = {{ETIRER}}
+FullScreen = true
+BorderlessFullScreen = true
 ; No mouse arrow over the game window, in every display mode (6555f22 and
 ; later; owner's choice, 28/10/2026). The Tab menu shows it while open.
 HideCursor = true

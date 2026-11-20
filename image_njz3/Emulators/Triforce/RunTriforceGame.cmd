@@ -12,8 +12,8 @@ CONSOLESTATE /Min
 set ROM=%~n1
 if "%ROM%"=="" ( echo Usage: %~n0 ^<game^> & exit /b 1 )
 
-:: The title BFF reads: the rom name between brackets, nothing else
-TITLE [%ROM%]
+:: The title BFF reads: the rom name between brackets, then the emulator
+TITLE [%ROM%]-Triforce
 
 CD /d "%~dp0"
 

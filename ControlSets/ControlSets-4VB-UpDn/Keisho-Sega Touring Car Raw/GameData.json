@@ -1,0 +1,14 @@
+{
+  "GameName": "stcc,stcca,stccb",
+  "Description": "Sega Touring Car Championship (raw, M2PAC)",
+  "ExecType": 1,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[stcc_raw]-Keisho*",
+  "PriorityLevel": 2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

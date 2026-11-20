@@ -14,7 +14,7 @@ CONSOLESTATE /Min
 ::set ROM=first argument
 set ROM=%~1
 :: set the title to match the name of the game, with the _raw suffix for BFF
-TITLE [%ROM%_raw]
+TITLE [%ROM%_raw]-Supermodel
 
 :: Change current directory to the folder that contains this file
 CD /d "%~dp0"

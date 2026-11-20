@@ -4,7 +4,7 @@
   "ExecType": 0,
   "OutputType": 3,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "*[clubkrt]*|*[clubk2k3]*",
+  "MainWindowTitle": "*[clubk2k3]-Flycast*|*[clubkrt]-Flycast*",
   "PriorityLevel": 1,
   "AddressesValues": [],
   "MatchingWordValues": [],

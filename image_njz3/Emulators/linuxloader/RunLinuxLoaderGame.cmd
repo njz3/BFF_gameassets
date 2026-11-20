@@ -22,7 +22,7 @@ if "%ROM%"=="" (
     exit /b 1
 )
 :: set the title to match the name of the game
-TITLE [%ROM%]
+TITLE [%ROM%]-LinuxLoader
 
 :: Change current directory to the folder that contains this file
 CD /d "%~dp0"

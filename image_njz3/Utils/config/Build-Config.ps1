@@ -497,6 +497,62 @@ foreach ($t in $cibles) {
             }
         }
 
+        'LINES' {
+            # Quelques lignes seulement d'un fichier que son programme reecrit
+            # lui-meme (attract.cfg, refait par AttractPlus quand on change un
+            # reglage dans son menu) : un template complet ecraserait ces
+            # reglages a chaque bascule. La SOURCE, a mots-cles comme un
+            # template, donne les lignes a poser : une ligne non indentee nomme
+            # la section ou elles vont, une ligne indentee est une entree dont
+            # le premier mot est la cle. L'entree de meme cle est remplacee
+            # dans sa section, ou ajoutee a la fin de la section si elle n'y
+            # est pas ; tout le reste du fichier est garde tel quel.
+            if (-not (Test-Path -LiteralPath $source)) { throw "lignes absentes : $source" }
+            if (-not (Test-Path -LiteralPath $sortie)) { throw "fichier a modifier absent : $sortie" }
+            $v = ValeursPour $cabCible
+            $modele = [IO.File]::ReadAllText($source, [Text.Encoding]::UTF8)
+            foreach ($k in $v.Keys) { $modele = $modele.Replace("{{$k}}", [string]$v[$k]) }
+            $restants = [regex]::Matches($modele, '\{\{([A-Z_0-9]+)\}\}') |
+                        ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique
+            if ($restants) { throw "$($t.TARGET) : mot(s)-cle(s) sans valeur : $($restants -join ', ')" }
+            $octets = [IO.File]::ReadAllBytes($sortie)
+            $bom = $octets.Length -ge 3 -and $octets[0] -eq 0xEF -and $octets[1] -eq 0xBB -and $octets[2] -eq 0xBF
+            $debut = if ($bom) { 3 } else { 0 }
+            $texte = [Text.Encoding]::UTF8.GetString($octets, $debut, $octets.Length - $debut)
+            $fin = if ($texte -match "`r`n") { "`r`n" } else { "`n" }
+            $l = [Collections.Generic.List[string]]($texte -split "`r?`n")
+            $section = $null; $poses = @()
+            foreach ($m in ($modele -split "`r?`n")) {
+                if (-not $m.Trim() -or $m.TrimStart().StartsWith('#')) { continue }
+                if ($m -notmatch '^\s') { $section = $m.Trim(); continue }
+                if (-not $section) { throw "$($t.SOURCE) : entree hors section : $m" }
+                $cle = ($m.Trim() -split '\s+')[0]
+                $i = $l.IndexOf($section)
+                if ($i -lt 0) { throw "$($t.TARGET) : section '$section' absente" }
+                # La section court jusqu'a la prochaine ligne non indentee et non vide.
+                $j = $i + 1
+                while ($j -lt $l.Count -and ($l[$j] -match '^\s' -or -not $l[$j].Trim())) { $j++ }
+                $trouve = -1
+                for ($n = $i + 1; $n -lt $j; $n++) { if ($l[$n].Trim() -and ($l[$n].Trim() -split '\s+')[0] -eq $cle) { $trouve = $n; break } }
+                if ($trouve -ge 0) { $l[$trouve] = $m }
+                else {
+                    # Apres la derniere entree de la section, avant ses lignes vides.
+                    $p = $j; while ($p -gt $i + 1 -and -not $l[$p - 1].Trim()) { $p-- }
+                    $l.Insert($p, $m)
+                }
+                $poses += $m.Trim() -replace '\s+', ' '
+            }
+            $neuf = $l -join $fin
+            if ($neuf -eq $texte) {
+                "garde    {0}  (deja : {1})" -f $t.TARGET, ($poses -join ' ; ')
+            } elseif ($WhatIf) {
+                "[essai] {0}  <- {1}" -f $t.TARGET, ($poses -join ' ; ')
+            } else {
+                [IO.File]::WriteAllText($sortie, $neuf, (New-Object Text.UTF8Encoding $bom))
+                "regle    {0}  <- {1}" -f $t.TARGET, ($poses -join ' ; ')
+            }
+        }
+
         default { throw "$($t.TARGET) : TYPE inconnu '$type'" }
     }
 }

@@ -4,7 +4,7 @@
   "ExecType": 0,
   "OutputType": 3,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "*[maxspeed]*",
+  "MainWindowTitle": "*[maxspeed]-Flycast*",
   "PriorityLevel": 1,
   "AddressesValues": [],
   "MatchingWordValues": [],

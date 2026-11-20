@@ -5,7 +5,7 @@ CONSOLESTATE /Min
 ::set ROM=first argument
 set ROM=%~1
 :: set the title to match the name of the game
-TITLE [%ROM%]
+TITLE [%ROM%]-MAME
 set GAME=%ROM%
 
 :: CAB_ID

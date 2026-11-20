@@ -1,0 +1,14 @@
+{
+  "GameName": "daytona,daytonas",
+  "Description": "Sega Daytona USA (raw, M2PAC)",
+  "ExecType": 1,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[daytona_raw]-Keisho*|*[daytonas_raw]-Keisho*",
+  "PriorityLevel": 2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

@@ -42,7 +42,7 @@ if "%ROM%"=="" (
     echo Usage : %~nx0 ^<nom du jeu^>
     exit /b 1
 )
-TITLE [%ROM%]
+TITLE [%ROM%]-WindowsLoader
 CD /d "%~dp0"
 
 set GAME=

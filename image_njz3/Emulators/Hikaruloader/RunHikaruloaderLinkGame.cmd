@@ -23,7 +23,7 @@ if "%~1"=="" goto :aide
 CONSOLESTATE /Min
 
 set ROM=%~1
-TITLE [%ROM%]
+TITLE [%ROM%]-Hikaruloader
 CD /d "%~dp0"
 
 CALL "..\..\Utils\set_cab_id.bat"

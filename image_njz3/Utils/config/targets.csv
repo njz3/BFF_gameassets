@@ -8,6 +8,8 @@
 # TYPE : TEMPLATE  un template a mots-cles {{AINSI}} -> le fichier produit
 #        VARIANT un fichier deja ecrit, choisi par son nom -> recopie
 #        FOLDER  un dossier modele -> recopie dans le dossier vivant
+#        LINES   quelques lignes d un fichier que son programme reecrit
+#                 lui-meme : remplacees ou ajoutees, le reste est garde
 #        STALE   les copies d un fichier que l emulateur garde dans le
 #                 dossier d ecriture (TARGET relative a WRITEDIR_ROOT) :
 #                 effacees si elles different de la SOURCE, a placer apres
@@ -136,6 +138,9 @@ keisho_link_cab*\vr\vr.eeprom;Emulators\Keisho LINK\saves\vr.eeprom;_single;STAL
 # de resolutions.csv ont toutes leur variante aujourd hui.
 AttractPlus\romlists\TeknoParrot.txt;AttractPlus\romlists\TeknoParrot{{RES}}.txt;_single;VARIANT;yes
 AttractPlus\romlists\Bike3D.txt;AttractPlus\romlists\Bike3D{{RES}}.txt;_single;VARIANT;yes
+# Le format d image d AttractPlus (aspect_ratio, ASPECT_AP) : une ligne seulement d attract.cfg,
+# que AttractPlus reecrit lui-meme ; les reglages faits dans son menu sont gardes.
+AttractPlus\config\attract.cfg;AttractPlus\config\attract.cfg.lignes;_single;LINES;
 # La resolution dans les profils TeknoParrot. Un seul type XML, pilote par
 # une table : les noms de champs varient d un jeu a l autre (six graphies),
 # et 100 profils x 11 resolutions en fichiers variantes serait intenable.

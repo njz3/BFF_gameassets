@@ -1,0 +1,14 @@
+{
+  "GameName": "sgt24h",
+  "Description": "Jaleco Super GT 24h (raw, M2PAC)",
+  "ExecType": 1,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[sgt24h_raw]-Keisho*",
+  "PriorityLevel": 2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

@@ -1,0 +1,14 @@
+{
+  "GameName": "daytona2,dayto2pe",
+  "Description": "Sega Daytona USA 2 Serie (raw, M2PAC)",
+  "ExecType": 2,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[dayto2pe_raw]-Supermodel*|*[daytona2_raw]-Supermodel*",
+  "PriorityLevel": 2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

@@ -25,7 +25,7 @@ if "%ROM%"=="" (
     echo Usage : %~nx0 ^<nom du jeu^>
     exit /b 1
 )
-TITLE [%ROM%]
+TITLE [%ROM%]-LinuxLoader
 CD /d "%~dp0"
 
 set JEUX=C:\Racecab\Games

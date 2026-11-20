@@ -1,0 +1,14 @@
+{
+  "GameName": "clubkrt, clubk2k3",
+  "Description": "Club Kart on Flycast (raw, M2PAC)",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[clubk2k3_raw]-Flycast*|*[clubkrt_raw]-Flycast*",
+  "PriorityLevel": 2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

@@ -1,0 +1,14 @@
+{
+  "GameName": "initd,initdexp,initdv2e,initdv3e",
+  "Description": "Initial D 123 series running on Flycast",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[initd]-Hikaruloader*|*[initdexp]-Hikaruloader*|*[initdv2e]-Hikaruloader*|*[initdv3e]-Hikaruloader*",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

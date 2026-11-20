@@ -16,20 +16,30 @@ CONSOLESTATE /Min
 set ROM=%~n1
 if "%ROM%"=="" ( echo Usage: %~n0 ^<game^> & exit /b 1 )
 
-:: The title BFF reads. Between brackets, and nothing else, so that
-:: [id5] can never be taken for the [id58] of another game.
-TITLE [%ROM%]
+:: The title BFF reads: the name between brackets, then the emulator, so
+:: that [id5] can never be taken for the [id58] of another game, nor the
+:: same name for the game of another emulator.
+TITLE [%ROM%]-TeknoParrot
 
 CD /d "%~dp0"
+
+:: The games that leave another resolution behind them when they quit:
+:: the Raw Thrills games (1920x1080, Cars excepted) and Storm Rider, seen
+:: in the 640x480 campaign of 12/11/2026. Only they get SetResolution
+:: RESTORE after the game; the others leave the screen as it is, and no
+:: console of SetResolution shows up for them.
+set BASEROM=%ROM%
+if /I "%ROM:~-5%"=="_link" set BASEROM=%ROM:~0,-5%
+set RESTAURE=
+for %%g in (Batman DirtyDrivin FNF FNFDrift FNFSB FNFSB2 FNFSC H2Overdrive NicktoonsNitro SnoCross StormRider) do if /I "%BASEROM%"=="%%g" set RESTAURE=1
 
 :: A link game reaches this script too: Attract-Mode gives the solo
 :: and the link lists the SAME emulator, and only the _link of the
 :: AltRomname tells them apart. Handed over rather than duplicated.
 if /I "%ROM:~-5%"=="_link" (
     CALL "%~dp0RunTeknoParrotLinkGame.cmd" %ROM%
-    REM Resolution choisie remise si le jeu l a changee (Raw Thrills : 1920x1080 a la sortie) ; rien sinon
-    "C:\Racecab\Utils\SetResolution.exe" RESTORE -noprompt >nul 2>&1
-    
+    REM Resolution choisie remise si le jeu l a changee, pour les jeux de RESTAURE seulement
+    if defined RESTAURE "C:\Racecab\Utils\SetResolution.exe" RESTORE -noprompt >nul 2>&1
     EXIT
 )
 
@@ -49,9 +59,8 @@ if not defined LAUNCH set LAUNCH=TeknoParrotUi.exe --profile=%GAME% --startMinim
 :: After the game, for the few that need it
 CALL :post_%ROM% 2>NUL
 
-REM Resolution choisie remise si le jeu l a changee (Raw Thrills : 1920x1080 a la sortie) ; rien sinon
-
-"C:\Racecab\Utils\SetResolution.exe" RESTORE -noprompt >nul 2>&1
+REM Resolution choisie remise si le jeu l a changee, pour les jeux de RESTAURE seulement
+if defined RESTAURE "C:\Racecab\Utils\SetResolution.exe" RESTORE -noprompt >nul 2>&1
 
 EXIT
 

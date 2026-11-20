@@ -1,0 +1,14 @@
+{
+  "GameName": "tokyobus",
+  "Description": "Tokyo Bus Guide (raw, M2PAC)",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[tokyobus_raw]-Flycast*",
+  "PriorityLevel": 2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

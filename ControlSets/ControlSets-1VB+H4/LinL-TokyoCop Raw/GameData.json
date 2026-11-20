@@ -1,0 +1,14 @@
+{
+  "GameName": "tokyocop",
+  "Description": " (raw, M2PAC)",
+  "ExecType": 4,
+  "OutputType": 0,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[TokyoCop_raw]-LinuxLoader*",
+  "PriorityLevel": 2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

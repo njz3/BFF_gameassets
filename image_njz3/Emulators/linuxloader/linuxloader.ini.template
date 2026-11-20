@@ -46,7 +46,9 @@ FULLSCREEN = false
 # inside at its own shape, black bars where the shapes differ; 4:3_LETTERBOX is 4:3); 4:3_STRETCH or 16:9_STRETCH
 # (the picture fills the frame, deformed); 4:3_CROP or 16:9_CROP (the picture fills the frame, cut on the
 # sides or above and below)
-ASPECT_RATIO = ORIGINAL
+# Column ASPECT_CHARGEURS of resolutions.csv: 4:3 in super-resolution, the CRT's real shape, so that a 16:9 game
+# keeps its bars and is only doubled in width by BORDERLESS_STRETCH; ORIGINAL elsewhere (20/11/2026).
+ASPECT_RATIO = {{ASPECT_CHARGEURS}}
 
 # The part a cropped aspect ratio keeps: -100 (left or top) to 100 (right or bottom), 0 the middle
 CROP_POSITION = 0

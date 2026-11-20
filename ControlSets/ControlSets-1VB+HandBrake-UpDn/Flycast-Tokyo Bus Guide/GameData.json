@@ -4,7 +4,7 @@
   "ExecType": 0,
   "OutputType": 3,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "*[tokyobus]*",
+  "MainWindowTitle": "*[tokyobus]-Flycast*",
   "PriorityLevel": 0,
   "AddressesValues": [],
   "MatchingWordValues": [],

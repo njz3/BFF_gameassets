@@ -1,0 +1,14 @@
+{
+  "GameName": "clubk2k3,clubkrt",
+  "Description": "Club Kart on Flycast",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[clubk2k3]-Hikaruloader*|*[clubkrt]-Hikaruloader*",
+  "PriorityLevel": 1,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

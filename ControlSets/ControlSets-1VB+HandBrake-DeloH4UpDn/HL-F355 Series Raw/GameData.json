@@ -1,0 +1,14 @@
+{
+  "GameName": "f355twin_raw,f355twn2_raw",
+  "Description": "F355 Challenge Series running on Flycast (raw, M2PAC)",
+  "ExecType": 0,
+  "OutputType": 3,
+  "ProcessName": "conhost|cmd",
+  "MainWindowTitle": "*[f355twin_raw]-Hikaruloader*|*[f355twn2_raw]-Hikaruloader*",
+  "PriorityLevel": 2,
+  "AddressesValues": [],
+  "MatchingWordValues": [],
+  "ForceSoundVolume": -1.0,
+  "ScriptFilename": "init.lua",
+  "KeyStrokeMode": 0
+}

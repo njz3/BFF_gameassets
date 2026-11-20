@@ -4,7 +4,7 @@
   "ExecType": 4,
   "OutputType": 0,
   "ProcessName": "conhost|cmd",
-  "MainWindowTitle": "*[tokyocop]*",
+  "MainWindowTitle": "*[TokyoCop]-LinuxLoader*",
   "PriorityLevel": 0,
   "AddressesValues": [],
   "MatchingWordValues": [],
